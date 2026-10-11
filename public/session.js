@@ -1,7 +1,7 @@
 import { roomPath } from "./protocol.js";
 
 const PROJECT = "Decentralized Curation";
-const PAPER_DOI = "10.5281/zenodo.20543760";
+const PAPER_DOI = "10.5281/zenodo.23298493";
 const PUBLIC_ADDRESS_PLACEHOLDER = "CHANGE-ME";
 const SITE = "https://decentralized-curation.0xferit.workers.dev";
 const COPYRIGHT = "Copyright (C) 2026 Ferit Tunçer";
@@ -10,8 +10,8 @@ const CONTENT_LICENCE = "CC BY 4.0";
 const LICENCE = `code ${CODE_LICENCE}, text and figures ${CONTENT_LICENCE}`;
 
 export const SESSION = Object.freeze({
-  title: "Credible consensus among strangers",
-  subtitle: "A jury for funding the research commons",
+  title: "Decentralized curation",
+  subtitle: "Private incentives, credible consensus, public benefit",
   project: PROJECT,
   event: "Institute of Open Science Practices (IOSP) 2026, Leiden",
   day: "Wednesday 14 October 2026, 14:00 to 15:20",
@@ -26,7 +26,7 @@ export const SESSION = Object.freeze({
   workshopReward:
     "Workshop simplification: each round with opened scores pays the full base reward, even when those scores all agree.",
   nextRound:
-    "Arrow, the first funded round of this design, runs at Octant in early 2027: an invited jury of domain experts scores a real docket under a published policy. Arrow’s invited jury is assumed not to collude.",
+    "Arrow is a planned precursor experiment at Octant: invited experts score a real docket under a published policy. It assumes honesty, competence and non-collusion; it does not validate the full permissionless system.",
   nextRoundUrl: "https://octant.build",
   copyright: COPYRIGHT,
   codeLicence: CODE_LICENCE,

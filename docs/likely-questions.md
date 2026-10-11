@@ -1,179 +1,219 @@
-# Likely questions, and the answers to give
+# Likely questions, and answers grounded in the sources
 
-Use the room's actual results when answering. Each entry gives an answer, a limitation to concede and an answer to avoid where a tempting reply would overstate the design. The ledger is `public/core.js`; the scenarios in `scripts/red-team/` run against the current ledger. The [red-team report](red-team-2026-10-09.md) records an earlier workshop version with different band arithmetic; its numerical thresholds are historical, not current predictions. The approved follow-up announcement is defined once as `SESSION.nextRound` in `public/session.js` and rendered on the deck and handout.
+Start from the full mechanism and its aim of turning private incentives into public benefit. Credible consensus is an intermediate objective. Then say which version a question concerns: today's hosted exercise, the current manuscript, the archived publication, the contract implementation and the planned Arrow experiment have different rules. Agreement alone establishes neither credibility, truth nor public benefit.
 
-## 1. "You pay me to forecast the room, not to read the evidence."
+## Source order
 
-Yes: a Keynesian beauty contest with the judging criteria written down. The curation policy is the Schelling prompt: it asks for honest judgment. Jurors who expect the others to follow it have a reason to follow it too. The bet is that this shared expectation makes honest reading the focal strategy. Sealed scores keep a visible first score from displacing the prompt. The ledger pays for coherence with the jury, not for being right. A credible result here means public and reproducible; it does not establish truth.
+For implemented behavior, use the [contract snapshot](https://github.com/golemfoundation/octant-v3-monorepo/tree/ca8c8560119dee34f809a31e5149f4a6217467fb), committed September 3, 2026. Its pool and coherence-engine code control implementation claims. This is evidence that code exists, not that it is audited or deployed.
 
-Concede: an expectation that others will follow a shared bias can also make agreement pay. The game cannot identify the quality of a reading from agreement alone. This is a design argument, not a proof.
+For the current research argument, use the [October 11 manuscript at `9927927`](https://github.com/0xferit/manuscript-decentralized-curation/blob/9927927cebd11f3b4e66f80bebee65b3248af919/paper.qmd). It incorporates the September equilibrium correction and adds a clearer distinction between private incentives, credible consensus and public benefit. [Zenodo version 1.1.0](https://doi.org/10.5281/zenodo.23298493), published October 11, 2026, is the current archive; the [June version 1.0.4](https://doi.org/10.5281/zenodo.20546399) remains historical. Source links identify the inspected manuscript revision; the archive link identifies the published preprint.
 
-Avoid: "your own reading is always your best forecast" or "a sharper prompt fixes every shared bias."
+For today's rules, use the [ledger](../public/core.js), [policy and docket](../public/domain.js), and [session facts](../public/session.js). The [red-team report](red-team-2026-10-09.md) describes an earlier workshop band and is not a source for current thresholds. The current follow-up wording is defined once as `SESSION.nextRound`.
 
-## 2. "The band wiped out the one juror who knew better."
+## 1. What problem does the full system address?
 
-It can penalize informed dissent. A juror's distance from the centre determines the distance forfeit; the ledger cannot verify that the minority had better evidence. Publishing the policy and every opened score makes the disagreement inspectable. Hear the juror's reason before treating a forfeit as a bad reading.
+The aim is to make useful information production, assessment and correction privately rewarding, so that people pursuing their own interests improve public decisions. This requires two links: incentives must induce useful work, and its results must benefit affected people. Neither link follows from participant profits alone. The [current manuscript](https://github.com/0xferit/manuscript-decentralized-curation/blob/9927927cebd11f3b4e66f80bebee65b3248af919/paper.qmd#L27-L41) treats both as hypotheses to test.
 
-Concede: the workshop has no appeal or reason field, so it cannot repair that result within the round. At essentially zero spread, distance forfeits are disabled; that numerical rule does not identify which judgment was informed.
+A focused group can study evidence carefully while missing affected people's needs; wider participation can supply both those needs and missing knowledge, without guaranteeing a sound decision. Delegating assessment does not authorize assessors to decide whose interests count. The [research framing](presentation-sources.md#judgment-and-public-accountability) explains this accountability question.
 
-Avoid: "recuse if you disagree" or "the expert could appeal today."
+The mechanism separates the work needed before allocation: the creator states the policy; nominations supply claims and evidence; jurors assess relevance; wider participants can fund eligible factual challenges or relevance appeals; allocation follows the resulting weights. An allocation formula cannot repair false evidence or decide what a community should value. Stake does not certify expertise, and the cost of scrutiny can exclude useful voices.
 
-## 3. "Whoever holds the stake sets the centre and can never forfeit."
+Concede: reliable facts do not remove value disagreement. This is a proposed architecture for a class of information and funding problems, not a solution to governance in general.
 
-Within one round, a juror holding more than half its stake stays inside this band and cannot lose that stake through distance forfeits. Their weight affects both the mean and the spread. The proposed design draws seats from locked tokens: more drawn seats give a curator more weight on one score, not more independent readings. Stake is the deposited capital locked and at risk for that round. Today's game uses equal seats and points; it does not test the distribution of capital in an open pool.
+## 2. How do truth, credible consensus and public benefit differ?
 
-Concede: capital concentration is a material limit, and a larger jury need not remove it. A penalty tied to the same weighted scores does not make concentrated influence safe.
+Public benefit is the final aim. Credible consensus is an intermediate objective: judgments grounded in evidence, assessed under an explicit policy, with usable correction paths. Consensus means a collective result, not unanimity; shared bias can still make it wrong. The protocol does not certify truth, competence or beneficial outcomes. These are the [current manuscript's distinctions](https://github.com/0xferit/manuscript-decentralized-curation/blob/9927927cebd11f3b4e66f80bebee65b3248af919/paper.qmd#L133-L161).
 
-Avoid: "stake is skin in the game" as an answer to whose capital carries influence, or a universal safe collusion threshold.
+Accuracy challenges and relevance appeals have different jobs. A factual challenge targets a claim and goes to an external arbitrator. A relevance jury asks how much the contribution matters under this pool's policy. Its score does not certify the claim or establish causal impact.
 
-## 4. "You rigged a majority and showed that a majority wins."
+For example, the [NumPy announcement](https://numpy.org/news/#numpy-2-0-0-released) establishes that version 2.0.0 shipped on 16 June 2024. The policy still governs the relevance of NumPy's work. Whether the release caused additional scientific progress is a further evidential question.
 
-The live bloc is sampled seat by seat; it is not a guaranteed majority. The arXiv banner reports assignment among the revealed jurors and how many submitted the instructed score. A matching score does not establish a juror's motive. We deliberately introduce an attack, then inspect what it earned. If it pays, discuss capture; if it forfeits, discuss where the penalty bites. If no assigned juror submits that score, say that this attack did not appear in the revealed scores.
+Avoid describing a pool's ruling as a universal, protocol-wide truth verdict. Evidence policies, claims and adjudication remain concrete dependencies. Separately accepted claims can also contradict one another: the design has no cross-item consistency test. Nor does faithful application of a policy establish that the policy serves affected people.
 
-Concede: this demonstrates one realised configuration. It does not establish the prevalence of collusion, a safe threshold or the effectiveness of the full deterrents. The full design uses commit and reveal, anti-prereveal games and appeals; the workshop does not perform appeals.
+## 3. How does a score become money?
 
-Avoid: "the bloc always wins", "the bloc always pays for cheating" or "a random draw dilutes a bloc's expected share of the pool."
+In the current contracts, effective weight is the lower of the nominator's requested weight and the curated score. The ongoing funding flow is divided across earning weights. New or increased weight waits through a holdback; a decrease takes effect immediately. Funds accrue and are claimed by the fixed beneficiary.
 
-## 5. "The buyer waits for the reveal and pays on the public number."
+A score is neither a price nor a fixed percentage of the budget. Two nominations with equal effective weights share equally; adding another earning nomination changes their relative shares. No weight means no retrospective earnings for that interval.
 
-That arrangement is outside what the proof-reporting bounty deters. The bounty makes proving a sealed score before reveal risky; afterwards, the workshop publishes names and scores. The P plus epsilon attack is a relevant objection. Commit and reveal, anti-prereveal games and appeals are deterrents in the full design, not a claim that every bribery arrangement fails.
+The default worked example makes this visible: NumPy's 0.60 score yields 40 of the illustrative 100 units released per day, because the total effective weight is 1.50. The 0.70 appeal result yields 43.75 units; a 0.30 re-score yields 25. These are calculated accrual rates after any required holdback, not automatic daily transfers or real NumPy funding. The deck owns the example inputs.
 
-Concede: publicly attributable scores can help outsiders inspect a result and can help a buyer verify it. The workshop does not resolve that tradeoff.
+Source: [weight rule](https://github.com/golemfoundation/octant-v3-monorepo/blob/ca8c8560119dee34f809a31e5149f4a6217467fb/packages/contracts/src/libraries/Weights.sol) and [pool implementation](https://github.com/golemfoundation/octant-v3-monorepo/blob/ca8c8560119dee34f809a31e5149f4a6217467fb/packages/contracts/src/Pool.sol).
 
-Avoid: "the buyer cannot verify before the reveal", which does not answer a buyer who waits.
+## 4. Why distinguish the relevance score from juror grading?
 
-## 6. "Your prompt funds the already-funded, and you wrote it."
+They perform different jobs. The deepest completed relevance round supplies a weighted mean for the nomination's score. Economic grading instead uses that round's weighted median and median absolute deviation, with a minimum width, to assess reports across the case.
 
-This prompt asks about reliance, not funding need. A community that values need must express that in its policy. Committees can already publish assessment criteria. This design combines a public policy, sealed scoring, a reproducible ledger and payments tied to coherence. Whether that combination improves assessment is a question to test.
+The workshop uses a mean and standard deviation, with reward shares based on closeness. Those visuals illustrate incentives in this exercise; they are not the current contract formula.
 
-Concede: I chose the workshop policy and docket. The mechanism does not settle who should write a policy or which values it should encode.
+A central score can also hide two clusters of judgment. Read the individual scores and reasons, not just the aggregate. A payment band is not a confidence interval.
 
-Avoid: "the policy is just an example" without explaining what participants can assess about the mechanism using it.
+## 5. What is the nominator risking, and is it the same asset as curator stake?
 
-## 7. "A number with no reasons, and a bounty for reporting a colleague."
+The current implementation takes a nomination deposit proportional to requested weight, plus a curation fee, in the funding asset. Curators deposit the separately configured stake asset to obtain tickets and back their reports. Challenge counter-stakes and relevance-appeal bonds use the funding asset.
 
-The workshop collects scores and leaves reasons to the debrief. Reporting applies to a proof of a sealed score, not merely a conversation about the policy. Only jurors seated for that nominee can report; keep your proof private.
+Do not conflate every deposit with the curator token. Nor does posting a deposit demonstrate that evidence is sound: it creates an exposure governed by challenge rules.
 
-Concede: publishing scores makes an aggregate reproducible, but it does not supply the reasons needed to assess a juror's reading. A fuller process can collect reasons; today's ledger does not grade them.
+## 6. Does paying for agreement reward conformity?
 
-Avoid: "the reasons are in the policy." The policy is the shared prompt, not each juror's explanation.
+It can. The intended focal point is the public policy applied to evidence, but participants may instead coordinate on a shared bias or an easy response. A clear prompt helps people understand the task; it does not establish honest reporting as a best response.
 
-## 8. "The centre for the portable document format (PDF) is a number nobody gave."
+The September correction withdrew the earlier equilibrium guarantee. The [current manuscript](https://github.com/0xferit/manuscript-decentralized-curation/blob/9927927cebd11f3b4e66f80bebee65b3248af919/paper.qmd#L372-L390) retains its profitable variance-padding deviation for the paper's mean/standard-deviation, dispersion-scaled reward rule. That defect is not automatically an exploit of the median-based contracts or today's flat-base-reward exercise. Each rule set needs its own analysis.
 
-Yes: a mean can fall between clusters without representing anyone's reading. Read the centre, spread and individual scores together. The band determines payment eligibility; it is not a confidence interval or evidence that all jurors agree.
+A truthful-reporting defect does not by itself establish the system's net public effect. A strategically imperfect mechanism could improve on feasible alternatives; the paper establishes neither that improvement nor its absence. Compare information quality, participation costs and downstream consequences.
 
-Concede: a split jury may be better described as "split, and here is where" than by its centre alone. The result cannot tell us whose substitute test was better without hearing their reasons.
+Avoid saying that incentives “make honesty rational” without assumptions and a valid result for the exact mechanism.
 
-Avoid: treating a centre between two groups as an agreed compromise.
+## 7. Does stake prevent fake identities and capture?
 
-## 9. "Recusal is free and scoring is risky, so the honest leave."
+Stake weights capital, not people. Splitting an unchanged token balance among addresses does not create extra capital, but the mechanism does not certify identity, independence or competence. One curator can hold multiple drawn seats.
 
-Recusal carries no scoring stake, share or absence forfeit. Participation can pay or lose points, depending on the jury's result. That may encourage people who believe they can apply the policy to score, but it is not a competence test.
+Concentrated or cheaply acquired stake remains a capture risk. A random sample does not reduce a coalition's expected stake share; it changes the realized jury. More seats are not necessarily more independent views.
 
-Concede: uncertainty, confidence and expertise need not move together. Hear why people recused, without treating disagreement itself as a reason to leave.
+The current code's tests explicitly include a majority bloc that controls grading and penalizes an honest minority. Do not present a universal safe coalition threshold.
 
-Avoid: promising that the incentive selects only knowledgeable jurors, or attributing compulsory participation and conflict rules to a funded round without an approved specification.
+## 8. How can an appeal help an informed minority?
 
-## 10. "By round three everyone knows the room."
+Anyone may file a relevance appeal in the current implementation, including someone outside the jury. The appellant posts a funding-asset bond and a sealed prediction. A larger child jury is drawn, excluding the appellant's own tickets. The deepest completed result becomes the score; its reference grades reports across the case.
 
-Sealing hides the current scores until opening. It does not hide the roster, previous results or what participants learn about one another. Later rounds may involve calibration, conformity or both.
+The prediction is a separate economic bet. Its refund depends on beating the prior score by the required margin; a lost bet does not invalidate the child jury's result.
 
-Concede: this six-round workshop is not six independent tests. Prior results and the facilitator's debriefs can change later expectations.
+Concede: a larger jury helps only if it supplies useful additional judgment. Appeals cost money and time, and can reproduce a pool-wide bias. There is no configured depth ceiling, but available stake, participation and implementation bounds still constrain escalation.
 
-Avoid: "within a round nobody can copy", which ignores leaked proofs and knowledge of the room.
+Source: [coherence engine](https://github.com/golemfoundation/octant-v3-monorepo/blob/ca8c8560119dee34f809a31e5149f4a6217467fb/packages/contracts/src/CoherenceEngine.sol).
 
-## 11. "Nobody knows research as a whole, and your anchors count fields."
+## 9. What happens during an accuracy dispute?
 
-The anchors encode a value judgment about breadth of reliance. Participants should apply the published tests and recuse when they cannot make a reading. A community that values criticality within a small field may choose different anchors.
+The nomination must already be scored or active and have no open relevance case. The challenger pays counter-stake and a flat tax in the funding asset, plus the external arbitrator's fee. Current contracts let accrual continue, but withhold claiming and certain exit operations while the dispute is pending.
 
-Concede: short blurbs and a brief scoring window provide thin evidence. The policy cannot give a juror knowledge they do not have.
+If the claim is debunked, its weight stops, unclaimed accrual returns to the open pool budget, and the challenger receives the nomination deposit and their counter-stake. If the challenge fails, the nomination resumes and the nominator receives the counter-stake. A timeout bounds detention when an arbitrator does not respond. Payments already made are not clawed back.
 
-Avoid: treating the anchors as facts about what a fund ought to value.
+This differs from older descriptions that immediately removed disputed weight. Do not mix the two.
 
-## 12. "Output agreement has uninformative equilibria, and the known fixes reward the opposite."
+The NumPy example deliberately adds a false assertion about unchanged binary compatibility to show this separate branch. It is not an accusation that NumPy made that assertion, and the button is not an actual arbitration. Its documented release date remains supported.
 
-Output agreement is a relevant comparison: agreement can reflect common knowledge or shared bias rather than careful private information. That literature does not prove truthfulness for this ledger. Our proposed focal point is the public policy; the expectation that others follow it is the design argument to examine.
+Debunking and a zero relevance score have different meanings: debunking preserves the last relevance score, stops earning weight and returns unclaimed accrual to an open pool. A relevance cut alone preserves earlier accrual.
 
-Concede: neither a tight band nor a profitable reading establishes that the incentives improved judgment. The paper reduces the total base reward for low-dispersion rounds as one deterrent to lazy agreement. Today's workshop keeps that reward full and fixed, so it does not exercise that deterrent. The individual relative-distance reward rule is shared with the paper, including stake-proportional sharing when all scores are identical.
+## 10. Will people investigate false claims if investigation is expensive?
 
-Avoid: importing a truthful-equilibrium result from another mechanism or presenting Keynes, Schelling and output agreement as interchangeable theories.
+Not necessarily. A profitable dispute after discovering a falsehood does not pay for all the unsuccessful investigations needed to find one. Evidence access, investigation cost, arbitration fees, expected recovery and retaliation concerns matter.
 
-## 13. "This is a Delphi round with a penalty and no reasons."
+The architecture permits scrutiny; it does not guarantee a sufficient supply of it. A deployment needs to test those incentives and the external arbitrator's competence and availability.
 
-Delphi is a useful comparison; this design adds explicit stakes, coherence payments and sealed scoring. The question is whether those choices help the process you need. Existing facilitated methods remain possible comparators.
+## 11. Can challenges or appeals be used to harass a project?
 
-Concede: the workshop uses a facilitator and leaves reasons to discussion. We have not shown that payments outperform facilitated deliberation or published criteria alone.
+Yes, they introduce delay and participation costs as well as correction paths. Counter-stakes, fees, prediction requirements and timeouts impose constraints, but they do not prove that all harassment is uneconomic.
 
-Avoid: claiming that Delphi cannot work among strangers or has no incentive for care.
+Evaluate the exact path and who bears each cost. “There is a bond” is not a complete answer to griefing.
 
-## 14. "Funders already use lotteries."
+## 12. Who chooses the policy, and can they change the rules later?
 
-A lottery can complement a jury score, for example if a fund chooses a score threshold for eligibility. The threshold and allocation rule remain policy choices. The workshop supplies judgments under one policy; it does not establish which funding rule is best.
+A pool creator chooses the policy, terms and dependencies; people choose which pool to use. Publishing a policy makes it inspectable. It does not establish that affected people chose it or that it represents everyone's needs. Current contracts make economic parameters immutable and require a new pool for a new version. Human-readable policy and evidence remain outside the contract's semantic understanding: code enforces procedures and financial consequences, not the meaning or achievement of public benefit.
 
-Concede: a lottery may answer a fund's problem without these coherence incentives.
+A configured temporary circuit breaker is a specific exception: its holder can stop future accrual within the defined powers, without rewriting weights or taking already-accrued funds. That authority must be disclosed.
 
-Avoid: treating every existing funding process as unreproducible.
+Pool choice does not automatically correct a bad policy. Participants must recognize the problem, find a funded alternative and coordinate a move. People affected by the outcome may lack stake or be absent from the readership. As the [Dewey discussion](https://github.com/0xferit/manuscript-decentralized-curation/blob/9927927cebd11f3b4e66f80bebee65b3248af919/paper.qmd#L686-L694) emphasizes, access and exit have not been shown equivalent to effective public participation. Accountability over public purposes remains a separate requirement.
 
-## 15. "This is Kleros."
+## 13. Does re-scoring keep the system up to date automatically?
 
-Kleros and SchellingCoin are relevant antecedents; this workshop uses continuous scores and a band derived from the jury's spread. The shared concern is that anticipating agreement can reward a biased centre.
+It supplies a route to revisit relevance. The current scheduler works through eligible nominations with bounded calls and can skip infeasible evaluations while retaining the standing score. Someone still has to call it, juries must participate, and evidence must remain usable.
 
-Concede: sealing is not a distinctive answer to collusion by itself. The workshop cannot establish that this design resolves the antecedents' failure modes.
+Scheduled draws have a different randomness boundary from participant-triggered draws. The former retain caller timing influence; the latter commit before a future block. Neither warrants “unbiasable randomness” as a blanket claim.
 
-Avoid: "ours is sealed" or unsupported claims about funded-round arrangements.
+## 14. The workshop punished the one expert. What does that show?
 
-## 16. "Hashes and Bitcoin seed words on your own server."
+That informed dissent can lose under agreement-based grading. Hear the expert's reason before treating the penalty as a mistake by the person. The ledger cannot identify superior knowledge from a score alone.
 
-Today participants trust the hosted service to enforce the protocol. The browser stores a score and its salt; the service accepts a matching reveal and the clients derive the ledger from the published records. These checks do not remove trust in the service operator. The score and salt words form a proof; the words are not a wallet recovery phrase.
+Today's exercise has no appeal or structured reason field. Use the example to ask what evidence and correction path a real funding system would need. Do not tell people to recuse merely because they disagree.
 
-Concede: this is a hosted workshop demonstration, not a deployment that removes operator trust. A future deployment must state its own trust assumptions.
+## 15. You assigned a colluding bloc, then showed that collusion works.
 
-Avoid: "sealing protects you from the operator" or "it is not crypto."
+The live bloc is sampled seat by seat. The banner distinguishes assigned participants from those who revealed the instructed score. Neither a majority nor compliance is guaranteed, and a matching score does not establish motive.
 
-## 17. "What result today would have counted against the design?"
+We introduce a possible attack and inspect what this configuration pays. If it succeeds, discuss capture; if it loses, identify the specific scores and band that caused it. Neither result estimates how common the behavior is or proves the full system secure.
 
-Before scoring, predict that PDF's band will be wider than both Inkscape's and Linux's. If it is not, that comparative prediction fails. The scores alone do not tell us whether a prompt failed, jurors lacked evidence or participants shared a reading we did not expect. Hear their reasons and compare them with what the ledger rewarded.
+## 16. Does the proof-reporting bounty stop vote buying?
 
-Concede: points, one room, familiar nominees and my blurbs demonstrate arithmetic and failure modes. They do not establish that the incentives improve judgment.
+It makes one kind of early disclosure costly in this workshop. A seated juror can report a proof of another juror's sealed score. Ordinary conversation about the policy is not itself such a proof.
 
-Avoid: inferring herding from a narrow band or calling every possible result support for the thesis.
+A buyer can instead use a public revealed score, a prior agreement or another verification channel. The bounty is not a general bribery solution. More importantly, no commitment-leak report or penalty path was found in the inspected full-system contracts. It must not be advertised as their protection.
 
-## 18. "Project communities will stake to sit on their own juries."
+The inspected contract binds a reveal to the same juror’s earlier commitment, but accepts early reveals while other jurors can still commit. It therefore does not fully prevent copying. The research blueprint discusses an early-disclosure mechanism; that is a separate source and implementation claim.
 
-Stake does not establish independence or remove conflicts of interest. In the open design, interested parties can gain weight. The full deterrents are commit and reveal, anti-prereveal games and appeals; they do not turn agreement into evidence of impartiality. Use only the approved follow-up announcement on slide 14 when describing the funded round.
+## 17. Are sealed scores private from the workshop operator?
 
-Concede: aligned interests can produce a tight band around a biased centre without active collusion. The ledger cannot distinguish that from an informed agreement.
+Participants trust this hosted service to enforce the protocol. The browser stores the score and salt, the service checks matching reveals, and clients derive the ledger from published records. These checks do not remove operator trust.
 
-Avoid: claiming that the paper specifies an invited jury, excludes every conflict before seating or proves a safe collusion threshold.
+The two words are part of a score proof, not a wallet recovery phrase. Losing the local salt can prevent a reveal. Keep proofs private and explain these practical limits before scoring.
 
-## 19. "Appeals cannot fix a shared bias."
+## 18. What if a phone sleeps or a participant arrives late?
 
-A larger jury can change a result, but it can share the same bias. The paper's conditional argument depends on adding distinct curators and limiting concentration of stake; more seats held by one curator still produce one reading. An appeal also has costs and can fail.
+The cutoff is pressing “Grade”, not the moment a phone sleeps. A phone waking before the cutoff can reveal its stored seal. Later reveals are recorded but excluded. A non-recused seated juror with no timely reveal loses the stake when at least one score opens; if no score opens, the round is void without absence forfeits.
 
-Concede: escalation is not a guarantee of correction. We discuss appeals and do not perform them today.
+Late arrivals are at stake from the next nominee. In paper play, follow the explicit-recusal workaround in the [facilitator guide](facilitator-guide.md).
 
-Avoid: "appeals fix capture by a small bloc" without its assumptions.
+## 19. Why let jurors recuse without a penalty?
 
-## 20. "A sleeping phone is a total loss."
+It lets someone who lacks knowledge avoid presenting a guess as an informed score. The workshop gives no scoring stake, reward or absence fine for an explicit recusal.
 
-The cutoff is pressing "Grade", not the moment a phone sleeps. A phone waking before that cutoff can open its stored seal automatically. Afterwards, its reveal is recorded but does not count. A non-recused seated juror without a timely reveal loses the stake when at least one score opens; if nobody opens a score, the round is void with no absence forfeits.
+Concede: confidence and competence are different. Free recusal can remove cautious experts as well as uninformed participants. It is not a selection theorem, and the workshop's recusal behavior should not be projected onto other deployments.
 
-Concede: device availability matters in this workshop. The host announces the cutoff and allows recovery within the processing allowance. Deployment choices for real capital need their own specification.
+## 20. By the third round, everyone knows the room.
 
-Avoid: promising days-long reveal windows, sponsored capital or automatic future reveals as settled parts of the paper.
+Correct. Sealing hides current scores, not previous outcomes, the roster or discussion. Later rounds may reflect useful calibration, conformity or both.
 
-## 21. "What is 0.43 in euros, and the committee still decides."
+These six rounds are not six independent experiments. Treat debriefs and observed history as part of the conditions, and avoid causal claims that the exercise cannot distinguish.
 
-The workshop produces a score, not a price or a funding share. If a fund chooses proportional allocation, a nominee's share is its score divided by the sum of the docket's scores. Choosing that allocation rule is a separate policy decision; it also needs a rule for a docket whose scores sum to zero. The jury does not determine the budget or establish the value of another euro of funding.
+## 21. Why not use a panel, deliberation, peer prediction or a lottery?
 
-Concede: a fund already able to publish criteria and arithmetic may need no replacement. Assess whether this particular scoring and incentive process serves its purpose.
+Those can be appropriate alternatives or complements. This architecture makes evidence, challenge rights, incentives and allocation rules explicit; whether that additional machinery improves a given process must be tested against its alternatives.
 
-Avoid: calling a raw score a share or claiming that the committee's authority disappears.
+A lottery may reduce assessment burden; a deliberative panel may collect richer reasons. Peer-prediction mechanisms have their own rules and assumptions. This scalar coherence game does not inherit another mechanism's truthfulness result simply because both pay participants using others' reports.
 
-## 22. "Your deck, handout, guide and game disagree."
+## 22. Is this just Kleros?
 
-Check the precise claim against the policy in `public/domain.js`, the ledger in `public/core.js` and the session facts in `public/session.js`. A historical simulation is not a promise about the current room. If the current materials disagree, acknowledge the discrepancy and use the observed result rather than defending the wording.
+There is shared intellectual background in Schelling-style coordination. In this architecture an external arbitration system can resolve factual challenges, while a separate scalar relevance process determines policy-relative weights. Naming Kleros is not evidence that a particular court is integrated, appropriately expert or ready for a deployment.
 
-Concede: "credible consensus" needs its limit stated every time it matters: public and reproducible, not guaranteed true.
+Explain the boundary rather than claiming novelty from sealing alone.
 
-Avoid: saying that every discrepancy is already fixed without checking it.
+## 23. What is Arrow, and what can it establish?
+
+Arrow is a precursor experiment with invited experts and trusted nominations. It explores relevance scoring and operations under assumptions of competent, honest, non-colluding participants. It does not instantiate the open staked market, accuracy challenges, growing appeal ladder or continuous funding system.
+
+It can inform questions about participation, prompt comprehension, score distributions, coherence and operational execution. Comparing its expert ranking with another funding method supplies a comparison, not a ground-truth verdict. Do not present a positive result as validation of permissionless security.
+
+The current experiment announcement is supplied by [session data](../public/session.js); do not improvise a confirmed partner, exact launch, allocation budget or production-readiness claim.
+
+## 24. What has actually been validated?
+
+Keep distinct levels of evidence:
+
+- The paper formalizes an architecture and reports conditional calculations and simulations under prescribed strategies and assumptions. These do not establish that freely chosen strategies produce public benefit.
+- The historical Truth Post deployment concerned the accuracy layer, not the current integrated funding system.
+- Code and tests show implemented rules and exercised cases, not economic safety under every strategy.
+- This workshop reveals behavior in a hosted room with points and a selected docket.
+- Arrow can collect further behavioral and operational evidence under its trusted-participant assumptions.
+
+The June publication made stronger claims that the September correction withdrew. The October 11 manuscript further distinguishes public benefit from policy fidelity, profits and equilibrium. It specifies no public-welfare objective function and establishes no optimum. Do not attribute these revisions to the archived version, or transfer a paper's result to different contract arithmetic.
+
+## 25. What result today would count against your expectation?
+
+Before play, predict that the portable document format round's band will be wider than both Inkscape's and Linux's. If that does not happen, the comparative prediction fails.
+
+That result alone cannot identify whether the policy, knowledge, incentives or shared interpretation caused it. Ask for reasons and compare them with what was rewarded. Points, a familiar docket and one room do not establish that incentives improve judgment.
+
+For the full system, ask which assumptions need separate tests: viable scrutiny, affordable appeals, independent participation, understandable policies and correct integrated settlement. Then compare the behavior participants choose and the resulting decisions with feasible alternatives. Assess whose needs are covered, who is excluded and what consequences follow for users and non-users. Avoid making the proposal immune to contrary evidence.
+
+## 26. The sources disagree. Which version should I use?
+
+Check scope and content, then dates. The October 11 manuscript controls current research claims; it does not replace the contract specification or turn the paper's funding profile into the implemented mechanism. A newer Arrow plan defines a narrower experiment. The current contracts use continuous funding, proportional nomination deposits and median-based grading. Research funding profiles describe batch allocation and different grading. The workshop deliberately uses another simplified rule set.
+
+For the local exercise, the ledger, policy and session data control. If a slide disagrees with them, acknowledge it and inspect the actual result. Historical thresholds and catalog update times do not overrule current behavior.
+
+## 27. Is the NumPy example an actual funding round?
+
+No. It combines real evidence with an interactive illustration. NumPy's release, delivered features, SciPy's preparation for compatibility and migration costs come from primary records listed in the [evidence register](presentation-sources.md). The nomination, scores, tickets, requested weight, comparison positions and funding parameters are chosen example inputs.
+
+Changing a score really recomputes the weighted mean and allocation shown in the deck. The appeal button substitutes a twelve-ticket jury's result; the re-score button restores the baseline jury and applies a lower score. Initial and appeal views assume finalization and the required holdback are complete. The accuracy button illustrates a debunked counterfactual claim after the relevance case closes. It stops future weight and returns unclaimed accrual, while prior payments remain paid.
+
+This is a calculation of current rates, not execution of the contracts. It does not draw a jury, enforce eligibility, adjudicate claims, settle deposits, track accumulated balances or move assets. The later live workshop separately exercises relevance scoring with points. Neither demonstration establishes that the integrated funding system is deployed or economically secure.

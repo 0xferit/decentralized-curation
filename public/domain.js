@@ -48,36 +48,36 @@ const DEFAULT_NOMINEES = [
     key: "inkscape",
     name: "Inkscape",
     blurb:
-      "The free vector drawing program, built largely by volunteers since 2003, behind a great many conference posters, journal figures and lab logos.",
-    note: "A low reading follows the substitute test, as in the worked colour map. You may have made your last poster in it; personal use is excluded. Ask what would break without this particular tool and whether another vector editor or converter could replace it. A high score needs a case about research's reliance, rather than how good the software is. Hear that case before interpreting the result.",
+      "Free vector drawing software for technical diagrams, illustrations and other graphics. Started in 2003, the project is developed by a community of contributors.",
+    note: "Ask which research workflows depend on this particular tool, what would change without it and which alternatives could replace it. Personal use and preference are excluded. Hear the reasons for a high or low score before interpreting the result.",
   },
   {
     key: "linux",
     name: "Linux",
     blurb:
-      "The free operating system most researchers don’t run on their laptop, yet it runs every machine on the TOP500 list of the fastest supercomputers, and most of the clusters and cloud servers where analysis happens.",
-    note: "A high reading follows the reach and reliance tests. Ask whether the room's reasons support that reading. A tight cluster narrows the band, so a juror can forfeit despite giving a defensible score. Inspect the actual centre, band and payout; coherence is measured against this room, and agreement does not establish truth.",
+      "The kernel used by Linux operating systems on research clusters, cloud servers and supercomputers. It underpins the software environments in which many scientific computations run.",
+    note: "Consider reliance through research clusters and computing services as well as direct use. A tight cluster narrows the band, so a juror can forfeit despite giving a defensible score. Inspect the actual centre, band and payout; agreement does not establish correctness.",
   },
   {
     key: "pdf",
     name: "PDF",
     blurb:
-      "The format most papers are downloaded and read in. Adobe created it in 1993 and published the spec free from the start; since 2008 it has been an ISO standard (ISO 32000), kept up by an ISO committee.",
+      "Portable Document Format (PDF), used to share paginated documents such as papers. Adobe published its specification in 1993; it became the International Organization for Standardization’s 32000 standard in 2008.",
     note: "The substitute test may divide the room: some jurors see web and structured-text versions of papers as replacements; others emphasize the existing literature and workflows. A preference for another format is excluded; an argument about what breaks or cannot be reused may bear on reliance and substitutes. Hear the reasons for each reading. A split can widen the band; being in the smaller group does not by itself imply a forfeit. Inspect what the revealed scores actually earned.",
   },
   {
     key: "latex",
     name: "LaTeX",
     blurb:
-      "The typesetting system much of mathematics, physics and computer science is written in. Knuth froze his TeX engine in 1990, bar bug fixes; LaTeX runs on successors such as pdfTeX and LuaTeX, kept up by a small volunteer team.",
-    note: "Your field is not the field. A mathematician may find it indispensable; a clinician may use another tool. The prompt asks about research as a whole, so your own field gets no extra weight. Ask how jurors considered reliance beyond their own desk. Different readings can widen the band, and the mean and spread use every opened score. Do not infer a forfeit from a minority reading alone.",
+      "The free typesetting system used for research articles, theses and books. It supports mathematical notation, cross-references and bibliographies, and runs on TeX engines such as pdfTeX and LuaTeX.",
+    note: "Apply the policy to research as a whole. Different disciplines rely on different tools; a juror’s own field gets no extra weight. Ask how participants considered reliance, disruption and substitutes beyond their own work. A minority reading does not by itself imply a forfeit.",
   },
   {
     key: "arxiv",
     name: "arXiv",
     blurb:
       "The preprint server where much of physics, mathematics and computer science has appeared first since 1991: more than three million papers, free to post and free to read. Moderated, not peer-reviewed.",
-    note: "A high reading follows its role in sharing research before journal publication. ‘It’s flooded with AI-written papers’ judges the quality of its contents, which the policy excludes. Use the banner to distinguish who was assigned the private instruction, who submitted its score and what they earned. A matching score does not establish a juror's motive. If the bloc is paid, discuss capture; if it forfeits, discuss where the penalty bites. Neither outcome establishes a safe threshold.",
+    note: "Ask how research relies on early sharing and access to existing preprints. The instructed claim about AI-written papers concerns content quality, which this policy excludes. Use the banner to distinguish assignment, submitted score and reward. A matching score does not establish motive, and one outcome cannot establish a safe collusion threshold.",
     bloc: true,
     blocScore: "0.10",
     blocCover: "it’s flooded with AI-written papers",
@@ -87,7 +87,7 @@ const DEFAULT_NOMINEES = [
     name: "NumPy",
     blurb:
       "The array library underneath scientific Python: SciPy, pandas, scikit-learn and Astropy are built on it. It was part of the software behind the first image of a black hole and the first detection of gravitational waves.",
-    note: "Reach in builders, not users. Many researchers never type its name, yet most Python analyses they run pass through it, and ‘how many rely’ counts them too. Remove it and most of scientific Python stops; look-alikes such as CuPy copy its interface, not its place underneath. R users may land lower than Python users: the field effect again, and the mean reflects the whole room.",
+    note: "Indirect reliance counts too. Ask which research workflows depend on NumPy, what would change without it and which alternatives could support those workflows. A juror’s own use of Python or R should not determine the score. Hear the reasons before interpreting the room’s mean.",
   },
 ];
 
@@ -96,50 +96,50 @@ const SPARE_NOMINEES = [
     key: "swh",
     name: "Software Heritage",
     blurb:
-      "The archive of publicly available source code, started at Inria in 2016 and backed by UNESCO since 2017. It keeps copies of code from hosts that have since shut down, such as Google Code and Gitorious.",
-    note: "The three tests may pull in different directions. Some jurors emphasize what would break this week; others emphasize preserving code that has disappeared from its original host. ‘Kept’ is in the prompt. Hear both readings and inspect the result: the mean and spread use every opened score, so a split can widen the band rather than automatically penalize the smaller group.",
+      "The archive of publicly available source code, publicly launched by Inria in 2016. It preserves code from hosts that have shut down, including Google Code and Gitorious.",
+    note: "Ask about both current workflows and continued access to preserved code. The prompt includes how research is kept. Some jurors may emphasize immediate disruption; others may emphasize access to code whose original host has disappeared. Hear how each reading applies the three policy tests.",
   },
   {
     key: "git",
     name: "Git",
     blurb:
-      "The version-control tool Linus Torvalds wrote in 2005 for the Linux kernel. GitHub, owned by Microsoft, is a platform built around it; Git itself is free software, a Software Freedom Conservancy project, not GitHub.",
-    note: "Score the layer named. Much shared research code lives in Git repositories, and the instinct is to score GitHub, the brand people see. Git is the free tool under GitHub, GitLab and many labs’ own servers; without it, that code loses the tool that records its history. Who owns the website is excluded either way.",
+      "The version-control tool initially developed by Linus Torvalds in 2005 for the Linux kernel. GitHub, owned by Microsoft, is one hosting platform built around it. Git is free software and a Software Freedom Conservancy project.",
+    note: "Score the tool named, rather than a hosting platform such as GitHub. Ask how research workflows use version history and collaboration, what would change without Git and which alternatives could support them. Website ownership is excluded by the policy.",
   },
   {
     key: "orcid",
     name: "ORCID",
     blurb:
-      "The free, persistent identifier that tells one J. Wang from another, run by a non-profit funded by its members. Many funders and publishers now require one at application or submission.",
-    note: "Reliance by mandate. Many researchers hold an iD only because a funder or journal required one, and some resent it; that is taste, excluded. ‘How many rely’ does not ask why: the grant and submission systems that check iDs, NIH’s among them, would degrade without it, and no open substitute works across all of them.",
+      "A free, persistent researcher identifier that distinguishes people with similar names, run by a member-funded nonprofit. Some funders and publishers require it for applications or submissions.",
+    note: "Distinguish administrative requirements from practical reliance. Ask which workflows use the identifier, what would change without it and which substitutes could support those workflows. A requirement alone does not settle the score.",
   },
   {
     key: "openalex",
     name: "OpenAlex",
     blurb:
-      "The open, CC0 index of scholarly works, authors and institutions, launched by a non-profit in 2022 as Microsoft retired its academic graph. Sorbonne University dropped Web of Science for it in 2024.",
-    note: "The substitute test with a price on it. Web of Science and Scopus do much of the same job, for a subscription many institutions cannot pay. The policy asks ‘any substitute’, not ‘any free one’: a paid substitute is weaker, not none. Its own heavy application programming interface use is now metered; the data stays free. Gaps in its metadata are a quality complaint: excluded.",
+      "An open index of scholarly works, authors and institutions, launched by the nonprofit OurResearch in 2022 as Microsoft retired its academic graph. Sorbonne University announced a move from Web of Science to OpenAlex.",
+    note: "Apply all three policy tests. Ask how research workflows use this index, what would change without it and which substitutes could meet those needs. The policy does not restrict substitutes to free products; explain any access or cost constraints that affect whether an alternative is practical.",
   },
   {
     key: "ojs",
     name: "Open Journal Systems",
     blurb:
-      "The free, open source publishing software from the Public Knowledge Project. It runs tens of thousands of journals in well over a hundred countries, most of them outside Europe and North America.",
-    note: "Relied on unknowingly, mostly far from here. Readers of these journals rarely know what software runs them, and most of the journals charge neither readers nor authors, so a paid platform is often out of reach. ‘How many rely’ is not ‘how many have heard of it’. Substitutes exist on paper; for a volunteer journal with no budget, few are real.",
+      "Free, open-source publishing software from the Public Knowledge Project. It runs tens of thousands of journals in more than a hundred countries.",
+    note: "Consider reliance by journals and readers who may not know which software they use. Ask what would change for those workflows and which substitutes could meet their needs. Explain any resource constraints rather than assuming a paid alternative is either adequate or impossible.",
   },
   {
     key: "rstudio",
     name: "RStudio",
     blurb:
-      "The open source editor many R users write their analyses in, licensed under the GNU Affero General Public License and built by Posit, a public benefit corporation that was itself called RStudio until 2022.",
-    note: "Open is not the same as a commons. A company directs it, and who controls the roadmap is excluded, so docking it for that scores something the policy set aside. What decides is the substitute: R runs fine in VS Code, Emacs or a terminal. Heavy use, mild reliance: the same shape as Inkscape, whatever its fame.",
+      "The open-source edition of the editor for R, licensed under the GNU Affero General Public License version 3. It is developed by Posit, the public benefit corporation called RStudio until 2022.",
+    note: "Keep ownership separate from the policy tests. Ask how researchers rely on the editor, what would change without it and which workflows could move to another tool. Heavy use alone does not settle the score.",
   },
   {
     key: "osm",
     name: "OpenStreetMap",
     blurb:
-      "The open map of the world, built mostly by volunteers alongside paid corporate teams, under the Open Database License. Navigation apps, humanitarian responders and many research projects use it.",
-    note: "Score the research slice. Its general reach is enormous, but the prompt asks how much research stands on it: geography, urban and transport studies, and disaster and health mapping use it heavily; most of research never touches it. Score the map’s fame and you land high; score the prompt and you land in the lower middle.",
+      "The open map of the world, built by a global community of mappers and published under the Open Database License. Navigation applications, humanitarian responders and research projects use its data.",
+    note: "Apply the prompt to research uses, rather than general popularity. Ask which research workflows rely on OpenStreetMap, what they would lose without it and which substitutes could meet those needs. Hear different assessments of scope before interpreting the scores.",
   },
 ];
 

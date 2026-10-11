@@ -1,123 +1,31 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Session deck</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/paper.css"><style>
-html{scroll-snap-type:y proximity}body{margin:0}.slide{min-height:100svh;max-width:1240px;margin:auto;padding:clamp(2rem,5vh,4rem) clamp(1.2rem,5vw,5rem) 5rem;display:flex;flex-direction:column;justify-content:center;gap:1.5rem;scroll-snap-align:start;border-bottom:1px solid var(--hair)}.slide h1{font-size:clamp(2.7rem,6.5vw,5.5rem);max-width:16ch;line-height:1.04;letter-spacing:-.025em}.slide h2{font-size:clamp(2rem,4.5vw,3.6rem);max-width:24ch;line-height:1.08;letter-spacing:-.018em}.slide h2 em{color:var(--upheld)}.title-subtitle{font-size:clamp(1.3rem,2.5vw,2rem)}.title-rule{width:5rem;height:3px;background:var(--upheld);margin:.5rem 0}.note{font-family:var(--mono);font-size:.8rem;line-height:1.55;color:var(--muted);max-width:70em}.say{border-left:3px solid var(--upheld);padding-left:1.1rem;display:grid;gap:.7rem}.machines,.use-cases{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr))}.machine{background:var(--raise);border:1px solid var(--hair);border-top:3px solid var(--upheld);padding:1.3rem;display:grid;align-content:start;gap:.8rem}.machine.evidence{border-top-color:var(--charge)}.machine h3{font:500 1.55rem var(--serif);color:var(--ink);text-transform:none;letter-spacing:0}.kind{font: .7rem var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.out{padding-top:.7rem;border-top:1px dashed var(--hair);font:.8rem var(--mono);color:var(--upheld)}.map{margin:0;background:var(--raise);border:1px solid var(--hair);padding:1rem}.map svg{display:block;width:100%;height:auto}.map figcaption{font:.75rem/1.5 var(--mono);color:var(--muted);margin-top:.7rem}.mini{max-width:470px}.figure-copy{display:grid;grid-template-columns:1fr 1.1fr;gap:1.6rem;align-items:center}.box,.actor{fill:var(--paper);stroke:var(--hair);stroke-width:1.3}.box.core,.fill-soft{fill:var(--upheld-soft)}.box.bad{stroke:var(--charge)}.call,.read{fill:none;stroke:var(--upheld);stroke-width:1.4}.charge,.strike{fill:none;stroke:var(--charge);stroke-width:1.5}.map .ghost{fill:var(--paper);stroke:var(--charge);opacity:.45}.seat,.fill-up{fill:var(--upheld)}.out{fill:var(--charge)}.mk-call,.mk-read{fill:var(--upheld)}.mk-charge{fill:var(--charge)}.hold,.lbl,.tiny{font-family:var(--mono);fill:var(--muted)}.hold{font-size:10px;letter-spacing:.06em}.lbl{font-size:11px}.tiny{font-size:9px}.who{font:14px var(--serif);fill:var(--ink)}.r,.token{fill:var(--upheld)}.e{fill:var(--charge)}.herd{fill:none;stroke:var(--charge);stroke-dasharray:4 3}.axisline{stroke:var(--hair)}.pg{stroke:var(--hair)}.join-layout{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:center}.qr-block{width:132px;max-width:100%;background:white;padding:.6rem}.qr-block img{display:block;width:100%;aspect-ratio:1}.qr-pending{font:.67rem/1.5 var(--mono);color:var(--muted)}.room-address{font:clamp(1rem,2.8vw,1.8rem) var(--mono)}.join-steps{padding-left:1.3rem;font-size:1.35rem;line-height:1.8}.policy-ex{padding:1.2rem;background:var(--raise);border:1px solid var(--hair);border-left:3px solid var(--upheld);display:grid;gap:1rem}.policy-prompt{font-size:1.5rem}.anchors{display:grid;grid-template-columns:repeat(5,1fr);gap:.7rem;padding-block:.8rem;border-block:1px solid var(--hair);font:.7rem/1.5 var(--mono)}.anchors b{display:block;font-size:1.1rem;color:var(--upheld)}.policy-columns{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.policy-columns ul{padding-left:1.1rem;font-size:.95rem}.worked{display:grid;gap:.6rem}.worked p{font-size:1rem}.worked b{font-family:var(--mono);color:var(--upheld);margin-right:.6rem}.docket{list-style:none;counter-reset:docket;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}.docket li{counter-increment:docket;border:1px solid var(--hair);background:var(--raise);padding:1rem;font-size:1.55rem}.docket li:before{content:counter(docket,decimal-leading-zero);display:block;font:.75rem var(--mono);color:var(--muted);margin-bottom:.4rem}.widget{background:var(--raise);border:1px solid var(--hair);padding:clamp(.9rem,2vw,1.35rem);display:flex;flex-direction:column;gap:.8rem}.track{--track-row-height:22px;height:calc(var(--track-row-height) * var(--track-rows));position:relative;border:1px solid var(--hair);background:var(--paper);touch-action:none;overflow:hidden}.track__band{position:absolute;inset-block:0;border-inline:1px solid var(--upheld);background:var(--upheld-soft)}.track__centre{position:absolute;inset-block:0;width:2px;background:var(--upheld);transform:translateX(-1px)}.dot{position:absolute;width:24px;height:24px;border-radius:50%;transform:translate(-50%,-50%);cursor:ew-resize;border:1.5px solid var(--paper);padding:0;touch-action:none}.dot.bloc{border:2px solid var(--charge)}.axis{display:flex;justify-content:space-between;font:.66rem var(--mono);color:var(--muted);gap:.5rem}.readout{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;margin:0}.readout dt{font:.65rem var(--mono);color:var(--muted)}.readout dd{margin:.2rem 0 0;font:1rem var(--mono)}.ctrl{display:grid;gap:.4rem}.ctrl-head{display:flex;justify-content:space-between;font:.75rem var(--mono)}input[type=range]{width:100%;accent-color:var(--upheld);min-height:2rem}.legend{font:.7rem var(--mono);color:var(--muted)}.closing-links{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}.closing-links .card{align-items:start}.deck-nav{position:fixed;right:1rem;bottom:1rem;display:flex;gap:.4rem;align-items:center;z-index:10;background:var(--paper);padding:.35rem;border:1px solid var(--hair)}.deck-nav button{font-size:.72rem;padding:.6rem .7rem}.deck-progress{font:.7rem var(--mono);color:var(--muted);padding-inline:.2rem}.rail{position:fixed;right:.8rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:.65rem}.rail a{width:10px;height:10px;border:1px solid var(--muted);border-radius:50%}.rail a.on{background:var(--ink)}
-.mechanism-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:start}.mechanism-demo{display:grid;gap:1rem}.mechanism-copy p,.payment-summary{font-size:1.15rem;line-height:1.45}.mechanism-copy .kind{font-size:.8rem;line-height:1.5}.mechanism-copy{gap:1rem}.mechanism-copy .note{font-size:.8rem;line-height:1.55}
-@media(min-width:651px){#s6,#s10{padding-block:1.5rem 4rem;gap:1rem}#s6 h2,#s10 h2{max-width:none;font-size:2.75rem}#s6 .widget,#s10 .widget{padding:1rem;gap:.65rem}#s6 .track,#s10 .track{--track-row-height:14px}#s6 .dot,#s10 .dot{width:16px;height:16px}#s6 .readout dd,#s10 .readout dd{font-size:1rem}#s6 .legend,#s10 .legend{font-size:.7rem;line-height:1.45}}
-@media(max-width:650px){:root{--deck-controls-height:calc(4rem + env(safe-area-inset-bottom,0px))}html{scroll-snap-type:none}body{height:100svh;overflow:hidden}main{height:calc(100svh - var(--deck-controls-height));overflow-y:auto;scroll-snap-type:y proximity}.figure-copy,.join-layout,.policy-columns,.mechanism-layout{grid-template-columns:1fr}.mechanism-layout{gap:1.3rem}.slide{gap:1.3rem;min-height:calc(100svh - var(--deck-controls-height));padding-bottom:2rem}.deck-nav{left:0;right:0;bottom:0;height:var(--deck-controls-height);padding:.5rem 1rem calc(.5rem + env(safe-area-inset-bottom,0px));justify-content:flex-end;border-inline:0;border-bottom:0}.rail{display:none}.anchors{grid-template-columns:repeat(3,1fr)}.docket{grid-template-columns:1fr 1fr}.closing-links{grid-template-columns:1fr}.readout{grid-template-columns:repeat(3,1fr)}.map{padding:.65rem}.policy-prompt{font-size:1.2rem}.slide h2{font-size:2rem}.qr-block{width:120px}.legend{font-size:.64rem}}
-@media print{@page{size:A4 landscape;margin:10mm}html{scroll-snap-type:none}body{height:auto;overflow:visible}main{height:auto;overflow:visible}.slide{height:185mm;min-height:0;max-width:none;padding:3mm 8mm;gap:4mm;break-after:page;justify-content:center}.slide:last-of-type{break-after:auto}.slide h1{font-size:36pt}.slide h2{font-size:26pt}.slide .lede{font-size:13pt}.slide p{font-size:10pt}.slide .note{font-size:8pt}.slide .map svg{max-height:68mm}.slide .widget{padding:3mm}.slide .track{--track-row-height:3.9mm}.deck-nav,.rail{display:none}.widget button.dot{display:block!important}.qr-pending{font-size:7pt}.policy-ex{gap:3mm}.anchors{padding:2mm}.worked p{font-size:9pt}.slide .closing-links{grid-template-columns:1fr 1fr}.slide .figure-copy{grid-template-columns:1fr 1.1fr}.mechanism-layout{grid-template-columns:1.1fr 1fr}.mechanism-copy p,.payment-summary{font-size:11pt}}
-</style></head><body><main><section class="slide" id="s1"><div class="eyebrow">01 / The workshop</div><h1 data-session="title"></h1><p class="title-subtitle" data-session="subtitle"></p><div class="title-rule"></div><p class="eyebrow" data-session="project"></p><p class="fine"><span data-session="event"></span><br><span data-session="day"></span><br><span data-session="venue"></span></p><p class="note"><span data-session="attribution"></span> <span data-session="support"></span></p></section>
-<section class="slide" id="s2"><div class="eyebrow">02 / The problem</div><h2>Who gets how much depends on <em>judgments no proof can settle.</em></h2><p class="lede">How much did this library matter to the field this year? No interface returns that, and no proof settles it. The question today is whether a public policy, sealed readings and explicit incentives can make that judgment credible.</p><figure class="map"><svg viewBox="0 0 860 200" role="img" aria-label="Three things people want a number for. A price question is answered by a market and yields a live price. A fact question is answered by a proof and yields true or false. How much a piece of work mattered has no oracle: only people, a prompt, and a judgment with no ground truth.">
-      <defs><marker id="md-call" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="mk-call"/></marker>
-            <marker id="md-charge" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="mk-charge"/></marker></defs>
-      <text class="hold token" x="20" y="14">the question</text>
-      <text class="hold token" x="420" y="14">what answers it</text>
-      <text class="hold token" x="600" y="14">what you get</text>
-
-      <text class="who" x="20" y="44">What is a currency worth?</text>
-      <line class="call" x1="330" y1="40" x2="410" y2="40" marker-end="url(#md-call)"/>
-      <rect class="box" x="420" y="22" width="160" height="36"/>
-      <text class="who" x="500" y="45" text-anchor="middle">a market</text>
-      <text class="lbl r" x="600" y="44">a price, live</text>
-
-      <text class="who" x="20" y="104">Did this transfer happen?</text>
-      <line class="call" x1="330" y1="100" x2="410" y2="100" marker-end="url(#md-call)"/>
-      <rect class="box" x="420" y="82" width="160" height="36"/>
-      <text class="who" x="500" y="105" text-anchor="middle">a proof</text>
-      <text class="lbl r" x="600" y="104">true or false, verifiable</text>
-
-      <text class="who" x="20" y="164">How much did this work matter?</text>
-      <line class="charge" x1="330" y1="160" x2="410" y2="160" marker-end="url(#md-charge)"/>
-      <rect class="box bad" x="420" y="142" width="160" height="36"/>
-      <text class="who" x="500" y="165" text-anchor="middle">no oracle exists</text>
-      <circle class="seat" cx="606" cy="160" r="5"/><circle class="seat" cx="620" cy="160" r="5"/><circle class="seat" cx="634" cy="160" r="5"/><circle class="seat" cx="648" cy="160" r="5"/><circle class="seat" cx="662" cy="160" r="5"/>
-      <text class="lbl e" x="676" y="164">a judgment, no ground truth</text>
-    </svg><figcaption>A price can come from a market. A fact can be verified. A judgment needs people and a shared standard.</figcaption></figure></section>
-<section class="slide" id="s3"><div class="eyebrow">03 / Two questions</div><h2>What happened, and <em>how much does it matter?</em></h2><div class="machines"><article class="machine evidence"><div class="kind">A question with an answer</div><h3>Did they ship it?</h3><p>Evidence can decide what happened.</p><p class="fine">This workshop starts from completed work.</p></article><article class="machine judge"><div class="kind">A judgment under a policy</div><h3>How much does it matter?</h3><p>A shared policy gives strangers a common prompt. A credible consensus is a candidate answer they can act on.</p><div class="out">One policy → independent scores → a jury’s centre and band</div></article></div><p class="note">Today we score the importance of completed work. We examine what the incentives reward and where agreement can still go wrong.</p></section>
-<section class="slide" id="s4"><div class="eyebrow">04 / Join the room</div><h2>A phone will do. <em>Join the jury.</em></h2><div class="join-layout"><div class="qr-block" data-qr="room"><img src="/handout/qr-room.svg" alt="Scan to join the session room"><p class="qr-pending">Room code will be generated after the public address is confirmed.</p></div><div><a class="room-address" data-link="room"></a><ol class="join-steps"><li>No account.</li><li>No wallet.</li><li>Enter a name, read the policy, take a seat.</li></ol><p class="fine">The host opens each nominee. Keep this page or the game open on your phone.</p></div></div></section>
-<section class="slide" id="s5"><div class="eyebrow">05 / A published policy</div><h2>One prompt. <em>The same for everyone.</em></h2><div id="policy" class="policy-ex"></div></section>
-<section class="slide" id="s6"><div class="eyebrow">06 / How you are paid</div><h2>The jury sets the centre, <em>and the yardstick.</em></h2><div class="mechanism-layout"><div class="mechanism-demo"><div class="widget" id="w-pay"></div><p class="payment-summary">The centre is the mean weighted by stake. The band follows the jury’s spread, measured by weighted standard deviation. Nearer the centre, a larger share of the pot; beyond the band, a forfeit that grows with distance. When spread is essentially zero, distance forfeits switch off.</p></div><div class="say mechanism-copy"><div class="kind">A Keynesian beauty contest with the judging criteria written down</div><p>The curation policy is the Schelling prompt: it asks for honest judgment. Jurors who expect the others to follow it have a reason to follow it too. The bet is that this shared expectation makes honest reading the focal strategy. Sealed scores keep a visible first score from displacing the prompt.</p><p>Honest jurors can still disagree, and shared bias or collusion can still produce agreement. It is a design argument, not a proof.</p><p class="note" data-session="workshopReward"></p></div></div></section>
-<section class="slide" id="s7"><div class="eyebrow">07 / Play</div><h2>Six nominees. <em>Read the policy, then score alone.</em></h2><ol class="docket" id="docket"></ol><div class="say"><p class="lede">Seal your score before the host closes the window. Open it when asked. Keep your two salt words private.</p></div><p class="note">This slide stays up while the room plays. The points are for the workshop; they are not money. Recuse yourself if you cannot apply the policy.</p></section>
-<section class="slide" id="s8"><div class="eyebrow">08 / Objection: herding</div><h2>Agreement can be <em>an echo.</em></h2><figure class="map"><svg viewBox="0 0 760 215" role="img" aria-label="Two panels of fifteen scores, both showing agreement. Left, anchored to the policy and read alone: fifteen independent readings scatter, and their centre is a consensus. Right, anchored to each other and paid to agree: the first scorer sets the line and every later reading moves onto it; the agreement can echo the first reading.">
-      <defs><marker id="me-charge" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="mk-charge"/></marker></defs>
-      <text class="hold token" x="20" y="12">anchored to the policy · each read it alone</text>
-      <rect class="box" x="20" y="30" width="340" height="140"/>
-      <line class="ref" x1="232" y1="30" x2="232" y2="170"/>
-      <text class="lbl r" x="232" y="26" text-anchor="middle">centre</text>
-      <circle class="seat" cx="215" cy="52" r="5"/><circle class="seat" cx="240" cy="66" r="5"/><circle class="seat" cx="205" cy="80" r="5"/>
-      <circle class="seat" cx="255" cy="94" r="5"/><circle class="seat" cx="228" cy="108" r="5"/><circle class="seat" cx="248" cy="122" r="5"/>
-      <circle class="seat" cx="198" cy="136" r="5"/><circle class="seat" cx="236" cy="150" r="5"/><circle class="seat" cx="262" cy="59" r="5"/>
-      <circle class="seat" cx="222" cy="73" r="5"/><circle class="seat" cx="244" cy="87" r="5"/><circle class="seat" cx="210" cy="101" r="5"/>
-      <circle class="seat" cx="251" cy="115" r="5"/><circle class="seat" cx="232" cy="129" r="5"/><circle class="seat" cx="226" cy="143" r="5"/>
-      <text class="lbl r" x="190" y="190" text-anchor="middle">independent readings</text>
-      <text class="lbl" x="190" y="205" text-anchor="middle">the centre of fifteen independent readings</text>
-
-      <text class="hold ether" x="400" y="12">anchored to each other · paid to agree</text>
-      <rect class="box" x="400" y="30" width="340" height="140"/>
-      <line class="herd" x1="470" y1="30" x2="470" y2="170"/>
-      <text class="lbl e" x="470" y="26" text-anchor="middle">whoever moved first</text>
-      <circle class="ring" cx="470" cy="52" r="10"/>
-      <circle class="out" cx="470" cy="52" r="5"/>
-      <circle class="out" cx="472" cy="66" r="5"/><circle class="out" cx="468" cy="80" r="5"/>
-      <circle class="out" cx="475" cy="94" r="5"/><circle class="out" cx="470" cy="108" r="5"/><circle class="out" cx="463" cy="122" r="5"/>
-      <circle class="out" cx="477" cy="136" r="5"/><circle class="out" cx="469" cy="150" r="5"/><circle class="out" cx="474" cy="59" r="5"/>
-      <circle class="out" cx="466" cy="73" r="5"/><circle class="out" cx="471" cy="87" r="5"/><circle class="out" cx="473" cy="101" r="5"/>
-      <circle class="out" cx="467" cy="115" r="5"/><circle class="out" cx="470" cy="129" r="5"/><circle class="out" cx="476" cy="143" r="5"/>
-      <circle class="ghost" cx="590" cy="66" r="5"/><line class="charge" x1="583" y1="66" x2="482" y2="66" marker-end="url(#me-charge)"/>
-      <circle class="ghost" cx="640" cy="108" r="5"/><line class="charge" x1="633" y1="108" x2="480" y2="108" marker-end="url(#me-charge)"/>
-      <circle class="ghost" cx="560" cy="143" r="5"/><line class="charge" x1="553" y1="143" x2="486" y2="143" marker-end="url(#me-charge)"/>
-      <text class="lbl e" x="640" y="130" text-anchor="middle">own reading, abandoned</text>
-      <text class="lbl e" x="570" y="190" text-anchor="middle">agreement, one source</text>
-      <text class="lbl" x="570" y="205" text-anchor="middle">fifteen copies of one reading</text>
-    </svg><figcaption>Independent readings can carry information. Copying a visible first score can erase it.</figcaption></figure><div class="say"><p class="lede">Seal first; open together.</p><p>The centre is hidden while scores can still change, so jurors cannot copy an unseen score. This limits visible herding; it does not prevent coordination outside the game.</p></div></section>
-<section class="slide" id="s9"><div class="eyebrow">09 / Objection: vote buying</div><h2>A proof shown to a buyer <em>can be reported.</em></h2><div class="figure-copy"><figure class="map mini"><svg viewBox="0 0 300 170" role="img" aria-label="Sealed scores: five hidden scores are committed first, then all five open together across a divider. A copying arrow between two jurors is crossed out.">
-        <defs><marker id="ma1-call" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="mk-call"/></marker>
-              <marker id="ma1-charge" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="mk-charge"/></marker></defs>
-        <text class="lbl" x="14" y="40">seal: scores hidden</text>
-        <rect class="box" x="14" y="52" width="26" height="18"/><text class="tiny" x="27" y="65" text-anchor="middle">?</text>
-        <rect class="box" x="41" y="52" width="26" height="18"/><text class="tiny" x="54" y="65" text-anchor="middle">?</text>
-        <rect class="box" x="68" y="52" width="26" height="18"/><text class="tiny" x="81" y="65" text-anchor="middle">?</text>
-        <rect class="box" x="95" y="52" width="26" height="18"/><text class="tiny" x="108" y="65" text-anchor="middle">?</text>
-        <rect class="box" x="122" y="52" width="26" height="18"/><text class="tiny" x="135" y="65" text-anchor="middle">?</text>
-        <path class="charge" d="M27,80 C30,105 50,105 54,80" marker-end="url(#ma1-charge)"/>
-        <line class="strike" x1="35" y1="93" x2="46" y2="104"/><line class="strike" x1="46" y1="93" x2="35" y2="104"/>
-        <text class="lbl e" x="40" y="124" text-anchor="middle">unseen scores</text>
-        <line class="read" x1="154" y1="30" x2="154" y2="140"/>
-        <text class="lbl" x="160" y="40">open: all at once</text>
-        <rect class="box core" x="160" y="52" width="26" height="18"/><text class="tiny" x="173" y="65" text-anchor="middle">0.62</text>
-        <rect class="box core" x="187" y="52" width="26" height="18"/><text class="tiny" x="200" y="65" text-anchor="middle">0.58</text>
-        <rect class="box core" x="214" y="52" width="26" height="18"/><text class="tiny" x="227" y="65" text-anchor="middle">0.71</text>
-        <rect class="box core" x="241" y="52" width="26" height="18"/><text class="tiny" x="254" y="65" text-anchor="middle">0.55</text>
-        <rect class="box core" x="268" y="52" width="26" height="18"/><text class="tiny" x="281" y="65" text-anchor="middle">0.66</text>
-        <text class="lbl r" x="227" y="124" text-anchor="middle">scores become visible</text>
-        <line class="call" x1="14" y1="150" x2="290" y2="150" marker-end="url(#ma1-call)"/>
-        <text class="lbl" x="14" y="164">commit</text><text class="lbl" x="290" y="164" text-anchor="end">reveal</text>
-      </svg><figcaption>Scores remain hidden until the reveal phase.</figcaption></figure><div class="say"><p class="lede">A juror can prove their sealed score by showing the score and salt words.</p><p>Whoever receives that proof can report it for a bounty. That makes verification risky for a buyer. It does not prove that every possible bribery arrangement fails.</p></div></div><p class="note">Do not show your salt words before the round is graded. A report fines the leaker; the reporter receives part of that penalty.</p></section>
-<section class="slide" id="s10"><div class="eyebrow">10 / Objection: collusion</div><h2>A bloc can move <em>the room’s mean.</em></h2><div class="mechanism-layout"><div class="widget" id="w-bloc"></div><div class="say mechanism-copy"><p>A bloc can move the centre and stretch the band. The live arXiv outcome depends on how many jurors receive and follow the instruction. If the bloc is paid, discuss capture; if it forfeits, discuss where the penalty bites. Neither outcome establishes a safe threshold.</p><p>The full design uses commit and reveal, anti-prereveal games and appeals to deter collusion. These deterrents do not guarantee that every collusion arrangement fails.</p></div></div></section>
-<section class="slide" id="s11"><div class="eyebrow">11 / Objection: a vague policy</div><h2>Make the policy <em>concrete enough to read together.</em></h2><div id="worked-policy" class="policy-ex"></div><div class="say"><p class="lede">Worked anchors give strangers something more useful than “importance”.</p><p>Recusal lets a juror step out rather than invent a score. A clear policy can still encode a disputed value judgment: put that argument in the public document.</p></div></section>
-<section class="slide" id="s12"><div class="eyebrow">12 / Objection: fake identities</div><h2>In the proposed design, <em>stake weighs seats.</em></h2><div class="figure-copy"><figure class="map mini"><svg viewBox="0 0 300 170" role="img" aria-label="A proposed design draws jury seats from tickets weighted by stake. This workshop does not perform a random draw.">
-        <defs><marker id="ma3-call" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="mk-call"/></marker></defs>
-        <text class="lbl" x="79" y="24" text-anchor="middle">stake buys tickets</text>
-        <rect class="box" x="14" y="30" width="130" height="100"/>
-        <rect class="fill-up" x="22" y="44" width="8" height="8"/><rect class="fill-up" x="33" y="44" width="8" height="8"/><rect class="fill-up" x="44" y="44" width="8" height="8"/><rect class="fill-up" x="55" y="44" width="8" height="8"/><rect class="fill-up" x="66" y="44" width="8" height="8"/><rect class="fill-up" x="77" y="44" width="8" height="8"/>
-        <text class="tiny" x="92" y="51">6 tickets</text>
-        <rect class="fill-up" x="22" y="68" width="8" height="8"/><rect class="fill-up" x="33" y="68" width="8" height="8"/><rect class="fill-up" x="44" y="68" width="8" height="8"/>
-        <text class="tiny" x="59" y="75">3 tickets</text>
-        <rect class="fill-up" x="22" y="92" width="8" height="8"/><rect class="fill-up" x="33" y="92" width="8" height="8"/><rect class="fill-up" x="44" y="92" width="8" height="8"/><rect class="fill-up" x="55" y="92" width="8" height="8"/><rect class="fill-up" x="66" y="92" width="8" height="8"/><rect class="fill-up" x="77" y="92" width="8" height="8"/><rect class="fill-up" x="88" y="92" width="8" height="8"/><rect class="fill-up" x="99" y="92" width="8" height="8"/><rect class="fill-up" x="110" y="92" width="8" height="8"/>
-        <text class="tiny" x="22" y="121">one per unit of stake</text>
-        <line class="call" x1="144" y1="80" x2="166" y2="80" marker-end="url(#ma3-call)"/>
-        <rect class="box core" x="168" y="60" width="40" height="40" rx="6"/>
-        <text class="tiny" x="188" y="84" text-anchor="middle">draw</text>
-        <text class="lbl" x="188" y="116" text-anchor="middle">lottery</text>
-        <line class="call" x1="210" y1="80" x2="232" y2="80" marker-end="url(#ma3-call)"/>
-        <text class="lbl" x="264" y="52" text-anchor="middle">15 seats</text>
-        <circle class="seat" cx="240" cy="68" r="4"/><circle class="seat" cx="252" cy="68" r="4"/><circle class="seat" cx="264" cy="68" r="4"/><circle class="seat" cx="276" cy="68" r="4"/><circle class="seat" cx="288" cy="68" r="4"/>
-        <circle class="seat" cx="240" cy="80" r="4"/><circle class="seat" cx="252" cy="80" r="4"/><circle class="seat" cx="264" cy="80" r="4"/><circle class="seat" cx="276" cy="80" r="4"/><circle class="seat" cx="288" cy="80" r="4"/>
-        <circle class="seat" cx="240" cy="92" r="4"/><circle class="seat" cx="252" cy="92" r="4"/><circle class="seat" cx="264" cy="92" r="4"/><circle class="seat" cx="276" cy="92" r="4"/><circle class="seat" cx="288" cy="92" r="4"/>
-        <text class="lbl" x="150" y="150" text-anchor="middle">proposed draw weighted by stake</text>
-      </svg><figcaption>Tickets represent stake in the proposed jury draw.</figcaption></figure><div class="say"><p class="lede">Creating another name would not create another unit of stake.</p><p>The full design weights the draw by stake rather than by head. Concentrated stake remains a concern. This workshop uses equal seats and points, so it does not demonstrate that defence.</p></div></div></section>
-<section class="slide" id="s13"><div class="eyebrow">13 / Where it fits</div><h2>A public policy, a docket, <em>a room and an hour.</em></h2><div class="use-cases"><article class="machine"><div class="kind">Review panels</div><h3>Compare contributions</h3><p>A research community sets a policy; a jury scores the work against it.</p></article><article class="machine"><div class="kind">Grant programmes</div><h3>Expose the judgment</h3><p>A fund publishes what it values; a jury supplies scores to inform allocation.</p></article><article class="machine"><div class="kind">Community funds</div><h3>Make disagreement visible</h3><p>Members set a shared policy; a jury tests whether it coordinates their readings.</p></article></div><p class="note">The jury supplies a judgment under a policy. Deciding whether to fund from those scores remains a choice for the community.</p></section>
-<section class="slide" id="s14"><div class="eyebrow">14 / Keep the conversation going</div><h2>Read the paper. <em>Run a jury of your own.</em></h2><div class="closing-links"><div class="card"><h3>The working paper</h3><div class="qr-block" data-qr="paper"><img src="/handout/qr-paper.svg" alt="Scan to read the working paper"></div><a data-link="paper"></a></div><div class="card"><h3>Follow the project</h3><div class="qr-block" data-qr="join"><img src="/handout/qr-join.svg" alt="Scan to join the mailing list"><p class="qr-pending">Mailing-list code will be generated after the public address is confirmed.</p></div><a data-link="join"></a></div></div><div class="say"><div class="kind">The first funded round</div><p data-session="nextRound"></p><p>Follow it at <a data-session-url="nextRoundUrl"></a>.</p></div><p class="fine">Site: <span data-session="site"></span></p><p class="note"><span data-session="attribution"></span> <span data-session="support"></span></p><p class="fine" data-session="legal"></p></section>
-</main><nav class="rail" id="rail" aria-label="Slides"></nav><nav class="deck-nav" aria-label="Deck controls"><button type="button" class="ghost" id="prevBtn">Back</button><span class="deck-progress" id="progress"></span><button type="button" id="nextBtn">Next</button></nav>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Decentralized curation: session deck</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/paper.css"><link rel="stylesheet" href="/deck/deck.css"></head><body><main>
+<section class="slide dark" id="s1"><div class="eyebrow">Decentralized curation / Workshop</div><h1 data-session="title"></h1><p class="title-subtitle" data-session="subtitle"></p><div class="hero-chain"><span>Evidence</span><span>Judgment</span><span>Funding</span></div><p class="fine"><span data-session="event"></span><br><span data-session="day"></span> · <span data-session="venue"></span></p><p class="note"><span data-session="attribution"></span> <span data-session="support"></span></p></section>
+<section class="slide" id="s2"><div class="eyebrow">01 / The objective</div><h2>Private incentives.<br><span class="accent">Public benefit.</span></h2><p class="lede">Expertise does not ensure public benefit. Participation can reveal needs and evidence, but cannot guarantee sound judgment.</p><div class="decision-chain"><article><span class="step-no">01 / JUDGMENT</span><h3>Draw on expertise.</h3><p>Give difficult assessments the attention and knowledge they need. Expertise matters; headcount alone is no guarantee of quality.</p></article><article><span class="step-no">02 / PUBLIC VOICE</span><h3>Keep needs visible.</h3><p>People affected can surface neglected needs, evidence and costs. Their participation can improve the judgment itself.</p></article><article><span class="step-no">03 / OUR AIM</span><h3>Reward useful work.</h3><p>Make assessment and correction worthwhile. Test whether those rewards improve decisions and serve affected people.</p></article></div><p class="rule">Credible consensus: evidence-informed judgment under an explicit policy, with usable correction paths. An intermediate objective; public benefit is the outcome to test.</p><p class="source">Framing: <a href="https://www.gutenberg.org/files/71000/71000-h/71000-h.htm#Page_206">John Dewey (1927), pp. 206–209</a>. The revised manuscript develops this incentive-alignment thesis. <a href="#s24">[1]</a></p></section>
+<section class="slide" id="s3"><div class="eyebrow">02 / The full mechanism</div><h2>A continuing system for funding public goods.</h2><div class="loop"><article><span class="step-no">01 / SET THE TERMS</span><h3>A pool with a purpose</h3><p>The creator states the purpose, evidence policy, relevance rubric and fixed terms.</p></article><article><span class="step-no">02 / NOMINATE</span><h3>A claim with backing</h3><p>Name the beneficiary, supply evidence and post a deposit.</p></article><article><span class="step-no">03 / EVALUATE</span><h3>Draw a relevance jury</h3><p>Selected curators apply the policy, commit a score and reveal that same score.</p></article><article><span class="step-no">04 / CONTEST</span><h3>Appeal the score</h3><p>Fund a larger jury before the case is finalized.</p></article><article><span class="step-no">05 / ALLOCATE</span><h3>Stream at supported weight</h3><p>The score caps the requested funding weight.</p></article><article><span class="step-no">06 / REVISIT</span><h3>Re-score as things change</h3><p>New evaluations can change future funding weight.</p></article></div><p class="accuracy-line"><strong>A separate accuracy path:</strong> challenge a nomination’s claims; an external arbitrator decides the dispute. Scoring does not certify truth.</p><p class="source">Current funding implementation: <a href="#s24">[2]</a>. Authority is divided among the creator, jurors, challengers and arbitrator. The workshop exercises one part.</p></section>
+<section class="slide" id="s4"><div class="eyebrow">03 / Set the terms</div><h2>The relevance policy defines <span class="accent">the scoring prompt.</span></h2><div class="split"><div class="stack"><div class="kind">Our worked case: a research infrastructure pool</div><p class="example-prompt" data-example="prompt"></p><p class="note">The same prompt guides the live workshop. A release is evidence about a nominee’s work; the score concerns the nominee under this policy.</p><div id="example-anchors" class="example-anchors"></div></div><dl class="term-list"><div><dt>Evidence</dt><dd>Published releases, documentation and concrete downstream use. Name both capabilities and costs.</dd></div><div><dt>Funding</dt><dd>For this example, a funded pool releases <strong data-example="release"></strong> units per day, shared by active weights.</dd></div><div><dt>Authority</dt><dd>The creator sets the policy and terms. Funders choose whether to support the pool; jurors assess its nominees.</dd></div></dl></div><p class="source">A real contribution; illustrative scores and funding. Publicly stated does not mean publicly chosen. Contracts enforce encoded rules, not public benefit. <a href="#s24">[1, 2]</a></p></section>
+<section class="slide" id="s5"><div class="eyebrow">04 / Nominate real work</div><h2>NumPy shipped.<br><span class="accent">Now inspect what was delivered.</span></h2><div class="split wide-left"><div class="claim-sheet"><div><span class="label">NOMINEE IN THIS WORKED CASE</span><h3>NumPy</h3></div><div><span class="label">VERIFIABLE ASSERTION</span><p class="claim">“NumPy 2.0.0 was released on 16 June 2024.”</p></div><div><span class="label">ILLUSTRATIVE NOMINATION</span><p>NumPy as beneficiary; requested weight <strong data-example="request"></strong>; nomination deposit and curation fee.</p></div><p class="note">This is a worked nomination, not an actual NumPy funding application.</p></div><div class="stack evidence-links"><div><h3><a href="https://numpy.org/doc/2.2/release/2.0.0-notes.html">Delivered capabilities</a></h3><p>Array-standard support, variable-length strings and documented performance work.</p></div><div><h3><a href="https://docs.scipy.org/doc/scipy-1.13.0/release/1.13.0-notes.html">Downstream integration</a></h3><p>SciPy 1.13 explicitly prepared support for NumPy 2.0.</p></div><div><h3><a href="https://numpy.org/doc/2.0/numpy_2_0_migration_guide.html">Migration costs</a></h3><p>Compiled extensions may need rebuilding; changed numerical behavior needs review.</p></div></div></div><p class="source">Release date: <a href="https://numpy.org/news/#numpy-2-0-0-released">NumPy announcement</a>. These records establish delivery and trade-offs. Current reliance and substitutes need further evidence. Registration and deposit rules: <a href="#s24">[2]</a>.</p></section>
+<section class="slide" id="s6"><div class="eyebrow">05 / Relevance jury</div><h2>Read the evidence.<br><span class="accent">Try the jury’s scores.</span></h2><div class="split"><div class="stack"><div class="kind"><span data-example="initialSeats"></span> drawn tickets; <span data-example="initialCurators"></span> illustrative curators</div><div id="example-jury" class="example-jury"></div><p class="note">Move a score or use its arrow keys. Tickets carry the same stake per seat. One curator can hold several seats.</p></div><div class="stack"><h3>Commit, then reveal.</h3><p>The controls show already-revealed scores. Each curator commits a score, then reveals it. The current contract permits early reveals before commitments close.</p><div class="example-total"><span>Initial jury’s weighted mean</span><strong data-example="mean"></strong></div><p class="example-calculation" id="example-calculation"></p><p class="rule">In this example, the score caps NumPy’s funding weight. Agreement alone does not make the judgment credible.</p></div></div><p class="source">The scores are illustrative, not a survey of NumPy’s value. Live calculation: selected tickets × score, divided by total tickets. Contract rule: <a href="#s24">[2]</a>.</p></section>
+<section class="slide" id="s7"><div class="eyebrow">06 / Appeal before finalization</div><h2>A larger jury can<br><span class="accent">change the adopted score.</span></h2><div class="appeal-ladder"><div class="appeal-stage"><div class="kind">Initial jury</div><h3><span data-example="initialSeats"></span> tickets</h3><p>Weighted mean <strong data-example="initialMean"></strong></p></div><span class="flow-arrow" aria-hidden="true">→</span><div class="appeal-stage"><div class="kind">Illustrative appeal jury</div><h3><span data-example="appealSeats"></span> tickets</h3><p id="example-appeal-scores"></p></div><span class="flow-arrow" aria-hidden="true">→</span><div class="appeal-stage"><div class="kind">New adopted score</div><div class="example-total"><strong data-example="appealMean"></strong></div><button type="button" data-example-action="appeal">Apply appeal result</button></div></div><div class="split"><p>Anyone can fund an appeal before the case closes. It needs enough available stake; the appellant’s tickets are excluded.</p><p>The final jury’s mean supplies the relevance score. Its median and median absolute deviation grade curator reports, separately from funding.</p></div><p class="source">The next slide uses whichever result you select. This calculator omits appeal-bond returns and curator rewards, which depend on additional parameters. The child score stands even if the appellant loses that separate bet. <a href="#s24">[2]</a></p></section>
+<section class="slide" id="s8"><div class="eyebrow">07 / Funding follows the settled score</div><h2>A score can change<br><span class="accent">everyone’s share.</span></h2><p class="example-equation" data-example="weightRule"></p><div class="split wide-left"><div><table class="allocation"><caption class="kind">Illustrative active pool, after required holdback</caption><thead><tr><th>Nominee</th><th>Request</th><th>Score</th><th>Active weight</th><th>Units/day</th></tr></thead><tbody id="example-allocation"></tbody></table><div id="example-stream" class="stream-bar"></div></div><div class="stack"><div class="kind" data-example="stage"></div><div class="example-total"><span>NumPy’s active funding weight</span><strong data-example="effective"></strong></div><p class="example-calculation" id="example-funding-calculation"></p><p class="rule">These are accrual rates. The beneficiary claims accrued funds; the protocol does not send this amount every day.</p></div></div><p class="source">The archive and registry are comparison positions with fixed example weights. The <span data-example="release"></span>-unit daily rate is a chosen equivalent; the contracts release by block and the pool must have funds. <a href="#s24">[2]</a></p></section>
+<section class="slide" id="s9"><div class="eyebrow">08 / Accuracy is a separate, later branch</div><h2>Contest a factual claim.<br><span class="accuracy">Not its relevance score.</span></h2><div class="split"><div class="stack"><h3>The actual release is documented.</h3><p>The announcement supports the date. No accuracy ruling about NumPy has occurred in this example.</p><div class="claim-sheet"><span class="label">A COUNTERFACTUAL ADDITION TO THE NOMINATION</span><p class="claim">“Existing NumPy 1.x compiled extensions work unchanged.”</p><p>The <a href="https://numpy.org/doc/2.0/numpy_2_0_migration_guide.html">migration guide</a> supplies counter-evidence: binaries using NumPy’s C interface, built against 1.x, need rebuilding for 2.0.</p></div></div><div class="stack"><h3>Challenge after scoring.</h3><p>The current contracts require a scored or active nomination and no open relevance case. A challenger posts the required bond, tax and arbitration fee.</p><h3>While the dispute is open</h3><p>Accrual continues, but withdrawals of accrued funds and exits are blocked. An external arbitrator resolves the factual dispute.</p><button type="button" class="ghost" data-example-action="debunked">Show debunked outcome</button><p class="note">This button illustrates the consequence of rejecting the counterfactual claim. It is not a verdict about NumPy.</p></div></div><p class="source">If debunked: stop future weight, return unclaimed accrual to the open pool, and award the nomination deposit plus counter-deposit to the challenger. A failed challenge resumes the nomination. <a href="#s24">[2]</a></p></section>
+<section class="slide" id="s10"><div class="eyebrow">09 / Re-score and compare</div><h2>Change the assessment.<br><span class="accent">Watch the funding change.</span></h2><div class="split"><div class="stack"><h3>A later jury returns <span data-example="rescore"></span>.</h3><p>Compare with the original <span data-example="baselineMean"></span> score. This restores the starting jury, then applies the lower assessment; the archive and registry stay unchanged.</p><div class="example-actions"><button type="button" data-example-action="rescore">Apply lower re-score</button><button type="button" class="ghost" data-example-action="initial">Reset worked example</button></div><p class="note">The lower score is an example input, not a finding about NumPy. Scheduled re-scoring can skip temporarily infeasible nominations.</p></div><div class="stack"><div class="kind" data-example="stage"></div><div class="example-total"><span>NumPy’s daily accrual equivalent</span><strong><span data-example="numpyRate"></span> units</strong></div><p class="rule" id="example-outcome"></p><p>A later increase waits through a new holdback while the old weight keeps earning. A decrease applies when the score is committed.</p></div></div><p class="source">Return to <a href="#s8">the allocation table</a> to see all shares. This model calculates current rates, not accumulated balances or contract settlement. Score and accuracy transitions: <a href="#s24">[2]</a>.</p></section>
+<section class="slide" id="s11"><div class="eyebrow">10 / Conditions for success</div><h2>Contracts can enforce rules.<br><span class="accent">They cannot certify good judgment.</span></h2><div class="risk-list"><article><h3>A defensible public purpose</h3><p>A clear policy can still serve the wrong interests. Agreement under it does not establish public benefit.</p></article><article><h3>Contestable evidence</h3><p>Someone must find the problem, gather counter-evidence and pay to challenge it. The external arbitrator must resolve the dispute.</p></article><article><h3>Informed, independent judgment</h3><p>Stake does not certify expertise. Concentrated stake, coordination and shared bias can move the jury’s reference.</p></article><article><h3>Explicit stop authority</h3><p>A configured temporary circuit breaker lets its holder permanently stop future accrual once, before its authority expires.</p></article></div><p class="source">The holder cannot take prior accrual. No general guarantee of truthful reporting or resistance to capture is established. <a href="#s24">[1, 2]</a></p></section>
+<section class="slide" id="s12"><div class="eyebrow">11 / Enter the workshop</div><h2>Now experience <span class="accent">one relevance jury.</span></h2><div class="join-layout"><div class="qr-block" data-qr="room"><img src="/handout/qr-room.svg" alt="Scan to join the session room"><p class="qr-pending">Room code will be generated after the public address is confirmed.</p></div><div class="stack"><a class="room-address" data-link="room"></a><ol class="join-steps"><li>Enter a name and take a seat.</li><li>Read the shared policy.</li><li>Score alone, then open when asked.</li></ol><p>No account or wallet. Workshop points are not money.</p></div></div><p class="rule">We are testing our experience of judgment, incentives and disagreement. This room does not run the full funding protocol.</p></section>
+<section class="slide" id="s13"><div class="eyebrow">12 / The shared policy</div><h2>One shared <span class="accent">scoring policy.</span></h2><div id="policy" class="policy-ex"></div><p class="note">A score is your reading of this policy, not a general endorsement of a project. Recuse yourself when you cannot apply it.</p></section>
+<section class="slide" id="s14"><div class="eyebrow">13 / Workshop arithmetic</div><h2>The room sets the centre <span class="accent">and the band.</span></h2><div class="mechanism-layout"><div class="mechanism-demo"><div class="widget" id="w-pay"></div><p class="note">Drag a score or use its arrow keys. Watch the mean, spread and band change together.</p></div><div class="mechanism-copy"><p><strong>Centre:</strong> the stake-weighted mean. Here each seat has equal weight.</p><p><strong>Band:</strong> weighted standard deviation sets its width. At essentially zero spread, distance forfeits switch off.</p><p><strong>Points:</strong> closer scores inside the band share more of the pot; outside it, distance increases the forfeit.</p><p class="note" data-session="workshopReward"></p><p class="rule">The full implementation uses a different grading rule: final-jury median and median absolute deviation. See <a href="#s22">the comparison</a>.</p></div></div></section>
+<section class="slide" id="s15"><div class="eyebrow">14 / Play the jury</div><h2><span id="docket-count"></span> nominees.<br><span class="accent">One policy. Your judgment.</span></h2><ol class="docket" id="docket"></ol><p class="rule">Seal before the host closes the window. Open when asked. Keep your two salt words private.</p><div class="split"><p>After each round: what evidence and policy anchor support your score?</p><p>Then inspect what the room rewarded. Agreement and a defensible judgment can diverge.</p></div><p class="note">The examples concern completed work. Accuracy disputes, funding, economic jury selection and relevance appeals are outside this exercise.</p></section>
+<section class="slide" id="s16"><div class="eyebrow">15 / Read the result</div><h2>Coherence can reward <span class="accent">a shared mistake.</span></h2><div class="mechanism-layout"><div class="mechanism-demo"><div class="widget" id="w-bloc"></div><p class="note">Illustration using workshop arithmetic. The instructed bloc reports <span id="bloc-score"></span>; move its share and inspect the result.</p></div><div class="mechanism-copy"><h3>Did the policy or the group become the anchor?</h3><p>What reasons explained the spread? Did people apply the same scope and substitutes test?</p><h3>What did the intervention change?</h3><p>Compare the instructed group, the scores actually submitted and the points paid. A matching score alone does not reveal motive.</p><p class="rule">One room and one simulated bloc cannot establish a safe collusion threshold.</p><p>In the full system, concentrated stake can also control the grading reference. Appeals are a proposed backstop, not a guarantee.</p></div></div></section>
+<section class="slide" id="s17"><div class="eyebrow">16 / Defences and their limits</div><h2>Each mechanism addresses <span class="accent">a narrower failure.</span></h2><table class="comparison"><thead><tr><th>Mechanism</th><th>What it contributes</th><th>What remains</th></tr></thead><tbody><tr><td>Published policy</td><td>A shared prompt, scoring rubric and evidence requirements</td><td>Ambiguity, poor policy, shared bias</td></tr><tr><td>Commit and reveal</td><td>Binds a reveal to an earlier commitment</td><td>Early reveals while others can still commit; coordination and bribery</td></tr><tr><td>Stake-backed draws</td><td>Influence requires selected capital at risk</td><td>Concentrated or low-value stake</td></tr><tr><td>Larger appeal juries</td><td>A funded route to another evaluation</td><td>Cost, participation and correlated judgment</td></tr></tbody></table><p class="note">The workshop can penalize a reported proof of early disclosure. No corresponding leak-report penalty was found in the current full-system contracts. Do not transfer that protection between versions.</p><p class="source">Current implementation and its explicit limitations: <a href="#s24">[2]</a>.</p></section>
+<section class="slide" id="s18"><div class="eyebrow">17 / Arrow’s role</div><h2>Arrow is a precursor.<br><span class="accent">The full system is the destination.</span></h2><div class="split"><div class="stack"><div class="kind">The proposed experiment</div><p class="big-line">Invited experts score a real funding docket under a published policy.</p><p>Trusted nominations. A fixed round. Honesty, competence and non-collusion are assumptions.</p><p class="note" data-session="nextRound"></p></div><div class="stack"><div class="kind">What this can tell us</div><h3>Can people use the policy?</h3><p>Study comprehension, reasons for disagreement, score stability and the practical experience of committing and revealing.</p><h3>What it cannot establish</h3><p>Permissionless selection, resistance to bribery or capture, accuracy adjudication, the appeal economy, or long-running funding safety.</p></div></div><p class="source">Experiment scope: proposal updated 9 October 2026. These are learning questions, not reported results. <a href="#s24">[3]</a></p></section>
+<section class="slide" id="s19"><div class="eyebrow">18 / Building confidence</div><h2>Confidence must grow <span class="accent">at each boundary.</span></h2><div class="evidence-stairs"><article><div class="kind">01 / People and policy</div><h3>Can jurors apply the policy well?</h3><p>Arrow can test prompt comprehension, participation and disagreement among invited experts.</p><p class="note">Expertise is an input to the experiment, not an output of the scoring rule.</p></article><article><div class="kind">02 / Incentives and correction</div><h3>Do rewards encourage useful work?</h3><p>Test chosen strategies, investigation costs, coordination and whether better evidence changes the result.</p><p class="note">An appeal path matters only if people can use it.</p></article><article><div class="kind">03 / Operation and outcomes</div><h3>Does funding serve the stated purpose?</h3><p>Compare the complete loop with feasible alternatives. Examine who benefits, who is missed and what the process costs.</p><p class="note">Reliable operation and public benefit need separate evidence.</p></article></div><p class="rule">This is a proposed sequence of evidence, not a claim that the later stages have been validated.</p></section>
+<section class="slide dark" id="s20"><div class="eyebrow">19 / The takeaway</div><h2>Credible consensus.<br><span class="accent">In service of public benefit.</span></h2><p class="lede">Reward informed assessment and correction. Use those judgments to allocate funding. Then test whether the results serve affected people. Agreement and participant profits alone do not establish public benefit.</p><div class="closing-links"><a href="#s24">Current manuscript and implementation</a><a data-link="join">Follow the work</a></div><p class="fine">Published preprint, version 1.1.0: <a data-link="paper"></a></p><p class="note"><span data-session="attribution"></span> <span data-session="support"></span></p><p class="fine" data-session="legal"></p></section>
+<section class="slide" id="s21"><div class="eyebrow">Appendix A / Keep the versions separate</div><h2>Three different scopes.</h2><table class="comparison"><thead><tr><th></th><th>Full funding system</th><th>Arrow proposal</th><th>This workshop</th></tr></thead><tbody><tr><th>Who scores?</th><td>Drawn, stake-backed curators</td><td>Invited experts</td><td>People in this room</td></tr><tr><th>What is tested?</th><td>Target integrated mechanism</td><td>Policy use in a real docket</td><td>Judgment and incentive experience</td></tr><tr><th>Consequences</th><td>Continuous funding; real stake</td><td>Fixed expert-scoring round; funding depends on the mode</td><td>Points</td></tr><tr><th>Accuracy path</th><td>External arbitration</td><td>Trusted nominations</td><td>Completed-work examples</td></tr><tr><th>Correction</th><td>Appeals and re-scoring</td><td>Bounded experiment design</td><td>Discussion and illustration</td></tr></tbody></table><p class="source">The full implementation is inspected code, not a claim of deployed readiness. Arrow details remain subject to the experiment plan. <a href="#s24">[2, 3]</a></p></section>
+<section class="slide" id="s22"><div class="eyebrow">Appendix B / Score versus settlement</div><h2>One number funds projects.<br><span class="accent">Another reference grades curators.</span></h2><div class="split"><div class="stack"><div class="kind">Current full implementation</div><h3>Adopted score</h3><p>The deepest completed jury’s stake-weighted mean.</p><h3>Grading reference</h3><p>That jury’s weighted median and median absolute deviation (MAD), with a configured floor.</p><p>Reports from all rounds are graded against this final band. Eligible reports share rewards; distance outside the band increases stake loss.</p></div><div class="stack"><div class="kind">Workshop simplification</div><h3>Shared mean and spread</h3><p>The stake-weighted mean and weighted standard deviation set the workshop centre and band.</p><h3>Immediate points</h3><p>Closeness changes reward shares; essentially zero spread disables distance forfeits.</p><p class="note" data-session="workshopReward"></p></div></div><p class="source">Do not read a workshop slider outcome as a simulation of current contract settlement. <a href="#s24">[2]</a></p></section>
+<section class="slide" id="s23"><div class="eyebrow">Appendix C / Source versions</div><h2>The newest date is not always <span class="accent">the newest mechanism.</span></h2><div class="timeline"><article><b>3 SEP / CODE SNAPSHOT</b><h3>Funding implementation</h3><p>Current inspected main branch. Mean for score; median-based grading; continuous funding.</p></article><article><b>22–23 SEP / MANUSCRIPT</b><h3>Research correction</h3><p>Withdraws the paper model’s equilibrium guarantee and scopes the facts-versus-values claim.</p></article><article><b>9 OCT / EXPERIMENT</b><h3>Arrow proposal</h3><p>Latest inspected experiment scope: a precursor under trusted-expert assumptions.</p></article><article><b>11 OCT / MANUSCRIPT</b><h3>Private gain, public benefit</h3><p>Reframes the thesis around incentives and outcomes; adds public-accountability and consistency limits.</p></article></div><p class="rule">Use each source for its own claim. The paper’s incentive counterexample is not automatically an exploit of the different contract rule.</p><p class="source">Source review completed 11 October 2026. Metadata edits are not mechanism changes. <a href="#s24">[1–4]</a></p></section>
+<section class="slide" id="s24"><div class="eyebrow">Appendix D / Sources</div><h2>Read the mechanism<br><span class="accent">with its version attached.</span></h2><ol class="reference-list"><li><a href="https://github.com/0xferit/manuscript-decentralized-curation/blob/9927927cebd11f3b4e66f80bebee65b3248af919/paper.qmd">Current research manuscript</a><small>[1] October 11 revision: private incentives, public benefit and explicit limits. Retains the incentive correction. Its news and fixed-round funding rules differ from current contracts.</small></li><li><a href="https://github.com/golemfoundation/octant-v3-monorepo/tree/ca8c8560119dee34f809a31e5149f4a6217467fb">Octant v3 implementation snapshot</a><small>[2] Main branch inspected at ca8c856, September 3. Access-controlled repository; code and tests inspected, no deployment or audit status inferred.</small></li><li><a href="https://app.notion.com/p/3e4e165689aa819b8aa6d2f4c5d54330">Octant v3 Curation Experiment: Proposal, Budget, and Timeline</a><small>[3] Arrow scope updated October 9. Access-controlled working proposal, not experiment results.</small></li><li><a data-link="paper"></a><small>[4] Version 1.1.0, published October 11. Archived research on private incentives and public benefit; the implementation snapshot remains authoritative for contract behavior.</small></li></ol><p class="note">On judgment and public accountability: <a href="https://www.gutenberg.org/files/71000/71000-h/71000-h.htm#Page_206">Dewey (1927)</a>; <a href="https://sites.lsa.umich.edu/scottepage/wp-content/uploads/sites/344/2015/11/pnas.pdf">Hong and Page (2004)</a>; <a href="https://doi.org/10.1257/aer.100.3.641">Ostrom (2010)</a>. Claim-level details are in the repository’s source register.</p></section>
+</main><nav class="rail" id="rail" aria-label="Slides"></nav><nav class="deck-nav" aria-label="Deck controls"><button type="button" class="ghost" id="shortcutsBtn" aria-label="Keyboard shortcuts" aria-haspopup="dialog" aria-controls="shortcuts">Shortcuts</button><button type="button" class="ghost" id="prevBtn">Back</button><span class="deck-progress" id="progress" aria-live="polite"></span><button type="button" id="nextBtn">Next</button></nav>
+<dialog id="shortcuts" class="shortcuts" aria-labelledby="shortcuts-title" aria-describedby="shortcuts-note"><div class="shortcuts-heading"><h2 id="shortcuts-title">Keyboard shortcuts</h2><button type="button" class="ghost" id="closeShortcuts" autofocus>Close</button></div><dl id="shortcut-list"></dl><p id="shortcuts-note">Press Esc to close. Shortcuts pause while you edit a field or adjust a score.</p></dialog>
 <script type="module">
 import "/core.js";
 import { POLICY, NOMINEES, DEFAULT_DOCKET_KEYS } from "/domain.js";
@@ -154,18 +62,113 @@ for (const element of document.querySelectorAll("[data-qr]")) {
   if (caption) caption.hidden = !pending;
 }
 
-function policyMarkup(withDetails) {
+function policyMarkup() {
   const anchors = `<div class="anchors">${POLICY.anchors.map(([score, label]) => `<span><b>${score}</b>${label}</span>`).join("")}</div>`;
   const worked = `<div class="worked">${POLICY.worked.map(([score, label]) => `<p><b>${score}</b>${label}</p>`).join("")}</div>`;
-  return `<h3>${POLICY.scope}</h3><p class="policy-prompt">${POLICY.prompt}</p>${anchors}${worked}` + (withDetails ? `<div class="policy-columns"><div><h3>Consider</h3><ul>${POLICY.tests.map((item) => `<li>${item}</li>`).join("")}</ul></div><div><h3>Keep separate</h3><ul>${POLICY.separate.map((item) => `<li>${item}</li>`).join("")}</ul></div></div>` : "");
+  return `<h3>${POLICY.scope}</h3><p class="policy-prompt">${POLICY.prompt}</p>${anchors}${worked}` + `<div class="policy-columns"><div><h3>Consider</h3><ul>${POLICY.tests.map((item) => `<li>${item}</li>`).join("")}</ul></div><div><h3>Keep separate</h3><ul>${POLICY.separate.map((item) => `<li>${item}</li>`).join("")}</ul></div></div>`;
 }
-document.getElementById("policy").innerHTML = policyMarkup(true);
-document.getElementById("worked-policy").innerHTML = policyMarkup(false);
+document.getElementById("policy").innerHTML = policyMarkup();
+document.getElementById("docket-count").textContent = String(DEFAULT_DOCKET_KEYS.length);
+document.getElementById("bloc-score").textContent = BLOC_SCORE.toFixed(2);
+
 for (const key of DEFAULT_DOCKET_KEYS) {
   const item = document.createElement("li");
   item.textContent = NOMINEES.find((nominee) => nominee.key === key).name;
   document.getElementById("docket").append(item);
 }
+
+function fundingExample() {
+  const example = {
+    request: 0.8,
+    release: 100,
+    rescore: 0.3,
+    scoreStep: 0.05,
+    jury: [
+      { name: "Curator A", tickets: 3, score: 0.7 },
+      { name: "Curator B", tickets: 2, score: 0.4 },
+      { name: "Curator C", tickets: 1, score: 0.7 },
+    ],
+    appeal: [{ tickets: 8, score: 0.8 }, { tickets: 4, score: 0.5 }],
+    others: [
+      { id: "archive", name: "Archive", request: 0.7, score: 0.3 },
+      { id: "registry", name: "Registry", request: 0.6, score: 0.9 },
+    ],
+  };
+  let jury = example.jury.map((report) => ({ ...report }));
+  let stage = "initial";
+  let stageBeforeDebunking = stage;
+  const mean = (reports) => reports.reduce((sum, report) => sum + report.score * report.tickets, 0) / reports.reduce((sum, report) => sum + report.tickets, 0);
+  const countSeats = (reports) => reports.reduce((sum, report) => sum + report.tickets, 0);
+  const scoreText = (score) => score.toFixed(3);
+  const setText = (key, value) => document.querySelectorAll(`[data-example="${key}"]`).forEach((node) => { node.textContent = value; });
+  setText("prompt", POLICY.prompt);
+  setText("release", String(example.release));
+  setText("request", scoreText(example.request));
+  setText("rescore", scoreText(example.rescore));
+  setText("baselineMean", scoreText(mean(example.jury)));
+  setText("initialSeats", String(countSeats(jury)));
+  setText("initialCurators", String(jury.length));
+  setText("appealSeats", String(countSeats(example.appeal)));
+  setText("appealMean", scoreText(mean(example.appeal)));
+  document.getElementById("example-anchors").innerHTML = POLICY.anchors.map(([score, label]) => `<span><b>${score}</b> ${label}</span>`).join("");
+  document.getElementById("example-appeal-scores").textContent = example.appeal.map((report) => `${report.tickets} at ${scoreText(report.score)}`).join("; ");
+  const inputs = jury.map((report, index) => {
+    const row = document.createElement("div");
+    row.className = "example-juror";
+    row.innerHTML = `<div><label for="example-score-${index}">${report.name}</label><span>${report.tickets} tickets</span><output for="example-score-${index}"></output></div><input id="example-score-${index}" type="range" min="0" max="1" step="${example.scoreStep}" value="${report.score}" aria-label="${report.name}’s example score">`;
+    document.getElementById("example-jury").append(row);
+    const input = row.querySelector("input");
+    input.addEventListener("input", () => {
+      jury[index].score = C.clamp01(Number(input.value));
+      stage = "initial";
+      paint();
+    });
+    return input;
+  });
+  function paint() {
+    const initialMean = mean(jury);
+    const scoreStage = stage === "debunked" ? stageBeforeDebunking : stage;
+    const adopted = { initial: initialMean, appeal: mean(example.appeal), rescore: example.rescore }[scoreStage];
+    const positions = [{ id: "numpy", name: "NumPy", request: example.request, score: adopted }, ...example.others].map((position) => ({ ...position, weight: position.id === "numpy" && stage === "debunked" ? 0 : Math.min(position.request, position.score) }));
+    const totalWeight = positions.reduce((sum, position) => sum + position.weight, 0);
+    const funded = positions.map((position) => ({ ...position, rate: example.release * position.weight / totalWeight }));
+    const numpy = funded.find((position) => position.id === "numpy");
+    const stageLabels = { initial: "Initial jury, after finalization and holdback", appeal: "Appeal jury, after finalization and holdback", rescore: "Later re-score, lower weight active", debunked: "Counterfactual accuracy claim debunked" };
+    const outcomes = {
+      initial: "Change a jury score to recompute the funding shares. The requested weight caps NumPy’s active funding weight.",
+      appeal: "The larger jury supplies the adopted score. The allocation changes even if the appellant loses their separate prediction bet.",
+      rescore: "Lower weight takes effect immediately. Earlier accrual stays earned; only future accrual uses the new shares.",
+      debunked: "Future funding stops and unclaimed accrual returns to the open pool. Previously paid funds are not recovered by this process.",
+    };
+    setText("mean", scoreText(initialMean));
+    setText("initialMean", scoreText(initialMean));
+    setText("effective", scoreText(numpy.weight));
+    setText("weightRule", stage === "debunked" ? "Debunked nomination: active weight = 0; recorded relevance score stays unchanged." : "effective weight = min(requested weight, adopted score)");
+    setText("numpyRate", numpy.rate.toFixed(2));
+    setText("stage", stageLabels[stage]);
+    inputs.forEach((input, index) => {
+      input.value = String(jury[index].score);
+      input.previousElementSibling.querySelector("output").textContent = scoreText(jury[index].score);
+    });
+    document.getElementById("example-calculation").textContent = `(${jury.map((report) => `${report.tickets} × ${report.score.toFixed(2)}`).join(" + ")}) ÷ ${countSeats(jury)} = ${scoreText(initialMean)}`;
+    document.getElementById("example-funding-calculation").textContent = `${example.release} × ${scoreText(numpy.weight)} ÷ ${scoreText(totalWeight)} = ${numpy.rate.toFixed(2)} units/day`;
+    document.getElementById("example-allocation").innerHTML = funded.map((position) => `<tr><td>${position.name}</td><td>${scoreText(position.request)}</td><td>${scoreText(position.score)}</td><td>${scoreText(position.weight)}</td><td data-project-rate="${position.id}">${position.rate.toFixed(2)}</td></tr>`).join("");
+    const stream = document.getElementById("example-stream");
+    stream.innerHTML = funded.map((position) => `<span style="width:${position.rate / example.release * PERCENT}%">${position.rate ? position.name : ""}</span>`).join("");
+    stream.setAttribute("role", "img");
+    stream.setAttribute("aria-label", funded.map((position) => `${position.name}: ${position.rate.toFixed(2)} units per day`).join("; "));
+    document.getElementById("example-outcome").textContent = outcomes[stage];
+  }
+  document.querySelectorAll("[data-example-action]").forEach((button) => button.addEventListener("click", () => {
+    const nextStage = button.dataset.exampleAction;
+    if (nextStage === "debunked" && stage !== "debunked") stageBeforeDebunking = stage;
+    stage = nextStage;
+    if (stage === "initial" || stage === "rescore") jury = example.jury.map((report) => ({ ...report }));
+    paint();
+  }));
+  paint();
+}
+fundingExample();
 
 function widget(host, withBloc) {
   const scores = BASE.slice();
@@ -209,7 +212,7 @@ function widget(host, withBloc) {
     host.querySelector(".v-band").textContent = `±${grade.half.toFixed(3)}`;
     host.querySelector(".v-paid").textContent = String(grade.coherentCount);
     host.querySelector(".v-out").textContent = String(grade.forfeitsEnabled ? grade.outlierCount : 0);
-    host.querySelector(".legend").textContent = `Green: inside the band. Red: outside it.${grade.forfeitsEnabled ? "" : " Distance forfeits are off because the spread is essentially zero."}${withBloc ? " A red outline marks the instructed bloc." : ""}`;
+    host.querySelector(".legend").textContent = `Blue: inside the band. Red: outside it.${grade.forfeitsEnabled ? "" : " Distance forfeits are off because the spread is essentially zero."}${withBloc ? " A red outline marks the instructed bloc." : ""}`;
     const output = host.querySelector(".v-bloc");
     if (output) output.textContent = `${Math.round(entries.filter((_, index) => isBloc(index)).length / BASE.length * PERCENT)}%`;
   }
@@ -257,11 +260,13 @@ widget(document.getElementById("w-pay"), false);
 widget(document.getElementById("w-bloc"), true);
 
 const slides = Array.from(document.querySelectorAll(".slide"));
+const slideHeadings = slides.map(slide => slide.querySelector("h1,h2"));
 const rail = document.getElementById("rail");
 slides.forEach((slide, index) => {
+  slideHeadings[index].tabIndex = -1;
   const link = document.createElement("a");
   link.href = `#${slide.id}`;
-  link.setAttribute("aria-label", `Slide ${index + 1}: ${slide.querySelector("h1,h2").textContent}`);
+  link.setAttribute("aria-label", `Slide ${index + 1}: ${slideHeadings[index].textContent}`);
   rail.append(link);
 });
 const navigationDots = Array.from(rail.children);
@@ -285,23 +290,68 @@ function mark() {
   document.getElementById("prevBtn").disabled = index === 0;
   document.getElementById("nextBtn").disabled = index === slides.length - 1;
 }
+function showSlide(index) {
+  if (!slides[index]) return;
+  slides[index].scrollIntoView({ behavior: "instant", block: "start" });
+  slideHeadings[index].focus({ preventScroll: true });
+  mark();
+}
 function go(delta) {
-  const next = current() + delta;
-  if (!slides[next]) return false;
-  slides[next].scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "start" });
-  return true;
+  showSlide(current() + delta);
+}
+const shortcuts = document.getElementById("shortcuts");
+const closeShortcutsButton = document.getElementById("closeShortcuts");
+const SHORTCUTS = [
+  { label: "Next slide", button: "nextBtn", run: () => go(1), keys: [
+    { key: "ArrowRight", label: "→" }, { key: "ArrowDown", label: "↓" },
+    { key: "PageDown", label: "Page Down" }, { key: " ", label: "Space" }
+  ] },
+  { label: "Previous slide", button: "prevBtn", run: () => go(-1), keys: [
+    { key: "ArrowLeft", label: "←" }, { key: "ArrowUp", label: "↑" },
+    { key: "PageUp", label: "Page Up" }, { key: " ", shift: true, label: "Shift + Space" }
+  ] },
+  { label: "First slide", run: () => showSlide(0), keys: [{ key: "Home", label: "Home" }] },
+  { label: "Last slide", run: () => showSlide(slides.length - 1), keys: [{ key: "End", label: "End" }] },
+  { label: "Show shortcuts", button: "shortcutsBtn", run: () => shortcuts.showModal(), keys: [{ key: "F1", label: "F1" }] }
+];
+for (const shortcut of SHORTCUTS) {
+  const row = document.createElement("div");
+  const label = document.createElement("dt");
+  label.textContent = shortcut.label;
+  const keys = document.createElement("dd");
+  for (const binding of shortcut.keys) {
+    const key = document.createElement("kbd");
+    key.textContent = binding.label;
+    keys.append(key);
+  }
+  row.append(label, keys);
+  document.getElementById("shortcut-list").append(row);
+  if (shortcut.button) {
+    const button = document.getElementById(shortcut.button);
+    button.addEventListener("click", shortcut.run);
+    button.setAttribute("aria-keyshortcuts", shortcut.keys.map(binding => `${binding.shift ? "Shift+" : ""}${binding.key === " " ? "Space" : binding.key}`).join(" "));
+  }
 }
 window.addEventListener("scroll", mark, { passive: true });
 document.querySelector("main").addEventListener("scroll", mark, { passive: true });
 document.addEventListener("keydown", (event) => {
-  if (event.target.closest("input,textarea,select,[role=slider]")) return;
-  let delta = 0;
-  if (["ArrowDown", "ArrowRight", "PageDown"].includes(event.key)) delta = 1;
-  else if (["ArrowUp", "ArrowLeft", "PageUp"].includes(event.key)) delta = -1;
-  if (delta && go(delta)) event.preventDefault();
+  if (event.defaultPrevented || event.isComposing || event.ctrlKey || event.metaKey || event.altKey || shortcuts.open) return;
+  const target = event.target;
+  if (target instanceof Element) {
+    if (target.isContentEditable || target.closest("input,textarea,select,[role=slider],[role=textbox]")) return;
+    if (event.key === " " && target.closest("button,a[href],summary,[role=button]")) return;
+  }
+  const shortcut = SHORTCUTS.find(shortcut => shortcut.keys.some(binding =>
+    binding.key === event.key && (binding.shift ?? false) === event.shiftKey
+  ));
+  if (!shortcut) return;
+  event.preventDefault();
+  shortcut.run();
 });
-document.getElementById("prevBtn").addEventListener("click", () => go(-1));
-document.getElementById("nextBtn").addEventListener("click", () => go(1));
+closeShortcutsButton.addEventListener("click", () => shortcuts.close());
+closeShortcutsButton.addEventListener("keydown", (event) => {
+  if (event.key === "Tab" && !event.ctrlKey && !event.metaKey && !event.altKey) event.preventDefault();
+});
 mark();
 document.title = `${SESSION.title}: session deck`;
 

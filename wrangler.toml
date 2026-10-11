@@ -1,4 +1,5 @@
 name = "decentralized-curation"
+account_id = "abfb18f38d5263b5da582e40ba6ae552"
 main = "src/worker.ts"
 compatibility_date = "2026-07-30"
 

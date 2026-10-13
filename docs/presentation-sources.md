@@ -304,8 +304,8 @@ For facilitation: present the loop first, identify what the exercise isolates, t
 
 The narrative and visual review used the scientific-slides workflow from [Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents](https://arxiv.org/abs/2609.00065), by Timothy Kassis and colleagues (2026). This is a preparation-method reference, not evidence for the curation mechanism.
 
-## Conference support and logo
+## Conference sponsorship and logo
 
-The presenter reports partial support for conference expenses from Golem Foundation’s Octant project. This acknowledges conference support, not endorsement of the mechanism or its claims. The opening and closing slides, landing page and printable handout display the official logo linked to [Octant](https://octant.build/) and name [Golem Foundation](https://golem.foundation/).
+The presenter identifies Golem Foundation’s Octant project as a sponsor of his conference participation, providing partial support for his expenses. This sponsorship acknowledgement does not imply endorsement of the mechanism or its claims. The opening and closing slides, landing page and printable handout display the official logo linked to [Octant](https://octant.build/) and name [Golem Foundation](https://golem.foundation/).
 
 The unmodified logo comes from the [official Octant documentation asset](https://docs.octant.app/img/logo.svg). The [documentation footer](https://docs.octant.app/legal/) identifies Octant as a Golem Foundation project and links its [brand file](https://www.figma.com/design/mvl5UURCYYKDD94TdjRraq/octant-brand?node-id=2916-38296). Asset provenance and licence boundaries are recorded in [the brand asset note](../public/brand/README.md).

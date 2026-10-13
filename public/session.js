@@ -69,7 +69,7 @@ export function renderSupport(root = document) {
     foundationLink.textContent = support.foundation;
     const acknowledgement = document.createElement("p");
     acknowledgement.append(
-      "Conference expenses partially supported by ",
+      "My conference participation is sponsored in part by ",
       foundationLink,
       `’s ${support.project} project. Thank you.`,
     );

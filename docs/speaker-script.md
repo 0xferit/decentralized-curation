@@ -36,7 +36,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 2 minutes. Elapsed: 0:03 to 0:05.**
 
-“Here is the public-goods funding application, or PGF. A pool has a purpose and a published policy. Someone nominates a contribution, supplies evidence, identifies its beneficiary and puts up a bond. A drawn jury judges relevance under that policy. People can fund an appeal. The resulting weight determines a share of the available funding, and later assessments can change future shares.
+“Here is the public-goods funding application, or PGF. A pool has a purpose and a published policy. Someone nominates a contribution, supplies evidence, identifies its beneficiary and puts up a bond. A drawn jury judges relevance under that policy. People can fund an appeal. Together, the resulting weights describe what matters under that policy. A funding budget can arrive later and use those shares.
 
 “Two questions run through this process. Is the nomination making defensible factual claims? And, given those facts, how relevant is the contribution to this pool's purpose?
 
@@ -54,7 +54,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “Examine who relies on it, its role in research and the alternatives. Releases, documentation and downstream use provide evidence. Costs and limitations belong there too.
 
-“This is a choice made for this example pool. Another pool may care about a different problem and need a different policy. There is no universal rubric hidden in the mechanism.
+“This is a choice made for this example pool. Another pool may care about a different problem and need a different policy. We can start curating before anyone commits a grant budget. Bonds and jury costs still follow the economic rules; knowledge production is not cost-free.
 
 “Publishing a policy lets people inspect it. It does not establish that everyone affected chose it, or that it serves a good purpose. The creator chooses the terms; funders choose whether to support that pool; jurors apply its policy.”
 
@@ -112,19 +112,19 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Do not calculate backer settlement here. The widget changes the assessment and allocation only.]
 
-## 8. Translate weight into a funding share
+## 8. Curate the shares; funding can follow
 
 **Target: 3 minutes. Elapsed: 0:15 to 0:18.**
 
-“Here is where the score has a consequence. The effective weight is the smaller of the requested weight and the adopted relevance score. We then divide the available flow among the eligible weights.
+“The effective weight is the smaller of the requested weight and the adopted relevance score. Divide each eligible weight by their total, and the resulting shares sum to one. This is our curated, policy-relative picture of what matters. It exists before a grant budget does.
 
-“At the reset values, NumPy's weight is 0.60 out of a total of 1.50. That gives it 40 of the illustrative 100 units per day. After our appeal example, the table shows its changed share and the corresponding changes for the other nominees.”
+“At the reset values, NumPy's weight is 0.60 out of a total of 1.50: a 40 percent share. Set the grant flow to zero: the shares remain. Add 100 units per day, and NumPy receives 40. The budget acts on the curated knowledge.”
 
-[Point to NumPy, then to the other two rows. Use the current values rather than the reset values if the appeal is still applied.]
+[Set the grant-flow control to zero, then restore 100. Point to the unchanged shares and changed amounts. Use the current values if the appeal is still applied.]
 
-“A score of 0.60 does not mean 60 percent of the budget. And a weight twice as large is not evidence of twice as much public benefit. The policy is using those numbers to allocate this budget.
+“A score of 0.60 does not mean a 60 percent share. And twice the weight is not evidence of twice the public benefit. These are relative judgments under a chosen policy.
 
-“There is an important boundary case. If the pool has only one eligible positive weight, it receives the whole distributable flow, even with a low score. Other nominations can compete for a share under the pool's rules. The mechanism does not guarantee they will enter.
+“One eligible positive weight receives the whole share, even with a low score. With no positive eligible weights, there is no allocation vector yet; we do not invent equal shares.
 
 “The table shows earning rates after the relevant conditions are met. A new nomination waits through holdback before it earns. Later rating changes create no new holdback. Once funds are earned, the beneficiary can claim them immediately.”
 

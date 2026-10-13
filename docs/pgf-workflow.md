@@ -2,21 +2,21 @@
 
 _An application of the Decentralized Curation framework._
 
-This one-page workflow shows the ongoing-funding application used in the presentation. Its accuracy gate controls nomination eligibility; its relevance gate supplies a policy-relative score for allocating the funding flow. These two gates describe this application, not the full scope of the framework. Other funding profiles can have different allocation rules.
+This one-page workflow shows the ongoing-funding application used in the presentation. Its accuracy gate controls nomination eligibility; its relevance gate supplies policy-relative weights before any beneficiary budget is required. Eligible weights can be normalized into allocation shares; any later funding can use them. These two gates describe this application, not the full scope of the framework. Other funding profiles can have different allocation rules.
 
 ```mermaid
 flowchart TB
     accTitle: Public-goods funding application workflow
     accDescr: An ongoing-funding application of the broader Decentralized Curation framework. Nominations remain subject to accuracy challenges while relevance juries and appeals produce scores that determine eligible funding weights, accrual and beneficiary claims.
     subgraph publication["Publish under declared rules"]
-        define_policy["POOL CREATOR<br/>Define funding purpose and policy<br/>Evidence requirements<br/>and fixed economic rules"]
+        define_policy["POOL CREATOR<br/>Define purpose and policy<br/>Evidence requirements<br/>and fixed economic rules"]
         publish_nomination["NOMINATOR<br/>Publish claims and evidence<br/>Identify contribution and beneficiary<br/>Request a weight; post the bond"]
-        fund_pool["POOL FUNDERS<br/>Supply the pool budget<br/>Support allocation and jury service"]
+        fund_pool["POOL FUNDERS<br/>May add beneficiary funding later<br/>Jury-service funding is separate"]
     end
     subgraph accuracy_gate["ACCURACY GATE: can the claims withstand challenge?"]
         provisional_eligibility["PROTOCOL<br/>Check bond and structural rules<br/>Admit the nomination provisionally<br/>No prior truth approval"]
         file_challenge["PUBLIC CHALLENGER<br/>Any time while nomination is active<br/>Contest false or non-falsifiable claims<br/>Post counter-stake, tax and fees"]
-        external_arbitration["ARBITRATOR + PROTOCOL<br/>Arbitrator examines the dispute<br/>Funding continues to accrue<br/>Earned funds stay claimable<br/>Later nomination exit queues"]
+        external_arbitration["ARBITRATOR + PROTOCOL<br/>Arbitrator examines the dispute<br/>Existing earning continues<br/>Earned funds stay claimable<br/>Later nomination exit queues"]
         challenge_upheld{"EXTERNAL ARBITRATOR<br/>Challenge<br/>upheld?"}
         close_nomination["PROTOCOL<br/>Close the failed nomination<br/>Bond to challenger; future funding stops<br/>Accrued funding remains owed"]
         resume_nomination["PROTOCOL<br/>Resume the nomination<br/>Counter-stake to the nominator<br/>Queued exit may then proceed"]
@@ -33,12 +33,12 @@ flowchart TB
         final_score["PROTOCOL<br/>0: retain issued score<br/>1: adopt funded score<br/>Settle adjudicated pots<br/>Backers collect payouts"]
     end
     subgraph funding["Allocate funding and preserve accrued claims"]
-        adopt_funding_score["PROTOCOL<br/>Use this revision's adopted score<br/>Apply the pool's adoption rules<br/>Only eligible nominations earn"]
-        compute_funding_weight["PROTOCOL<br/>Effective weight = lower of<br/>requested weight and adopted score<br/>Split the flow by eligible weights"]
-        allocate_funding["PROTOCOL + BENEFICIARIES<br/>New nominations serve holdback<br/>Accrue eligible funding shares<br/>Earned funds are immediately claimable"]
+        adopt_funding_score["PROTOCOL<br/>Use this revision's adopted score<br/>Produce curated weights<br/>No grant budget required"]
+        compute_funding_weight["PROTOCOL<br/>Cap by request and score<br/>Normalize eligible weights<br/>Positive total: shares sum to 1<br/>Zero total: no allocation"]
+        allocate_funding["PROTOCOL + BENEFICIARIES<br/>Apply funding when available<br/>New nominations serve holdback<br/>Earned funds are immediately claimable"]
     end
     define_policy --> publish_nomination
-    fund_pool -->|Pool budget| allocate_funding
+    fund_pool -->|Optional funding| allocate_funding
     publish_nomination --> provisional_eligibility
     provisional_eligibility -->|Continue while eligible| draw_jury
     provisional_eligibility -.-> file_challenge
@@ -73,6 +73,8 @@ flowchart TB
     class resume_nomination,final_score,compute_funding_weight,allocate_funding outcome
     class close_nomination closed
 ```
+
+Curation and beneficiary funding are separate. Raw effective weights need not sum to one. For each eligible nomination, normalize its effective weight by the positive total to obtain its allocation share. These shares sum to one; an available or later beneficiary budget multiplies them. With no positive eligible weight, there is no allocation vector. Holdback affects earning eligibility, not whether scores can be curated. Bonds, jury-service funding and appeal backing retain their own requirements.
 
 ## Actors
 

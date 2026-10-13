@@ -2,12 +2,12 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Decentralized curation: session deck</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/paper.css"><link rel="stylesheet" href="/deck/deck.css"></head><body><main>
 <section class="slide dark" id="s1"><div class="eyebrow">Decentralized curation / Workshop</div><h1 data-session="title"></h1><p class="title-subtitle" data-session="subtitle"></p><p class="fine"><span data-session="attribution"></span><br><span data-session="event"></span></p><div class="support-credit" data-support></div></section>
 <section class="slide" id="s2"><div class="eyebrow">01 / The problem</div><h2>Who judges research?<br><span class="accent">What do we reward?</span></h2><div class="visual-chain"><div>Read</div><span aria-hidden="true">→</span><div>Cite</div><span aria-hidden="true">→</span><div>Reuse</div><span aria-hidden="true">→</span><div>Fund</div></div><p class="punchline">Every step depends on judgment.</p><p class="source">Research context and <a href="#s23">related approaches</a> · <a href="#s24">Sources</a></p></section>
-<section class="slide" id="s3"><div class="eyebrow">02 / A funding application</div><h2>One framework.<br><span class="accent">Here, public-goods funding.</span></h2><div class="process-map"><div class="process-start"><b>Set the policy</b><span>Pool creator</span></div><div class="process-main"><div><b>Nominate</b><span>Claims + bond</span></div><span aria-hidden="true">→</span><div><b>Judge relevance</b><span>Drawn jury</span></div><span aria-hidden="true">→</span><div><b>Fund</b><span>Relative weights</span></div></div><div class="process-branches"><span class="accuracy">Accuracy: challenge claims anytime active</span><span class="accent">Relevance: appeal + re-score</span></div></div><p class="source">Two distinct gates; broader framework · <a href="/mechanism/">Full mechanism</a></p></section>
+<section class="slide" id="s3"><div class="eyebrow">02 / A funding application</div><h2>Curate what matters.<br><span class="accent">Funding can follow.</span></h2><div class="process-map"><div class="process-start"><b>Set the policy</b><span>Pool creator</span></div><div class="process-main"><div><b>Nominate</b><span>Claims + bond</span></div><span aria-hidden="true">→</span><div><b>Judge relevance</b><span>Drawn jury</span></div><span aria-hidden="true">→</span><div><b>Curated shares</b><span>Ready for later funding</span></div></div><div class="process-branches"><span class="accuracy">Accuracy: challenge claims anytime active</span><span class="accent">Relevance: appeal + re-score</span></div></div><p class="source">No beneficiary budget needed to establish weights · <a href="/mechanism/">Full mechanism</a></p></section>
 <section class="slide" id="s4"><div class="eyebrow">03 / Set the terms</div><h2>Start with <span class="accent">a public policy.</span></h2><p class="example-prompt" data-example="prompt"></p><div id="example-anchors" class="example-anchors"></div><div class="visual-chain compact"><div>Evidence</div><span>+</span><div>Criteria</div><span>+</span><div>Fixed terms</div></div><p class="source">This pool's authored policy, not a universal rubric · <a href="/handout/">Policy reference</a></p></section>
 <section class="slide" id="s5"><div class="eyebrow">04 / Nominate real work</div><h2>A claim you can <span class="accent">check.</span></h2><div class="claim-focus"><span class="kind">NumPy 2.0.0</span><p class="claim">“Released on 16 June 2024.”</p><a href="https://numpy.org/news/#numpy-2-0-0-released">Release record ↗</a></div><div class="visual-chain compact"><div>Delivery</div><span>+</span><div>Downstream use</div><span>+</span><div>Migration costs</div></div><p class="source">Real release; illustrative nomination and scores · <a href="https://numpy.org/doc/2.2/release/2.0.0-notes.html">Release notes</a> · <a href="https://numpy.org/doc/2.0/numpy_2_0_migration_guide.html">Migration guide</a></p></section>
 <section class="slide" id="s6"><div class="eyebrow">05 / Relevance jury</div><h2>One jury.<br><span class="accent">Different judgments.</span></h2><div class="split jury-focus"><div><div class="report-count"><span data-example="initialSeats"></span> seats · <span data-example="initialCurators"></span> curators</div><div id="example-jury" class="example-jury"></div></div><div class="score-focus"><span class="kind">Stake-weighted mean</span><strong data-example="mean"></strong><p class="example-calculation" id="example-calculation"></p><p>Commit → reveal</p></div></div><p class="source">Illustrative reports; one curator may hold several seats · <a href="#s22">Grading is separate</a></p></section>
 <section class="slide" id="s7"><div class="eyebrow">06 / Appeal</div><h2>Disagree?<br><span class="accent">Fund another hearing.</span></h2><div class="appeal-ladder"><div class="appeal-stage"><span class="kind">Initial jury</span><strong class="seat-number" data-example="initialSeats"></strong><span>seats · score <b data-example="initialMean"></b></span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="appeal-stage"><span class="kind">Contested appeal</span><strong class="seat-number" data-example="appealSeats"></strong><span>seats · score <b data-example="appealMean"></b></span><span id="example-appeal-scores" class="note"></span></div></div><div class="action-line"><p>Public backers. Larger jury. A revisable score.</p><button type="button" data-example-action="appeal">Apply appeal result</button></div><p class="source">Intended crowdfunding design; an unopposed funded score wins by forfeiture · <a href="/mechanism/#appeals">Details</a></p></section>
-<section class="slide" id="s8"><div class="eyebrow">07 / Funding follows the score</div><h2>A weight.<br><span class="accent">Not a percentage.</span></h2><p class="example-equation" data-example="weightRule"></p><div class="split wide-left"><div><table class="allocation"><caption class="kind">Illustrative pool · <span data-example="release"></span> units/day</caption><thead><tr><th>Nominee</th><th>Request</th><th>Score</th><th>Weight</th><th>Units/day</th></tr></thead><tbody id="example-allocation"></tbody></table><div id="example-stream" class="stream-bar"></div></div><div class="score-focus"><span class="kind">NumPy's weight</span><strong data-example="effective"></strong><p class="example-calculation" id="example-funding-calculation"></p><span class="kind" data-example="stage"></span></div></div><p class="source">After applicable holdback; relative allocation, not a measured ratio of public benefit.</p></section>
+<section class="slide" id="s8"><div class="eyebrow">07 / Funding follows the score</div><h2>Curated shares.<br><span class="accent">Ready for any budget.</span></h2><p class="example-equation" data-example="weightRule"></p><div class="split wide-left"><div><table class="allocation"><caption class="kind">Weights → normalized shares</caption><thead><tr><th>Nominee</th><th>Request</th><th>Score</th><th>Weight</th><th>Share</th><th>Units/day</th></tr></thead><tbody id="example-allocation"></tbody></table><div id="example-stream" class="stream-bar"></div></div><div class="score-focus allocation-focus"><span class="kind">NumPy's share</span><strong data-example="numpyShare"></strong><label for="example-budget">Illustrative funding: <b data-example="release"></b> units/day</label><input id="example-budget" type="range" min="0" step="10" aria-label="Illustrative funding per day"><p class="example-calculation" id="example-funding-calculation"></p><span class="kind" data-example="stage"></span></div></div><p class="source">Set funding to zero: the shares remain. Shown after admission holdback; not measured fractions of public benefit.</p></section>
 <section class="slide" id="s9"><div class="eyebrow">08 / Accuracy gate</div><h2>Facts can be <span class="accuracy">challenged.</span></h2><div class="claim-focus accuracy-focus"><span class="kind">Counterfactual claim</span><p class="claim">“NumPy 1.x C extensions work unchanged in 2.0.”</p><a href="https://numpy.org/doc/2.0/numpy_2_0_migration_guide.html">These extensions require rebuilding ↗</a></div><div class="visual-chain compact"><div>Challenge</div><span aria-hidden="true">→</span><div>External arbitrator</div><span aria-hidden="true">→</span><div>Debunked?<br><small>Bond lost; future funding stops</small></div></div><button type="button" class="ghost" data-example-action="debunked">Show debunked outcome</button><p class="source">Illustration, not a verdict about NumPy. Previously earned funding remains owed.</p></section>
 <section class="slide" id="s10"><div class="eyebrow">09 / Re-score</div><h2>New judgment.<br><span class="accent">New funding shares.</span></h2><div class="rescore-visual"><div><span class="kind">Initial score</span><strong data-example="baselineMean"></strong></div><span aria-hidden="true">→</span><div><span class="kind">Later score</span><strong data-example="rescore"></strong></div><div><span class="kind">NumPy / day</span><strong><span data-example="numpyRate"></span></strong></div></div><div class="example-actions"><button type="button" data-example-action="rescore">Apply lower re-score</button><button type="button" class="ghost" data-example-action="initial">Reset worked example</button></div><p class="outcome-line" id="example-outcome"></p><p class="source">Illustrative re-score; <a href="#s8">return to the allocation</a>.</p></section>
 <section class="slide" id="s11"><div class="eyebrow">10 / What must hold</div><h2>Rules can be enforced.<br><span class="accent">Judgment must earn trust.</span></h2><div class="three-anchors"><article><span>01</span><h3>A defensible policy</h3></article><article><span>02</span><h3>Usable evidence</h3></article><article><span>03</span><h3>Independent scrutiny</h3></article></div><p class="punchline">Agreement alone is not enough.</p><p class="source">Conditions to test, not guarantees · <a href="#s24">Sources and limits</a></p></section>
@@ -96,12 +96,12 @@ function fundingExample() {
   let jury = example.jury.map((report) => ({ ...report }));
   let stage = "initial";
   let stageBeforeDebunking = stage;
+  let release = example.release;
   const mean = (reports) => reports.reduce((sum, report) => sum + report.score * report.tickets, 0) / reports.reduce((sum, report) => sum + report.tickets, 0);
   const countSeats = (reports) => reports.reduce((sum, report) => sum + report.tickets, 0);
   const scoreText = (score) => score.toFixed(3);
   const setText = (key, value) => document.querySelectorAll(`[data-example="${key}"]`).forEach((node) => { node.textContent = value; });
   setText("prompt", POLICY.prompt);
-  setText("release", String(example.release));
   setText("request", scoreText(example.request));
   setText("rescore", scoreText(example.rescore));
   setText("baselineMean", scoreText(mean(example.jury)));
@@ -131,7 +131,8 @@ function fundingExample() {
     const adopted = { initial: initialMean, appeal: mean(example.appeal), rescore: example.rescore }[scoreStage];
     const positions = [{ id: "numpy", name: "NumPy", request: example.request, score: adopted }, ...example.others].map((position) => ({ ...position, weight: position.id === "numpy" && stage === "debunked" ? 0 : Math.min(position.request, position.score) }));
     const totalWeight = positions.reduce((sum, position) => sum + position.weight, 0);
-    const funded = positions.map((position) => ({ ...position, rate: example.release * position.weight / totalWeight }));
+    const shares = positions.map((position) => ({ ...position, share: position.weight / totalWeight }));
+    const funded = shares.map((position) => ({ ...position, rate: release * position.share }));
     const numpy = funded.find((position) => position.id === "numpy");
     const stageLabels = { initial: "New nomination, after admission holdback", appeal: "Appeal jury, adopted score", rescore: "Later re-score, lower weight active", debunked: "Counterfactual accuracy claim debunked" };
     const outcomes = {
@@ -142,21 +143,22 @@ function fundingExample() {
     };
     setText("mean", scoreText(initialMean));
     setText("initialMean", scoreText(initialMean));
-    setText("effective", scoreText(numpy.weight));
     setText("weightRule", stage === "debunked" ? "Debunked nomination: active weight = 0; recorded relevance score stays unchanged." : "effective weight = min(requested weight, adopted score)");
     setText("numpyRate", numpy.rate.toFixed(2));
+    setText("release", String(release));
+    setText("numpyShare", `${(numpy.share * PERCENT).toFixed(1)}%`);
     setText("stage", stageLabels[stage]);
     inputs.forEach((input, index) => {
       input.value = String(jury[index].score);
       input.previousElementSibling.querySelector("output").textContent = scoreText(jury[index].score);
     });
     document.getElementById("example-calculation").textContent = `(${jury.map((report) => `${report.tickets} × ${report.score.toFixed(2)}`).join(" + ")}) ÷ ${countSeats(jury)} = ${scoreText(initialMean)}`;
-    document.getElementById("example-funding-calculation").textContent = `${example.release} × ${scoreText(numpy.weight)} ÷ ${scoreText(totalWeight)} = ${numpy.rate.toFixed(2)} units/day`;
-    document.getElementById("example-allocation").innerHTML = funded.map((position) => `<tr><td>${position.name}</td><td>${scoreText(position.request)}</td><td>${scoreText(position.score)}</td><td>${scoreText(position.weight)}</td><td data-project-rate="${position.id}">${position.rate.toFixed(2)}</td></tr>`).join("");
+    document.getElementById("example-funding-calculation").textContent = `${release} × ${(numpy.share * PERCENT).toFixed(1)}% = ${numpy.rate.toFixed(2)} units/day`;
+    document.getElementById("example-allocation").innerHTML = funded.map((position) => `<tr><td>${position.name}</td><td>${scoreText(position.request)}</td><td>${scoreText(position.score)}</td><td${position.id === "numpy" ? ' data-example="effective"' : ""}>${scoreText(position.weight)}</td><td data-project-share="${position.id}">${(position.share * PERCENT).toFixed(1)}%</td><td data-project-rate="${position.id}">${position.rate.toFixed(2)}</td></tr>`).join("");
     const stream = document.getElementById("example-stream");
-    stream.innerHTML = funded.map((position) => `<span style="width:${position.rate / example.release * PERCENT}%">${position.rate ? position.name : ""}</span>`).join("");
+    stream.innerHTML = funded.map((position) => `<span style="width:${position.share * PERCENT}%">${position.share ? position.name : ""}</span>`).join("");
     stream.setAttribute("role", "img");
-    stream.setAttribute("aria-label", funded.map((position) => `${position.name}: ${position.rate.toFixed(2)} units per day`).join("; "));
+    stream.setAttribute("aria-label", funded.map((position) => `${position.name}: ${(position.share * PERCENT).toFixed(1)}% share; ${position.rate.toFixed(2)} units per day`).join("; "));
     document.getElementById("example-outcome").textContent = outcomes[stage];
   }
   document.querySelectorAll("[data-example-action]").forEach((button) => button.addEventListener("click", () => {
@@ -166,6 +168,13 @@ function fundingExample() {
     if (stage === "initial" || stage === "rescore") jury = example.jury.map((report) => ({ ...report }));
     paint();
   }));
+  const budget = document.getElementById("example-budget");
+  budget.max = String(example.release);
+  budget.value = String(release);
+  budget.addEventListener("input", () => {
+    release = Number(budget.value);
+    paint();
+  });
   paint();
 }
 fundingExample();

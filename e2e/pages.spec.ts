@@ -289,6 +289,23 @@ test("worked example carries jury scores through capped funding and later outcom
   await expect(page.locator('[data-project-rate="numpy"]')).toHaveText("40.00");
 });
 
+test("curated shares remain available without beneficiary funding", async ({ page }) => {
+  await page.goto("/deck/#s8");
+  const budget = page.getByRole("slider", { name: "Illustrative funding per day" });
+  await expect(budget).toHaveCount(1);
+  const shares = page.locator("[data-project-share]");
+  await expect(shares).toHaveText(["40.0%", "20.0%", "40.0%"]);
+  await budget.fill("0");
+  await expect(page.locator("[data-project-rate]")).toHaveText(["0.00", "0.00", "0.00"]);
+  await expect(shares).toHaveText(["40.0%", "20.0%", "40.0%"]);
+  await expect(page.locator("#example-stream span")).toHaveCount(3);
+  await expect(page.locator("#example-stream span").first()).toHaveText("NumPy");
+  await expect(page.locator("#example-stream")).toHaveAttribute("aria-label", /40.0%/);
+  await budget.fill("50");
+  await expect(page.locator("[data-project-rate]")).toHaveText(["20.00", "10.00", "20.00"]);
+  await expect(shares).toHaveText(["40.0%", "20.0%", "40.0%"]);
+});
+
 test("signup validates and retains values after a network failure", async ({ page }) => {
   await page.goto("/join/");
   await page.locator("#name").fill("Ada");

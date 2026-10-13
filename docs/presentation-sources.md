@@ -306,6 +306,6 @@ The narrative and visual review used the scientific-slides workflow from [Scient
 
 ## Conference sponsorship and logo
 
-The presenter identifies Golem Foundation’s Octant project as a sponsor. The audience-facing credit is simply “Sponsored by Golem Foundation’s Octant project.” This sponsorship acknowledgement does not imply endorsement of the mechanism or its claims. The opening and closing slides, landing page and printable handout display the official logo linked to [Octant](https://octant.build/) and name [Golem Foundation](https://golem.foundation/).
+The presenter identifies Octant as the direct sponsor. The audience-facing credit is simply “Sponsored by Octant.” This sponsorship acknowledgement does not imply endorsement of the mechanism or its claims. The opening and closing slides, landing page and printable handout display the official logo and sponsor name linked to [Octant](https://octant.build/).
 
 The unmodified logo comes from the [official Octant documentation asset](https://docs.octant.app/img/logo.svg). The [documentation footer](https://docs.octant.app/legal/) identifies Octant as a Golem Foundation project and links its [brand file](https://www.figma.com/design/mvl5UURCYYKDD94TdjRraq/octant-brand?node-id=2916-38296). Asset provenance and licence boundaries are recorded in [the brand asset note](../public/brand/README.md).

@@ -4,4 +4,4 @@
 
 The [official documentation footer](https://docs.octant.app/legal/) identifies Octant as a Golem Foundation project and links the [official brand file](https://www.figma.com/design/mvl5UURCYYKDD94TdjRraq/octant-brand?node-id=2916-38296).
 
-This third-party mark remains the property of its rights holder. It is excluded from this repository’s software and original-content licences. Its use acknowledges sponsorship by Golem Foundation’s Octant project; it does not imply endorsement of the presentation’s claims.
+This third-party mark remains the property of its rights holder. It is excluded from this repository’s software and original-content licences. Its use acknowledges sponsorship by Octant; it does not imply endorsement of the presentation’s claims.

@@ -29,8 +29,6 @@ export const SESSION = Object.freeze({
     project: "Octant",
     projectUrl: "https://octant.build/",
     logoUrl: "/brand/octant.svg",
-    foundation: "Golem Foundation",
-    foundationUrl: "https://golem.foundation/",
   }),
   workshopReward:
     "Workshop simplification: each round with opened scores pays the full base reward, even when those scores all agree.",
@@ -64,11 +62,11 @@ export function renderSupport(root = document) {
     logo.width = 165;
     logo.height = 46;
     logoLink.append(logo);
-    const foundationLink = document.createElement("a");
-    foundationLink.href = support.foundationUrl;
-    foundationLink.textContent = support.foundation;
+    const projectLink = document.createElement("a");
+    projectLink.href = support.projectUrl;
+    projectLink.textContent = support.project;
     const acknowledgement = document.createElement("p");
-    acknowledgement.append("Sponsored by ", foundationLink, `’s ${support.project} project.`);
+    acknowledgement.append("Sponsored by ", projectLink, ".");
     element.replaceChildren(logoLink, acknowledgement);
   }
 }

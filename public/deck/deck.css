@@ -24,8 +24,6 @@
 
 .report-count{font-size:1rem;line-height:1.5;color:var(--muted)}
 
-.slide .support-credit{font-size:var(--deck-support-size);margin-top:auto}
-.slide .support-credit p{max-width:48ch}
-.slide .support-logo img{width:165px}
+.slide .support-credit{--support-desktop-logo-width:165px;margin-top:auto}
+.slide .support-credit p{font:inherit}
 .dark .support-credit{color:var(--paper)}
-@media(max-width:450px){.slide .support-logo img{width:105px}}

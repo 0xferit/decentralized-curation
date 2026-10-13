@@ -257,4 +257,4 @@ The assessment workshop makes goals and evidence weights explicit. The Unjournal
 
 ## 32. Does the conference reaction establish demand for your system?
 
-No. The presenter heard dissatisfaction with research assessment and rewards. That is motivation to investigate the problem, not evidence that attendees endorse this solution, would adopt it or would pay for it. Those require separate observations and tests. The workshop itself can reveal comprehension and experience under its simplified rules, not demand or security of the full system.
+No. The conference memo informs how the presentation addresses this audience. The author has worked on the thesis since 2021; it did not originate at this meeting. The memo is not evidence that attendees endorse this solution, would adopt it or would pay for it. Those require separate observations and tests. The workshop itself can reveal comprehension and experience under its simplified rules, not demand or security of the full system.

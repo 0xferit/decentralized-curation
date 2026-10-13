@@ -54,7 +54,7 @@ For this mechanism, the creator states the policy, jurors assess contributions, 
 
 ## Conference observations and adjacent work
 
-Ferit Tunçer’s memo of 13 October 2026 supplies firsthand motivation for the opening: he heard recurring dissatisfaction with how research is assessed and rewarded, alongside discussion of preservation, discovery, modular publication and attribution. These are informal observations, not a representative survey or evidence of demand for this particular mechanism. The presentation does not infer adoption, willingness to pay, collaboration or efficacy from them.
+Ferit Tunçer’s memo of 13 October 2026 informs the choice of examples and language for the research audience: assessment and rewards, preservation, discovery, modular publication and attribution. It is audience context, not an origin story for the thesis. The author dates his work on the thesis to 2021. The memo’s informal observations do not establish representative demand, adoption, willingness to pay, collaboration or efficacy.
 
 The [official Institute of Open Science Practices programme](https://www.iosp.science/) separates preservation, sharing, assessment and funding. Its modular-science session describes separately attributable research components. Its assessment exercise asks participants to adopt a funder’s perspective, choose a goal and evidence weights, and construct an inspectable algorithm. The hypothetical budget is an exercise premise, not money being awarded. The session is led by Anne Fouilloux of Science Live with Jonathan Starr and Ellie DeSota of SciOS; it should not be attributed to SciOS alone. The public programme lists the conference as 12–15 October 2026.
 

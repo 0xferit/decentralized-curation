@@ -15,7 +15,7 @@ export const SESSION = Object.freeze({
   project: PROJECT,
   event: "Institute of Open Science Practices (IOSP) 2026, Leiden",
   day: "Wednesday 14 October 2026, 14:00 to 15:20",
-  venue: "Workshop room, Poortgebouw, Leiden",
+  venue: "Venue to be confirmed",
   site: SITE,
   publicAddressConfirmed: !SITE.includes(PUBLIC_ADDRESS_PLACEHOLDER),
   roomCode: "leiden",

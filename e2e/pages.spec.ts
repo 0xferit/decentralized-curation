@@ -80,13 +80,13 @@ test("session pages fit a phone and execute without page errors", async ({ page 
   expect(errors).toEqual([]);
 });
 
-test("full mechanism precedes the workshop and its real jury remains interactive", async ({
+test("funding application precedes the workshop and its real jury remains interactive", async ({
   page,
 }) => {
   await page.setViewportSize(PHONE);
   await page.goto("/deck/");
   await expect(page.locator("section.slide")).toHaveCount(24);
-  await expect(page.locator("#s3")).toContainText("The full mechanism");
+  await expect(page.locator("#s3")).toContainText("A funding application");
   await expect(page.locator("#s9")).toContainText("Accuracy");
   await expect(page.locator("#s7")).toContainText("Appeal");
   await expect(page.locator("#s14")).toContainText("Workshop arithmetic");

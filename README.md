@@ -24,7 +24,7 @@ Choose the docket before summoning. The default projects and available spares co
 
 A juror whose device wakes after grading may open a matching seal, but that late reveal does not change the result. Jurors joining after a nominee opens wait for the next nominee. Hosting can be taken over with confirmation. Starting a new game reseats everyone; wiping empties the room's documents and leases.
 
-The deck leads with the full funding system: nominations, accuracy disputes, drawn relevance juries, appeals, continuous allocation and re-scoring. The live workshop isolates one relevance exercise; Arrow is presented as a precursor experiment. The [source register](docs/presentation-sources.md) records version choices and claim boundaries, and the [facilitator guide](docs/facilitator-guide.md) maps the eighty-minute session to the slides.
+The deck introduces the broader credible-consensus thesis through a funding application: nominations, accuracy disputes, drawn relevance juries, appeals, continuous allocation and re-scoring. The live workshop isolates one relevance exercise; Arrow is presented as a precursor experiment. The [source register](docs/presentation-sources.md) records version choices and claim boundaries, and the [facilitator guide](docs/facilitator-guide.md) maps the eighty-minute session to the slides.
 
 ## Verify
 

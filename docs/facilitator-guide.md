@@ -1,6 +1,6 @@
 # Facilitator guide
 
-Run this as an eighty-minute workshop about the full decentralized curation mechanism and its aim of turning private incentives into public benefit. The opening worked example calculates funding rates from adjustable scores for a real contribution. The later live jury examines one component; neither activity simulates the entire protocol. Times run from the session start. Slides 21 to 24 are optional references.
+Run this as an eighty-minute workshop about the decentralized curation thesis and its aim of turning private incentives into credible consensus and public benefit. Public-goods funding is the application explored here. The opening worked example calculates funding rates from adjustable scores for a real contribution. The later live jury examines one component; neither activity simulates the entire protocol. Times run from the session start. Slides 21 to 24 are optional references.
 
 ## Before people arrive
 
@@ -18,7 +18,7 @@ Summon the jury from the laptop: enter an alias, keep the six default nominees s
 
 | Time | Slides | Purpose and action |
 | --- | --- | --- |
-| 0:00 to 0:25 | 1 to 11 | Explain the complete mechanism with NumPy's real release evidence. Change scores and follow the calculated allocation through an appeal, a separate accuracy branch and re-scoring. End with its dependencies and limits. |
+| 0:00 to 0:25 | 1 to 11 | Explain the funding application with NumPy's real release evidence. Change scores and follow the calculated allocation through an appeal, a separate accuracy branch and re-scoring. End with its dependencies and limits. |
 | 0:25 to 0:32 | 12 to 14 | Join the room, read the shared policy and use the payment widget. Make the workshop's simplifications explicit. |
 | 0:32 to 0:59 | 15 | Play all six nominees. Allow about four and a half minutes each: roughly three minutes to score, recover phones, reveal and grade; ninety seconds to discuss. |
 | 0:59 to 1:09 | 16 and 17 | Debrief the results and collusion widget. Then examine attacks, responses and remaining weaknesses. |
@@ -27,9 +27,11 @@ Summon the jury from the laptop: enter an alias, keep the six default nominees s
 
 These are facilitation allowances, not changes to the game's scoring clock. If joining or paper collection takes longer, shorten discussion explicitly. Processing a round and interpreting it are separate work.
 
-## Explain the full mechanism first
+## Explain the thesis, then the funding application
 
 Open with: “Can we make useful assessment and correction rewarding, so that people pursuing their own interests help produce better public decisions? That is the ambition. A good funding decision still needs informed judgment and a purpose worth serving. A focused group can study the evidence, while affected people can reveal needs and consequences it missed.”
+
+State the scope: “Credible consensus is the general design problem. Today we explore public-goods funding as one application.”
 
 Then name the intermediate objective: “Credible consensus: a collective judgment people have reason to rely on. The final aim is public benefit, not agreement for its own sake or a claim to certify truth.” The [research framing](presentation-sources.md#judgment-and-public-accountability) supports combining informed judgment with participation and scrutiny. It does not establish that monarchy produces better decisions or that democracy only counts preferences.
 
@@ -37,7 +39,7 @@ Explain what credibility requires: inspectable evidence, a public policy, incent
 
 Use the NumPy 2.0.0 release throughout. Say: “The release and source records are real. This nomination, its curator scores and its funding parameters are illustrative. No NumPy application, payment or accuracy ruling is being reported.” The shared policy scores the nominee; the release is evidence about its work, not the entire object being scored.
 
-- **Slides 1 to 3:** Separate who assesses a contribution from whose needs the assessment serves. Then name the complete loop: the creator states the policy; jurors assess relevance; wider participants can supply evidence, fund eligible challenges and crowdfund relevance appeals; resulting weights determine continuing funding. Funding requirements can limit access; an unopposed funded position returns its contributions in full without a jury fee. This is delegated assessment with correction paths, not a guarantee that everyone is represented. Return to the map whenever a component is mistaken for the whole system.
+- **Slides 1 to 3:** Separate who assesses a contribution from whose needs the assessment serves. Then name the funding application's complete loop: the creator states the policy; jurors assess relevance; wider participants can supply evidence, fund eligible challenges and crowdfund relevance appeals; resulting weights determine continuing funding. Funding requirements can limit access; an unopposed funded position returns its contributions in full without a jury fee. This is delegated assessment with correction paths, not a guarantee that everyone is represented. Return to the map whenever a component is mistaken for the whole system.
 - **Slides 4 and 5:** Read the scoring prompt and anchors generated from the shared policy. The creator chooses the policy; publishing it makes the criterion inspectable, not democratically authorized. The pool fixes economic terms; the prompt states what curators score and the rubric guides how they score it. Inspect the release announcement, delivered capabilities, SciPy's preparation for compatibility, and NumPy's migration costs. A nomination identifies a beneficiary, supplies evidence, requests an applied weight and posts a deposit in the funding asset. A requested weight is a ceiling, not a promised share.
 - **Slide 6:** Move a curator's score and inspect the weighted mean. Six drawn tickets belong to three illustrative curators: stake buys potential seats, not certified expertise or six independent people. These controls represent revealed reports; they do not enact commit and reveal. The current contract binds each reveal to a commitment but accepts early reveals while other jurors can still commit. Do not promise that it prevents score copying. Reset the example before showing the baseline below.
 - **Slide 7:** Apply the twelve-ticket appeal result. In this adjudicated example, the final jury’s mean supplies the adopted relevance score; its median and median absolute deviation supply a separate grading reference for reports across the case. Explain that anyone, including the nominator, may fund a fixed-score position. Two different funded scores are counterparties, even if neither defends the previous ruling. Keep the bounded admission window open for later proposals. All admitted positions share a later funding deadline. With at least two funded positions, draw the shared jury after admission closes and all admitted funding outcomes are known; if any position is partial, wait for the common deadline to determine funded positions and full-refund entitlements. The appellant may serve if drawn. The calculator illustrates score replacement and omits contribution transfers, jury fees and backer payouts. Discuss inverse-distance settlement and its limits after the simple demonstration, using the [appeal notes](presentation-sources.md#appeal-crowdfunding).

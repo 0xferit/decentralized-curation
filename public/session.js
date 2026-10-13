@@ -62,11 +62,8 @@ export function renderSupport(root = document) {
     logo.width = 165;
     logo.height = 46;
     logoLink.append(logo);
-    const projectLink = document.createElement("a");
-    projectLink.href = support.projectUrl;
-    projectLink.textContent = support.project;
     const acknowledgement = document.createElement("p");
-    acknowledgement.append("Sponsored by ", projectLink, ".");
-    element.replaceChildren(logoLink, acknowledgement);
+    acknowledgement.textContent = "Sponsored by";
+    element.replaceChildren(acknowledgement, logoLink);
   }
 }

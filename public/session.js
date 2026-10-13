@@ -11,7 +11,7 @@ const LICENCE = `code ${CODE_LICENCE}, original text and figures ${CONTENT_LICEN
 
 export const SESSION = Object.freeze({
   title: "Decentralized curation",
-  subtitle: "Private incentives, credible consensus, public benefit",
+  subtitle: "Putting self-interest to work for the public good.",
   project: PROJECT,
   event: "Institute of Open Science Practices (IOSP) 2026, Leiden",
   day: "Wednesday 14 October 2026, 14:00 to 15:20",

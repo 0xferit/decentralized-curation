@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "@playwright/test";
 import { PDFDocument } from "pdf-lib";
+import { SESSION } from "../public/session.js";
 
 const ORIGIN = process.env["PRINT_ORIGIN"] || "http://localhost:8787";
 const OUT = fileURLToPath(new URL("../public/handout/handout.pdf", import.meta.url));
@@ -22,6 +23,15 @@ try {
   const page = await context.newPage();
   await page.goto(`${ORIGIN}/handout/`, { waitUntil: "networkidle" });
   await page.waitForFunction(() => document.documentElement.dataset.ready === "true");
+  await page.evaluate((site) => {
+    for (const link of document.querySelectorAll("a[href]")) {
+      if (link.getAttribute("href").startsWith("#")) continue;
+      const target = new URL(link.href);
+      if (target.origin === location.origin) {
+        link.href = new URL(`${target.pathname}${target.search}${target.hash}`, site).href;
+      }
+    }
+  }, SESSION.site);
   await page.pdf({ path: OUT, format: "A4", printBackground: true, preferCSSPageSize: true });
   const document = await PDFDocument.load(await readFile(OUT));
   const pages = document.getPages();

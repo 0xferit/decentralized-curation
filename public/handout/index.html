@@ -12,7 +12,7 @@ body{margin:0}.handout{max-width:1000px;margin:auto;padding:2rem;display:flex;fl
 <section class="section intro"><h2>Who judges what matters?</h2><p>Decentralized Curation uses human judgment, incentives and challenges to build shared assessments under a chosen policy. Those assessments can guide what we read, reuse or reward. <strong>Here we apply the framework to public-goods funding.</strong></p></section>
 <div class="columns"><div class="column">
 <section class="section"><h2>The funding application</h2><ol><li><strong>Set the policy.</strong> Define what matters and pay for curation. Funding for beneficiaries can arrive later.</li><li><strong>Nominate work.</strong> Anyone can name a beneficiary, publish claims and evidence, and put down a deposit. Claims can enter before being fact-checked.</li><li><strong>Judge relevance.</strong> People lock tokens they risk losing to enter the jury lottery. Selected jurors score independently under the policy.</li><li><strong>Keep scores current.</strong> Renew scores periodically. Anyone can fund an objection; competing funded proposals trigger an appeal with a larger jury.</li><li><strong>Publish allocation shares.</strong> Curated weights determine how available or later funding is divided.</li><li><strong>Challenge facts at any time.</strong> Anyone can challenge an active nomination’s claims. An external arbitrator decides. False or untestable claims cost the nomination its deposit and future funding. Past earnings are kept; a new nomination is allowed.</li></ol></section>
-<section class="section"><h2>Fund curation. Distribute later.</h2><figure class="weight-figure"><div class="vector" id="allocation-vector" aria-label="Illustrative allocation vector"></div><div class="allocation-bar" id="allocation-bar" aria-hidden="true"></div><p class="vector-total" id="allocation-total"></p><figcaption>Illustrative shares, not measured fractions of public benefit. Any later distribution budget can follow them. No positive weights means no allocation.</figcaption></figure></section>
+<section class="section"><h2>Fund curation. Distribute later.</h2><figure class="weight-figure"><div class="vector" id="allocation-vector" aria-label="Illustrative allocation vector"></div><div class="allocation-bar" id="allocation-bar" aria-hidden="true"></div><p class="vector-total" id="allocation-total"></p><figcaption>Illustrative allocation, not actual project ratings or measured fractions of public benefit. Any later distribution budget can follow them. No positive weights means no allocation.</figcaption></figure></section>
 </div><div class="column">
 <section class="section"><h2>One example: research infrastructure</h2><div class="policy-card"><p id="policy-prompt"></p><div class="policy-tests" id="policy-tests"></div><div class="policy-scale" id="policy-scale" aria-label="Relevance score scale"></div></div><p class="fine">Each pool chooses its own policy. <a href="/mechanism/#workshop">Policy context and attribution.</a></p></section>
 <section class="section"><h2>Today: try relevance scoring</h2><div class="workshop-sequence" aria-label="Workshop sequence"><span><b>1</b>Read the policy</span><span><b>2</b>Score alone</span><span><b>3</b>Seal your score</span><span><b>4</b>Reveal together</span></div><p>An equal-seat points game about relevance scoring. Full jury selection, accuracy disputes, appeals and funding are outside this exercise.</p><p>Use an alias or observe. Revealed scores and standings are public; role-play may be assigned. Keep score proofs private; ask before photos. The host wipes results afterward.</p></section>
@@ -24,7 +24,7 @@ body{margin:0}.handout{max-width:1000px;margin:auto;padding:2rem;display:flex;fl
 import { SESSION, roomUrl, joinUrl, renderSupport } from "/session.js";
 renderSupport();
 import { roomPath } from "/protocol.js";
-import { POLICY } from "/domain.js";
+import { POLICY, NOMINEES } from "/domain.js";
 document.getElementById("document-label").textContent = document.title;
 const pending = !SESSION.publicAddressConfirmed;
 for (const element of document.querySelectorAll("[data-session]")) element.textContent = SESSION[element.dataset.session];
@@ -67,9 +67,9 @@ for (const [score, description] of POLICY.anchors) {
   document.getElementById("policy-scale").append(item);
 }
 const illustrativeWeights = [
-  { label: "A", weight: 5 },
-  { label: "B", weight: 3 },
-  { label: "C", weight: 2 },
+  { key: "numpy", weight: 5 },
+  { key: "arxiv", weight: 3 },
+  { key: "linux", weight: 2 },
 ];
 const totalWeight = illustrativeWeights.reduce((sum, entry) => sum + entry.weight, 0);
 const vector = document.getElementById("allocation-vector");
@@ -82,12 +82,12 @@ function vectorBracket(text) {
   return bracket;
 }
 vector.append(vectorBracket("["));
-for (const { label, weight } of illustrativeWeights) {
+for (const { key, weight } of illustrativeWeights) {
   const share = weight / totalWeight;
   const entry = document.createElement("div");
   entry.className = "vector-entry";
   const name = document.createElement("span");
-  name.textContent = label;
+  name.textContent = NOMINEES.find((nominee) => nominee.key === key).name;
   const value = document.createElement("b");
   value.textContent = share.toFixed(2);
   entry.append(name, value);

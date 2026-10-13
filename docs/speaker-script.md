@@ -22,15 +22,23 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 2 minutes. Elapsed: 0:01 to 0:03.**
 
-“Think about work that research depends on but that a publication count struggles to describe: maintaining software, preserving data, improving a method or finding an important error. Someone still has to decide what that work contributes and how to recognize it.
+“Think about work that research depends on but that a publication count struggles to describe: maintaining software, preserving data or finding an important error. Someone still has to judge what that work contributes.
 
-“Metrics can help us. But choosing a metric, choosing its weight and interpreting the result already involve judgment. Moving that judgment into a formula does not remove the underlying choices.
+“Metrics can help, but choosing and interpreting them already involve judgment. Let us try a twenty-second coordination game.
 
-“I want to make those choices visible, make assessment worth doing, and make weak assessments worth challenging. The immediate aim is credible consensus: a collective judgment that people have reasons to rely on. The further aim is that decisions based on it benefit the people they affect.
+“Look at the three scannable codes on your handout. Without talking or scanning, silently choose left, middle or right: which do you think most other people here will choose? Your goal is to match the group. Keep your choice private for now.
 
-“Those are two separate tests. Getting people to agree does not, by itself, pass either one.”
+[Allow five silent seconds. Do not point out the middle code's dark green color yet. This is a quick show of hands, with no money or app scoring.]
 
-[Invite one brief example of valuable work that is poorly recognized. Take the example without trying to solve it yet.]
+“On the count of three, reveal together: one finger for left, two for middle or three for right. One, two, three.
+
+[Observe the distribution before pointing out the middle code's dark green color. If choices cluster, name the cluster. If there is a tie or no clear cluster, say: “We did not find one shared choice this time.”]
+
+“I made the middle code green. A cue like that can focus expectations: I notice it, and expect others to notice it too. That shared focal point is called a Schelling point.
+
+“Our curation game aims to make honest assessment that shared focal point. The goal is credible consensus: a collective judgment people have reasons to rely on.”
+
+[The code labels also influence choices. Do not claim that the color caused the result or that this exercise proves honesty. Keep the two-minute slot; this replaces the audience example.]
 
 ## 3. One application: public-goods funding
 
@@ -166,9 +174,15 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 2 minutes. Elapsed: 0:23 to 0:25.**
 
-“For this to work well, several things have to go right. The policy must serve a defensible purpose. Relevant evidence must be accessible. Assessors must have enough knowledge and independence. People must be able to discover a problem and afford to contest it.
+“For this to work well, we need a worthwhile goal, usable evidence and informed, independent assessors. We also need ways to challenge mistakes.
 
-“A contract can enforce encoded procedures and transfers. It cannot certify expertise, eliminate shared bias or make a bad objective good. More stake and more agreement do not establish those things either.
+“Honesty, care and competence are different. Honesty means reporting sincerely. Care means taking the time to examine the evidence. Competence means having the knowledge and ability to judge it. Someone can be honest and careful yet misunderstand the subject.
+
+“Fees compensate the work; rewards and penalties aim to make careful assessment worthwhile. Paying someone does not create expertise or prove they did the work.
+
+“Competition over repeated rounds aims to make uninformed guessing a losing strategy. Expected losses discourage entry. Someone who keeps participating and losing gives up tokens. As their stake shrinks relative to competitors’, they are drawn less often and have less influence.
+
+“This selects for competence only if informed judgment outperforms guessing after fees, rewards, penalties and effort. That is what we need to test.
 
 “There are also real governance choices. The inspected funding implementation has a configured, time-limited authority that can permanently stop future accrual once. That holder cannot take funding already accrued. We should make that authority visible when discussing the system.
 
@@ -399,6 +413,14 @@ These are optional answers, not another presentation segment. The [source regist
 ### What if the nomination is edited?
 
 “A jury and its appeals remain attached to the revision they assessed. Editing does not erase that funded contest or transfer its judgment to new content. A new revision needs its own adopted score for score-dependent funding. Previously earned money stays attributed to the earlier revision and remains claimable. Content identifiers establish which revision is being judged; they do not guarantee that its evidence stays available.”
+
+### How do honesty, care and competence differ?
+
+“Honesty concerns whether you report your judgment sincerely. Care concerns whether you do the work to examine the evidence. Competence concerns whether you have the knowledge and ability to judge it. An honest, careful person can still lack expertise.
+
+“Fees compensate service, not measured effort or expertise. Rewards and penalties aim to make careful, informed work worthwhile; hidden scores address reporting incentives.
+
+“Repeated competition aims to make uninformed guessing unprofitable. Expected losses deter entry; continued losses shrink relative stake, draw chances and influence. This selects for competence only if informed judgment has an advantage. Service fees could outweigh token losses, so we must test total returns.”
 
 ### Does this guarantee honest or sound judgment?
 

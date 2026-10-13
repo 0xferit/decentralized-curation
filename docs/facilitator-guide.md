@@ -29,9 +29,14 @@ These are facilitation allowances, not changes to the game's scoring clock. If j
 
 ## Explain the thesis, then the funding application
 
-Open with: “Can we make useful assessment and correction rewarding, so that people pursuing their own interests help produce better public decisions? That is the ambition. A good funding decision still needs informed judgment and a purpose worth serving. A focused group can study the evidence, while affected people can reveal needs and consequences it missed.”
+Open with: “In conversations here, I heard a recurring concern: we are opening up research, but who decides what counts, and what do we reward? Data, software, methods and corrections all matter. My thesis asks whether we can make assessment and useful challenges privately worthwhile, so that individual incentives help us form credible collective judgments.”
 
 State the scope: “Credible consensus is the general design problem. Today we explore public-goods funding as one application.”
+
+Use the conference memo as firsthand motivation, not a survey or evidence of demand, adoption or efficacy. Acknowledge preservation, discovery and granular attribution as distinct parts of the research infrastructure. This mechanism depends on accessible evidence; it does not supply those other layers by itself. Explain the relationship between metrics and judgment: choosing a measure, its weight and its interpretation embeds a purpose. Metrics can help, and a jury score can also be gamed. The relevant question is how assessment can be inspected, challenged and improved.
+
+Use Appendix C when participants ask about adjacent work. The assessment workshop makes funder goals and evidence weights inspectable; The Unjournal already pays for public expert evaluation; the Open Source Endowment combines published measures with human review and board approval; Matadisco supports discovery. Present these as complementary approaches, not failed competitors or confirmed partners. The distinction to investigate is the proposed organization of participation, incentives and correction. See the [conference context and source checks](presentation-sources.md#conference-observations-and-adjacent-work).
+
 
 Then name the intermediate objective: “Credible consensus: a collective judgment people have reason to rely on. The final aim is public benefit, not agreement for its own sake or a claim to certify truth.” The [research framing](presentation-sources.md#judgment-and-public-accountability) supports combining informed judgment with participation and scrutiny. It does not establish that monarchy produces better decisions or that democracy only counts preferences.
 

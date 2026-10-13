@@ -52,6 +52,18 @@ The opening asks how private rewards can support useful assessment and correctio
 
 For this mechanism, the creator states the policy, jurors assess contributions, and wider participants can supply evidence or pay to pursue eligible challenges and appeals. The resulting weights govern allocation. The contracts enforce specified procedures and financial consequences. Whether the policy serves affected people, whether assessors are competent, and whether correction paths are usable remain separate questions to investigate. Publishing a policy is not democratic authorization; stake is not proof of expertise. The manuscript [makes those limits explicit](https://github.com/0xferit/manuscript-decentralized-curation/blob/9927927cebd11f3b4e66f80bebee65b3248af919/paper.qmd#L686-L694): public benefit is an objective, not an additional quality score, and exit has not been shown equivalent to effective public participation.
 
+## Conference observations and adjacent work
+
+Ferit Tunçer’s memo of 13 October 2026 supplies firsthand motivation for the opening: he heard recurring dissatisfaction with how research is assessed and rewarded, alongside discussion of preservation, discovery, modular publication and attribution. These are informal observations, not a representative survey or evidence of demand for this particular mechanism. The presentation does not infer adoption, willingness to pay, collaboration or efficacy from them.
+
+The [official Institute of Open Science Practices programme](https://www.iosp.science/) separates preservation, sharing, assessment and funding. Its modular-science session describes separately attributable research components. Its assessment exercise asks participants to adopt a funder’s perspective, choose a goal and evidence weights, and construct an inspectable algorithm. The hypothetical budget is an exercise premise, not money being awarded. The session is led by Anne Fouilloux of Science Live with Jonathan Starr and Ellie DeSota of SciOS; it should not be attributed to SciOS alone. The public programme lists the conference as 12–15 October 2026.
+
+[Matadisco](https://matadisco.org/) publishes metadata pointers through AT Protocol for independent discovery services. It separates discovery from storage and describes itself as experimental. Neither discovery nor persistence establishes research quality. The [Unjournal overview](https://info.unjournal.org/) describes paid, public expert evaluation, ratings and author responses. Paying reviewers and publishing evaluations are therefore existing practices, not sufficient novelty claims for this proposal. Its reported compensation varies between pages and is not quoted in the materials.
+
+The [Open Source Endowment’s grantmaking description](https://endowment.dev/faq/) combines published value, risk and eligibility measures with human due diligence and board approval. It is not purely automatic allocation, and its criticality and underfunding objectives differ from this workshop’s current-reliance rubric. Its [team page](https://endowment.dev/about/) identifies Jonathan Starr as Executive Director. These descriptions support a comparison of institutional choices, not a ranking of demonstrated performance.
+
+The presentation treats metric selection and interpretation as judgments under a chosen purpose. It does not infer that metrics are useless or that numerical scores can establish quality without further evidence. The proposal’s own scores and rewards can be manipulated. Likewise, its objective is to reduce dependence on a single trusted evaluator through public rules, incentives and correction, not to prove that trust, competence or social coordination have been eliminated.
+
 ## Audience-accessible scope and evaluation
 
 The [public mechanism summary](../public/mechanism/index.html), served at `/mechanism/`, gives attendees an inspectable description of the intended policy, nomination, jury, appeal, allocation and recovery boundaries. It distinguishes the hosted points game, published research, local working choices and implementation evidence. It publishes no private code or benchmark and cannot make the access-controlled implementation reproducible. Claims about that implementation remain source-inspected observations from the reviewed snapshot, not independently verifiable deployment claims. The full private Arrow protocol was not inspected for this review.
@@ -302,7 +314,7 @@ For facilitation: present the loop first, identify what the exercise isolates, t
 
 ## Preparation method
 
-The narrative and visual review used the scientific-slides workflow from [Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents](https://arxiv.org/abs/2609.00065), by Timothy Kassis and colleagues (2026). This is a preparation-method reference, not evidence for the curation mechanism.
+The narrative and visual review used the scientific-slides and scientific-critical-thinking workflows from [Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents](https://doi.org/10.48550/arXiv.2609.00065), by Timothy Kassis, Vinayak Agarwal, Yuhuan He, Darshil Patel and Aubrey M. Brueckner (2026). This is a preparation-method reference, not evidence for the curation mechanism. The current record was checked for the conference-memo revision.
 
 ## Conference sponsorship and logo
 

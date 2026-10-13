@@ -245,3 +245,16 @@ For illustration, other active weight of 0.9 and one contribution credited 0.6 p
 Use an alias. The joining notice explains that aliases, revealed scores and standings are visible to the room, that some rounds assign an adversarial role, and that participants may decline a role, sit a nominee out or watch without joining. These are ordinary choices and need no claim about competence.
 
 Session records remain until the host wipes them; the system supplies no automatic expiry. The facilitator must perform and verify that wipe after the closing discussion. Wiping the room preserves server-side seat authentication and does not remove participants' browser-stored credentials or sealed-score proofs, or recall screenshots. Ask permission before photographing or sharing identifiable results. Joining this teaching exercise is not automatic consent to research reuse or indefinite retention of identifiable data.
+
+
+## 30. Are you arguing against metrics?
+
+No. A measure can provide useful evidence. Choosing what to measure, how to weight it and what decision follows involves judgment under a purpose. Making those choices inspectable helps others question them. The jury’s numerical score is also a potential target for manipulation; neither using people nor using a number makes an assessment correct. The proposal needs independent tests of evidence use, correction and outcomes.
+
+## 31. How does this relate to the other work presented here?
+
+The assessment workshop makes goals and evidence weights explicit. The Unjournal already commissions paid public expert evaluations and publishes ratings and responses. The Open Source Endowment combines published measures with human due diligence and board approval. Matadisco supports research discovery. These are complementary institutional choices. This proposal explores participation, economic incentives and challenge paths; their relative effectiveness has not been established. See the [conference context and primary sources](presentation-sources.md#conference-observations-and-adjacent-work).
+
+## 32. Does the conference reaction establish demand for your system?
+
+No. The presenter heard dissatisfaction with research assessment and rewards. That is motivation to investigate the problem, not evidence that attendees endorse this solution, would adopt it or would pay for it. Those require separate observations and tests. The workshop itself can reveal comprehension and experience under its simplified rules, not demand or security of the full system.

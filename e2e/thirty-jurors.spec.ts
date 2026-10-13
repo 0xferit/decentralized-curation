@@ -1,4 +1,5 @@
 import { type BrowserContext, expect, type Page, test } from "@playwright/test";
+import { SCORE_MAX } from "../public/protocol.js";
 
 const JURORS = 30;
 const NOMINEES = 6;
@@ -36,7 +37,7 @@ async function setScore(page: Page, score: number): Promise<void> {
     const input = el as HTMLInputElement;
     input.value = String(value);
     input.dispatchEvent(new Event("input", { bubbles: true }));
-  }, score);
+  }, score / SCORE_MAX);
 }
 
 async function seal(page: Page, score: number): Promise<void> {

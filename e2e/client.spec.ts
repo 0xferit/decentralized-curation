@@ -216,11 +216,11 @@ test("concurrent tabs reveal the final seal even when older acknowledgement arri
     await second.goto(`${ORIGIN}/r/regression`);
     await second.locator("#rng").waitFor();
     assert.equal(await first.locator("#app img, #app svg").count(), 0);
-    await first.locator("#rng").fill("35");
+    await first.locator("#rng").fill("0.35");
     await first.locator("#seal").click();
     await second.locator("#chg").waitFor();
     await second.locator("#chg").click();
-    await second.locator("#rng").fill("71");
+    await second.locator("#rng").fill("0.71");
     await second.locator("#seal").click();
     await second.waitForFunction(() =>
       Object.keys(localStorage).some(
@@ -252,7 +252,7 @@ test("a refused replacement shows failure and preserves the confirmed seal", asy
     const page = await context.newPage();
     await page.goto(`${ORIGIN}/r/regression`);
     await page.locator("#rng").waitFor();
-    await page.locator("#rng").fill("35");
+    await page.locator("#rng").fill("0.35");
     await page.locator("#seal").click();
     await page.locator("#chg").waitFor();
     room.acknowledgeFirst();
@@ -263,7 +263,7 @@ test("a refused replacement shows failure and preserves the confirmed seal", asy
     );
     room.refuseNextSeal();
     await page.locator("#chg").click();
-    await page.locator("#rng").fill("71");
+    await page.locator("#rng").fill("0.71");
     await page.locator("#seal").click();
     await page.locator(".net-banner").waitFor();
     assert.match((await page.locator(".net-banner").textContent()) || "", /game moved on/);
@@ -284,12 +284,12 @@ test("seal, replacement, recusal and return preserve false in conditional writes
     const room = await isolatedRoom(context);
     const page = await context.newPage();
     await page.goto(`${ORIGIN}/r/regression`);
-    await page.locator("#rng").fill("35");
+    await page.locator("#rng").fill("0.35");
     await page.locator("#seal").click();
     await page.locator("#chg").waitFor();
     room.acknowledgeFirst();
     await page.locator("#chg").click();
-    await page.locator("#rng").fill("71");
+    await page.locator("#rng").fill("0.71");
     await page.locator("#seal").click();
     await page.locator("#chg").waitFor();
     assert.equal(room.seals(), 2);
@@ -318,7 +318,7 @@ test("an accepted seal survives lost reply and snapshot, timeout, reload and rev
     const page = await context.newPage();
     await page.clock.install();
     await page.goto(`${ORIGIN}/r/regression`);
-    await page.locator("#rng").fill("49");
+    await page.locator("#rng").fill("0.49");
     room.dropNextSealReply();
     await page.locator("#seal").click();
     await page.waitForFunction(() =>
@@ -378,7 +378,7 @@ test("restoring a persisted page reauthenticates the same seat and reveals its s
     const room = await isolatedRoom(context);
     const page = await context.newPage();
     await page.goto(`${ORIGIN}/r/regression`);
-    await page.locator("#rng").fill("62");
+    await page.locator("#rng").fill("0.62");
     await page.locator("#seal").click();
     await page.locator("#chg").waitFor();
     room.acknowledgeFirst();

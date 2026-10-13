@@ -255,6 +255,7 @@ const COMMIT_DURATION_S = 60;
 const BLOC_FRACTION = 0.55;
 const BLOC_TOLERANCE = 0.05;
 const NEUTRAL_SCORE = (SCORE_MIN + SCORE_MAX) / 2;
+const SCORE_INPUT_STEP = 1 / SCORE_MAX;
 const SUMMON_LEASE_MS = 15000;
 const LABEL_FLIP = 0.5;
 const TRACK_MIN_HEIGHT = 180;
@@ -876,10 +877,10 @@ function netBanner() {
 }
 
 function lawBlock() {
-  return `<div class="law"><h3>Our curation policy for ${esc(POLICY.scope)}</h3><p class="law-prompt">${esc(POLICY.prompt)}</p>` +
+  return `<div class="law"><h3>Example pool policy: ${esc(POLICY.scope)}</h3><p class="law-prompt">${esc(POLICY.prompt)}</p><p class="fine">Workshop exercise: use brief descriptions and prior knowledge.</p><p class="fine">${esc(POLICY.attribution)}</p>` +
     `<div class="scaleviz"><div class="bar"></div><div class="ticks">${POLICY.anchors.map((a) => `<span><b>${a[0]}</b>${esc(a[1])}</span>`).join("")}</div></div>` +
     '<div class="lawkey">Consider, in this order</div>' +
-    `<div class="rubric"><table><thead><tr><th>worked example</th>${POLICY.tests.map((t) => `<th>${esc(t)}</th>`).join("")}</tr></thead><tbody>` +
+    `<div class="rubric"><table><caption>Hypothetical examples; stipulated scores.</caption><thead><tr><th>example</th>${POLICY.tests.map((t) => `<th>${esc(t)}</th>`).join("")}</tr></thead><tbody>` +
     POLICY.worked.map((w) => `<tr><td class="s"><b>${w[0]}</b>${esc(w[1])}</td>${w[2].map((v) => `<td>${esc(v)}</td>`).join("")}</tr>`).join("") +
     `</tbody></table></div><p class="nyj"><span class="lawkey no">Not your job</span>${POLICY.separate.map(esc).join(" · ")}</p></div>`;
 }
@@ -974,7 +975,7 @@ function hostBar(inner) {
 
 function resetControls() {
   if (busy) return '<span class="fine">working…</span>';
-  const confirm = { end: ["cEnd", "Confirm: end the game"], new: ["cNew", "Confirm: new game"], wipe: ["cWipe", "Confirm: delete everything in this room"] }[pending];
+  const confirm = { end: ["cEnd", "Confirm: end the game"], new: ["cNew", "Confirm: new game"], wipe: ["cWipe", "Confirm: wipe session records"] }[pending];
   if (confirm) return `<button class="danger" id="${confirm[0]}">${confirm[1]}</button><button class="ghost" id="cX">Cancel</button>`;
   return `${state.phase !== GAME_PHASE.ENDED ? '<button class="ghost" id="bEnd">End the game</button>' : ""}<button class="ghost" id="bNew">New game</button><button class="ghost" id="bWipe">Wipe all</button>`;
 }
@@ -1142,7 +1143,12 @@ function renderWaiting() {
 }
 
 function nameBox() {
-  return `<input type="text" id="nm" placeholder="Your name" maxlength="${MAX_NAME_LENGTH}" autocomplete="off" value="${esc(myName)}">`;
+  return `<input type="text" id="nm" aria-label="Your alias" placeholder="Your alias" maxlength="${MAX_NAME_LENGTH}" autocomplete="off" value="${esc(myName)}">`;
+}
+
+function participationNotice() {
+  return '<div class="card"><h3>Before you join</h3><p class="fine">Use an alias. Your alias, revealed scores and standings are visible to the room. Some rounds assign an adversarial role for you to act out; you may decline it or sit a nominee out. Watching without joining is welcome.</p>' +
+    '<p class="fine">Session records remain stored until the host wipes them; there is no automatic expiry. Wiping keeps server-side seat authentication and does not clear the credentials or sealed-score proofs stored in your browser. Ask permission before photographing or sharing identifiable results.</p></div>';
 }
 
 function readName() {
@@ -1165,7 +1171,7 @@ function focusNameOnce() {
 }
 
 function renderSummon() {
-  app.innerHTML = `${netBanner()}<div class="card summonbar"><div class="stack"><h1>No jury summoned</h1><p class="fine">One jury at a time. Whoever summons it hosts it; everyone else takes a seat once it exists.</p></div>` +
+  app.innerHTML = `${netBanner()}${participationNotice()}<div class="card summonbar"><div class="stack"><h1>No jury summoned</h1><p class="fine">One jury at a time. Whoever summons it hosts it; everyone else takes a seat once it exists.</p></div>` +
     `<div class="row">${nameBox()}<button id="summon"${busy || !chosenDocket().length ? " disabled" : ""}>Summon a jury and host it</button></div></div>` +
     (seatMsg ? banner("amber", "Note", seatMsg) : "") + pickerBlock() + lawBlock();
   focusNameOnce();
@@ -1179,7 +1185,7 @@ function renderJoin() {
     '<div class="rule"><b>Graded against the jury, not against the truth</b>The nearer the jury’s centre you land, the larger your share of the round’s pot. The farther beyond the band, the more of your own stake you forfeit. The only thing all of you share is the policy.</div>' +
     `<div class="strip"><div><b>${n(GAME_ANTE)}</b><span>stake per nominee</span></div><div class="g"><b>+</b><span>near the jury</span></div><div class="r"><b>−</b><span>far from it</span></div></div>` +
     (myName ? '<p class="fine">A jury is summoned. Take your seat.</p>' : "") +
-    `<div class="row">${nameBox()}<button id="seat">Take a seat</button></div></div>${docketBlock()}${seatedBlock(false, false)}</div></div>`;
+    `${participationNotice()}<div class="row">${nameBox()}<button id="seat">Take a seat</button></div></div>${docketBlock()}${seatedBlock(false, false)}</div></div>`;
   focusNameOnce();
   const go = () => { const name = readName(); if (name) takeSeat(name); };
   document.getElementById("seat").addEventListener("click", go);
@@ -1198,7 +1204,7 @@ function renderLobby() {
 function blocInstruction() {
   const c = nomineeDef();
   if (!c.bloc || !state || !inBloc(myPid, state.seed, state.blocFraction)) return "";
-  return `<div class="banner bad"><b>Private: only you see this</b>You are in the bloc. <strong>Score ${esc(c.blocScore)}.</strong> If challenged, say ${esc(c.blocCover)}. That reading is excluded by the policy, but nobody can see <em>why</em> you scored, only what you scored. If enough of you comply the centre moves toward the bloc and the honest jurors forfeit to you.</div>` +
+  return `<div class="banner bad"><b>Private: assigned adversarial role</b>You are in the bloc. You may decline this role or sit this nominee out. To act it out, <strong>score ${esc(c.blocScore)}.</strong> If challenged, say ${esc(c.blocCover)}. That reading is excluded by the policy, but nobody can see <em>why</em> you scored, only what you scored. If enough of you comply, the centre can move toward the bloc and other jurors may forfeit. This is assigned role-play, not evidence that anyone independently chose to manipulate.</div>` +
     `<div class="banner amber"><b>Proving a sealed score is risky</b>Showing your score and salt words proves your current seal. A seated juror who receives a valid proof can report it and cost you ${n(LEAK_PENALTY)} of your stake, keeping ${n(LEAK_BOUNTY)}. The proof establishes that seal, not your final score: you can replace it until scoring closes.</div>`;
 }
 
@@ -1218,13 +1224,13 @@ function renderCommit() {
   const scorer = !seatedHere
     ? '<div class="banner amber"><b>You joined after this nominee opened</b>You will take part from the next nominee. Nothing is at stake for you here.</div>'
     : recused
-      ? `<div class="banner amber"><b>Recused</b>You have declared you do not know enough about ${esc(c.name)} to score it. No stake, no share, no fine for silence; a leak still costs.</div><div class="row"><button class="ghost" id="unrec">Take my seat back</button></div>`
+      ? '<div class="banner amber"><b>Sitting this nominee out</b>You chose not to submit a score. No stake, no share, no fine for silence; a leak still costs.</div><div class="row"><button class="ghost" id="unrec">Take my seat back</button></div>'
       : sealed
-      ? '<div class="banner good"><b>Sealed</b>Nobody can see your number, including the host. You can replace it until the scoring closes.</div><div class="row"><button class="ghost" id="chg">Change my score</button><button class="ghost" id="rec">Recuse myself</button></div>'
+      ? '<div class="banner good"><b>Sealed</b>Nobody can see your number, including the host. You can replace it until the scoring closes.</div><div class="row"><button class="ghost" id="chg">Change my score</button><button class="ghost" id="rec">Sit this nominee out</button></div>'
       : '<div class="rule"><b>Graded against the jury, not against the truth</b>The nearer the jury’s mean you land, the larger your share of the round’s pot. The farther beyond the band, the more of your own stake you forfeit; two bands out is all of it. The only thing all of you share is the policy.</div>' +
-        `<div class="bigscore" id="out">${fmtScore(myScore)}</div><input type="range" id="rng" min="${SCORE_MIN}" max="${SCORE_MAX}" step="1" value="${myScore}">` +
-        `<div class="ends"><span>0.00 ${esc(POLICY.anchors[0][1])}</span><span>1.00 ${esc(POLICY.anchors[POLICY.anchors.length - 1][1])}</span></div>${payoffShape()}` +
-        '<div class="row"><button id="seal">Seal and submit</button><button class="ghost" id="rec">I do not know enough</button></div>';
+        `<label class="fine" for="rng">Your relevance score for ${esc(c.name)}</label><div class="bigscore" id="out">${fmtScore(myScore)}</div><input type="range" id="rng" min="${fmtScore(SCORE_MIN)}" max="${fmtScore(SCORE_MAX)}" step="${SCORE_INPUT_STEP}" value="${fmtScore(myScore)}" aria-valuemin="${fmtScore(SCORE_MIN)}" aria-valuemax="${fmtScore(SCORE_MAX)}" aria-valuenow="${fmtScore(myScore)}" aria-valuetext="${fmtScore(myScore)}" aria-describedby="score-help"><p class="fine" id="score-help">Score from ${fmtScore(SCORE_MIN)} to ${fmtScore(SCORE_MAX)} in steps of ${SCORE_INPUT_STEP.toFixed(2)}. Arrow keys adjust one step; Home and End select the limits.</p>` +
+        `<div class="ends"><span>${fmtScore(SCORE_MIN)} ${esc(POLICY.anchors[0][1])}</span><span>${fmtScore(SCORE_MAX)} ${esc(POLICY.anchors[POLICY.anchors.length - 1][1])}</span></div>${payoffShape()}` +
+        '<div class="row"><button id="seal">Seal and submit</button><button class="ghost" id="rec">Sit this nominee out</button></div>';
   app.innerHTML = `${netBanner()}<div class="split"><div class="stack">${nomineeBlock(c)}${lawBlock()}</div><div class="stack">${seatedHere ? blocInstruction() : ""}` +
     `<div class="card"><div class="strip"><div><b>${n(GAME_ANTE)}</b><span>${seatedHere ? "your stake" : "seated juror’s stake"}</span></div><div><b>${n(C.ROUND_REWARD)}</b><span>round reward, forfeits join it</span></div>` +
     `<div><b>${gate.nSealed}/${(meta(state.nomineeIdx).seated || []).length - gate.nRecused}</b><span>sealed</span></div>${gate.nRecused ? `<div><b>${gate.nRecused}</b><span>recused</span></div>` : ""}${nChanged ? `<div><b>${nChanged}</b><span>changed a seal</span></div>` : ""}</div>${scorer}</div>` +
@@ -1239,7 +1245,13 @@ function renderCommit() {
   if (seatedHere && !sealed && !recused) {
     const rng = document.getElementById("rng");
     const out = document.getElementById("out");
-    rng.addEventListener("input", () => { myScore = +rng.value; out.textContent = fmtScore(myScore); });
+    rng.addEventListener("input", () => {
+      myScore = Math.round(Number(rng.value) * SCORE_MAX);
+      const normalized = fmtScore(myScore);
+      out.textContent = normalized;
+      rng.setAttribute("aria-valuenow", normalized);
+      rng.setAttribute("aria-valuetext", normalized);
+    });
     document.getElementById("seal").addEventListener("click", sealScore);
   } else {
     const ch = document.getElementById("chg");
@@ -1261,10 +1273,10 @@ function leakPanel(sealed) {
   const cc = cur();
   const stored = sealed ? storedSeal(state.nomineeIdx, myPlay()) : null;
   const already = cc.leaks.find((l) => l.leakerPid === myPid);
-  return '<div class="card"><h3>Anti-pre-revelation</h3><p class="fine">Opening your sealed score to anyone before the jury opens together is pre-revelation. Whoever you show can turn it in.</p>' +
+  return '<div class="card"><h3>Sealed-score proofs</h3><p class="fine">A proof contains a score and its salt words. During scoring, another seated juror can report a valid proof. The amounts below show the deduction and reward.</p>' +
     `<div class="strip"><div class="r"><b>−${n(LEAK_PENALTY)}</b><span>if reported</span></div><div class="g"><b>+${n(LEAK_BOUNTY)}</b><span>if you report</span></div><div><b>${cc.leaks.length}</b><span>reported</span></div></div>` +
     (already ? `<div class="banner bad"><b>You were reported</b>${esc(pname(already.reporterPid))} holds your proof. −${n(LEAK_PENALTY)}.</div>` : "") +
-    (stored ? `<div class="proofwrap"><span class="proof-k">your proof · anyone who reads it can report you</span>${proofsOpen() || showProof ? `<div class="proof">${esc(proofText(+stored.split(":")[0], stored.split(":").slice(1).join(":")))}</div>` : ""}` +
+    (stored ? `<div class="proofwrap"><span class="proof-k">your proof · reportable during scoring</span>${proofsOpen() || showProof ? `<div class="proof">${esc(proofText(+stored.split(":")[0], stored.split(":").slice(1).join(":")))}</div>` : ""}` +
       (proofsOpen() ? "" : `<div class="row"><button class="ghost" id="tp">${showProof ? "Hide my proof" : "Show my proof"}</button></div>`) +
       '<span class="fine">It proves what you sealed, not what you will open, and stays reportable even after you change it.</span></div>' : "") +
     '<div class="row"><input type="text" id="rep" placeholder="The proof you heard"><button class="warn" id="repBtn">Report</button></div>' +
@@ -1350,9 +1362,9 @@ function blocBanner(c, r, g) {
   const blocShare = g.graded.filter((x) => x.within && matchedInstruction.includes(x.pid)).reduce((s, x) => s + x.share, 0);
   const share = Math.round((assigned.length / Math.max(r.valid.length, 1)) * PERCENT_SCALE);
   const head = `Bloc assigned to ${share}% of revealed jurors · ${matchedInstruction.length} of ${assigned.length} submitted the instructed score`;
-  if (!matchedInstruction.length) return banner("good", head, "No assigned juror submitted the instructed score. This attack did not appear in the revealed scores.");
-  if (blocOut > 0 && otherOut === 0) return banner("good", head, `${blocOut} assigned juror${blocOut === 1 ? "" : "s"} submitting the instructed score forfeited. The penalty bit the instructed bloc in this round.`);
-  if (otherOut > 0) return banner("bad", head, `${otherOut} other juror${otherOut === 1 ? "" : "s"} and ${blocOut} assigned jurors submitting the instructed score forfeited; ${matchedInstruction.length - blocOut} assigned jurors submitting that score stayed inside the band. A bloc can move a mean. The full design uses commit and reveal, anti-prereveal games and appeals to deter collusion.`);
+  if (!matchedInstruction.length) return banner("good", head, "No assigned juror submitted the instructed score.");
+  if (blocOut > 0 && otherOut === 0) return banner("good", head, `${blocOut} assigned juror${blocOut === 1 ? "" : "s"} submitting the instructed score forfeited.`);
+  if (otherOut > 0) return banner("bad", head, `${otherOut} other juror${otherOut === 1 ? "" : "s"} and ${blocOut} assigned jurors submitting the instructed score forfeited; ${matchedInstruction.length - blocOut} assigned jurors submitting that score stayed inside the band.`);
   return banner("amber", head, `Assigned jurors submitting the instructed score took ${Math.round(blocShare * PERCENT_SCALE)}% of the pot. Nobody who revealed paid a distance forfeit.`);
 }
 

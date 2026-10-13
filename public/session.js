@@ -1,13 +1,13 @@
 import { roomPath } from "./protocol.js";
 
 const PROJECT = "Decentralized Curation";
-const PAPER_DOI = "10.5281/zenodo.23298493";
+const PAPER_DOI = "10.5281/zenodo.23313625";
 const PUBLIC_ADDRESS_PLACEHOLDER = "CHANGE-ME";
 const SITE = "https://decentralized-curation.0xferit.workers.dev";
 const COPYRIGHT = "Copyright (C) 2026 Ferit Tunçer";
 const CODE_LICENCE = "GPL-3.0-or-later";
 const CONTENT_LICENCE = "CC BY 4.0";
-const LICENCE = `code ${CODE_LICENCE}, text and figures ${CONTENT_LICENCE}`;
+const LICENCE = `code ${CODE_LICENCE}, original text and figures ${CONTENT_LICENCE}; third-party marks excluded`;
 
 export const SESSION = Object.freeze({
   title: "Decentralized curation",
@@ -19,10 +19,19 @@ export const SESSION = Object.freeze({
   site: SITE,
   publicAddressConfirmed: !SITE.includes(PUBLIC_ADDRESS_PLACEHOLDER),
   roomCode: "leiden",
+  paperVersion: "1.2.0",
   paperDoi: PAPER_DOI,
+  paperSourceUrl:
+    "https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd",
   paperUrl: `https://doi.org/${PAPER_DOI}`,
   attribution: `${PROJECT} research by Ferit Tunçer.`,
-  support: "Supported by Octant.",
+  support: Object.freeze({
+    project: "Octant",
+    projectUrl: "https://octant.build/",
+    logoUrl: "/brand/octant.svg",
+    foundation: "Golem Foundation",
+    foundationUrl: "https://golem.foundation/",
+  }),
   workshopReward:
     "Workshop simplification: each round with opened scores pays the full base reward, even when those scores all agree.",
   nextRound:
@@ -41,4 +50,29 @@ export function roomUrl() {
 
 export function joinUrl() {
   return `${SESSION.site}/join/`;
+}
+
+export function renderSupport(root = document) {
+  const support = SESSION.support;
+  for (const element of root.querySelectorAll("[data-support]")) {
+    const logoLink = document.createElement("a");
+    logoLink.className = "support-logo";
+    logoLink.href = support.projectUrl;
+    const logo = document.createElement("img");
+    logo.src = support.logoUrl;
+    logo.alt = support.project;
+    logo.width = 165;
+    logo.height = 46;
+    logoLink.append(logo);
+    const foundationLink = document.createElement("a");
+    foundationLink.href = support.foundationUrl;
+    foundationLink.textContent = support.foundation;
+    const acknowledgement = document.createElement("p");
+    acknowledgement.append(
+      "Conference expenses partially supported by ",
+      foundationLink,
+      `’s ${support.project} project. Thank you.`,
+    );
+    element.replaceChildren(logoLink, acknowledgement);
+  }
 }

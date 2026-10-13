@@ -78,4 +78,4 @@ The code is free software: you can redistribute it and/or modify it under the te
 
 The text and figures of the deck (`public/deck/`) and the handout (`public/handout/`) are licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0), whose text is in `LICENSE-CC-BY-4.0`.
 
-The attribution line and the licence line shown on the pages are defined in the session module.
+The attribution, support acknowledgement and licence lines shown on the pages are defined in the session module. The third-party Octant logo is excluded from the content licence; its official source is recorded in `public/brand/README.md`.

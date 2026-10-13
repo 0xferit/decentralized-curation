@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An audience-readable summary of decentralized curation, its intended rules, and the limits of the workshop evidence.">
+  <title>Decentralized curation: mechanism and evidence</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.6; }
+    body { max-width: 72rem; margin: auto; padding: 1.5rem; }
+    main { max-width: 58rem; }
+    a { color: light-dark(#075c94, #8bcfff); text-underline-offset: .18em; }
+    a:focus-visible { outline: .2rem solid currentColor; outline-offset: .3rem; }
+    h1, h2, h3 { line-height: 1.2; }
+    h2 { margin-top: 2.2rem; }
+    .status { padding: 1rem; border: .15rem solid currentColor; }
+    .table-wrap { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; vertical-align: top; padding: .7rem; border-bottom: 1px solid currentColor; }
+    caption { text-align: left; font-weight: 700; padding: .7rem 0; }
+    nav ul { padding-left: 1.3rem; }
+    @media (max-width: 40rem) { body { padding: 1rem; } th, td { padding: .5rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">Decentralized curation workshop</a>
+    <h1>Mechanism and evidence</h1>
+    <p class="status"><strong>Status: working presentation summary.</strong> The intended rules below include local design decisions beyond the published paper. They are not a claim that these rules are deployed, audited or economically validated. No funds move in the workshop.</p>
+  </header>
+  <nav aria-label="On this page">
+    <ul>
+      <li><a href="#loop">The intended mechanism</a></li>
+      <li><a href="#workshop">What the workshop actually does</a></li>
+      <li><a href="#evidence">What evidence would count</a></li>
+      <li><a href="#sources">Sources and inspection limits</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="loop" aria-labelledby="loop-title">
+      <h2 id="loop-title">The intended mechanism</h2>
+      <p>The aim is to reward useful information production, assessment and correction so that decisions serve affected people. Agreement and participant profit are intermediate observations; neither establishes truth or public benefit.</p>
+      <h3>Policy and nominations</h3>
+      <p>Each pool authors its own policy and evidence requirements. A nomination identifies the contribution, beneficiary and supporting claims and posts its required bond. Ordinary publication does not require prior semantic approval. A successful challenge establishing falsity or non-falsifiability debunks that nomination, forfeits its bond and ends its eligibility to benefit from the pool. Its author can submit a fresh nomination under the ordinary rules.</p>
+      <p>A contract can check identifiers and financial conditions. It cannot establish that two descriptions are different work or that a policy serves the public. A pool needs an explicit attribution policy for overlap; shared beneficiaries alone do not imply duplicate contributions.</p>
+      <h3>Relevance and jury payment</h3>
+      <p>Jurors stake a dedicated utility token to signal availability and receive a chance of being drawn. Stake and seats do not certify competence or independent judgment. Jurors assess a pinned nomination and policy. When quorum is met, the weighted mean of valid reports supplies the policy-relative relevance assessment; agreement-based grading can still reward shared error or punish informed dissent.</p>
+      <p>The intended design separates assets: ether (ETH) pays jury service and backs financial positions; the utility token supplies jury collateral and redistribution of incoherence penalties. Valid service fees are paid per eligible revealed seat only when the jury issues a valid ruling. Failed quorum creates no service fee. Later appeals do not claw back earned service fees. A proven leak can redirect the violator's fee and actual confiscated utility tokens to its reporter. These are intended rules, not behavior demonstrated by the hosted points game.</p>
+      <h3 id="appeals">Publicly funded appeals</h3>
+      <p>Anyone may fund a fixed-score appeal position, including a nominator, appellant or juror. Supporting the same score contributes to the same position. Different fully funded scores compete in one shared jury and pot after the bounded admission and funding opportunities finish. The next jury has more planned seats; more seats alone do not establish more independent information.</p>
+      <p>Jury costs are deducted according to the funding rules. After the whole appeal chain ends, each adjudicated level settles against its ultimate final score: closer positive-error positions receive larger inverse-distance shares, and a unique exact position receives the net pot. A closer position can still lose principal. A sole funded position wins procedurally by forfeiture, receives its contributions back without a jury fee or gain on that position, and does not establish consensus. Retries and successive appeals can prolong capital lockup; crowdfunding does not establish equal access or guaranteed correction.</p>
+      <h3>Allocation and updates</h3>
+      <p>The application maps eligible relevance weights into funding under its stated rules. The workshop's worked calculator caps weight by the request and divides the available flow proportionally. A positive sole eligible weight can receive the full distributable flow. Weight ratios are allocation choices, not measured ratios of public benefit. New assessments and factual challenges have different consequences; already completed payments are not automatically recovered.</p>
+      <h3>Voluntary fork recovery</h3>
+      <p>Any group may propose replacement contracts and a utility token using its own exclusion list without proving misconduct or obtaining the old majority's permission. Included holders retain token units from a specified pre-incident snapshot; suspected attackers may be excluded. Exclusion is that group's judgment, so innocent holders can be excluded and attackers can remain included. Users decide whether to adopt the replacement.</p>
+      <p>The selected recovery design starts with fresh assessments and supports optional conditional funding commitments. Each funder may migrate their remaining attributed contribution where the source pool actually implements that right. Existing liabilities and reserved funds stay protected. Common protocol income remains communal. A snapshot creates no spendable ETH, cannot reverse completed payments and does not give new contracts access to old funds. Recovery tooling and rehearsal remain work to do.</p>
+    </section>
+    <section id="workshop" aria-labelledby="workshop-title">
+      <h2 id="workshop-title">What the workshop actually does</h2>
+      <p>The hosted game uses equal point stakes, sealed reports, a mean and standard-deviation band, and points shared by closeness. It does not execute token staking, funding allocation, accuracy adjudication, public appeal crowdfunding or fork recovery. Participants trust the host and service. The worked funding calculator is an illustration with stipulated inputs, not an on-chain transaction.</p>
+      <h3>This workshop's policy</h3>
+      <p id="policy-prompt"></p>
+      <p id="policy-attribution"></p>
+      <p>Use brief descriptions and prior knowledge. No shared evidence dossier is supplied. The scores demonstrate coordination under uneven information, not a rigorous estimate of research-wide reliance.</p>
+      <p>The adversarial round assigns a role. Its outcome shows submitted reports and resulting payoffs in that configuration, not how often participants would freely choose manipulation. A matching score does not establish motive. More agreement, a wider band or a larger jury does not by itself establish better judgment.</p>
+    </section>
+    <section id="evidence" aria-labelledby="evidence-title">
+      <h2 id="evidence-title">What evidence would count</h2>
+      <p>The following are proposed tests, not completed findings or the full protocol of the Arrow experiment. Before an efficacy study, specify its population, primary outcome, comparison, horizon and practically meaningful success criteria. Do not infer success from agreement or profit alone.</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable evidence table">
+        <table>
+          <caption>Different claims need different measurements</caption>
+          <thead><tr><th scope="col">Claim</th><th scope="col">Measure and comparison</th><th scope="col">Reason to revise the claim</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Comprehension</th><td>Independently scored unseen rule and policy cases, compared with ordinary guidance.</td><td>Persistent errors despite confident reporting.</td></tr>
+            <tr><th scope="row">Reliable assessment</th><td>Repeated unchanged-evidence cases and separate changed-evidence cases; compare an independent rating process.</td><td>Instability, anchoring or ignored decisive evidence.</td></tr>
+            <tr><th scope="row">Useful incentives</th><td>Blind assessment of reasons and factual support, comparing independently chosen strategies with fixed compensation.</td><td>More agreement or profit without better evidence use.</td></tr>
+            <tr><th scope="row">Usable correction</th><td>Audit challenged and unchallenged items; compare errors, access, delays and all costs with feasible review.</td><td>Errors persist because investigation or correction is unaffordable.</td></tr>
+            <tr><th scope="row">Public benefit</th><td>Affected people and accountable funders define a bounded purpose; compare consequences and total costs with a feasible allocation alternative.</td><td>No meaningful advantage after costs, harmful distribution or failure on the declared purpose.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Jury members affect one another's payoffs. Independent groups, not individual seats in one jury, supply the replication for comparisons of incentives. Independent reviewers can also err: publish their criteria, conflicts, disagreements and uncertainty.</p>
+    </section>
+    <section id="sources" aria-labelledby="sources-title">
+      <h2 id="sources-title">Sources and inspection limits</h2>
+      <ul>
+        <li><a id="paper-link">Published working paper</a>: an archived research version. Later local hardening is not part of that published artifact.</li>
+        <li><a id="paper-source">Source for the published paper</a>: check its revision and release before attributing any rule to it. This summary describes intended choices, not a release announcement.</li>
+        <li><a href="/deck/">Workshop presentation</a> and <a href="/domain.js">shared workshop policy and docket</a>: inspectable teaching material; <a href="/core.js">the points ledger</a> defines the exercise's arithmetic.</li>
+      </ul>
+      <p>The presentation's contract comparison came from an access-controlled implementation snapshot inspected during review. This page neither republishes that code nor makes its behavior independently reproducible. It does not establish that a later deployment matches either that snapshot or the current intended rules.</p>
+      <p>The Arrow description covers an invited-participant experiment with trusted nominations. Its complete private protocol was not inspected for this review. Participation and scoring observations under those assumptions cannot validate permissionless security, the complete appeal lifecycle or integrated funding.</p>
+    </section>
+  </main>
+  <script type="module">
+    import { POLICY } from "/domain.js";
+    import { SESSION } from "/session.js";
+    const paperLink = document.getElementById("paper-link");
+    document.getElementById("paper-source").href = SESSION.paperSourceUrl;
+    paperLink.href = SESSION.paperUrl;
+    paperLink.textContent = `Published working paper, version ${SESSION.paperVersion}`;
+    document.getElementById("policy-prompt").textContent = POLICY.prompt;
+    document.getElementById("policy-attribution").textContent = POLICY.attribution;
+  </script>
+</body>
+</html>

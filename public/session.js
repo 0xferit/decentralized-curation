@@ -68,11 +68,7 @@ export function renderSupport(root = document) {
     foundationLink.href = support.foundationUrl;
     foundationLink.textContent = support.foundation;
     const acknowledgement = document.createElement("p");
-    acknowledgement.append(
-      "My conference participation is sponsored in part by ",
-      foundationLink,
-      `’s ${support.project} project. Thank you.`,
-    );
+    acknowledgement.append("Sponsored by ", foundationLink, `’s ${support.project} project.`);
     element.replaceChildren(logoLink, acknowledgement);
   }
 }

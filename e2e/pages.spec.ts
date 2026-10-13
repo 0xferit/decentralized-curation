@@ -281,7 +281,9 @@ test("worked example carries jury scores through capped funding and later outcom
     "0.300",
   );
   await expect(page.locator('[data-project-rate="numpy"]')).toHaveText("0.00");
-  await expect(page.locator("#example-outcome")).toContainText("unclaimed accrual returns");
+  await expect(page.locator("#example-outcome")).toContainText(
+    "Accrued funding remains owed, including unclaimed amounts",
+  );
   await page.getByRole("button", { name: "Reset worked example", exact: true }).click();
   await expect(page.locator('[data-example="mean"]')).toHaveText("0.600");
   await expect(page.locator('[data-project-rate="numpy"]')).toHaveText("40.00");

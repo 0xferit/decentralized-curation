@@ -54,7 +54,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “Examine who relies on it, its role in research and the alternatives. Releases, documentation and downstream use provide evidence. Costs and limitations belong there too.
 
-“This is a choice made for this example pool. Another pool may care about a different problem and need a different policy. We can start curating before anyone commits a grant budget. Bonds and jury costs still follow the economic rules; knowledge production is not cost-free.
+“This is a choice made for this example pool. Another pool may care about a different problem and need a different policy. Curation costs must be funded. A budget to distribute to beneficiaries is useful upfront, but optional: it can arrive after we have curated the weights.
 
 “Publishing a policy lets people inspect it. It does not establish that everyone affected chose it, or that it serves a good purpose. The creator chooses the terms; funders choose whether to support that pool; jurors apply its policy.”
 
@@ -112,7 +112,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Do not calculate backer settlement here. The widget changes the assessment and allocation only.]
 
-## 8. Curate the shares; funding can follow
+## 8. Curate the shares; distribution can follow
 
 **Target: 3 minutes. Elapsed: 0:15 to 0:18.**
 

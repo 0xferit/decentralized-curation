@@ -11,7 +11,7 @@ flowchart TB
     subgraph publication["Publish under declared rules"]
         define_policy["POOL CREATOR<br/>Define purpose and policy<br/>Evidence requirements<br/>and fixed economic rules"]
         publish_nomination["NOMINATOR<br/>Publish claims and evidence<br/>Identify contribution and beneficiary<br/>Request a weight; post the bond"]
-        fund_pool["POOL FUNDERS<br/>May add beneficiary funding later<br/>Jury-service funding is separate"]
+        fund_pool["POOL FUNDERS<br/>Fund the costs of curation<br/>Distribution budget may come later"]
     end
     subgraph accuracy_gate["ACCURACY GATE: can the claims withstand challenge?"]
         provisional_eligibility["PROTOCOL<br/>Check bond and structural rules<br/>Admit the nomination provisionally<br/>No prior truth approval"]
@@ -33,7 +33,7 @@ flowchart TB
         final_score["PROTOCOL<br/>0: retain issued score<br/>1: adopt funded score<br/>Settle adjudicated pots<br/>Backers collect payouts"]
     end
     subgraph funding["Allocate funding and preserve accrued claims"]
-        adopt_funding_score["PROTOCOL<br/>Use this revision's adopted score<br/>Produce curated weights<br/>No grant budget required"]
+        adopt_funding_score["PROTOCOL<br/>Use this revision's adopted score<br/>Produce curated weights<br/>Distribution budget optional"]
         compute_funding_weight["PROTOCOL<br/>Cap by request and score<br/>Normalize eligible weights<br/>Positive total: shares sum to 1<br/>Zero total: no allocation"]
         allocate_funding["PROTOCOL + BENEFICIARIES<br/>Apply funding when available<br/>New nominations serve holdback<br/>Earned funds are immediately claimable"]
     end
@@ -74,7 +74,7 @@ flowchart TB
     class close_nomination closed
 ```
 
-Curation and beneficiary funding are separate. Raw effective weights need not sum to one. For each eligible nomination, normalize its effective weight by the positive total to obtain its allocation share. These shares sum to one; an available or later beneficiary budget multiplies them. With no positive eligible weight, there is no allocation vector. Holdback affects earning eligibility, not whether scores can be curated. Bonds, jury-service funding and appeal backing retain their own requirements.
+Curation and beneficiary funding are separate. Raw effective weights need not sum to one. For each eligible nomination, normalize its effective weight by the positive total to obtain its allocation share. These shares sum to one; an available or later beneficiary budget multiplies them. With no positive eligible weight, there is no allocation vector. Holdback affects earning eligibility, not whether scores can be curated. Curation costs must be funded. The budget distributed to beneficiaries is optional upfront and may arrive later. Bonds, jury-service funding and appeal backing retain their own requirements.
 
 ## Actors
 

@@ -32,9 +32,9 @@ Avoid describing a pool's ruling as a universal, protocol-wide truth verdict. Ev
 
 ## 3. Do we need a funding budget before we can curate?
 
-No beneficiary grant budget is required at creation. Curation produces a policy-relative allocation vector first; funding can arrive later and act on it. Effective weight is the lower of the nominator's requested weight and the adopted score. For total eligible weight $W>0$, each share is $p_i=w_i/W$ and the shares sum to one. Applying a grant budget $B$ gives $B p_i$ per nomination. Setting $B=0$ leaves the shares unchanged and creates no earnings. When $W=0$, there is no allocatable vector, rather than an arbitrary equal split.
+The beneficiary distribution budget is useful upfront but not required. Curation costs do require funding. Curation produces a policy-relative allocation vector; a distribution budget can arrive later and act on it. Effective weight is the lower of the nominator's requested weight and the adopted score. For total eligible weight $W>0$, each share is $p_i=w_i/W$ and the shares sum to one. Applying a distribution budget $B$ gives $B p_i$ per nomination. Setting $B=0$ leaves the shares unchanged and creates no beneficiary earnings. When $W=0$, there is no allocatable vector, rather than an arbitrary equal split.
 
-This separates grant capital from the cost of curation. Nomination bonds, jury service fees and dispute or appeal costs still follow their existing rules. Only new nominations wait through holdback before earning. Later rating changes affect future earning when adopted under the ordinary finalization rules, without a new holdback. Earned funds are immediately claimable by the beneficiary.
+Curation funding and the beneficiary distribution budget are separate. Nomination bonds, jury service fees and dispute or appeal costs still follow their existing rules. Only new nominations wait through holdback before earning. Later rating changes affect future earning when adopted under the ordinary finalization rules, without a new holdback. Earned funds are immediately claimable by the beneficiary.
 
 The inspected historical contracts instead apply holdback to new or increased weight and apply decreases immediately. That source behavior is not the intended rule for later rating changes.
 

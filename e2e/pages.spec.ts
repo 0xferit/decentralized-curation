@@ -291,7 +291,7 @@ test("worked example carries jury scores through capped funding and later outcom
 
 test("curated shares remain available without beneficiary funding", async ({ page }) => {
   await page.goto("/deck/#s8");
-  const budget = page.getByRole("slider", { name: "Illustrative funding per day" });
+  const budget = page.getByRole("slider", { name: "Illustrative distribution per day" });
   await expect(budget).toHaveCount(1);
   const shares = page.locator("[data-project-share]");
   await expect(shares).toHaveText(["40.0%", "20.0%", "40.0%"]);

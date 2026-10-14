@@ -92,7 +92,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “Look at these one hundred numbers. Silently choose the number you expect others here to choose. Your aim is to match them. Do not say it yet.”
 
-[Give eight seconds. All options initially look alike. Do not point to 100 or disclose that it is the only even number among 99 odd values. Participants use no controls or devices.]
+[Give five seconds. All options initially look alike. Do not point to 100 or disclose that it is the only even number among 99 odd values. Participants use no controls or devices.]
 
 “On three, say your number together. One, two, three.”
 

@@ -81,7 +81,7 @@ function schellingGame() {
       prompt: "Choose the number you expect everyone else to choose.",
       label: "Number choices",
       switchLabel: "Curation round",
-      values: Array.from({ length: optionCount }, (_, index) => numberValues[(index * displayStride) % optionCount]),
+      values: [...numberValues].sort((left, right) => left - right),
       focal: focalNumber,
     },
     {

@@ -7,7 +7,7 @@ const PHONE = { width: 390, height: 667 };
 const READABLE_SUPPORT_PX = 14;
 const GEOMETRY_TOLERANCE_PX = 1;
 const SCHELLING_OPTION_COUNT = 100;
-const SCHELLING_FOCAL_NUMBER = "47";
+const SCHELLING_FOCAL_NUMBER = "100";
 
 test("Schelling example reveals locally and preserves keyboard navigation", async ({ page }) => {
   await page.setViewportSize(DESKTOP);
@@ -18,11 +18,33 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
   const focal = slide.locator(".schelling-options li[data-focal]");
   await expect(focal).toHaveCount(1);
   await expect(focal).toHaveText(SCHELLING_FOCAL_NUMBER);
+  const values = (await options.allTextContents()).map(Number);
+  expect(new Set(values).size).toBe(SCHELLING_OPTION_COUNT);
+  expect(values.filter((value) => value % 2 === 0)).toEqual([Number(SCHELLING_FOCAL_NUMBER)]);
+  expect(values.filter((value) => value % 2 !== 0)).toHaveLength(SCHELLING_OPTION_COUNT - 1);
+  const initialAppearances = await options.evaluateAll((elements) =>
+    elements.map((element) => {
+      const style = getComputedStyle(element);
+      return JSON.stringify([
+        style.backgroundColor,
+        style.color,
+        style.fontSize,
+        style.fontWeight,
+        style.borderColor,
+        style.borderWidth,
+        style.borderStyle,
+        style.boxShadow,
+        style.transform,
+        style.opacity,
+      ]);
+    }),
+  );
+  expect(new Set(initialAppearances).size).toBe(1);
   const otherBackground = await slide
     .locator(".schelling-options li:not([data-focal])")
     .first()
     .evaluate((element) => getComputedStyle(element).backgroundColor);
-  await expect(focal).not.toHaveCSS("background-color", otherBackground);
+  await expect(focal).toHaveCSS("background-color", otherBackground);
   await expect(
     slide.locator(
       ".schelling-options button, .schelling-options input, .schelling-options [role=button]",
@@ -38,7 +60,9 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
   await page.keyboard.press("Space");
   await expect(reveal).toHaveAttribute("aria-expanded", "true");
   await expect(explanation).toBeVisible();
-  await expect(explanation).toContainText(/shared expectations/i);
+  await expect(explanation).toContainText(/only even number/i);
+  await expect(explanation).toContainText(/shared focal point/i);
+  await expect(focal).not.toHaveCSS("background-color", otherBackground);
   await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
   await page.keyboard.press("Space");
   await expect(explanation).toBeVisible();
@@ -46,6 +70,8 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
   await reset.click();
   await expect(explanation).toBeHidden();
   await expect(reveal).toHaveAttribute("aria-expanded", "false");
+  await expect(focal).toHaveCSS("background-color", otherBackground);
+  await expect(options).toHaveText(values.map(String));
   await slide.locator("h2").focus();
   await page.keyboard.press("Space");
   await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s8");

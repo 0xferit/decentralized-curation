@@ -92,19 +92,19 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “Look at these one hundred numbers. Silently choose the number you expect others here to choose. Your aim is to match them. Do not say it yet.”
 
-[Give five silent seconds. The grid already highlights 47; do not name it or point to it. Participants use no controls or devices.]
+[Give eight to ten silent seconds. All options initially look alike. Do not point to 100 or disclose that it is the only even number among 99 odd values. Participants use no controls or devices.]
 
 “On three, say your number together. One, two, three.”
 
 [Listen to the room, then select **Reveal example**. Do not invent vote totals. If no clear answer emerges, say: “We did not converge on one answer this time.”]
 
-“A conspicuous number gives us a shared cue: I notice it, and I expect you to notice it. This is a Schelling point, a focal point for coordinating expectations.
+“One hundred is the only even number here, and the only round hundred. That pattern can give us a shared cue: I notice it, and I expect you to notice it. A choice that attracts these shared expectations is a Schelling point, a focal point for coordination.
 
 “In Schelling's 1957 sample, 36 people chose heads and six chose tails. Asked where and when to meet in New York, a majority chose Grand Central's information booth, and almost everyone chose noon. Those results reflected a particular sample and its shared context.
 
 “For curation, the opportunity is to make evidence-based assessment the shared focal point. Matching a salient answer illustrates coordination; it does not establish truth.”
 
-[The revealed explanation describes the concept; it does not report audience votes. **Reset game** hides that explanation for another delivery. Keep the whole exercise to 60–90 seconds.]
+[The reveal emphasizes 100 and explains the pattern; it does not report audience votes or prove that the room chose it. **Reset game** restores equal styling and hides the explanation for another delivery. Keep the whole exercise to 60–90 seconds.]
 
 Source: Thomas C. Schelling, [“Bargaining, communication, and limited war” (1957)](https://journals.sagepub.com/doi/10.1177/002200275700100104), note 1. The sample's New Haven location may have influenced its choices.
 
@@ -439,9 +439,9 @@ See the [grading comparison](presentation-sources.md#keep-the-four-mechanisms-di
 
 ### What can we infer from the number-grid coordination game?
 
-“The hundred-number grid illustrates how a salient cue can support shared expectations. Number 47 is conspicuous from the start. Saying answers together lets us hear whether one choice is prominent; it does not produce reliable vote totals or a controlled test of which visual feature caused the choice.
+“The hundred-number grid illustrates how a salient cue can support shared expectations. All options initially look alike, but 100 is the only even number among 99 odd values and the only round hundred. Saying answers together lets us hear whether one choice is prominent; it does not produce reliable vote totals or a controlled test of which property caused the choice.
 
-“The exercise asks people to coordinate, with no factual answer to establish. It does not prove that honesty is a focal point in an assessment game. The revealed explanation is conceptual, not a tally. A cluster is an observation about this room, not proof of the proposed incentives.”
+“The arithmetic pattern is factual; matching the room still has no predetermined correct answer. The exercise does not prove that honesty is a focal point in an assessment game. The revealed explanation describes the pattern and concept, not a tally. A cluster is an observation about this room, not proof of the proposed incentives.”
 
 ### What can we infer from the points exercise?
 

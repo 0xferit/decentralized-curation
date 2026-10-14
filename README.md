@@ -24,7 +24,7 @@ Choose the docket before summoning. The default projects and available spares co
 
 A juror whose device wakes after grading may open a matching seal, but that late reveal does not change the result. Jurors joining after a nominee opens wait for the next nominee. Hosting can be taken over with confirmation. Starting a new game reseats everyone; wiping empties the room's documents and leases.
 
-The deck introduces the broader credible-consensus thesis through a funding application: nominations, accuracy disputes, drawn relevance juries, appeals, continuous allocation and re-scoring. The live workshop isolates one relevance exercise. Its eighteen slides explain the handout, run the exercise and discuss attacks and defenses. The [source register](docs/presentation-sources.md) records version choices and claim boundaries, and the [facilitator guide](docs/facilitator-guide.md) maps the eighty-minute session to the slides.
+The twenty-slide deck starts with why curation matters, information-quality dimensions and the limits of a single curator or simple vote-counting. It introduces the general framework and incentive hypothesis before applying them to public goods funding: nominations, accuracy disputes, drawn relevance juries, appeals, continuous allocation and re-scoring. The live workshop isolates one relevance exercise, then discusses attacks and defenses. The [source register](docs/presentation-sources.md) records version choices and claim boundaries, and the [facilitator guide](docs/facilitator-guide.md) maps the eighty-minute session to the slides.
 
 ## Verify
 

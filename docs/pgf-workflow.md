@@ -15,10 +15,10 @@ flowchart TB
     end
     subgraph accuracy_gate["ACCURACY GATE: can the claims withstand challenge?"]
         provisional_eligibility["PROTOCOL<br/>Check bond and structural rules<br/>Admit the nomination provisionally<br/>No prior truth approval"]
-        file_challenge["PUBLIC CHALLENGER<br/>Any time while nomination is active<br/>Contest false or non-falsifiable claims<br/>Post counter-stake, tax and fees"]
+        file_challenge["PUBLIC FACT-CHECKER<br/>Any time while nomination is active<br/>Contest false or non-falsifiable claims<br/>Post counter-stake, tax and fees"]
         external_arbitration["ARBITRATOR + PROTOCOL<br/>Arbitrator examines the dispute<br/>Existing earning continues<br/>Earned funds stay claimable<br/>Later nomination exit queues"]
         challenge_upheld{"EXTERNAL ARBITRATOR<br/>Challenge<br/>upheld?"}
-        close_nomination["PROTOCOL<br/>Close the failed nomination<br/>Bond to challenger; future funding stops<br/>Accrued funding remains owed"]
+        close_nomination["PROTOCOL<br/>Close the failed nomination<br/>Bond to fact-checker; future funding stops<br/>Accrued funding remains owed"]
         resume_nomination["PROTOCOL<br/>Resume the nomination<br/>Counter-stake to the nominator<br/>Queued exit may then proceed"]
         arbitration_timeout["PROTOCOL<br/>Apply existing timeout rules<br/>Limit detention; no truth approval"]
     end
@@ -78,7 +78,7 @@ Curation and beneficiary funding are separate. Raw effective weights need not su
 
 ## Actors
 
-Each node begins with its responsible actor. Protocol denotes enforced rules that execute when called; it is not a person, an autonomous evaluator or a substitute for the jury. Pool creators define terms; funders supply capital; nominators post claims and bonds; curators assess relevance; public backers fund appeals; challengers contest factual claims; external arbitrators decide those disputes; beneficiaries claim eligible accrued funding. These roles may overlap.
+Each node begins with its responsible actor. Protocol denotes enforced rules that execute when called; it is not a person, an autonomous evaluator or a substitute for the jury. Pool creators define terms; funders supply capital; nominators post claims and bonds; curators assess relevance; public backers fund appeals; fact-checkers contest factual claims; external arbitrators decide those disputes; beneficiaries claim eligible accrued funding. These roles may overlap.
 
 ## Reading the gates
 

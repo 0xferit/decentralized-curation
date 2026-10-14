@@ -100,9 +100,9 @@ The intended working design uses optimistic publication: posting the bond and sa
 
 In the intended design, a factual challenge can begin whenever the nomination is active, including before its first relevance score and during a relevance assessment or appeal. A withdrawn nomination cannot receive a new challenge. Earned funding remains immediately claimable during the dispute. A nomination withdrawal requested after the dispute enters the event queue behind it; if the dispute ends in debunking, that queued exit is cancelled. Claims on earned funding are separate from withdrawal of the nomination.
 
-The inspected implementation differs: in those contracts, the nomination must already be scored or active and have no open relevance case. The challenger pays counter-stake and a flat tax in the funding asset, plus the external arbitrator's fee. Current contracts let accrual continue, but withhold claiming and certain exit operations while the dispute is pending.
+The inspected implementation differs: in those contracts, the nomination must already be scored or active and have no open relevance case. The fact-checker pays counter-stake and a flat tax in the funding asset, plus the external arbitrator's fee. Current contracts let accrual continue, but withhold claiming and certain exit operations while the dispute is pending.
 
-In that inspected implementation, if the claim is debunked, its weight stops, unclaimed accrual returns to the open pool budget, and the challenger receives the nomination deposit and their counter-stake. If the challenge fails, the nomination resumes and the nominator receives the counter-stake. A timeout bounds detention when an arbitrator does not respond. Payments already made are not clawed back.
+In that inspected implementation, if the claim is debunked, its weight stops, unclaimed accrual returns to the open pool budget, and the fact-checker receives the nomination deposit and their counter-stake. If the challenge fails, the nomination resumes and the nominator receives the counter-stake. A timeout bounds detention when an arbitrator does not respond. Payments already made are not clawed back.
 
 This differs from older descriptions that immediately removed disputed weight. Do not mix the two.
 

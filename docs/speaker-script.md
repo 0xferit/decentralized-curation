@@ -2,7 +2,7 @@
 
 The [handout](../public/handout/index.html) leads the session’s title and scope. This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
 
-The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 18 slides. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
+The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 20 slides. The opening establishes the curation problem, compares approaches and introduces the general framework before applying it to public goods funding. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
@@ -10,177 +10,201 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 1 minute. Elapsed: 0:00 to 0:01.**
 
-“Every day we use curated information: search results, recommendations, reading lists. Curation helps us find what matters, but it asks us to trust whoever selects it. Research is no different: someone decides what deserves attention, scrutiny and support.
+“Today I want to start with a problem we all share: there is more information than we can personally check, yet our decisions depend on what we learn from it.
 
-“Decentralized Curation asks how we can open participation and reward honesty, competence and scrutiny in judgment and fact-checking, so this useful work can also create public benefit.
+“Decentralized Curation is a proposal for organizing that work. Can we make producing, assessing and correcting useful information rewarding to the people doing it, so others can make better decisions?
 
-“I have worked on this framework since 2021. Today we will explore one application, experience part of it together, and then attack it.
+“I have worked on this framework since 2021. We will define the problem, examine the proposed solution, apply it to public goods funding and then experience one part of it together.
 
 “Thank you to Octant for sponsoring this session.”
 
-[Look at the audience. Let the title settle before advancing.]
+[Let the title settle. Keep the funding application for later; first establish why anyone needs curation.]
 
-## 2. Who decides? Whose needs count?
+## 2. Why curation matters
 
 **Target: 2 minutes. Elapsed: 0:01 to 0:03.**
 
-“Democracy can combine public voice with expert advice. Counting preferences alone does not ensure informed judgment, and one expert can still miss others' needs. We want open participation and rewarded good judgment together, without assuming that open entry represents everyone.
+“We already delegate curation whenever we use a newspaper, ranking, review, feed or recommendation. Someone selects what we see, checks some claims and supplies context. That saves us work, but it also makes our decisions depend on their competence and incentives.
 
-“Here is a quick coordination game. Look at the three codes on your handout. Without talking or scanning, choose the one you think most people will choose: left, middle or right. Keep it private.
+“Research has the same problem. We cannot read every paper, inspect every software project or independently verify every claim. What gets selected affects what we study, use and support.
 
-[Allow five silent seconds. Do not point out the middle code's dark green color yet. This is a quick show of hands, with no money or app scoring.]
+“Access to more information does not by itself give us reliable knowledge. We need information accurate and relevant enough for a particular decision. The foundational paper calls that decision-grade knowledge.
 
-“Reveal together: one finger for left, two for middle, three for right. One, two, three.
+“Better evidence can help us compare consequences and correct mistaken beliefs. It cannot decide whose interests should count or settle every disagreement about values. Curation is one part of a decision, with real consequences for the rest.”
 
-[Observe the distribution before pointing out the middle code's dark green color. If there is a tie or no clear cluster, say: “We did not find one shared choice this time.”]
+[Ask for one familiar example of delegated selection, checking or context. Keep the answer brief.]
 
-“I made the middle code green. I notice it and expect you to notice it too. That shared focal point is called a Schelling point.
-
-“Shared expectations can guide independent choices. The curation game aims to make honest assessment that shared focal point. Credible consensus means a collective judgment people have reasons to rely on. We still need to test whether the incentives earn that credibility.”
-
-[The code labels also influence choices. Do not claim that the color caused the result or that this exercise proves honesty. Keep the two-minute slot.]
-
-## 3. Curating public goods
+## 3. Information quality is not one thing
 
 **Target: 2 minutes. Elapsed: 0:03 to 0:05.**
 
-“Here is one application: curating public goods against a stated goal. First, a group defines the goal, the judging criteria, the required evidence and the assessor rewards. Together, these rules form its policy. A pool applies that policy to the nominations submitted to it.
+“Suppose a world-politics feed publishes perfectly accurate football trivia. The facts can be right and still fail the reader's purpose. Accuracy and relevance answer different questions.
 
-“Someone nominates a contribution, supplies testable claims and evidence, identifies its beneficiary and puts down a deposit backing those claims. A jury judges relevance under the criteria. People can fund an appeal, and periodic reassessment keeps the scores current. The resulting weights describe relative importance under the chosen criteria. A funding budget can arrive later and use those shares.
+“Accuracy asks whether a factual claim holds under its stated scope and time. Relevance asks how much it matters for this goal, here and now. A high score for relevance does not certify the facts; a correct fact does not establish its importance.
 
-“Two questions run through this process. Do the nomination's testable claims hold up to challenge? And, given those claims, how relevant is the contribution to the stated goal?
+“The paper also names timeliness, interpretability, completeness and accessibility. The important dimensions depend on the domain. Evidence makes claims and judgments inspectable; it is support for assessing quality, not a substitute for every quality we care about.
 
-“An accuracy challenge addresses the claims. Relevance assessment judges the contribution under the criteria. A high relevance score does not certify that every claim is true.
+“In our funding application, we will keep factual claims separate from relevance judgments. We will also revisit relevance as circumstances change. A contribution can remain accurately described while becoming more or less important.”
 
-“Funding is one use of these assessments. Decentralized Curation is the broader framework. It distributes the work of judging and checking; it still depends on sound criteria, usable evidence and credible arbitration.”
+[Start with accuracy and relevance, then point to the other dimensions. Do not introduce a single overall quality score.]
 
-[Trace the main path once. Point to the separate accuracy path; leave its procedure for slide 9.]
-
-## 4. Define the goal and criteria
+## 4. Who should curate?
 
 **Target: 2 minutes. Elapsed: 0:05 to 0:07.**
 
-“For this example, our goal is to support open infrastructure that research depends on. The question is how much the nominee's completed and maintained work underpins how research is done, shared and kept, now.
+“A central curator can bring expertise, a consistent editorial purpose and fast decisions. The difficulty is dependence on that curator: limited capacity, blind spots and incentives can shape what everyone else sees. We need ways to inspect and contest those judgments.
 
-“Examine who relies on it, its role in research and the alternatives. Releases, documentation and downstream use provide evidence. Costs and limitations belong there too.
+“A simple vote opens participation and tells us something about people's preferences. Counting votes alone does not gather evidence or make every voter informed about the subject. Popularity is not the same as accuracy or relevance to a stated goal.
 
-“This is a choice made for this example pool. Another pool may care about a different problem and need a different policy. Curation costs must be funded. A budget to distribute to beneficiaries is useful upfront, but optional: it can arrive after we have curated the weights.
+“These are not exhaustive descriptions of institutions. Democratic processes can include expert advice, deliberation and scrutiny; specialists can learn from the people affected by their decisions.
 
-“Publishing a policy lets people inspect it. The creator chooses the terms; funders choose whether to support the pool; jurors apply its criteria. We still need to ask affected people whose needs those criteria include or miss.”
+“The design challenge is to combine participation with informed, inspectable and correctable judgment. Opening entry is only one part of that. It does not guarantee equal influence or representation of everyone affected, and experts do not acquire the right to decide public purposes just by being experts.”
 
-[Read the scoring prompt once. Do not read every anchor.]
+[Ask which part of the challenge a familiar system handles well. Do not frame the proposal as a proven replacement for democracy or professional expertise.]
 
-## 5. Nominate work that we can inspect
+## 5. A framework before a mechanism
 
 **Target: 2 minutes. Elapsed: 0:07 to 0:09.**
 
-“Let us use NumPy, the array library used in scientific Python. Its version 2.0.0 was released on 16 June 2024. That is a testable claim: we can check the release record.
+“The foundational paper proposes four design steps.
 
-“Establishing that fact does not tell us how much the work matters. That needs judgment under our criteria: who relies on it, what role it plays and what alternatives exist.
+“First, define the problem. Which decision is suffering, and is missing or poor information actually part of the cause?
 
-“The release record is real. The nomination, scores and funding in this demonstration are illustrative. This is not an actual application by NumPy.”
+“Second, identify the qualities that matter for that decision. We should not assume every domain needs the same score.
 
-[Point to the release date, then ask which of our criteria the date alone can answer. Keep factual evidence separate from the relevance judgment.]
+“Third, ask where challenges make sense. They help only when a claim can be falsified and finding decisive counter-evidence is feasible and cheaper than exhaustively verifying everything. A fact that anyone can check instantly may need no elaborate dispute system.
 
-Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-0-0-released). Keep the link in the notes for questions rather than projecting it.
+“Fourth, choose a mechanism for each quality. A factual challenge and a judgment of relevance do different jobs. We should not force them into one signal.
 
-## 6. Jurors score independently
+“Decentralized Curation is this broader framework. The paper develops news as an application. Today we will use public goods funding, with its own purpose and policy. We want credible consensus: judgments grounded in evidence, assessed under an explicit policy and open to useful correction.”
+
+[Trace the four steps in order. Leave the funding workflow for slide 7.]
+
+## 6. What should become rewarding?
 
 **Target: 3 minutes. Elapsed: 0:09 to 0:12.**
 
-“People put down a deposit to enter the draw for paid jury work. That deposit is their stake: capital they can lose. More available stake increases their chance of being drawn. Here six drawn seats are held by three jurors. One person can hold several seats, so six seats do not necessarily mean six independent people.
+“The proposal is to make useful curation personally worthwhile. That takes honesty, competence and scrutiny. Honesty means reporting sincerely; competence means knowing how to judge the subject; scrutiny means critically examining claims and evidence. An honest person can be mistaken, and an expert can report strategically or fail to investigate.
 
-“Each juror reads the evidence and privately seals a score before revealing it. The technical name is commit and reveal. These controls show scores after revelation. The result is the weighted mean: a juror holding more of the drawn weight has more influence on it.
+“The relevance game asks participants to report privately and makes rewards depend on how their judgments compare with others. A factual challenge gives a separate reward for exposing a false claim. These incentives aim to make honest, informed work worthwhile.
+
+“Here is a quick illustration of shared expectations. Look at the three codes on your handout. Without talking or scanning, choose the one you think most people will choose: left, middle or right. Keep it private.
+
+[Allow five silent seconds. Do not point out the middle code's dark green color. This is a show of hands, with no money or app scoring.]
+
+“Reveal together: one finger for left, two for middle, three for right. One, two, three.
+
+[Observe the distribution. If there is no clear cluster, say: “We did not find one shared choice this time.”]
+
+“I made the middle code green. I notice it and expect you to notice it too. A shared focal point like that is called a Schelling point. The proposal aims to make honest assessment a shared focal point, but this little game has no factual answer and does not show that the incentives achieve that aim.
+
+“Paying for assessment does not prove that useful work happened. Investigation must be worth its effort and pay better overall than cheaply predicting the group. We need to test two links: do rewards induce useful curation, and do decisions based on it benefit the people affected?”
+
+[The labels, position and destinations also influence choices. Do not attribute the result to color alone. If asked about future selection, losses reduce draw chances only when stake falls relative to others after replenishment.]
+
+## 7. Apply the framework to public goods funding
+
+**Target: 2 minutes. Elapsed: 0:12 to 0:14.**
+
+“Let us apply those steps. Our decision is which public contributions to support. A group defines the goal, judging criteria, required evidence and assessor rewards. Together, these form its policy. A pool applies that policy to nominations.
+
+“A person nominates work, supplies checkable claims and evidence, identifies a beneficiary and puts down a deposit backing those claims. A jury assesses relevance under the policy. People can challenge the claims, fund an appeal of a score and reassess relevance later.
+
+“The assessment produces relative weights. A funding budget can use them to allocate support, and that budget can arrive after the curation. Funding is one use of the assessment, rather than the definition of the framework.
+
+“The process distributes judgment and checking. It still depends on sound criteria, accessible evidence and credible arbitration. Now we will follow one example so those roles become concrete.”
+
+[Trace funders → pool → beneficiaries first. Then show who supplies the assessment: nominators bring claims and evidence, jurors judge relevance, and fact-checkers take factual disputes to an external arbitrator. The creator publishes the policy. Continuous funding does not remove per-nomination jury and appeal rounds.]
+
+## 8. Set the policy; nominate checkable work
+
+**Target: 2 minutes. Elapsed: 0:14 to 0:16.**
+
+“Our example goal is to support open infrastructure that research depends on. How much does the nominee's completed and maintained work underpin how research is done, shared and kept, now? We consider who relies on it, its role and the alternatives, supported by evidence of use, costs and limitations.
+
+“This is a choice for this pool. Publishing the policy makes it inspectable; it does not settle whose needs it includes or misses. Another pool may choose a different goal.
+
+“Our nominee is NumPy, the array library used in scientific Python. Its version 2.0.0 was released on 16 June 2024. We can check that against the release record. Establishing the date does not establish how much the work matters under our criteria.
+
+“The release record is real. This nomination, its scores and its funding are illustrative. This is not an actual application by NumPy.”
+
+[Read the scoring question once, then point from the dated claim to the published release announcement. Ask which relevance criterion the release date alone can answer.]
+
+Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-0-0-released). Keep the link in the notes for questions rather than projecting it.
+
+## 9. Jurors score independently
+
+**Target: 2 minutes. Elapsed: 0:16 to 0:18.**
+
+“People put down a deposit to enter the draw for paid jury work. Their stake is capital they can lose. More available stake increases their chance of being drawn. Here six drawn seats are held by three jurors: more seats do not necessarily mean more independent people.
+
+“Each juror reads the evidence and privately seals a score before revealing it. The technical name is commit and reveal. These controls show scores after revelation. The result is the weighted mean; more drawn weight gives a juror more influence.
 
 “Watch what happens when I move one score.”
 
-[Move one slider. Pause while the audience follows the change.]
+[Move one slider and pause.]
 
-“The calculation changes predictably. To decide whether the judgment improved, we need the reason and the evidence.
+“The calculation changes predictably. To decide whether the judgment improved, we need the reason and the evidence, not just the new number.”
 
-“I will restore that score so that we can follow the same starting point through the next steps.”
+[Ask what evidence could justify the change. Reset the example to its starting values before advancing. Keep the limitations of sealing for slide 19.]
 
-[Restore the changed slider to its starting value. If asked about the arithmetic, use the displayed calculation. Ask one person what evidence could justify a higher or lower score. Save the technical limitations of commitment and revelation for slide 17.]
+## 10. Curate the shares; distribution can follow
 
-## 7. A disputed score can face a larger jury
+**Target: 2 minutes. Elapsed: 0:18 to 0:20.**
 
-**Target: 3 minutes. Elapsed: 0:12 to 0:15.**
+“Think of one whole budget being divided into shares. The table shows each contribution's weight, its share of the total and the funding that share receives. At the reset values, NumPy has weight 0.60 out of a total of 1.50. That is a 40 percent share, not 60 percent of the budget.
 
-“Suppose people believe that assessment missed something important. Anyone can help fund a proposed score, including the person who nominated the work. Competing, fully funded proposals trigger a larger jury.
+“Set funding to zero: the shares remain. Add 100 units per day, and NumPy's share receives 40.”
 
-“Here the jury grows from six seats to twelve. It examines the same nomination and can reach its own judgment. Let us apply this illustrative result.”
+[Set funding to zero, then restore 100. Point to the unchanged shares and changed amounts.]
 
-[Select **Apply appeal result**. Let the audience see which score and shares change.]
+“We have curated an assessment that can exist before a funding budget. Curation itself has costs, even when beneficiary funding arrives later. These weights express judgments under this policy, not measured public benefit.”
 
-“An appeal gives people a way to contest a score. More seats do not automatically mean more knowledge or a better answer: correction still needs evidence, participation and funding.”
+[Ask: “If one weight rises and the budget stays fixed, whose share changes?” Take a brief answer.]
 
-[Ask what new evidence they would want the appeal jury to consider. Keep settlement rules in the private questions below.]
+## 11. Contest a score through an appeal
 
-## 8. Curate the shares; distribution can follow
+**Target: 2 minutes. Elapsed: 0:20 to 0:22.**
 
-**Target: 3 minutes. Elapsed: 0:15 to 0:18.**
+“Suppose people think the assessment missed something important. Anyone can help fund a proposed score, including the person who nominated the work. Competing, fully funded proposals trigger a larger jury.
 
-“The table shows each contribution's weight, its share of the total and what that share receives from a funding budget. The shares sum to one. They describe relative importance under the chosen criteria.
+“Here the jury grows from six seats to twelve. It examines the same nomination and reaches its own judgment. Let us apply this illustrative result.”
 
-“At the reset values, NumPy's weight is 0.60 out of a total of 1.50: a 40 percent share. Set funding to zero: the shares remain. Add 100 units per day, and NumPy's share receives 40.”
+[Select **Apply appeal result**. Read the result on the current slide.]
 
-[Set the funding control to zero, then restore 100. Point to the unchanged shares and changed amounts. Use the current values if the appeal is still applied.]
+“The adopted score and funding shares change. An appeal gives people a route to contest a judgment. More seats do not automatically mean more knowledge: correction still needs evidence, independent assessment and funding.”
 
-“We have curated an assessment that can exist before a funding budget. Funding is one use of it. These weights are judgments under our criteria, not measurements of public benefit.”
+[Ask what evidence they would want the appeal jury to consider. Keep settlement rules in the private questions below.]
 
-[Ask: “If one weight rises and the budget stays fixed, whose share changes?” Take a short answer.]
+## 12. Challenge a factual claim
 
-## 9. Claim challenges reward fact-checkers
+**Target: 2 minutes. Elapsed: 0:22 to 0:24.**
 
-**Target: 3 minutes. Elapsed: 0:18 to 0:21.**
+“Now take a different kind of disagreement. Imagine the nomination says: ‘NumPy 2.0.0 was released in 2020.’ The release record says 16 June 2024. That gives a fact-checker evidence for a claim challenge, not a reason to argue about the relevance score.
 
-“Now imagine the nomination says: ‘NumPy 2.0.0 was released in 2020.’ We just checked its release record: 16 June 2024. That gives a fact-checker evidence for a challenge.
+“Anyone can challenge a claim as false or untestable while its nomination is active. An external arbitrator decides. A successful fact-checker receives the submitter's deposit and the nomination ends. The reward gives people a reason to look for errors, but it works only if investigation and reliable adjudication are feasible.”
 
-“Anyone can challenge a claim as false or untestable while its nomination is active. An external arbitrator decides. If the challenge succeeds, the fact-checker receives the submitter's deposit and the nomination ends.
+[Select **Show debunked outcome**. Read the result on the current slide.]
 
-“That reward gives people a reason to check claims. It is different from asking a jury how relevant the contribution is.”
+“Future funding stops. What the nomination already earned remains owed to its beneficiary. The submitter can make a fresh nomination.
 
-[Select **Show debunked outcome**.]
+“The 2020 claim is invented for this demonstration. It is not an accusation against NumPy.”
 
-“Future funding to this nomination stops. What it already earned remains its beneficiary's money. The submitter can make a fresh nomination.
+[Ask where the reward comes from. A lack of challenges alone is not evidence that every claim was checked.]
 
-“The 2020 claim is invented for this demonstration; it is not an accusation against NumPy.”
+## 13. Reassess when circumstances change
 
-[Ask who has an incentive to check the claim and where the reward comes from. Keep deposit settlement and withdrawal details in the private questions below.]
+**Target: 1 minute. Elapsed: 0:24 to 0:25.**
 
-## 10. Reassess periodically
-
-**Target: 2 minutes. Elapsed: 0:21 to 0:23.**
-
-“A contribution's claims can remain accurate while its relevance changes. Alternatives may improve or people may rely on it less. Periodic reassessment runs a fresh scoring round to keep the judgment current. An appeal is different: it contests an existing score.
+“A contribution can remain accurately described while its relevance changes. Alternatives improve; reliance grows or shrinks. Periodic reassessment runs a fresh scoring round. An appeal contests an existing score, while reassessment asks again in the current context.
 
 “This is a separate branch of the example. I am restoring the original nomination and applying an illustrative lower assessment.”
 
-[Select **Apply lower assessment**, then return to the allocation table if helpful.]
+[Select **Apply lower assessment**.]
 
-“The new weight changes future funding. Earlier earnings stay earned. A higher assessment would also change future funding.”
+“The new weight changes future funding; earlier earnings stay earned. We now have three different correction paths: challenge a claim, appeal a judgment or reassess it later. Let us experience the judgment part ourselves.”
 
-[Ask for one change in evidence that could justify reassessment. The calculator shows current rates, not accumulated balances.]
-
-## 11. Honesty, competence and scrutiny
-
-**Target: 2 minutes. Elapsed: 0:23 to 0:25.**
-
-“We want personal rewards to encourage judgment that other people can rely on. That takes three different qualities.
-
-“Honesty means reporting sincerely. Competence means knowing how to judge the subject. Scrutiny means critically examining claims and evidence. Someone can examine a claim honestly and still lack expertise; an expert can also fail to question it.
-
-“Fees support the work of scrutiny. Paying someone does not create expertise or prove that they examined the claims and evidence.
-
-“Jurors score privately. Agreement earns rewards; disagreement can bring penalties. Honesty is the intended Schelling point, but avoiding collusion does not show it is the only successful strategy.
-
-“Informed investigation must pay for its effort and earn more overall than cheaply predicting the group. Otherwise the game can reward prediction without rewarding competence.
-
-“Losses reduce future influence when they leave a juror with less stake relative to others, after any replenishment. We need to test these incentives, and whether better assessment improves decisions for the people affected.
-
-“Now let us experience one part of that game ourselves.”
-
-## 12. Join the workshop
+## 14. Join the workshop
 
 **Target: 3 minutes. Elapsed: 0:25 to 0:28.**
 
@@ -196,7 +220,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Compare seats with participants. Remove duplicate or stray seats before opening the first nominee. Do not put private host controls on the projector.]
 
-## 13. Use one shared policy
+## 15. Use one shared policy
 
 **Target: 2 minutes. Elapsed: 0:28 to 0:30.**
 
@@ -210,7 +234,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Read the anchor labels together. Invite one clarification about the policy. Avoid announcing which nominee should score highest.]
 
-## 14. See what the workshop rewards
+## 16. See what the workshop rewards
 
 **Target: 2 minutes. Elapsed: 0:30 to 0:32.**
 
@@ -226,7 +250,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “Relevance scores guide support for contributions; juror rewards pay the people assessing them. This workshop uses points to let us experience those incentives.”
 
-## 15. Play the jury
+## 17. Play the jury
 
 **Target: 27 minutes. Elapsed: 0:32 to 0:59.**
 
@@ -252,7 +276,7 @@ If proof reporting needs explanation, say:
 
 [For the assigned-role round, let the interface deliver the private instruction. Participants may decline it. Do not identify roles publicly before the result. If nobody reveals, explain that the round is void; do not infer a judgment from it.]
 
-## 16. What shaped the scores?
+## 18. What shaped the scores?
 
 **Target: 5 minutes. Elapsed: 0:59 to 1:04.**
 
@@ -270,7 +294,7 @@ If proof reporting needs explanation, say:
 
 “The group can sometimes move the result against which everyone is rewarded. A minority can also have a good argument and lose. This is why coherence alone cannot certify accuracy. One room and one simulated group do not establish resistance to capture.”
 
-## 17. Attack the mechanism
+## 19. Attack the mechanism
 
 **Target: 5 minutes. Elapsed: 1:04 to 1:09.**
 
@@ -290,11 +314,11 @@ If proof reporting needs explanation, say:
 
 [Use the remaining time for one concrete attack and response. Ask what weakness remains. Keep contract comparisons, payout rules and recovery machinery in the private notes.]
 
-## 18. Close the loop
+## 20. Close the loop
 
 **Target: 11 minutes. Elapsed: 1:09 to 1:20.**
 
-“The aim is open participation supported by honesty, competence and scrutiny. Personal rewards should make that work worthwhile for the people doing it, while their assessments help others make better decisions.
+“We began with a problem: our decisions depend on information that we cannot all inspect for ourselves. The proposal is open participation supported by honesty, competence and scrutiny. Personal rewards should make useful curation worthwhile for the people doing it, while their assessments help others make better decisions.
 
 “We explored public-goods curation, with funding as one use of its results. What would make this useful in your work, and what would make you hesitate to rely on it?”
 
@@ -321,7 +345,7 @@ If proof reporting needs explanation, say:
 
 Use these notes for source questions; there is no corresponding projected slide.
 
-“The sources have different roles. The published paper records the research at a particular release. The source register identifies later working choices. The inspected implementation snapshot supports statements about that code, not a claim that those contracts are deployed, audited or identical to the paper.
+“The sources have different roles. The opening four-step framework, multidimensional account of information quality and incentive hypothesis come from the published paper, which records the research at a particular release. The source register identifies later working choices. The inspected implementation snapshot supports statements about that code, not a claim that those contracts are deployed, audited or identical to the paper.
 
 “The Arrow proposal supports the experiment's stated scope. It does not supply results. Some implementation and proposal sources are access-controlled, so the public explanation states what was inspected and where independent access is limited.
 

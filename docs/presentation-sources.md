@@ -1,6 +1,6 @@
 # Presentation evidence register
 
-This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honesty, competence and scrutiny can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the eighteen-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
+This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honesty, competence and scrutiny can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the twenty-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
 
 ## Which source controls which claim
 
@@ -41,6 +41,18 @@ The Arrow column summarizes the proposal description available to the review, no
 
 The paper's variance-padding counterexample concerns its mean/standard-deviation and dispersion-scaled single-asset model. It cannot be transferred unchanged to the working two-asset design, the median/MAD implementation or the workshop's different reward rule. The [current analysis](https://github.com/0xferit/manuscript-decentralized-curation/blob/9927927cebd11f3b4e66f80bebee65b3248af919/paper.qmd#L374-L384) also distinguishes a truthful-reporting defect from net public benefit: a strategically imperfect system could improve on available alternatives, but this has not been established.
 
+## Foundational framing for the presentation
+
+Slides 2 to 6 establish the problem before introducing the public-goods application. Their foundation is the [published version 1.2.0 paper](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd), with its scope qualifications intact.
+
+| Narrative purpose | Paper-grounded idea | Boundary |
+| --- | --- | --- |
+| Why curation matters | Readers already delegate selection, verification and context to newspapers, rankings, reviews and feeds. This reduces individual work while making decisions depend on curators' competence and incentives: [introduction, lines 27–49](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd#L27-L49). | Reliable shared evidence can improve decisions; it does not settle conflicting values or establish legitimate public purposes. |
+| Qualities of information | Accuracy, relevance, timeliness, interpretability, completeness and accessibility are distinct dimensions. A strength in one must not hide a weakness in another: [quality identification, lines 91–95](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd#L91-L95). | The relevant dimensions depend on the domain. Accurate but irrelevant trivia illustrates why accuracy alone is insufficient: [lines 133–140](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd#L133-L140). |
+| Existing approaches | The presentation compares concentrated editorial judgment with simple preference tallying as two limited ways to select information. The paper motivates inspectable evidence, incentives and correction, while preserving public participation as a source of knowledge: [lines 35–49](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd#L35-L49). | This comparison is a presentation synthesis, not a result proving democracy inferior to expert judgment. Affected people contribute knowledge of needs and consequences. |
+| The framework | Define the curation problem, identify its quality dimensions, determine where feasible falsification justifies challenges, and design mechanisms by dimension: [four-step framework, lines 64–75](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd#L64-L75). | Challenge is appropriate where falsification is feasible and cheaper than exhaustive verification; it is not a universal truth test. |
+| Incentives and evaluation | The thesis links private rewards to useful production, assessment and correction, then to public benefit: [lines 27–31](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd#L27-L31). | Each link needs evidence. Agreement and positive participant returns establish neither productive incentives nor public benefit. |
+
 ## Judgment and public accountability
 
 The opening asks how private rewards can support useful assessment and correction, and how that work can serve affected people. The [inspected research snapshot](https://github.com/0xferit/manuscript-decentralized-curation/blob/9927927cebd11f3b4e66f80bebee65b3248af919/paper.qmd#L27-L41) requires evidence for both links. Public participation can reveal needs and contribute knowledge; expert or delegated assessment can itself be collective. This is a design aim, not a demonstrated advantage of monarchy over democracy. These sources inform the framing, not claims about the implemented contracts.
@@ -73,9 +85,15 @@ The [evaluation plan](evaluation-plan.md) defines separate candidate measures fo
 
 The shared workshop policy adds a contribution-attribution rule: separately named entries do not earn full credit for the same underlying work. Shared work receives credit once across the set, while distinct contributions by one beneficiary remain eligible. This policy guard depends on assessment of scope and evidence; neither a distinct registry identifier nor a paid deposit establishes semantic uniqueness. With nonbinding request caps, splitting one contribution's total credited weight across entries preserves its combined share; assigning the full credit twice can enlarge it. This is a rule for the example pool, not a universal duplicate-beneficiary restriction.
 
+## Prototype presentation material
+
+The [public prototype](https://rpgf-prototype.pages.dev/#/demo/value) and its [inspected source revision](https://github.com/golemfoundation/rpgf-prototype/tree/c6180f9ad7e44992725a6c6dcc96b60abe3de0df) inform the presentation of slides 7, 8 and 10: a pool with distinct funding and assessment roles, a dated claim connected to evidence, and a whole budget divided by normalized shares. The deck redraws these ideas using its existing research-infrastructure example and calculations. The prototype is a simulation, not evidence of a production deployment or successful incentives.
+
+Its internal investment pitch, pilot resource estimates, token selection, older settlement rules and “technical truth serum” analogy do not govern this presentation. The current manuscript and the source hierarchy above retain authority. Continuous beneficiary funding does not mean that per-nomination jury and appeal rounds disappear.
+
 ## Real evidence in the NumPy worked example
 
-Slides 4 to 10 follow NumPy as an illustrative nominee and use its 2.0.0 release as bounded evidence about delivered work. The scoring prompt concerns the nominee under the shared policy. It does not ask curators to assign a price to the release alone.
+Slides 8 to 13 follow NumPy as an illustrative nominee and use its 2.0.0 release as bounded evidence about delivered work. The scoring prompt concerns the nominee under the shared policy. It does not ask curators to assign a price to the release alone.
 
 | Record | Verified fact | Limit of the evidence |
 | --- | --- | --- |
@@ -88,7 +106,7 @@ The release-note link uses the later 2.2 manual's historical 2.0.0 notes. The 2.
 
 NumPy's nomination, requested weight, curator identities, ticket counts, scores, comparison positions and default 100-unit daily release equivalent are illustrative. The initial six-ticket mean, twelve-ticket appeal and later re-score drive a working allocation calculation; they are not reported evaluations of NumPy. Relative shares are calculated independently of grant flow; setting that flow to zero preserves the shares and creates no earnings. Initial and appeal rates represent an active allocation after the new nomination's holdback and the applicable score finalization. Later rating increases and decreases create no new holdback. Funds accrue for the beneficiary to claim; these figures are not scheduled daily transfers. The calculator omits balances, asset transfers, eligibility enforcement and contract settlement.
 
-The accuracy branch adds a deliberately counterfactual assertion that existing NumPy 1.x compiled extensions work unchanged. NumPy did not make that claim in this example. The migration guide supplies the counter-evidence. The button illustrates an external arbitrator rejecting that added claim after scoring; this teaching order is not a prerequisite for a factual challenge, and no real accuracy ruling occurs. Debunking stops future weight while preserving all funding accrued before closure, whether paid or still unclaimed. The lower re-score is a separate alternative outcome, not an action after debunking.
+The accuracy branch adds a deliberately counterfactual assertion that NumPy 2.0 was released in 2020. NumPy did not make that claim in this example. The release announcement and package record supply the counter-evidence: 16 June 2024. The button illustrates an external arbitrator rejecting that added claim after scoring; this teaching order is not a prerequisite for a factual challenge, and no real accuracy ruling occurs. Debunking stops future weight while preserving all funding accrued before closure, whether paid or still unclaimed. The lower re-score is a separate alternative outcome, not an action after debunking.
 
 ## Capture-defense attribution and recovery design
 

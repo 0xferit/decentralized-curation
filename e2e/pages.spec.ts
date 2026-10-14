@@ -5,7 +5,7 @@ test.use({ reducedMotion: "reduce" });
 
 const PHONE = { width: 375, height: 740 };
 const SHORT_PHONE = { width: 390, height: 667 };
-const DECK_SLIDE_COUNT = 23;
+const DECK_SLIDE_COUNT = 22;
 const PAGES = ["/", "/deck/", "/handout/", "/join/", "/paper/", "/paper/sheets.html"];
 
 test("the handout leads the title and subtitle across session pages", async ({ page }) => {

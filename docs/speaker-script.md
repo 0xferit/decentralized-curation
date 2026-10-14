@@ -2,7 +2,7 @@
 
 The [handout](../public/handout/index.html) leads the session’s title and scope. This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
 
-The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. Slides 21 to 23 are optional references. Source links remain in these notes; follow-up codes are on the handout.
+The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. Slides 21 to 22 are optional references. Source links remain in these notes; follow-up codes are on the handout.
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
@@ -363,18 +363,6 @@ If proof reporting needs explanation, say:
 “In the intended working design, ether (ETH) pays a fixed service fee per eligible revealed seat when a valid ruling is issued. A separate utility token provides jury stake and the redistribution of incoherence penalties. If nobody loses utility tokens, there are no extra tokens to redistribute. The ETH service fee is separate from that coherence result.”
 
 [Use the [grading comparison and source register](presentation-sources.md#keep-the-four-mechanisms-distinct) for model-specific questions. Do not transfer a result for one reward formula to another.]
-
-## 23. Backup: related approaches
-
-**Optional, about 2 minutes.**
-
-“Several adjacent approaches address parts of this problem. Matadisco supports discovery through published metadata pointers. The assessment workshop makes a funder's goals and evidence weights explicit. The Unjournal pays experts for public evaluation and allows author responses. The Open Source Endowment combines published criteria with human due diligence and board approval.
-
-“They illustrate different institutional choices, and they can complement one another. Paying reviewers and publishing assessments are already practiced. The question for this proposal is what open participation, its incentive rules and funded correction add, and at what cost.
-
-“I am not presenting a comparative study of their performance or claiming that these organizations have endorsed this design.”
-
-Sources: [Matadisco](https://matadisco.org/), [Institute of Open Science Practices programme](https://www.iosp.science/), [The Unjournal](https://info.unjournal.org/), [Open Source Endowment](https://endowment.dev/faq/). See the [conference context](presentation-sources.md#conference-observations-and-adjacent-work) for attribution and evidence limits.
 
 ## Private reference: source scope
 

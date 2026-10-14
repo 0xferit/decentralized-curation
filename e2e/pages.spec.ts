@@ -103,8 +103,8 @@ test("funding application precedes the workshop and its real jury remains intera
   await page.setViewportSize(PHONE);
   await page.goto("/deck/");
   await expect(page.locator("section.slide")).toHaveCount(24);
-  await expect(page.locator("#s3")).toContainText("A funding application");
-  await expect(page.locator("#s9")).toContainText("Accuracy");
+  await expect(page.locator("#s3")).toContainText("Curating public goods");
+  await expect(page.locator("#s9")).toContainText("Claim challenges");
   await expect(page.locator("#s7")).toContainText("Appeal");
   await expect(page.locator("#s14")).toContainText("Workshop arithmetic");
   await expect(page.locator("#s18")).toContainText("precursor");
@@ -290,7 +290,7 @@ test("worked example carries jury scores through capped funding and later outcom
     await score.focus();
     await score.press("Home");
   }
-  await page.getByRole("button", { name: "Apply lower re-score", exact: true }).click();
+  await page.getByRole("button", { name: "Apply lower assessment", exact: true }).click();
   await expect(page.locator('[data-example="mean"]')).toHaveText("0.600");
   await expect(page.locator('[data-project-rate="numpy"]')).toHaveText("25.00");
   await expect(page.locator("#example-outcome")).toContainText("Earlier accrual stays earned");

@@ -6,7 +6,7 @@ The eighty-minute schedule matches the facilitator guide. Timing includes demons
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
-## 1. Putting self-interest to work
+## 1. Putting self-interest to work for the public good
 
 **Target: 1 minute. Elapsed: 0:00 to 0:01.**
 
@@ -18,7 +18,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Look at the audience. Let the title settle before advancing.]
 
-## 2. Who judges research, and what do we reward?
+## 2. Who judges what matters?
 
 **Target: 2 minutes. Elapsed: 0:01 to 0:03.**
 
@@ -40,31 +40,33 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [The code labels also influence choices. Do not claim that the color caused the result or that this exercise proves honesty. Keep the two-minute slot; this replaces the audience example.]
 
-## 3. One application: public-goods funding
+## 3. Curating public goods
 
 **Target: 2 minutes. Elapsed: 0:03 to 0:05.**
 
-“Here is the public-goods funding application, or PGF. A pool has a purpose and a published policy. Someone nominates a contribution, supplies evidence, identifies its beneficiary and puts up a bond. A drawn jury judges relevance under that policy. People can fund an appeal. Together, the resulting weights describe what matters under that policy. A funding budget can arrive later and use those shares.
+“Here is one application: curating public goods against a stated goal. First, a group defines the goal, the judging criteria, the required evidence and the assessor rewards. Together, these rules form its policy. A pool applies that policy to the nominations submitted to it.
 
-“Two questions run through this process. Is the nomination making defensible factual claims? And, given those facts, how relevant is the contribution to this pool's purpose?
+“Someone nominates a contribution, supplies testable claims and evidence, identifies its beneficiary and puts down a deposit backing those claims. A jury judges relevance under the criteria. People can fund an appeal, and periodic reassessment keeps the scores current. The resulting weights describe relative importance under the chosen criteria. A funding budget can arrive later and use those shares.
 
-“The accuracy gate handles a challenge to the facts. The relevance gate handles the judgment under the policy. A high relevance score does not certify that every factual claim is true.
+“Two questions run through this process. Do the nomination's testable claims hold up to challenge? And, given those claims, how relevant is the contribution to the stated goal?
 
-“This is one application of the framework. Decentralized Curation is not limited to funding or to these two gates.”
+“An accuracy challenge addresses the claims. Relevance assessment judges the contribution under the criteria. A high relevance score does not certify that every claim is true.
+
+“Funding is one use of these assessments. Decentralized Curation is the broader framework.”
 
 [Trace the main path once. Point to the separate accuracy path; leave its procedure for slide 9.]
 
-## 4. First, agree what the pool is trying to do
+## 4. Define the goal and criteria
 
 **Target: 2 minutes. Elapsed: 0:05 to 0:07.**
 
-“For this example, our purpose is supporting open infrastructure that research depends on. The question is how much the nominee's completed and maintained work underpins how research is done, shared and kept, now.
+“For this example, our goal is to support open infrastructure that research depends on. The question is how much the nominee's completed and maintained work underpins how research is done, shared and kept, now.
 
 “Examine who relies on it, its role in research and the alternatives. Releases, documentation and downstream use provide evidence. Costs and limitations belong there too.
 
 “This is a choice made for this example pool. Another pool may care about a different problem and need a different policy. Curation costs must be funded. A budget to distribute to beneficiaries is useful upfront, but optional: it can arrive after we have curated the weights.
 
-“Publishing a policy lets people inspect it. It does not establish that everyone affected chose it, or that it serves a good purpose. The creator chooses the terms; funders choose whether to support that pool; jurors apply its policy.”
+“Publishing a policy lets people inspect it. It does not establish that everyone affected chose it, or that it serves a worthwhile goal. The creator chooses the terms; funders choose whether to support that pool; jurors apply its criteria.”
 
 [Read the scoring prompt once. Do not read every anchor.]
 
@@ -82,13 +84,13 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Point once to the evidence links. Keep the distinction between evidence and assessment visible.]
 
-## 6. A jury turns evidence into a relevance score
+## 6. Jurors score independently
 
 **Target: 3 minutes. Elapsed: 0:09 to 0:12.**
 
-“Now imagine a jury has read that evidence. Here we have six drawn seats held by three curators. One curator can hold several seats; six seats do not necessarily mean six independent people.
+“People put down a deposit to enter the draw for paid jury work. That deposit is their stake: capital they can lose. More available stake increases their chance of being drawn. Here six drawn seats are held by three jurors. One person can hold several seats, so six seats do not necessarily mean six independent people.
 
-“Each curator commits a score and then reveals it. These controls show scores after revelation. The result is the weighted mean: a curator holding more of the drawn weight has more influence on it.
+“Each juror reads the evidence and privately seals a score before revealing it. The technical name is commit and reveal. These controls show scores after revelation. The result is the weighted mean: a juror holding more of the drawn weight has more influence on it.
 
 “Watch what happens when I move one score.”
 
@@ -114,7 +116,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “The adopted score changes. Backers are putting capital behind a judgment about where the final score will land. Their payouts favor positions closer to that ultimate score. They can lose principal even if they are closer than another position.
 
-“If only one position becomes fully funded after the admission and funding process closes, it wins by forfeiture. Its backers get a full refund, with no new jury fee or profit. That is a procedural win; it is not another jury's consensus.
+“If exactly one position is fully funded when the admission and funding process has closed, it wins by forfeiture. Its backers get a full refund, with no new jury fee or profit. That is a procedural win; it is not another jury's consensus.
 
 “The larger jury and public funding create a way to contest a result. They do not guarantee new information or a successful correction.”
 
@@ -124,7 +126,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 3 minutes. Elapsed: 0:15 to 0:18.**
 
-“The effective weight is the smaller of the requested weight and the adopted relevance score. Divide each eligible weight by their total, and the resulting shares sum to one. This is our curated, policy-relative picture of what matters. It exists before a grant budget does.
+“The submitter requests a maximum weight, labeled ‘Cap’ in the table. The effective weight is the smaller of that cap and the adopted relevance score. Divide each eligible weight by their total, and the resulting shares sum to one. This is our curated, policy-relative picture of what matters. It exists before a grant budget does.
 
 “At the reset values, NumPy's weight is 0.60 out of a total of 1.50: a 40 percent share. Set the grant flow to zero: the shares remain. Add 100 units per day, and NumPy receives 40. The budget acts on the curated knowledge.”
 
@@ -134,51 +136,53 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “One eligible positive weight receives the whole share, even with a low score. With no positive eligible weights, there is no allocation vector yet; we do not invent equal shares.
 
-“The table shows earning rates after the relevant conditions are met. A new nomination waits through holdback before it earns. Later rating changes create no new holdback. Once funds are earned, the beneficiary can claim them immediately.”
+“The table shows earning rates after the relevant conditions are met. A new nomination has a waiting period, called holdback, before it earns. Later score changes create no new holdback. Once funds are earned, the beneficiary can claim them immediately.”
 
 [Ask: “If one weight rises and the budget stays fixed, whose share changes?” Take a short answer.]
 
-## 9. Accuracy is a different dispute
+## 9. Claim challenges reward fact-checkers
 
 **Target: 3 minutes. Elapsed: 0:18 to 0:21.**
 
 “Now separate relevance from accuracy. The actual release date is documented. Imagine, however, that our nomination also claimed that existing NumPy 1.x compiled extensions all work unchanged with version 2.0. The migration guide supplies counter-evidence for affected binaries.
 
-“Anyone can challenge a false or non-falsifiable factual claim while the nomination is active, including before scoring or during a relevance assessment or appeal. The challenger supplies the required stake and fees. An external arbitrator resolves the factual dispute; the relevance jury does not take over that job.
+“Anyone can challenge a claim as false or untestable while the nomination is active, including before scoring or during a relevance assessment or appeal. The challenger puts down a deposit and pays the required fees. An external arbitrator decides the challenge; the relevance jury does not take over that job.
 
 “This is a hypothetical bad claim added for the example, not an accusation against NumPy. Let us show what a successful challenge would do.”
 
 [Select **Show debunked outcome**.]
 
-“Future funding stops and the nomination loses its bond. What it already earned remains its beneficiary's money, paid or unpaid. There are no clawbacks of earned funding. Earned funds also remain claimable while the dispute is pending.
+“If the challenge succeeds, the fact-checker receives the submitter's deposit and the nomination ends. That reward gives people a reason to check claims. The submitter can make a fresh nomination. Future funding to the old nomination stops, but what it already earned remains its beneficiary's money, paid or unpaid. Earned funds also remain claimable while the dispute is pending.
 
-“Withdrawing the nomination itself is different from claiming its earnings. If that exit request comes after the dispute, it waits behind it. Debunking closes the nomination, so that pending exit becomes unnecessary and is cancelled. If the challenge fails, the nomination can continue and the challenger loses the counter-stake under the dispute rules.”
+“Withdrawing the nomination itself is different from claiming its earnings. If that exit request comes after the dispute, it waits behind it. A successful challenge closes the nomination, so that pending exit becomes unnecessary and is cancelled. If the challenge fails, the nomination can continue and the challenger loses their deposit under the dispute rules.”
 
-## 10. Revisit the judgment when the evidence changes
+## 10. Reassess periodically
 
 **Target: 2 minutes. Elapsed: 0:21 to 0:23.**
 
-“A contribution can remain factually accurate and still become less relevant to the pool. Alternatives may improve, reliance may change, or an earlier assessment may have been too generous.
+“A contribution's claims can remain accurate while its relevance to the goal changes. Alternatives may improve, reliance may change, or an earlier assessment may have been too generous. Periodic reassessment runs a fresh scoring round to keep the judgment current. An appeal is different: it contests an existing score.
 
 “This is a separate branch of the example. I am restoring the original nomination and applying an illustrative lower assessment.”
 
-[Select **Apply lower re-score**, then return to the allocation table if helpful.]
+[Select **Apply lower assessment**, then return to the allocation table if helpful.]
 
-“When the new score is adopted under the ordinary finalization rules, the lower weight changes future earning. A rating increase would take effect on adoption too, without a new holdback. Earlier earnings stay earned.
+“When the new score is adopted under the ordinary finalization rules, the lower weight changes future earning. A score increase would take effect on adoption too, without a new holdback. Earlier earnings stay earned.
 
 “We have now seen the main loop: evidence, judgment, contest and a consequence that can change over time.”
 
 [The calculator shows current rates, not accumulated balances or settlement. The holdback applies only to new nominations; increases and decreases follow ordinary score adoption.]
 
-## 11. What has to go right?
+## 11. Honesty, care and competence
 
 **Target: 2 minutes. Elapsed: 0:23 to 0:25.**
 
 “For this to work well, we need a worthwhile goal, usable evidence and informed, independent assessors. We also need ways to challenge mistakes.
 
-“Honesty, care and competence are different. Honesty means reporting sincerely. Care means taking the time to examine the evidence. Competence means having the knowledge and ability to judge it. Someone can be honest and careful yet misunderstand the subject.
+“Honesty means reporting sincerely. Care means assessing evidence rigorously. Competence means knowing how to judge it. Someone can be honest and careful yet lack the expertise.
 
 “Fees compensate the work; rewards and penalties aim to make careful assessment worthwhile. Paying someone does not create expertise or prove they did the work.
+
+“Jurors score privately. Coherence means agreement with the jury's assessment under the criteria. It earns rewards; incoherence brings penalties. When jurors cannot rely on collusion, the design aims to make honest assessment their shared focal point: the Schelling point from our opening game.
 
 “Competition over repeated rounds aims to make uninformed guessing a losing strategy. Expected losses discourage entry. Someone who keeps participating and losing gives up tokens. As their stake shrinks relative to competitors’, they are drawn less often and have less influence.
 
@@ -236,9 +240,9 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 27 minutes. Elapsed: 0:32 to 0:59.**
 
-“For each nominee, read the description, apply the policy and seal your own score. Keep your two salt words private. When I close scoring, keep this page open so your device can reveal. You can change your seal before closing, or sit the nominee out.
+“For each nominee, read the description, apply the policy and seal your own score. Keep the two secret words used to seal your score private. When I close scoring, keep this page open so your device can reveal. You can change your seal before closing, or sit the nominee out.
 
-“After revelation, I will set a clear cutoff before grading so that sleeping phones have a chance to reconnect. Once I grade, a later reveal cannot change that round's result.”
+“Before opening each round, I will announce the grading cutoff and leave time for sleeping phones to reconnect and reveal. Once I grade, a later reveal cannot change that round's result.”
 
 [Play the six default nominees in the order shown by the room. Allow roughly four and a half minutes each: quiet scoring first, then recovery and grading, followed by ninety seconds of discussion. Do not shorten an active scoring window.]
 
@@ -258,7 +262,7 @@ If proof reporting needs explanation, say:
 
 [For the assigned-role round, let the interface deliver the private instruction. Participants may decline it. Do not identify roles publicly before the result. If nobody reveals, explain that the round is void; do not infer a judgment from it.]
 
-## 16. Did we reward judgment or conformity?
+## 16. What shaped the scores?
 
 **Target: 5 minutes. Elapsed: 0:59 to 1:04.**
 
@@ -286,7 +290,7 @@ If proof reporting needs explanation, say:
 
 “If people copy or coordinate, commitment and revelation bind a revealed report to an earlier commitment. The inspected contract still permits an early reveal while others can commit. Private coordination and bribery remain possible. Sealing a score is not a complete anti-collusion defense.
 
-“If someone captures the jury, stake puts selected capital at risk. How much protection that supplies depends on its distribution and value. It does not prove competence. Appeals add another chance to challenge a result, but they need information, participation and funding; doubling seats does not necessarily double independent knowledge.
+“If someone captures the jury, deposits put selected capital at risk. How much protection that supplies depends on its distribution and value. A large deposit alone is not evidence of competence. The intended filter is repeated competition, where informed judgment must outperform guessing. Appeals add another chance to challenge a result, but they need information, participation and funding; doubling seats does not necessarily double independent knowledge.
 
 “If someone can prove a sealed score to a buyer, this workshop provides a reporting penalty and bounty. A buyer may have another verification route. That particular reporting path was not found in the inspected contracts.
 
@@ -328,7 +332,7 @@ If proof reporting needs explanation, say:
 
 “The idea is putting self-interest to work for the public good. That requires more than a reward formula. People need evidence they can inspect, a policy they can understand, and a practical way to challenge a weak judgment.
 
-“We explored funding as one application. The broader question is whether private incentives can make useful assessment and correction worthwhile, and whether the decisions that follow actually improve things for others.”
+“We explored public-goods curation, with funding as one use of its results. The broader question is whether private incentives can make useful assessment and correction worthwhile, and whether the decisions that follow actually improve things for others.”
 
 [Invite one participant to distinguish an accuracy challenge from a relevance appeal. Invite another to name evidence that would make an agreed judgment more credible.]
 
@@ -340,21 +344,21 @@ If proof reporting needs explanation, say:
 
 **Optional, about 1 minute.**
 
-“There are different objects here. The research describes a framework and application designs. The intended funding system uses drawn, staked juries, factual disputes, appeals and funding consequences. The inspected implementation is evidence about a particular code snapshot, and it differs from some intended rules.
+“There are different objects here. The research describes a framework and application designs. The intended public-goods application uses jurors drawn from deposited stake, claim challenges, appeals and periodic reassessment. Funding can follow the resulting assessments. The inspected implementation is evidence about a particular code snapshot, and it differs from some intended rules.
 
 “Arrow is an experiment plan involving invited experts and trusted nominations. This room is a points game that isolates one scoring experience. Evidence from one should not silently become a claim about another.”
 
 [Use this slide when a question conflates the exercise, proposed experiment, manuscript and implementation. See the [scope comparison](presentation-sources.md#keep-the-four-mechanisms-distinct).]
 
-## 22. Backup: the funding score and the grading reference
+## 22. Backup: a funding score is not a juror reward
 
 **Optional, about 2 minutes.**
 
-“A jury-issued relevance score is a weighted mean. Funding uses the score adopted under the pool's rules, which can instead come from an unopposed funded proposal winning by forfeiture. That requires no new jury and is not new jury consensus. In the inspected implementation, grading curators uses the final jury's weighted median and median absolute deviation, or MAD, with a configured floor. Reports from earlier rounds are evaluated against that final reference too.
+“A jury-issued relevance score is a weighted mean. Funding uses the score adopted under the pool's rules, which can instead come from an unopposed funded proposal winning by forfeiture. That requires no new jury and is not new jury consensus. In the inspected implementation, grading jurors uses the final jury's weighted median and median absolute deviation, or MAD, with a configured floor. Reports from earlier rounds are evaluated against that final reference too.
 
 “The workshop instead uses the mean and standard deviation, with closeness-based points and a zero-spread fallback. You cannot read the full implementation's settlement off this widget.
 
-“In the intended working design, Ether, or ETH, pays a fixed service fee per eligible revealed seat when a valid ruling is issued. A separate utility token provides jury stake and the redistribution of incoherence penalties. If nobody loses utility tokens, there are no extra tokens to redistribute. The ETH service fee is separate from that coherence result.”
+“In the intended working design, ether (ETH) pays a fixed service fee per eligible revealed seat when a valid ruling is issued. A separate utility token provides jury stake and the redistribution of incoherence penalties. If nobody loses utility tokens, there are no extra tokens to redistribute. The ETH service fee is separate from that coherence result.”
 
 [Use the [grading comparison and source register](presentation-sources.md#keep-the-four-mechanisms-distinct) for model-specific questions. Do not transfer a result for one reward formula to another.]
 
@@ -370,7 +374,7 @@ If proof reporting needs explanation, say:
 
 Sources: [Matadisco](https://matadisco.org/), [Institute of Open Science Practices programme](https://www.iosp.science/), [The Unjournal](https://info.unjournal.org/), [Open Source Endowment](https://endowment.dev/faq/). See the [conference context](presentation-sources.md#conference-observations-and-adjacent-work) for attribution and evidence limits.
 
-## 24. Backup: sources and version boundaries
+## 24. Backup: read sources and check scope
 
 **Optional, about 1 minute.**
 
@@ -406,7 +410,7 @@ These are optional answers, not another presentation segment. The [source regist
 
 ### What happens to earned funds, holds and exits?
 
-“Only new nominations face holdback before earning. A later rating increase or decrease creates no new holdback and changes future earning when adopted under the ordinary finalization rules. Once beneficiary funding is earned, it is immediately claimable, including during a factual dispute and after debunking. Debunking stops future earning and forfeits the nomination bond, not the beneficiary's past earnings.
+“Only new nominations face holdback before earning. A later score increase or decrease creates no new holdback and changes future earning when adopted under the ordinary finalization rules. Once beneficiary funding is earned, it is immediately claimable, including during a claim challenge and after the nomination is debunked. A successful challenge closes the nomination, stops future earning and awards the submitter's deposit to the fact-checker. It does not take the beneficiary's past earnings.
 
 “A request to withdraw the nomination is a different event. If made after a factual dispute starts, it waits behind that dispute. A successful challenge closes the nomination and cancels that queued exit. A rejected challenge allows the exit to proceed under the ordinary rules.”
 
@@ -416,9 +420,9 @@ These are optional answers, not another presentation segment. The [source regist
 
 ### How do honesty, care and competence differ?
 
-“Honesty concerns whether you report your judgment sincerely. Care concerns whether you do the work to examine the evidence. Competence concerns whether you have the knowledge and ability to judge it. An honest, careful person can still lack expertise.
+“Honesty means reporting sincerely. Care means assessing evidence rigorously. Competence means knowing how to judge it. An honest, careful person can still lack expertise.
 
-“Fees compensate service, not measured effort or expertise. Rewards and penalties aim to make careful, informed work worthwhile; hidden scores address reporting incentives.
+“Fees compensate service, not measured effort or expertise. Rewards and penalties aim to make careful, informed work worthwhile. Jurors score privately. Coherence means agreement with the jury's assessment under the criteria; it earns rewards, while incoherence brings penalties. When jurors cannot rely on collusion, honesty is the intended shared focal point, or Schelling point.
 
 “Repeated competition aims to make uninformed guessing unprofitable. Expected losses deter entry; continued losses shrink relative stake, draw chances and influence. This selects for competence only if informed judgment has an advantage. Service fees could outweigh token losses, so we must test total returns.”
 

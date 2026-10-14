@@ -126,7 +126,7 @@ test("post-demonstration disclosure response states its version and remaining at
   await expect(response).toContainText(/workshop only/i);
   await expect(response).toContainText(/penalty.*bounty/i);
   await expect(response).toContainText(/other verification routes remain/i);
-  await expect(response).toContainText(/no corresponding contract penalty/i);
+  await expect(response).toContainText(/no equivalent penalty found in the inspected code/i);
   await page.setViewportSize(PHONE);
   const cells = await response.locator("th, td").evaluateAll((elements) =>
     elements.map((element) => {

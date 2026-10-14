@@ -12,7 +12,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “Every day we use curated information: search results, recommendations, reading lists. Curation helps us find what matters, but it asks us to trust whoever selects it. Research is no different: someone decides what deserves attention, scrutiny and support.
 
-“Decentralized Curation asks how we can open participation and reward honest, competent and careful judgment and fact-checking, so this useful work can also create public benefit.
+“Decentralized Curation asks how we can open participation and reward honesty, competence and scrutiny in judgment and fact-checking, so this useful work can also create public benefit.
 
 “I have worked on this framework since 2021. Today we will explore one application, experience part of it together, and then attack it.
 
@@ -162,15 +162,15 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Ask for one change in evidence that could justify reassessment. The calculator shows current rates, not accumulated balances.]
 
-## 11. Honesty, care and competence
+## 11. Honesty, competence and scrutiny
 
 **Target: 2 minutes. Elapsed: 0:23 to 0:25.**
 
 “We want personal rewards to encourage judgment that other people can rely on. That takes three different qualities.
 
-“Honesty means reporting sincerely. Care means assessing evidence rigorously. Competence means knowing how to judge it. Someone can be honest and careful yet lack the expertise.
+“Honesty means reporting sincerely. Competence means knowing how to judge the subject. Scrutiny means critically examining claims and evidence. Someone can examine a claim honestly and still lack expertise; an expert can also fail to question it.
 
-“Fees compensate the work; incentives aim to reward care. Paying someone does not create expertise or prove they did the work.
+“Fees support the work of scrutiny. Paying someone does not create expertise or prove that they examined the claims and evidence.
 
 “Jurors score privately. Agreement earns rewards; disagreement can bring penalties. Honesty is the intended Schelling point, but avoiding collusion does not show it is the only successful strategy.
 
@@ -294,7 +294,7 @@ If proof reporting needs explanation, say:
 
 **Target: 11 minutes. Elapsed: 1:09 to 1:20.**
 
-“The aim is open participation with honest, competent and careful judgment. Personal rewards should make that work worthwhile for the people doing it, while their assessments help others make better decisions.
+“The aim is open participation supported by honesty, competence and scrutiny. Personal rewards should make that work worthwhile for the people doing it, while their assessments help others make better decisions.
 
 “We explored public-goods curation, with funding as one use of its results. What would make this useful in your work, and what would make you hesitate to rely on it?”
 
@@ -379,11 +379,11 @@ See the [grading comparison](presentation-sources.md#keep-the-four-mechanisms-di
 
 “A jury and its appeals remain attached to the revision they assessed. Editing does not erase that funded contest or transfer its judgment to new content. A new revision needs its own adopted score for score-dependent funding. Previously earned money stays attributed to the earlier revision and remains claimable. Content identifiers establish which revision is being judged; they do not guarantee that its evidence stays available.”
 
-### How do honesty, care and competence differ?
+### How do honesty, competence and scrutiny differ?
 
-“Honesty means reporting sincerely. Care means assessing evidence rigorously. Competence means knowing how to judge it. An honest, careful person can still lack expertise.
+“Honesty means reporting sincerely. Competence means knowing how to judge the subject. Scrutiny means critically examining claims and evidence, including plausible alternatives. Willingness to examine a claim is different from having the expertise to assess it; an expert can also accept a claim without questioning it.
 
-“Fees compensate service, not measured effort or expertise. Rewards and penalties aim to make careful, informed work worthwhile. Private reports and agreement-based rewards are meant to make honesty a shared focal point, or Schelling point. The absence of collusion does not establish that truthful reporting is the only equilibrium or the most profitable strategy.
+“Fees compensate service, not measured effort or expertise. Rewards and penalties aim to make informed judgment and critical scrutiny worthwhile. Private reports and agreement-based rewards are meant to make honesty a shared focal point, or Schelling point. The absence of collusion does not establish that truthful reporting is the only equilibrium or the most profitable strategy.
 
 “Competence selection requires informed investigation to be profitable after effort and other costs, and to outperform a cheap prediction of the group's answer. A participant can predict others accurately without understanding the subject. Service fees can also outweigh token losses. Compare total returns, including both assets and effort, rather than treating agreement or a loss as a competence test.
 
@@ -395,7 +395,7 @@ See the [grading comparison](presentation-sources.md#keep-the-four-mechanisms-di
 
 ### What can we infer from the points exercise?
 
-“We can observe which reports earn points under this rule and discuss why participants chose them. The same reports produce the group result and its rewards, so the rewards are not an independent measure of accuracy, care or expertise. Even unanimous erroneous scores can earn rewards.
+“We can observe which reports earn points under this rule and discuss why participants chose them. The same reports produce the group result and its rewards, so the rewards do not independently establish honesty, competence and scrutiny. Even unanimous erroneous scores can earn rewards.
 
 “The exercise gives each seat equal weight every round; accumulated point losses do not reduce later weight or draw chances. It does not model real capital at risk, costly information gathering, replenishment or stake-based selection. The short descriptions and prior knowledge also differ from a full evidence dossier.
 

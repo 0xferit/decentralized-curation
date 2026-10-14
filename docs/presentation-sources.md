@@ -1,6 +1,6 @@
 # Presentation evidence register
 
-This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honest, competent and careful judgment can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the eighteen-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
+This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honesty, competence and scrutiny can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the eighteen-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
 
 ## Which source controls which claim
 

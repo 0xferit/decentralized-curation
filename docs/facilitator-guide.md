@@ -1,6 +1,6 @@
 # Facilitator guide
 
-Run this as an eighty-minute workshop led by the [handout](../public/handout/index.html): putting self-interest to work for the public good through an application of the Decentralized Curation framework. Its central idea is that personal rewards for honest, competent and careful judgment can also create public benefit. The application is public-goods curation; funding is one use of the resulting assessments. The opening worked example curates relative allocation shares from adjustable scores for a real contribution, then applies an optional funding flow. The later live jury examines one component; neither activity simulates the entire protocol. Times run from the session start. The deck has 18 slides; technical detail stays in the private notes.
+Run this as an eighty-minute workshop led by the [handout](../public/handout/index.html): putting self-interest to work for the public good through an application of the Decentralized Curation framework. Its central idea is that personal rewards for judgment grounded in honesty, competence and scrutiny can also create public benefit. The application is public-goods curation; funding is one use of the resulting assessments. The opening worked example curates relative allocation shares from adjustable scores for a real contribution, then applies an optional funding flow. The later live jury examines one component; neither activity simulates the entire protocol. Times run from the session start. The deck has 18 slides; technical detail stays in the private notes.
 
 For rehearsal and delivery, use the [slide-by-slide speaker script](speaker-script.md) and [printable speech](../public/speech/speech.pdf). The projected deck contains visual prompts; the script carries the explanation, optional detail and source links. Use the handout codes for the preprint and follow-up; the deck keeps only the room link needed to join the exercise. The [offline deck](../public/deck/deck.pdf) is a fallback when the live demonstration is unavailable.
 
@@ -20,7 +20,7 @@ Summon the jury from the laptop: enter an alias, keep the six default nominees s
 
 | Time | Slides | Purpose and action |
 | --- | --- | --- |
-| 0:00 to 0:25 | 1 to 11 | Explain public-goods curation with NumPy's real release evidence. Change scores and follow the calculated shares through an appeal, a separate claim challenge and periodic reassessment. Show funding as one use, then explain honesty, care and competence. |
+| 0:00 to 0:25 | 1 to 11 | Explain public-goods curation with NumPy's real release evidence. Change scores and follow the calculated shares through an appeal, a separate claim challenge and periodic reassessment. Show funding as one use, then explain honesty, competence and scrutiny. |
 | 0:25 to 0:32 | 12 to 14 | Join the room, read the shared policy and use the points widget. Make the workshop's simplifications explicit. |
 | 0:32 to 0:59 | 15 | Play all six nominees. Allow about four and a half minutes each: roughly three minutes to score, recover phones, reveal and grade; ninety seconds to discuss. |
 | 0:59 to 1:09 | 16 and 17 | Debrief the results and collusion widget. Then examine attacks, responses and remaining weaknesses. |
@@ -30,7 +30,7 @@ These are facilitation allowances, not changes to the game's scoring clock. If j
 
 ## Explain the framework, then the public-goods application
 
-Open with: “We use curated information every day: what to read, which tools to use and what to support. A capable curator can save us effort and make good choices. But whose needs shape those choices? The idea is to open participation in that judgment and make honesty, care and competence personally rewarding, so useful work can also create public benefit.”
+Open with: “We use curated information every day: what to read, which tools to use and what to support. A capable curator can save us effort and make good choices. But whose needs shape those choices? The idea is to open participation in that judgment and make honesty, competence and scrutiny personally rewarding, so useful work can also create public benefit.”
 
 State the scope: “Credible consensus is the general design problem. Today we explore public-goods curation as one application. Funding is one use of the resulting assessments.”
 
@@ -44,7 +44,7 @@ Keep the code-choice game an illustration of shared expectations. Color, middle 
 
 Then name the intermediate objective: “Credible consensus: a collective judgment people have reason to rely on. The final aim is public benefit.” The [research framing](presentation-sources.md#judgment-and-public-accountability) supports combining informed judgment with participation and scrutiny.
 
-Explain what credibility requires: inspectable evidence, a public policy, incentives for careful judgment, and usable routes to challenge and revision. The design distributes judgment and checking; it still depends on the criteria, evidence and external arbitrator. Consensus means the resulting collective judgment, not unanimity. Accuracy challenges address false or untestable claims; relevance judgments remain relative to the stated goal and criteria. Keep two tests separate: do rewards make useful investigation worthwhile, and do the resulting decisions improve outcomes for the people affected?
+Explain what credibility requires: inspectable evidence, a public policy, incentives for informed judgment, and usable routes to challenge and revision. The design distributes judgment and checking; it still depends on the criteria, evidence and external arbitrator. Consensus means the resulting collective judgment, not unanimity. Accuracy challenges address false or untestable claims; relevance judgments remain relative to the stated goal and criteria. Keep two tests separate: do rewards make useful investigation worthwhile, and do the resulting decisions improve outcomes for the people affected?
 
 Use the NumPy 2.0.0 release throughout. Say: “The release and source records are real. This nomination, its jury scores and its funding parameters are illustrative. No NumPy application, payment or accuracy ruling is being reported.” The shared policy scores the nominee; the release is evidence about its work, not the entire object being scored.
 
@@ -55,7 +55,7 @@ Use the NumPy 2.0.0 release throughout. Say: “The release and source records a
 - **Slide 8:** Use the four columns: contribution, weight, share and units per day. Divide each weight by the total to obtain shares. Set funding to zero, then restore it: the assessments stay while the funding changes. The weights express judgments under the criteria, not measured public benefit. Leave caps and holdback mechanics for questions.
 - **Slide 9:** Invent the claim that NumPy 2.0.0 was released in 2020; contrast it with the release record's 16 June 2024 date. Explain the independent claim challenge, external arbitrator, deposit awarded to a successful fact-checker and end of the nomination. Future funding stops; already-earned funding stays owed. The bad claim is a teaching example, not a claim made by NumPy. The control illustrates the outcome, not a real arbitration.
 - **Slide 10:** Distinguish periodic reassessment, a fresh scoring round, from an appeal contesting an existing score. Apply the lower assessment. New weights affect future funding; earlier earnings stay earned. Reset when finished.
-- **Slide 11:** Distinguish honesty, care and competence. Fees fund work but do not establish effort or expertise. Honesty is the intended focal point; avoiding collusion does not prove that it is the only equilibrium or best strategy. For competence selection, informed investigation must be profitable after effort and other costs and pay more than cheaply predicting the group. Relative stake and future draw chances decrease only if losses are not offset by replenishment or changes in competitors' stakes. Keep these as conditions to test, not established properties.
+- **Slide 11:** Distinguish honesty, competence and scrutiny. Honesty means reporting sincerely; competence means knowing how to judge the subject; scrutiny means critically examining claims and evidence. Willingness to question a claim does not itself supply expertise, and an expert may fail to scrutinize it. Fees support this work but do not prove it happened. Honesty is the intended focal point; avoiding collusion does not prove that it is the only equilibrium or best strategy. For competence selection, informed investigation must be profitable after effort and other costs and pay more than cheaply predicting the group. Relative stake and future draw chances decrease only if losses are not offset by replenishment or changes in competitors' stakes. Keep these as conditions to test, not established properties.
 
 Participants should be able to distinguish the route for a false or untestable claim from a relevance appeal and a periodic reassessment, and explain how either can affect funding. Avoid spending this segment on every parameter.
 
@@ -90,7 +90,7 @@ On slide 14, say: “Our scores produce a group result and a reward zone. Scores
 
 Move one score and ask what changed. At essentially zero spread, distance penalties are disabled. A non-void workshop round pays the full base reward, as specified by `SESSION.workshopReward` in [session data](../public/session.js). The precise calculation and differences from other versions remain in the private notes; do not teach contract settlement here.
 
-Explain the incentive: jurors anticipate what others applying this policy will judge. That may encourage careful reading, but it can also reward cheap prediction or shared bias. Scores determine both the group result and the reward zone, so payout is not an independent measure of judgment quality. Neither agreement nor profit proves improved judgment.
+Explain the incentive: jurors anticipate what others applying this policy will judge. That may encourage critical reading, but it can also reward cheap prediction or shared bias. Scores determine both the group result and the reward zone, so payout is not an independent measure of judgment quality. Neither agreement nor profit proves improved judgment.
 
 ## Open and debrief each round
 
@@ -132,7 +132,7 @@ Choose one attack to discuss concretely. Ask what the attacker would do, how the
 
 Slide 18 runs from 1:09 to 1:20. Use about two minutes for a recap and first reactions, about seven for discussion and the final two to close. Do not turn this allowance into an eleven-minute monologue.
 
-Restate the central idea: personal rewards for honest, competent and careful judgment can also create public benefit through better decisions. Public-goods curation is the application; funding is one use of its assessments. Ask where participants could use such an assessment and what would make them hesitant to rely on it.
+Restate the central idea: personal rewards for judgment grounded in honesty, competence and scrutiny can also create public benefit through better decisions. Public-goods curation is the application; funding is one use of its assessments. Ask where participants could use such an assessment and what would make them hesitant to rely on it.
 
 If needed, choose one prompt at a time:
 

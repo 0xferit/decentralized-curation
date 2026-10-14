@@ -6,7 +6,9 @@ const DESKTOP = { width: 1280, height: 720 };
 const PHONE = { width: 390, height: 667 };
 const READABLE_SUPPORT_PX = 14;
 const GEOMETRY_TOLERANCE_PX = 1;
-const SCHELLING_OPTION_COUNT = 100;
+const SCHELLING_GRID_SIDE = 7;
+const SCHELLING_OPTION_COUNT = SCHELLING_GRID_SIDE ** 2;
+const SCHELLING_CENTER_INDEX = Math.floor(SCHELLING_OPTION_COUNT / 2);
 const SCHELLING_FOCAL_NUMBER = "100";
 const SCHELLING_CURATION_TARGET = "Honest · Competent · Thorough";
 const SCHELLING_CURATION_CHOICES = [
@@ -33,12 +35,37 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
   expect(new Set(values).size).toBe(SCHELLING_OPTION_COUNT);
   expect(values.filter((value) => value % 2 === 0)).toEqual([Number(SCHELLING_FOCAL_NUMBER)]);
   expect(values.filter((value) => value % 2 !== 0)).toHaveLength(SCHELLING_OPTION_COUNT - 1);
+  expect(values).toEqual([...values].sort((left, right) => left - right));
+  expect(values[SCHELLING_CENTER_INDEX]).toBe(Number(SCHELLING_FOCAL_NUMBER));
+  const optionBounds = await options.evaluateAll((elements) =>
+    elements.map((element) => {
+      const bounds = element.getBoundingClientRect();
+      return { left: bounds.left, top: bounds.top, right: bounds.right, bottom: bounds.bottom };
+    }),
+  );
+  expect(new Set(optionBounds.map((bounds) => bounds.left)).size).toBe(SCHELLING_GRID_SIDE);
+  expect(new Set(optionBounds.map((bounds) => bounds.top)).size).toBe(SCHELLING_GRID_SIDE);
+  const centerBounds = optionBounds[SCHELLING_CENTER_INDEX];
+  expect(centerBounds).toBeDefined();
+  if (!centerBounds) throw new Error("The number grid is missing its center option");
+  const gridCenterX =
+    (Math.min(...optionBounds.map((bounds) => bounds.left)) +
+      Math.max(...optionBounds.map((bounds) => bounds.right))) /
+    2;
+  const gridCenterY =
+    (Math.min(...optionBounds.map((bounds) => bounds.top)) +
+      Math.max(...optionBounds.map((bounds) => bounds.bottom))) /
+    2;
+  expect(Math.abs((centerBounds.left + centerBounds.right) / 2 - gridCenterX)).toBeLessThanOrEqual(
+    GEOMETRY_TOLERANCE_PX,
+  );
+  expect(Math.abs((centerBounds.top + centerBounds.bottom) / 2 - gridCenterY)).toBeLessThanOrEqual(
+    GEOMETRY_TOLERANCE_PX,
+  );
   const initialAppearances = await options.evaluateAll((elements) =>
     elements.map((element) => {
       const style = getComputedStyle(element);
       return JSON.stringify([
-        style.backgroundColor,
-        style.color,
         style.fontSize,
         style.fontWeight,
         style.borderColor,
@@ -55,7 +82,32 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
     .locator(".schelling-options li:not([data-focal])")
     .first()
     .evaluate((element) => getComputedStyle(element).backgroundColor);
-  await expect(focal).toHaveCSS("background-color", otherBackground);
+  const initialFocalBackground = await focal.evaluate(
+    (element) => getComputedStyle(element).backgroundColor,
+  );
+  const initialFocalColor = await focal.evaluate((element) => getComputedStyle(element).color);
+  const otherColor = await slide
+    .locator(".schelling-options li:not([data-focal])")
+    .first()
+    .evaluate((element) => getComputedStyle(element).color);
+  expect(initialFocalBackground).not.toBe(otherBackground);
+  expect(initialFocalColor).not.toBe(otherColor);
+  expect(
+    new Set(
+      await options.evaluateAll((elements) =>
+        elements.map((element) => getComputedStyle(element).backgroundColor),
+      ),
+    ).size,
+  ).toBe(2);
+  expect(
+    new Set(
+      await slide
+        .locator(".schelling-options li:not([data-focal])")
+        .evaluateAll((elements) =>
+          elements.map((element) => getComputedStyle(element).backgroundColor),
+        ),
+    ).size,
+  ).toBe(1);
   await expect(
     slide.locator(
       ".schelling-options button, .schelling-options input, .schelling-options [role=button]",
@@ -74,6 +126,8 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
   await expect(explanation).toContainText(/only even number/i);
   await expect(explanation).toContainText(/shared focal point/i);
   await expect(focal).not.toHaveCSS("background-color", otherBackground);
+  await expect(focal).not.toHaveCSS("background-color", initialFocalBackground);
+  await expect(focal).toHaveCSS("color", "rgb(255, 255, 255)");
   await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
   await page.keyboard.press("Space");
   await expect(explanation).toBeVisible();
@@ -81,7 +135,8 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
   await reset.click();
   await expect(explanation).toBeHidden();
   await expect(reveal).toHaveAttribute("aria-expanded", "false");
-  await expect(focal).toHaveCSS("background-color", otherBackground);
+  await expect(focal).toHaveCSS("background-color", initialFocalBackground);
+  await expect(focal).toHaveCSS("color", initialFocalColor);
   await expect(options).toHaveText(values.map(String));
   await slide.locator("h2").focus();
   await page.keyboard.press("Space");
@@ -99,6 +154,9 @@ test("Schelling curation round resets its reveal when switching rounds", async (
   const reset = slide.getByRole("button", { name: "Reset game", exact: true });
   const explanation = slide.locator("#schelling-explanation");
   const initialNumbers = await options.allTextContents();
+  const initialNumberBackground = await slide
+    .locator(".schelling-options li[data-focal]")
+    .evaluate((element) => getComputedStyle(element).backgroundColor);
   await reveal.click();
   await expect(explanation).toBeVisible();
   const curationRound = slide.getByRole("button", { name: "Curation round", exact: true });
@@ -164,11 +222,7 @@ test("Schelling curation round resets its reveal when switching rounds", async (
   await expect(explanation).toBeHidden();
   await expect(reveal).toHaveAttribute("aria-expanded", "false");
   await expect(focal).toHaveText(SCHELLING_FOCAL_NUMBER);
-  const restoredBackground = await slide
-    .locator(".schelling-options li:not([data-focal])")
-    .first()
-    .evaluate((element) => getComputedStyle(element).backgroundColor);
-  await expect(focal).toHaveCSS("background-color", restoredBackground);
+  await expect(focal).toHaveCSS("background-color", initialNumberBackground);
   await expect(slide.getByRole("button", { name: "Curation round", exact: true })).toBeVisible();
 });
 

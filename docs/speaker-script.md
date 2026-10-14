@@ -90,15 +90,15 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 1 minute 30 seconds. Elapsed: 0:08:30 to 0:10.**
 
-“Look at these one hundred numbers. Silently choose the number you expect others here to choose. Your aim is to match them. Do not say it yet.”
+“Look at these forty-nine numbers. Silently choose the number you expect others here to choose. Your aim is to match them. Do not say it yet.”
 
-[Give five seconds. All options initially look alike. Do not point to 100 or disclose that it is the only even number among 99 odd values. Participants use no controls or devices.]
+[Give five seconds. The seven-by-seven grid places 100 in the center with a gentle blue tint; all numbers use the same font and weight. Do not name these cues or point to 100. Participants use no controls or devices.]
 
 “On three, say your number together. One, two, three.”
 
 [Listen to the room, then select **Reveal example**. Do not invent vote totals. If no clear answer emerges, say: “We did not converge on one answer this time.”]
 
-"One hundred is the only even number here, and the only round hundred. A shared cue can align our expectations: I notice it, and I expect you to notice it. That is a Schelling point.
+"One hundred sits in the center. It is the only even number, the only round hundred, and has a gentle blue tint. These cues converge on one option. I notice it, and I expect you to notice it. That is a Schelling point.
 
 "Now choose the way of playing you expect everyone else to choose. Keep it to yourself until three."
 
@@ -108,7 +108,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 "The design challenge is to make acting on these qualities the most rewarding way to participate. Naming a focal point illustrates coordination; the incentives must make it worth following."
 
-[Spend about 35 seconds on the number round and 55 seconds on the curation round and transition. Reveal emphasizes the intended focal option and explains it; it does not report audience votes. **Reset game** hides the current round's emphasis and explanation. **Number round** returns to the initial exercise. If either round has scattered answers, acknowledge that rather than claiming consensus.]
+[Spend about 35 seconds on the number round and 55 seconds on the curation round and transition. Reveal emphasizes the intended focal option and explains it; it does not report audience votes. **Reset game** hides the explanation and restores the current round's initial styling: a gentle tint for 100 in the number round, equal styling in the curation round. **Number round** returns to the initial exercise. If either round has scattered answers, acknowledge that rather than claiming consensus.]
 
 ## 8. A framework before a mechanism
 
@@ -441,7 +441,7 @@ See the [grading comparison](presentation-sources.md#keep-the-four-mechanisms-di
 
 ### What can we infer from the two coordination rounds?
 
-“The hundred-number grid illustrates how a salient cue can support shared expectations. All options initially look alike, but 100 is the only even number among 99 odd values and the only round hundred. Saying answers together lets us hear whether one choice is prominent; it does not produce reliable vote totals or a controlled test of which property caused the choice.
+“The seven-by-seven grid illustrates how several salient cues can support shared expectations. Among 48 odd numbers from 53 through 147, 100 sits in the center with a gentle blue tint. It is also the only even number and the only round hundred. Saying answers together lets us hear whether one choice is prominent; it does not produce reliable vote totals or a controlled test of which property caused the choice.
 
 "The second round offers all eight combinations of honest or deceptive, competent or uninformed, and thorough or lazy. Honest, competent and thorough can become salient as a shared standard for how to play. Thorough here means critical scrutiny of claims and evidence. That illustrates contextual coordination, not a test showing that this conduct already maximizes returns in the curation mechanism.
 

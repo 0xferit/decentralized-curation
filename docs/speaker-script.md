@@ -24,7 +24,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 2 minutes. Elapsed: 0:01 to 0:03.**
 
-“One capable curator can still miss other people's needs. Voting on preferences gives more people a voice, but counting preferences alone does not ensure informed judgment. The framework aims to combine open participation with rewards for honest, competent and careful judgment, so that the work serves the public.
+“One capable curator can still miss other people's needs. Democracy gives people a voice, but a majority decision can still be poorly informed. The framework aims to combine open participation with rewards for honest, competent and careful judgment, so that the work serves the public.
 
 “Here is a quick coordination game. Look at the three codes on your handout. Without talking or scanning, choose the one you think most people will choose: left, middle or right. Keep it private.
 

@@ -45,6 +45,8 @@ The paper's variance-padding counterexample concerns its mean/standard-deviation
 
 Slides 2 to 8 establish the problem, trust requirements, incentive logic and framework before introducing the public-goods application. Their foundation is the [published version 1.2.0 paper](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd), with its scope qualifications intact. The incentive and focal-point slides also draw on the primary sources below.
 
+Slide 2 adapts [Wang and Strong (1996)](https://web.mit.edu/tdqm/www/tdqmpub/beyondaccuracy_files/beyondaccuracy.html), identified through [Information quality](https://en.wikipedia.org/wiki/Information_quality). Their four categories form one framework, not a universal or exhaustive taxonomy. “Credibility” condenses their believability and reputation dimensions.
+
 | Narrative purpose | Paper-grounded idea | Boundary |
 | --- | --- | --- |
 | Why curation matters | Information must meet the quality requirements of the decision it informs. Readers delegate assessment to newspapers, rankings, reviews and feeds because individually assessing every claim is costly: [introduction, lines 27–49](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd#L27-L49). | Information abundance does not establish fitness for a decision. This does not mean that every raw observation is useless without an intermediary. Reliable shared evidence does not settle conflicting values or establish legitimate public purposes. |

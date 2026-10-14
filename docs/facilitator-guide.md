@@ -62,7 +62,7 @@ Use the conference memo to tailor examples to a research audience. The author ha
 Use the NumPy 2.0.0 release throughout. Say: “The release and source records are real. This nomination, its jury scores and funding parameters are illustrative. No NumPy application, payment or accuracy ruling is being reported.” The policy scores the nominee; the release is evidence about its work, rather than the entire object being scored.
 
 - **Slide 1:** Introduce the decision problem and proposal in one minute. Move directly from individual assessment limits to institutional incentives.
-- **Slide 2:** Establish that useful information depends on a purpose and qualities supplied through curation. Use peer review, a systematic review or research software assessment as the example.
+- **Slide 2:** Introduce the four quality lenses as a framework for assessing fitness for use. Retain the academic example.
 - **Slide 3:** Make multidimensional quality explicit. Distinguish accuracy and relevance, then show why the chosen purpose determines which other dimensions matter.
 - **Slide 4:** Define honesty, competence and scrutiny and explain why delegating curation makes us rely on all three.
 - **Slide 5:** State both the strengths and limits of a central curator and simple vote-counting. Keep assessment distinct from representation and public authorization.

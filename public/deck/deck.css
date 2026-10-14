@@ -23,3 +23,7 @@
 @media print{.schelling-options [data-focal]{-webkit-print-color-adjust:exact;print-color-adjust:exact}.schelling-result{min-height:0}.schelling-prompt .example-actions{display:none}}
 
 .schelling-options[data-round="curation"]{grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;font:1.1rem/1.35 var(--sans)}.schelling-options[data-round="curation"] li{min-height:4.2rem;padding:.6rem;text-align:center;text-wrap:balance}.schelling-standard{color:var(--upheld);margin-bottom:.65rem}
+
+.information-lenses{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem}.information-lenses h3{font-size:1.2rem}.information-lenses p{font-size:1.1rem;line-height:1.6}
+@media(max-width:850px){.information-lenses{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.information-lenses{grid-template-columns:1fr}}

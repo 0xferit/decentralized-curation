@@ -20,11 +20,11 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Let the title settle. Keep the funding application for later; first establish why anyone needs curation.]
 
-## 2. Information becomes useful through curation
+## 2. Information becomes useful when it is fit for purpose
 
 **Target: 1 minute 30 seconds. Elapsed: 0:01 to 0:02:30.**
 
-“Information does not arrive ready for every decision. We need claims and evidence with the qualities a particular purpose requires. Curation identifies that information, assesses it and establishes the context in which we can use it.
+“Information quality depends on the user, the task and the context. Curation assesses fitness for use through four lenses: intrinsic, contextual, representational and accessibility. Accurate information can still be outdated, irrelevant or unusable.
 
 “Academic work depends on this: journals, peer review, systematic reviews and research databases help determine which findings we can rely on and what those findings mean. Their assessments shape attention, credibility and resource allocation.
 

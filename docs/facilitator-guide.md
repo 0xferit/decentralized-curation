@@ -30,7 +30,7 @@ These are facilitation allowances, not changes to the game's scoring clock. If j
 
 ## Explain the framework, then the public-goods application
 
-Open with: “Research depends on judgments about what to read, cite, reuse and reward. Those judgments take work. The idea is to make honest, competent and careful judgment personally rewarding, so the same work can also create public benefit. Fact-checking follows the same logic: reward the person who does useful work that others can rely on.”
+Open with: “We use curated information every day: what to read, which tools to use and what to support. A capable curator can save us effort and make good choices. But whose needs shape those choices? The idea is to open participation in that judgment and make honesty, care and competence personally rewarding, so useful work can also create public benefit.”
 
 State the scope: “Credible consensus is the general design problem. Today we explore public-goods curation as one application. Funding is one use of the resulting assessments.”
 
@@ -38,7 +38,9 @@ Define terms in the order used by the handout. The goal says what the group want
 
 Use the conference memo to tailor examples and language to the research audience. The author has worked on this thesis since 2021; do not present it as an idea conceived at the conference. The memo is not a survey or evidence of demand, adoption or efficacy. Acknowledge preservation, discovery and granular attribution as distinct parts of the research infrastructure. This mechanism depends on accessible evidence; it does not supply those other layers by itself. Explain the relationship between metrics and judgment: choosing a measure, its weight and its interpretation embeds a purpose. Metrics can help, and a jury score can also be gamed. The relevant question is how assessment can be inspected, challenged and improved.
 
-Then name the intermediate objective: “Credible consensus: a collective judgment people have reason to rely on. The final aim is public benefit, not agreement for its own sake or a claim to certify truth.” The [research framing](presentation-sources.md#judgment-and-public-accountability) supports combining informed judgment with participation and scrutiny. It does not establish that monarchy produces better decisions or that democracy only counts preferences.
+On slide 2, distinguish two requirements. A capable curator can make good judgments while overlooking other people’s needs. A preference vote gives people a way to express what they want, but counting those preferences does not by itself reward informed assessment. Decentralized Curation aims to combine open participation with incentives for honest, competent and careful judgment. Open participation means people can contribute, assess and challenge without an invitation; it does not guarantee equal influence or that every affected person is represented. Keep this a design ambition, not a claim that democracy always fails or that this mechanism has solved representation.
+
+Then name the intermediate objective: “Credible consensus: a collective judgment people have reason to rely on. The final aim is public benefit.” The [research framing](presentation-sources.md#judgment-and-public-accountability) supports combining informed judgment with participation and scrutiny.
 
 Explain what credibility requires: inspectable evidence, a public policy, incentives for careful judgment, and usable routes to challenge and revision. Consensus means the resulting collective judgment, not unanimity. Accuracy challenges address false or untestable claims; relevance judgments remain relative to the stated goal and criteria. These mechanisms aim to earn credibility, and agreement alone does not demonstrate success. Keep two tests separate: do private rewards induce useful work, and does that work improve decisions for the people affected?
 

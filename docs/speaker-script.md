@@ -10,7 +10,9 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 1 minute. Elapsed: 0:00 to 0:01.**
 
-“Research depends on people deciding what deserves attention, trust and support. Those decisions take work. The idea behind Decentralized Curation is to make honest, competent and careful judgment personally rewarding, so that the same work can also create public benefit. Fact-checking follows the same logic: reward the person who does useful work that others can rely on.
+“Every day we use curated information: search results, recommendations, reading lists. Curation helps us find what matters, but it asks us to trust whoever selects it. Research is no different: someone decides what deserves attention, scrutiny and support.
+
+“Decentralized Curation asks how we can open participation and reward honest, competent and careful judgment and fact-checking, so this useful work can also create public benefit.
 
 “I have worked on this framework since 2021. Today we will explore one application, experience part of it together, and then attack it.
 
@@ -18,27 +20,25 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Look at the audience. Let the title settle before advancing.]
 
-## 2. Who judges what matters?
+## 2. Who decides? Whose needs count?
 
 **Target: 2 minutes. Elapsed: 0:01 to 0:03.**
 
-“Think about work that research depends on but that a publication count struggles to describe: maintaining software, preserving data or finding an important error. Someone still has to judge what that work contributes.
+“One capable curator can still miss other people's needs. Voting on preferences gives more people a voice, but counting preferences alone does not ensure informed judgment. The framework aims to combine open participation with rewards for honest, competent and careful judgment, so that the work serves the public.
 
-“Metrics can help, but choosing and interpreting them already involve judgment. Let us try a twenty-second coordination game.
-
-“Look at the three scannable codes on your handout. Without talking or scanning, silently choose left, middle or right: which do you think most other people here will choose? Your goal is to match the group. Keep your choice private for now.
+“Here is a quick coordination game. Look at the three codes on your handout. Without talking or scanning, choose the one you think most people will choose: left, middle or right. Keep it private.
 
 [Allow five silent seconds. Do not point out the middle code's dark green color yet. This is a quick show of hands, with no money or app scoring.]
 
-“On the count of three, reveal together: one finger for left, two for middle or three for right. One, two, three.
+“Reveal together: one finger for left, two for middle, three for right. One, two, three.
 
-[Observe the distribution before pointing out the middle code's dark green color. If choices cluster, name the cluster. If there is a tie or no clear cluster, say: “We did not find one shared choice this time.”]
+[Observe the distribution before pointing out the middle code's dark green color. If there is a tie or no clear cluster, say: “We did not find one shared choice this time.”]
 
-“I made the middle code green. A cue like that can focus expectations: I notice it, and expect others to notice it too. That shared focal point is called a Schelling point.
+“I made the middle code green. I notice it and expect you to notice it too. That shared focal point is called a Schelling point.
 
-“Our curation game aims to make honest assessment that shared focal point. The goal is credible consensus: a collective judgment people have reasons to rely on.”
+“Our game aims to make honest assessment that focal point. Credible consensus means a collective judgment people have reasons to rely on. Open entry and rewards alone do not guarantee it.”
 
-[The code labels also influence choices. Do not claim that the color caused the result or that this exercise proves honesty. Keep the two-minute slot; this replaces the audience example.]
+[The code labels also influence choices. Do not claim that the color caused the result or that this exercise proves honesty. Keep the two-minute slot.]
 
 ## 3. Curating public goods
 
@@ -292,7 +292,7 @@ If proof reporting needs explanation, say:
 
 **Target: 11 minutes. Elapsed: 1:09 to 1:20.**
 
-“Personal rewards for honest, competent and careful judgment can also create public benefit: better decisions about what deserves attention or support. That is the aim of Decentralized Curation.
+“The aim is open participation with honest, competent and careful judgment. Personal rewards should make that work worthwhile for the people doing it, while their assessments help others make better decisions.
 
 “We explored public-goods curation, with funding as one use of its results. What would make this useful in your work, and what would make you hesitate to rely on it?”
 

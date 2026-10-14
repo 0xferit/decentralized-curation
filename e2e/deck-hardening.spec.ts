@@ -6,6 +6,52 @@ const DESKTOP = { width: 1280, height: 720 };
 const PHONE = { width: 390, height: 667 };
 const READABLE_SUPPORT_PX = 14;
 const GEOMETRY_TOLERANCE_PX = 1;
+const SCHELLING_OPTION_COUNT = 100;
+const SCHELLING_FOCAL_NUMBER = "47";
+
+test("Schelling example reveals locally and preserves keyboard navigation", async ({ page }) => {
+  await page.setViewportSize(DESKTOP);
+  await page.goto("/deck/#s7");
+  const slide = page.locator("#s7");
+  const options = slide.locator(".schelling-options li");
+  await expect(options).toHaveCount(SCHELLING_OPTION_COUNT);
+  const focal = slide.locator(".schelling-options li[data-focal]");
+  await expect(focal).toHaveCount(1);
+  await expect(focal).toHaveText(SCHELLING_FOCAL_NUMBER);
+  const otherBackground = await slide
+    .locator(".schelling-options li:not([data-focal])")
+    .first()
+    .evaluate((element) => getComputedStyle(element).backgroundColor);
+  await expect(focal).not.toHaveCSS("background-color", otherBackground);
+  await expect(
+    slide.locator(
+      ".schelling-options button, .schelling-options input, .schelling-options [role=button]",
+    ),
+  ).toHaveCount(0);
+  const reveal = slide.getByRole("button", { name: "Reveal example", exact: true });
+  const reset = slide.getByRole("button", { name: "Reset game", exact: true });
+  const explanation = page.locator("#schelling-explanation");
+  await expect(reveal).toHaveAttribute("aria-controls", "schelling-explanation");
+  await expect(reveal).toHaveAttribute("aria-expanded", "false");
+  await expect(explanation).toBeHidden();
+  await reveal.focus();
+  await page.keyboard.press("Space");
+  await expect(reveal).toHaveAttribute("aria-expanded", "true");
+  await expect(explanation).toBeVisible();
+  await expect(explanation).toContainText(/shared expectations/i);
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
+  await page.keyboard.press("Space");
+  await expect(explanation).toBeVisible();
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
+  await reset.click();
+  await expect(explanation).toBeHidden();
+  await expect(reveal).toHaveAttribute("aria-expanded", "false");
+  await slide.locator("h2").focus();
+  await page.keyboard.press("Space");
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s8");
+  await page.keyboard.press("Shift+Space");
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
+});
 
 test("slide navigation keeps heading focus without a presentation outline", async ({ page }) => {
   await page.setViewportSize(DESKTOP);
@@ -24,8 +70,8 @@ test("slide navigation keeps heading focus without a presentation outline", asyn
 });
 
 for (const scenario of [
-  { slide: "s11", button: "Apply appeal result", result: /0\.700.*43\.8%/ },
-  { slide: "s12", button: "Show debunked outcome", result: /Future funding stops/ },
+  { slide: "s13", button: "Apply appeal result", result: /0\.700.*43\.8%/ },
+  { slide: "s14", button: "Show debunked outcome", result: /Future funding stops/ },
 ]) {
   test(`${scenario.button} shows its result on the current slide`, async ({ page }) => {
     for (const viewport of [DESKTOP, PHONE]) {
@@ -52,7 +98,7 @@ for (const scenario of [
 }
 
 test("reset restores the worked example after a zero budget", async ({ page }) => {
-  await page.goto("/deck/#s10");
+  await page.goto("/deck/#s12");
   const budget = page.getByRole("slider", { name: "Illustrative distribution per day" });
   const initialBudget = await budget.inputValue();
   const rates = page.locator("[data-project-rate]");

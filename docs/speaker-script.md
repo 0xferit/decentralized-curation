@@ -2,7 +2,7 @@
 
 The [handout](../public/handout/index.html) leads the session’s title and scope. This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
 
-The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 20 slides. The opening establishes the curation problem, compares approaches and introduces the general framework before applying it to public goods funding. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
+The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 22 slides. The opening establishes purpose-specific, multidimensional information quality and the trust required for curation, then uses game theory and a brief Schelling-point exercise to introduce the framework before applying it to public goods funding. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
@@ -20,37 +20,47 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Let the title settle. Keep the funding application for later; first establish why anyone needs curation.]
 
-## 2. Why curation matters
+## 2. Information becomes useful through curation
 
-**Target: 2 minutes. Elapsed: 0:01 to 0:03.**
+**Target: 1 minute 30 seconds. Elapsed: 0:01 to 0:02:30.**
 
-“Curation determines which claims and evidence inform our decisions. Individuals cannot assess every relevant claim and its supporting evidence; we depend on journals, peer review, research databases and other curators.
+“Information does not arrive ready for every decision. We need claims and evidence with the qualities a particular purpose requires. Curation identifies that information, assesses it and establishes the context in which we can use it.
 
-“These institutions influence which findings gain credibility, which questions receive attention and which contributions attract resources. Their competence and incentives therefore matter.
+“Academic work depends on this: journals, peer review, systematic reviews and research databases help determine which findings we can rely on and what those findings mean. Their assessments shape attention, credibility and resource allocation.
 
-“Access to more information does not by itself give us reliable knowledge. We need information accurate and relevant enough for a particular decision. The foundational paper calls that decision-grade knowledge.
+“The useful question is therefore not simply how much information we have. It is whether we have information sufficiently accurate, relevant and usable for the decision in front of us. The foundational paper calls this decision-grade knowledge.”
 
-“Better evidence can help us compare consequences and correct mistaken beliefs. It cannot decide whose interests should count or settle every disagreement about values. Curation is one part of a decision, with real consequences for the rest.”
+[Use one academic example. Establish the purpose before discussing quality; information can be useful for one decision and unsuitable for another.]
 
-[Use one academic example: peer review, a systematic review or research software assessment.]
+## 3. Information quality is multidimensional
 
-## 3. Information quality is not one thing
+**Target: 1 minute 30 seconds. Elapsed: 0:02:30 to 0:04.**
 
-**Target: 2 minutes. Elapsed: 0:03 to 0:05.**
+“Accuracy is one dimension of information quality. A perfectly accurate football result can be irrelevant to a decision about research infrastructure. A relevant study can still be outdated or omit essential context.
 
-“Suppose a world-politics feed publishes perfectly accurate football trivia. The facts can be right and still fail the reader's purpose. Accuracy and relevance answer different questions.
+“Relevance, timeliness, completeness, interpretability and accessibility answer different questions. Which dimensions matter, and how demanding we should be about each, depends on the purpose. Quality is not a single number that means the same thing everywhere.
 
-“Accuracy asks whether a factual claim holds under its stated scope and time. Relevance asks how much it matters for this goal, here and now. A high score for relevance does not certify the facts; a correct fact does not establish its importance.
+“Curation therefore begins by specifying what qualities we seek. In our funding example, we will assess factual accuracy separately from relevance to the pool's goal. Evidence supports both assessments, but a high relevance score does not certify a factual claim, and a correct fact does not establish its importance.”
 
-“The paper also names timeliness, interpretability, completeness and accessibility. The important dimensions depend on the domain. Evidence makes claims and judgments inspectable; it is support for assessing quality, not a substitute for every quality we care about.
+[Point to the six dimensions, then return to accuracy and relevance. Do not introduce a universal aggregate quality score.]
 
-“In our funding application, we will keep factual claims separate from relevance judgments. We will also revisit relevance as circumstances change. A contribution can remain accurately described while becoming more or less important.”
+## 4. Curation creates reliance on the curator
 
-[Start with accuracy and relevance, then point to the other dimensions. Do not introduce a single overall quality score.]
+**Target: 1 minute 30 seconds. Elapsed: 0:04 to 0:05:30.**
 
-## 4. Who should curate?
+“Curation is essential because none of us can examine every claim ourselves. Delegating that work saves effort and gives us access to other people's expertise. It also makes us rely on three qualities of the curator.
 
-**Target: 2 minutes. Elapsed: 0:05 to 0:07.**
+“Honesty means reporting an assessment sincerely. Competence means knowing how to assess the subject. Scrutiny means investing effort in critically examining claims, evidence and plausible alternatives.
+
+“These qualities are distinct. A sincere person can be mistaken; an expert can report strategically; either can accept a plausible claim without examining it. Good curation needs all three.
+
+“The design opportunity is to support that trust with incentives, inspectable evidence and opportunities for correction. How can the institution make careful, competent and honest assessment worth doing?”
+
+[Keep the three qualities distinct. The proposal organizes and supports trust; it does not make trust unnecessary.]
+
+## 5. Who should curate?
+
+**Target: 1 minute 30 seconds. Elapsed: 0:05:30 to 0:07.**
 
 “A central curator can bring expertise, a consistent editorial purpose and fast decisions. The difficulty is dependence on that curator: limited capacity, blind spots and incentives can shape what everyone else sees. We need ways to inspect and contest those judgments.
 
@@ -62,9 +72,45 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Ask which part of the challenge a familiar system handles well. Do not frame the proposal as a proven replacement for democracy or professional expertise.]
 
-## 5. A framework before a mechanism
+## 6. Incentives shape strategic behavior
 
-**Target: 2 minutes. Elapsed: 0:07 to 0:09.**
+**Target: 1 minute 30 seconds. Elapsed: 0:07 to 0:08:30.**
+
+“Game theory gives us a useful way to design this institution. Specify the rewards, the costs, the available strategies and what participants know. Then ask which behavior becomes attractive when people respond to one another.
+
+“Reward submission volume and producing more submissions becomes attractive. Reward agreement and anticipating other people's answers becomes attractive. If we want useful curation, we need the rewards to make informed assessment and correction attractive after the work they require.
+
+“The game aims to make honesty, competence and scrutiny the most rewarding way to participate. That is a design objective to analyze and test. Rewards alone do not determine outcomes: information, expectations, effort and the surrounding rules matter.
+
+“One powerful idea here is that people can coordinate their expectations even without communicating.”
+
+[Use incentives as an analytical tool, not a claim that a reward formula proves the desired behavior. Move directly into the coordination exercise.]
+
+## 7. Find a shared focal point
+
+**Target: 1 minute 30 seconds. Elapsed: 0:08:30 to 0:10.**
+
+“Look at these one hundred numbers. Silently choose the number you expect others here to choose. Your aim is to match them. Do not say it yet.”
+
+[Give five silent seconds. The grid already highlights 47; do not name it or point to it. Participants use no controls or devices.]
+
+“On three, say your number together. One, two, three.”
+
+[Listen to the room, then select **Reveal example**. Do not invent vote totals. If no clear answer emerges, say: “We did not converge on one answer this time.”]
+
+“A conspicuous number gives us a shared cue: I notice it, and I expect you to notice it. This is a Schelling point, a focal point for coordinating expectations.
+
+“In Schelling's 1957 sample, 36 people chose heads and six chose tails. Asked where and when to meet in New York, a majority chose Grand Central's information booth, and almost everyone chose noon. Those results reflected a particular sample and its shared context.
+
+“For curation, the opportunity is to make evidence-based assessment the shared focal point. Matching a salient answer illustrates coordination; it does not establish truth.”
+
+[The revealed explanation describes the concept; it does not report audience votes. **Reset game** hides that explanation for another delivery. Keep the whole exercise to 60–90 seconds.]
+
+Source: Thomas C. Schelling, [“Bargaining, communication, and limited war” (1957)](https://journals.sagepub.com/doi/10.1177/002200275700100104), note 1. The sample's New Haven location may have influenced its choices.
+
+## 8. A framework before a mechanism
+
+**Target: 2 minutes. Elapsed: 0:10 to 0:12.**
 
 “The foundational paper proposes four design steps.
 
@@ -78,31 +124,9 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “Decentralized Curation is this broader framework. The paper develops news as an application. Today we will use public goods funding, with its own purpose and policy. We want credible consensus: judgments grounded in evidence, assessed under an explicit policy and open to useful correction.”
 
-[Trace the four steps in order. Leave the funding workflow for slide 7.]
+[Trace the four steps in order. Leave the funding workflow for slide 9.]
 
-## 6. What should become rewarding?
-
-**Target: 3 minutes. Elapsed: 0:09 to 0:12.**
-
-“The proposal is to make useful curation personally worthwhile. That takes honesty, competence and scrutiny. Honesty means reporting sincerely; competence means knowing how to judge the subject; scrutiny means critically examining claims and evidence. An honest person can be mistaken, and an expert can report strategically or fail to investigate.
-
-“The relevance game asks participants to report privately and makes rewards depend on how their judgments compare with others. A factual challenge gives a separate reward for exposing a false claim. These incentives aim to make honest, informed work worthwhile.
-
-“Here is a quick illustration of shared expectations. Look at the three codes on your handout. Without talking or scanning, choose the one you think most people will choose: left, middle or right. Keep it private.
-
-[Allow five silent seconds. Do not point out the middle code's dark green color. This is a show of hands, with no money or app scoring.]
-
-“Reveal together: one finger for left, two for middle, three for right. One, two, three.
-
-[Observe the distribution. If there is no clear cluster, say: “We did not find one shared choice this time.”]
-
-“I made the middle code green. I notice it and expect you to notice it too. A shared focal point like that is called a Schelling point. The proposal aims to make honest assessment a shared focal point, but this little game has no factual answer and does not show that the incentives achieve that aim.
-
-“Paying for assessment does not prove that useful work happened. Investigation must be worth its effort and pay better overall than cheaply predicting the group. We need to test two links: do rewards induce useful curation, and do decisions based on it benefit the people affected?”
-
-[The labels, position and destinations also influence choices. Do not attribute the result to color alone. If asked about future selection, losses reduce draw chances only when stake falls relative to others after replenishment.]
-
-## 7. Apply the framework to public goods funding
+## 9. Apply the framework to public goods funding
 
 **Target: 2 minutes. Elapsed: 0:12 to 0:14.**
 
@@ -116,7 +140,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Trace funders → pool → beneficiaries first. Then show who supplies the assessment: nominators bring claims and evidence, jurors judge relevance, and fact-checkers take factual disputes to an external arbitrator. The creator publishes the policy. Continuous funding does not remove per-nomination jury and appeal rounds.]
 
-## 8. Set the policy; nominate checkable work
+## 10. Set the policy; nominate checkable work
 
 **Target: 2 minutes. Elapsed: 0:14 to 0:16.**
 
@@ -132,7 +156,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-0-0-released). Keep the link in the notes for questions rather than projecting it.
 
-## 9. Jurors score independently
+## 11. Jurors score independently
 
 **Target: 2 minutes. Elapsed: 0:16 to 0:18.**
 
@@ -146,9 +170,9 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “The calculation changes predictably. To decide whether the judgment improved, we need the reason and the evidence, not just the new number.”
 
-[Ask what evidence could justify the change. Reset the example to its starting values before advancing. Keep the limitations of sealing for slide 19.]
+[Ask what evidence could justify the change. Reset the example to its starting values before advancing. Keep the limitations of sealing for slide 21.]
 
-## 10. Curate the shares; distribution can follow
+## 12. Curate the shares; distribution can follow
 
 **Target: 2 minutes. Elapsed: 0:18 to 0:20.**
 
@@ -162,7 +186,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Ask: “If one weight rises and the budget stays fixed, whose share changes?” Take a brief answer.]
 
-## 11. Contest a score through an appeal
+## 13. Contest a score through an appeal
 
 **Target: 2 minutes. Elapsed: 0:20 to 0:22.**
 
@@ -176,7 +200,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Ask what evidence they would want the appeal jury to consider. Keep settlement rules in the private questions below.]
 
-## 12. Challenge a factual claim
+## 14. Challenge a factual claim
 
 **Target: 2 minutes. Elapsed: 0:22 to 0:24.**
 
@@ -192,7 +216,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Ask where the reward comes from. A lack of challenges alone is not evidence that every claim was checked.]
 
-## 13. Reassess when circumstances change
+## 15. Reassess when circumstances change
 
 **Target: 1 minute. Elapsed: 0:24 to 0:25.**
 
@@ -204,7 +228,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “The new weight changes future funding; earlier earnings stay earned. We now have three different correction paths: challenge a claim, appeal a judgment or reassess it later. Let us experience the judgment part ourselves.”
 
-## 14. Join the workshop
+## 16. Join the workshop
 
 **Target: 3 minutes. Elapsed: 0:25 to 0:28.**
 
@@ -220,7 +244,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Compare seats with participants. Remove duplicate or stray seats before opening the first nominee. Do not put private host controls on the projector.]
 
-## 15. Use one shared policy
+## 17. Use one shared policy
 
 **Target: 2 minutes. Elapsed: 0:28 to 0:30.**
 
@@ -234,7 +258,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Read the anchor labels together. Invite one clarification about the policy. Avoid announcing which nominee should score highest.]
 
-## 16. See what the workshop rewards
+## 18. See what the workshop rewards
 
 **Target: 2 minutes. Elapsed: 0:30 to 0:32.**
 
@@ -250,7 +274,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “Relevance scores guide support for contributions; juror rewards pay the people assessing them. This workshop uses points to let us experience those incentives.”
 
-## 17. Play the jury
+## 19. Play the jury
 
 **Target: 27 minutes. Elapsed: 0:32 to 0:59.**
 
@@ -276,7 +300,7 @@ If proof reporting needs explanation, say:
 
 [For the assigned-role round, let the interface deliver the private instruction. Participants may decline it. Do not identify roles publicly before the result. If nobody reveals, explain that the round is void; do not infer a judgment from it.]
 
-## 18. What shaped the scores?
+## 20. What shaped the scores?
 
 **Target: 5 minutes. Elapsed: 0:59 to 1:04.**
 
@@ -294,7 +318,7 @@ If proof reporting needs explanation, say:
 
 “The group can sometimes move the result against which everyone is rewarded. A minority can also have a good argument and lose. This is why coherence alone cannot certify accuracy. One room and one simulated group do not establish resistance to capture.”
 
-## 19. Attack the mechanism
+## 21. Attack the mechanism
 
 **Target: 5 minutes. Elapsed: 1:04 to 1:09.**
 
@@ -314,7 +338,7 @@ If proof reporting needs explanation, say:
 
 [Use the remaining time for one concrete attack and response. Ask what weakness remains. Keep contract comparisons, payout rules and recovery machinery in the private notes.]
 
-## 20. Close the loop
+## 22. Close the loop
 
 **Target: 11 minutes. Elapsed: 1:09 to 1:20.**
 
@@ -351,7 +375,7 @@ Use these notes for source questions; there is no corresponding projected slide.
 
 “If a source seems to contradict today's explanation, first check which version and which system it describes.”
 
-References: [published version 1.2.0](https://doi.org/10.5281/zenodo.23313625), [published manuscript source](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd), [Schelling point explanation](https://en.wikipedia.org/wiki/Focal_point_(game_theory)), [inspected implementation snapshot](https://github.com/golemfoundation/octant-v3-monorepo/tree/ca8c8560119dee34f809a31e5149f4a6217467fb), [Arrow experiment proposal](https://app.notion.com/p/3e4e165689aa819b8aa6d2f4c5d54330), [public mechanism summary](../public/mechanism/index.html), [full source register](presentation-sources.md), [proposed evaluation plan](evaluation-plan.md).
+References: [published version 1.2.0](https://doi.org/10.5281/zenodo.23313625), [published manuscript source](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd), [Schelling’s original coordination examples](https://journals.sagepub.com/doi/10.1177/002200275700100104), [inspected implementation snapshot](https://github.com/golemfoundation/octant-v3-monorepo/tree/ca8c8560119dee34f809a31e5149f4a6217467fb), [Arrow experiment proposal](https://app.notion.com/p/3e4e165689aa819b8aa6d2f4c5d54330), [public mechanism summary](../public/mechanism/index.html), [full source register](presentation-sources.md), [proposed evaluation plan](evaluation-plan.md).
 
 ## Private reference: questions to answer without loading the slides
 
@@ -413,9 +437,11 @@ See the [grading comparison](presentation-sources.md#keep-the-four-mechanisms-di
 
 “Losses reduce future draw chances only if available stake falls relative to competitors. Replenishment, outside wealth and changes in other jurors' stakes can change that outcome. The design does not guarantee that every weak assessor leaves.”
 
-### What can we infer from the handout's coordination game?
+### What can we infer from the number-grid coordination game?
 
-“It can illustrate shared expectations and a salient choice. It cannot isolate a color effect: color, middle position, label and destination occur together. It also cannot establish that honesty is a focal point in an assessment game, because this choice has no factual answer and asks people to coordinate. A cluster is an observation about this room, not proof of the proposed incentives.”
+“The hundred-number grid illustrates how a salient cue can support shared expectations. Number 47 is conspicuous from the start. Saying answers together lets us hear whether one choice is prominent; it does not produce reliable vote totals or a controlled test of which visual feature caused the choice.
+
+“The exercise asks people to coordinate, with no factual answer to establish. It does not prove that honesty is a focal point in an assessment game. The revealed explanation is conceptual, not a tally. A cluster is an observation about this room, not proof of the proposed incentives.”
 
 ### What can we infer from the points exercise?
 

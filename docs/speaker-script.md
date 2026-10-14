@@ -24,15 +24,15 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 2 minutes. Elapsed: 0:01 to 0:03.**
 
-“We already delegate curation whenever we use a newspaper, ranking, review, feed or recommendation. Someone selects what we see, checks some claims and supplies context. That saves us work, but it also makes our decisions depend on their competence and incentives.
+“Curation determines which claims and evidence inform our decisions. Individuals cannot assess every relevant claim and its supporting evidence; we depend on journals, peer review, research databases and other curators.
 
-“Research has the same problem. We cannot read every paper, inspect every software project or independently verify every claim. What gets selected affects what we study, use and support.
+“These institutions influence which findings gain credibility, which questions receive attention and which contributions attract resources. Their competence and incentives therefore matter.
 
 “Access to more information does not by itself give us reliable knowledge. We need information accurate and relevant enough for a particular decision. The foundational paper calls that decision-grade knowledge.
 
 “Better evidence can help us compare consequences and correct mistaken beliefs. It cannot decide whose interests should count or settle every disagreement about values. Curation is one part of a decision, with real consequences for the rest.”
 
-[Ask for one familiar example of delegated selection, checking or context. Keep the answer brief.]
+[Use one academic example: peer review, a systematic review or research software assessment.]
 
 ## 3. Information quality is not one thing
 

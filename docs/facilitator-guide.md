@@ -32,7 +32,7 @@ These are facilitation allowances, not changes to the game's scoring clock. If j
 
 The first six slides establish the reason for the proposal before showing its machinery. Draw directly on the foundational paper’s introduction and four-step framework, recorded in the [source register](presentation-sources.md). Do not let the funding example become the definition of Decentralized Curation.
 
-Open with the ordinary experience of delegated curation: newspapers, rankings, reviews, feeds and recommendations select, check and contextualize information for us. Delegation saves effort but makes our decisions depend on a curator’s competence and incentives. Research shares this problem because nobody can inspect every paper, software project or claim. Access to information does not by itself establish access to reliable knowledge. The paper’s objective is decision-grade knowledge: information sufficiently accurate and relevant for a specified decision.
+Open with curation as a problem of knowledge production and collective judgment. No individual can assess every relevant claim and its supporting evidence; academic work depends on journals, peer review, research databases and other curators. Their assessments shape the credibility and visibility of findings and the allocation of resources. Distinguish information from reliable knowledge. The paper’s objective is decision-grade knowledge: information sufficiently accurate and relevant for a specified decision.
 
 Explain why quality needs decomposition. Accuracy asks whether a claim holds under its scope and time; relevance asks how much it matters under a stated goal. Accurate football trivia can still fail a world-politics feed. Timeliness, interpretability, completeness and accessibility can also matter. Evidence makes claims and judgments inspectable, while changing circumstances motivate reassessment. Neither is a reason to collapse the dimensions into one score.
 
@@ -54,8 +54,8 @@ Use the conference memo to tailor examples to a research audience. The author ha
 
 Use the NumPy 2.0.0 release throughout. Say: “The release and source records are real. This nomination, its jury scores and funding parameters are illustrative. No NumPy application, payment or accuracy ruling is being reported.” The policy scores the nominee; the release is evidence about its work, rather than the entire object being scored.
 
-- **Slide 1:** Introduce the decision problem and proposal in one minute. Save the detailed curation definition for the next slide.
-- **Slide 2:** Explain why delegation matters. Take one familiar example of selection, checking or context; connect the chosen information to a decision.
+- **Slide 1:** Introduce the decision problem and proposal in one minute. Move directly from individual assessment limits to institutional incentives.
+- **Slide 2:** Explain how curation shapes knowledge and resource allocation. Use peer review, a systematic review or research software assessment as the example.
 - **Slide 3:** Separate accuracy from relevance. Use the accurate-football-trivia example, then explain evidence and reassessment without treating them as interchangeable quality scores.
 - **Slide 4:** State both the strengths and limits of a central curator and simple vote-counting. Keep assessment distinct from representation and public authorization.
 - **Slide 5:** Trace the four design steps in order. The framework precedes its applications; do not teach funding mechanics yet.

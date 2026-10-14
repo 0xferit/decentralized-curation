@@ -10,9 +10,9 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 1 minute. Elapsed: 0:00 to 0:01.**
 
-“Research depends on people deciding what deserves attention, trust and support. Those decisions take work. My question is whether we can make useful judgment and useful correction personally rewarding, so that pursuing a private benefit also helps other people.
+“Research depends on people deciding what deserves attention, trust and support. Those decisions take work. The idea behind Decentralized Curation is to make honest, competent and careful judgment personally rewarding, so that the same work can also create public benefit. Fact-checking follows the same logic: reward the person who does useful work that others can rely on.
 
-“I call the framework Decentralized Curation. I have worked on it since 2021. Today we will explore one application, experience part of it together, and then attack it.
+“I have worked on this framework since 2021. Today we will explore one application, experience part of it together, and then attack it.
 
 “Thank you to Octant for sponsoring this session.”
 
@@ -176,7 +176,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 2 minutes. Elapsed: 0:23 to 0:25.**
 
-“For this to work well, we need a worthwhile goal, usable evidence and informed, independent assessors. We also need ways to challenge mistakes.
+“We want personal rewards to encourage judgment that other people can rely on. That takes three different qualities, supported by a worthwhile goal, usable evidence and ways to challenge mistakes.
 
 “Honesty means reporting sincerely. Care means assessing evidence rigorously. Competence means knowing how to judge it. Someone can be honest and careful yet lack the expertise.
 
@@ -186,7 +186,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “Competition over repeated rounds aims to make uninformed guessing a losing strategy. Expected losses discourage entry. Someone who keeps participating and losing gives up tokens. As their stake shrinks relative to competitors’, they are drawn less often and have less influence.
 
-“This selects for competence only if informed judgment outperforms guessing after fees, rewards, penalties and effort. That is what we need to test.
+“This selects for competence only if informed judgment outperforms guessing after fees, rewards, penalties and effort. We need to test that link, and whether better assessment improves decisions for the people affected.
 
 “There are also real governance choices. The inspected funding implementation has a configured, time-limited authority that can permanently stop future accrual once. That holder cannot take funding already accrued. We should make that authority visible when discussing the system.
 
@@ -330,9 +330,9 @@ If proof reporting needs explanation, say:
 
 **Target: 4 minutes. Elapsed: 1:16 to 1:20.**
 
-“The idea is putting self-interest to work for the public good. That requires more than a reward formula. People need evidence they can inspect, a policy they can understand, and a practical way to challenge a weak judgment.
+“Personal rewards for honest, competent and careful judgment can also create public benefit: better decisions about what deserves attention or support. That is the aim of Decentralized Curation. Evidence, clear criteria and practical ways to challenge mistakes connect those rewards to useful work.
 
-“We explored public-goods curation, with funding as one use of its results. The broader question is whether private incentives can make useful assessment and correction worthwhile, and whether the decisions that follow actually improve things for others.”
+“We explored public-goods curation, with funding as one use of its results. Now we need to test that connection: do the incentives reward useful assessment and correction, and do the resulting decisions help the people affected?”
 
 [Invite one participant to distinguish an accuracy challenge from a relevance appeal. Invite another to name evidence that would make an agreed judgment more credible.]
 

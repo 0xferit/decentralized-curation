@@ -1,6 +1,6 @@
 # Facilitator guide
 
-Run this as an eighty-minute workshop led by the [handout](../public/handout/index.html): putting self-interest to work for the public good through an application of the Decentralized Curation framework. The application is public-goods curation; funding is one use of the resulting assessments. The opening worked example curates relative allocation shares from adjustable scores for a real contribution, then applies an optional funding flow. The later live jury examines one component; neither activity simulates the entire protocol. Times run from the session start. Slides 21 to 24 are optional references.
+Run this as an eighty-minute workshop led by the [handout](../public/handout/index.html): putting self-interest to work for the public good through an application of the Decentralized Curation framework. Its central idea is that personal rewards for honest, competent and careful judgment can also create public benefit. The application is public-goods curation; funding is one use of the resulting assessments. The opening worked example curates relative allocation shares from adjustable scores for a real contribution, then applies an optional funding flow. The later live jury examines one component; neither activity simulates the entire protocol. Times run from the session start. Slides 21 to 24 are optional references.
 
 For rehearsal and delivery, use the [slide-by-slide speaker script](speaker-script.md) and [printable speech](../public/speech/speech.pdf). The projected deck contains visual prompts; the script carries the explanation and optional detail. The [offline deck](../public/deck/deck.pdf) is a fallback when the live demonstration is unavailable.
 
@@ -31,7 +31,7 @@ These are facilitation allowances, not changes to the game's scoring clock. If j
 
 ## Explain the framework, then the public-goods application
 
-Open with: “Research depends on judgments about what to read, cite, reuse and reward. Those judgments take work, and incentives shape how that work is done. My thesis asks whether private incentives can make honest, careful and informed assessment and useful challenges worthwhile, helping us build credible collective judgments.”
+Open with: “Research depends on judgments about what to read, cite, reuse and reward. Those judgments take work. The idea is to make honest, competent and careful judgment personally rewarding, so the same work can also create public benefit. Fact-checking follows the same logic: reward the person who does useful work that others can rely on.”
 
 State the scope: “Credible consensus is the general design problem. Today we explore public-goods curation as one application. Funding is one use of the resulting assessments.”
 
@@ -140,7 +140,7 @@ Describe the next study as a proposed evaluation, not an approved or completed A
 
 Ask: “Whose needs are missing from this policy? What evidence would show that the resulting funding served its stated purpose?” Then ask which of those claims the available evidence supports. Do not treat every possible outcome as support.
 
-On slide 20, return to public-goods curation, with funding as one use of its assessments, public benefit as the final aim and credible consensus as an intermediate objective. Ask one participant to distinguish a claim challenge from a relevance appeal or periodic reassessment, and another to explain what would make an agreed judgment credible or justify revising it. Then ask what evidence would show that the resulting decisions benefited affected people. A profitable strategy, faithful policy application or stable consensus alone would not answer that question. Close with the full loop, research questions and paper/mailing-list links. Press “Finish” if needed so standings remain visible.
+On slide 20, restate the central idea: personal rewards for honest, competent and careful judgment can also create public benefit through better decisions. Public-goods curation is the application; funding is one use of its assessments, and credible consensus is an intermediate objective. Ask one participant to distinguish a claim challenge from a relevance appeal or periodic reassessment, and another to explain what would make an agreed judgment credible or justify revising it. Then ask what evidence would show that the resulting decisions benefited affected people. A profitable strategy, faithful policy application or stable consensus alone would not answer that question. Close with the full loop, research questions and paper/mailing-list links. Press “Finish” if needed so standings remain visible.
 
 ## While the room plays
 

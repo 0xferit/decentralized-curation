@@ -16,3 +16,4 @@
 @media(max-width:650px){.pool-funding{grid-template-columns:1fr;gap:.5rem}.pool-funding>.pool-arrow{transform:rotate(90deg)}.pool-assessors{grid-template-columns:1fr}.pool-policy{align-items:start;flex-direction:column;gap:.3rem}}
 
 .pool-inputs{display:flex;gap:.65rem;align-items:center;justify-content:center}.pool-inputs .pool-arrow{line-height:1}.pool-assessors{border-top:1px solid var(--hair);padding-top:.8rem}
+.slide>:is(h1,h2)[tabindex="-1"]:focus-visible{outline:none}

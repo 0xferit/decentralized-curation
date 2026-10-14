@@ -7,6 +7,22 @@ const PHONE = { width: 390, height: 667 };
 const READABLE_SUPPORT_PX = 14;
 const GEOMETRY_TOLERANCE_PX = 1;
 
+test("slide navigation keeps heading focus without a presentation outline", async ({ page }) => {
+  await page.setViewportSize(DESKTOP);
+  await page.goto("/deck/");
+  await page.keyboard.press("Space");
+  const heading = page.locator("#s2 h2");
+  await expect(heading).toBeFocused();
+  await expect(heading).toHaveCSS("outline-style", "none");
+  await page.keyboard.press("Shift+Space");
+  const title = page.locator("#s1 h1");
+  await expect(title).toBeFocused();
+  await expect(title).toHaveCSS("outline-style", "none");
+  const next = page.getByRole("button", { name: "Next", exact: true });
+  await next.focus();
+  await expect(next).toHaveCSS("outline-style", "solid");
+});
+
 for (const scenario of [
   { slide: "s11", button: "Apply appeal result", result: /0\.700.*43\.8%/ },
   { slide: "s12", button: "Show debunked outcome", result: /Future funding stops/ },

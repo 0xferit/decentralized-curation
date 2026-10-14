@@ -6,7 +6,7 @@ body{margin:0}.handout{max-width:1000px;margin:auto;padding:2rem;display:flex;fl
 @media print{.resources{margin-top:5mm}.support-credit{--support-logo-width:27mm;gap:3mm}.support-logo{padding:2mm 3mm;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
 @media print{.section p.fine{font-size:7.5pt;line-height:1.35}.footer{display:grid;grid-template-columns:1fr 1fr;column-gap:7mm;row-gap:1mm;align-items:center}.footer .support-credit{grid-row:1 / span 2}.footer .fine{grid-column:2}}
 </style></head><body><main class="handout">
-<header class="section"><p class="eyebrow" id="document-label"></p><h1 id="handout-title"></h1><p class="subtitle">An application of the <span data-session="project"></span> framework</p><p class="fine"><span data-session="event"></span> · <span data-session="day"></span></p><p class="warning" id="publication-status" hidden>Preview handout: the scoring workshop and mailing-list addresses await deployment.</p></header>
+<header class="section"><p class="eyebrow" id="document-label"></p><h1 id="handout-title" data-session="title"></h1><p class="subtitle" data-session="subtitle"></p><p class="fine"><span data-session="event"></span> · <span data-session="day"></span></p><p class="warning" id="publication-status" hidden>Preview handout: the scoring workshop and mailing-list addresses await deployment.</p></header>
 <section class="section intro"><h2>Who judges what matters?</h2><p>Decentralized Curation is a framework for rewarding useful information, assessment and correction. <strong>It aims to build credible consensus without trusting individual participants or requiring permission to take part.</strong> This handout explores one application: checking testable claims and judging public goods against a stated goal.</p></section>
 <div class="columns"><div class="column">
 <section class="section"><h2>Curating public goods</h2><ol><li><strong>Define the goal and criteria.</strong> Specify required evidence and assessor rewards.</li><li><strong>Nominate work.</strong> Anyone can submit claims and evidence with a deposit.</li><li><strong>Judge relevance.</strong> People put down a deposit to enter the draw for paid jury work. Selected jurors score independently using the criteria and risk penalties for large disagreements with the final judgment.</li><li><strong>Appeal a score.</strong> Competing, fully funded proposals trigger a larger jury; anyone can contribute.</li><li><strong>Reassess periodically.</strong> Run fresh scoring rounds.</li><li><strong>Publish the assessment.</strong> Show how much each eligible contribution matters relative to the others.</li><li><strong>Challenge claims at any time.</strong> Anyone can challenge an active nomination’s claims. An external arbitrator decides. If a claim is false or untestable, the fact-checker receives the submitter’s deposit and the nomination ends. The submitter can nominate again.</li></ol></section>
@@ -23,8 +23,6 @@ renderSupport();
 import { roomPath } from "/protocol.js";
 import { POLICY, NOMINEES } from "/domain.js";
 document.getElementById("document-label").textContent = document.title;
-const handoutTitle = SESSION.subtitle.replace(/\.$/, "");
-document.getElementById("handout-title").textContent = handoutTitle;
 const pending = !SESSION.publicAddressConfirmed;
 for (const element of document.querySelectorAll("[data-session]")) element.textContent = SESSION[element.dataset.session];
 for (const element of document.querySelectorAll("[data-session-url]")) {
@@ -92,6 +90,6 @@ for (const { key, weight } of illustrativeWeights) {
 }
 vector.append(vectorBracket("]"));
 document.getElementById("allocation-total").textContent = `${illustrativeWeights.map(({ weight }) => (weight / totalWeight).toFixed(2)).join(" + ")} = 1.00`;
-document.title = `${handoutTitle}: handout`;
+document.title = `${SESSION.title}: handout`;
 document.documentElement.dataset.ready = "true";
 </script></body></html>

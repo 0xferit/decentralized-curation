@@ -1,12 +1,12 @@
 # Speaker script
 
-This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
+The [handout](../public/handout/index.html) leads the session’s title and scope. This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
 
 The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. Slides 21 to 24 are optional references.
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
-## 1. Decentralized curation
+## 1. Putting self-interest to work
 
 **Target: 1 minute. Elapsed: 0:00 to 0:01.**
 

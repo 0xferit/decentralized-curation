@@ -7,6 +7,23 @@ const PHONE = { width: 375, height: 740 };
 const SHORT_PHONE = { width: 390, height: 667 };
 const PAGES = ["/", "/deck/", "/handout/", "/join/", "/paper/", "/paper/sheets.html"];
 
+test("the handout leads the title and subtitle across session pages", async ({ page }) => {
+  await page.goto("/handout/");
+  await expect(page.locator(".handout h1")).not.toBeEmpty();
+  await expect(page.locator(".handout .subtitle")).not.toBeEmpty();
+  const title = await page.locator(".handout h1").innerText();
+  const subtitle = await page.locator(".handout .subtitle").innerText();
+
+  await page.goto("/");
+  await expect(page.locator(".hero h1")).toHaveText(title);
+  await expect(page.locator(".hero .subtitle")).toHaveText(subtitle);
+
+  await page.goto("/deck/");
+  await expect(page.locator("#s1 h1")).toHaveText(title);
+  await expect(page.locator("#s1 .title-subtitle")).toHaveText(subtitle);
+  await expect(page).toHaveTitle(`${title}: session deck`);
+});
+
 test("deck pages share title and source alignment across screen sizes", async ({ page }) => {
   for (const viewport of [
     { width: 1440, height: 900 },

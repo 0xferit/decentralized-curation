@@ -10,8 +10,8 @@ const CONTENT_LICENCE = "CC BY 4.0";
 const LICENCE = `code ${CODE_LICENCE}, original text and figures ${CONTENT_LICENCE}; third-party marks excluded`;
 
 export const SESSION = Object.freeze({
-  title: "Decentralized curation",
-  subtitle: "Putting self-interest to work for the public good.",
+  title: "Putting self-interest to work for the public good",
+  subtitle: `An application of the ${PROJECT} framework`,
   project: PROJECT,
   event: "Institute of Open Science Practices (IOSP) 2026, Leiden",
   day: "Wednesday 14 October 2026, 14:00 to 15:20",

@@ -5,7 +5,7 @@ test.use({ reducedMotion: "reduce" });
 
 const PHONE = { width: 375, height: 740 };
 const SHORT_PHONE = { width: 390, height: 667 };
-const DECK_SLIDE_COUNT = 25;
+const DECK_SLIDE_COUNT = 24;
 const PAGES = ["/", "/deck/", "/handout/", "/join/", "/paper/", "/paper/sheets.html"];
 
 test("the handout leads the title and subtitle across session pages", async ({ page }) => {
@@ -122,10 +122,10 @@ test("funding application precedes the workshop and its real jury remains intera
   await expect(qualitySpace).toHaveAccessibleName("Accuracy and relevance quality space");
   await expect(page.locator("#s11")).toContainText("relevance has no pass threshold");
   await expect(page.locator("#s12")).toContainText("Curating public goods");
-  await expect(page.locator("#s17")).toContainText("Claim challenges");
-  await expect(page.locator("#s16")).toContainText("Appeal");
-  await expect(page.locator("#s21")).toContainText("How points work");
-  await expect(page.locator("#s25")).toContainText("Make personal benefit serve the public good");
+  await expect(page.locator("#s16")).toContainText("Claim challenges");
+  await expect(page.locator("#s15")).toContainText("Appeal");
+  await expect(page.locator("#s20")).toContainText("How points work");
+  await expect(page.locator("#s24")).toContainText("Make personal benefit serve the public good");
   const widget = page.locator("#w-pay");
   const dot = widget.getByRole("slider").first();
   await dot.focus();
@@ -152,9 +152,9 @@ test("funding application precedes the workshop and its real jury remains intera
 
 test("deck advances from the tall slide still being read on a phone", async ({ page }) => {
   await page.setViewportSize(SHORT_PHONE);
-  await page.goto("/deck/#s23");
-  await expect(page.locator("#progress")).toHaveText(`23 / ${DECK_SLIDE_COUNT}`);
-  const initialSlide = await page.locator("#s23").boundingBox();
+  await page.goto("/deck/#s22");
+  await expect(page.locator("#progress")).toHaveText(`22 / ${DECK_SLIDE_COUNT}`);
+  const initialSlide = await page.locator("#s22").boundingBox();
   const readingArea = await page.locator("main").boundingBox();
   if (!initialSlide || !readingArea) throw new Error("the deck has no visible reading area");
   const initialScroll = await page.locator("main").evaluate((element) => element.scrollTop);
@@ -168,14 +168,14 @@ test("deck advances from the tall slide still being read on a phone", async ({ p
   await expect
     .poll(() => page.locator("main").evaluate((element) => element.scrollTop))
     .toBeGreaterThan(initialScroll + initialSlide.height * minimumReadingFraction);
-  await expect(page.locator("#s23 p").last()).toBeInViewport({ ratio: 1 });
-  const slide = await page.locator("#s23").boundingBox();
+  await expect(page.locator("#s22 p").last()).toBeInViewport({ ratio: 1 });
+  const slide = await page.locator("#s22").boundingBox();
   if (!slide) throw new Error("the collusion slide has no visible geometry");
   expect(slide.y).toBeLessThanOrEqual(0);
   expect(slide.y + slide.height).toBeGreaterThan(0);
-  await expect(page.locator("#progress")).toHaveText(`23 / ${DECK_SLIDE_COUNT}`);
+  await expect(page.locator("#progress")).toHaveText(`22 / ${DECK_SLIDE_COUNT}`);
   await page.getByRole("button", { name: "Next", exact: true }).click();
-  await expect(page.locator("#progress")).toHaveText(`24 / ${DECK_SLIDE_COUNT}`);
+  await expect(page.locator("#progress")).toHaveText(`23 / ${DECK_SLIDE_COUNT}`);
 });
 
 for (const viewport of [{ width: 1280, height: 720 }, SHORT_PHONE]) {
@@ -225,19 +225,17 @@ test("keyboard shortcuts preserve controls and provide a dismissible focus-conta
   await page.getByRole("button", { name: "Next", exact: true }).focus();
   await page.keyboard.press("Space");
   await expect(progress).toHaveText(`15 / ${DECK_SLIDE_COUNT}`);
-  await page.keyboard.press("ArrowRight");
-  await expect(progress).toHaveText(`16 / ${DECK_SLIDE_COUNT}`);
   await page.getByRole("button", { name: "Apply appeal result", exact: true }).focus();
   await page.keyboard.press("Space");
-  await expect(page.locator('#s15 [data-example="stage"]')).toContainText("Appeal jury");
-  await expect(progress).toHaveText(`16 / ${DECK_SLIDE_COUNT}`);
+  await expect(page.locator('#s14 [data-example="stage"]')).toContainText("Appeal jury");
+  await expect(progress).toHaveText(`15 / ${DECK_SLIDE_COUNT}`);
   await page.keyboard.press("ArrowRight");
-  await expect(progress).toHaveText(`17 / ${DECK_SLIDE_COUNT}`);
-  await page.keyboard.press("Space");
-  await expect(progress).toHaveText(`18 / ${DECK_SLIDE_COUNT}`);
-  await page.keyboard.press("PageUp");
-  await page.keyboard.press("PageUp");
   await expect(progress).toHaveText(`16 / ${DECK_SLIDE_COUNT}`);
+  await page.keyboard.press("Space");
+  await expect(progress).toHaveText(`17 / ${DECK_SLIDE_COUNT}`);
+  await page.keyboard.press("PageUp");
+  await page.keyboard.press("PageUp");
+  await expect(progress).toHaveText(`15 / ${DECK_SLIDE_COUNT}`);
 
   const shortcuts = page.getByRole("button", { name: "Keyboard shortcuts", exact: true });
   await shortcuts.click();
@@ -249,7 +247,7 @@ test("keyboard shortcuts preserve controls and provide a dismissible focus-conta
   await page.keyboard.press("Tab");
   await expect(close).toBeFocused();
   await page.keyboard.press("End");
-  await expect(progress).toHaveText(`16 / ${DECK_SLIDE_COUNT}`);
+  await expect(progress).toHaveText(`15 / ${DECK_SLIDE_COUNT}`);
   await page.keyboard.press("Escape");
   await expect(guide).not.toBeVisible();
   await expect(shortcuts).toBeFocused();
@@ -262,25 +260,26 @@ test("keyboard shortcuts preserve controls and provide a dismissible focus-conta
     const editor = document.createElement("div");
     editor.contentEditable = "true";
     editor.setAttribute("aria-label", "Speaker notes");
-    document.querySelector("#s16")?.append(editor);
+    document.querySelector("#s15")?.append(editor);
     editor.focus();
   });
   await page.keyboard.type("my notes");
   await expect(page.getByLabel("Speaker notes")).toHaveText("my notes");
-  await expect(progress).toHaveText(`16 / ${DECK_SLIDE_COUNT}`);
+  await expect(progress).toHaveText(`15 / ${DECK_SLIDE_COUNT}`);
   await expect(guide).not.toBeVisible();
-  await page.locator("#s16 h2").focus();
-  await expect(progress).toHaveText(`16 / ${DECK_SLIDE_COUNT}`);
+  await page.locator("#s15 h2").focus();
+  await expect(progress).toHaveText(`15 / ${DECK_SLIDE_COUNT}`);
   await page.keyboard.press("Control+ArrowRight");
   await page.keyboard.press("Meta+ArrowRight");
   await page.keyboard.type("np?");
-  await expect(progress).toHaveText(`16 / ${DECK_SLIDE_COUNT}`);
+  await expect(progress).toHaveText(`15 / ${DECK_SLIDE_COUNT}`);
 });
 
 test("worked example carries jury scores through capped funding and later outcomes", async ({
   page,
 }) => {
   await page.goto("/deck/#s14");
+  await expect(page.locator("#s14 #example-allocation")).toBeInViewport();
   await expect(page.locator("#s13")).toContainText("NumPy 2.0.0");
   await expect(page.locator('[data-example="mean"]')).toHaveText("0.600");
   await expect(page.locator('[data-project-rate="numpy"]')).toHaveText("40.00");
@@ -290,6 +289,8 @@ test("worked example carries jury scores through capped funding and later outcom
   await scores.first().press("End");
   await expect(page.locator('[data-example="mean"]')).toHaveText("0.750");
   await expect(page.locator('[data-project-rate="numpy"]')).toHaveText("45.45");
+  await expect(page.locator('#s14 [data-project-rate="numpy"]')).toBeInViewport();
+  await expect(page.locator('#s14 [data-example="numpyShare"]')).toHaveText("45.5%");
   for (const score of await scores.all()) {
     await score.focus();
     await score.press("End");
@@ -326,7 +327,7 @@ test("worked example carries jury scores through capped funding and later outcom
 });
 
 test("curated shares remain available without beneficiary funding", async ({ page }) => {
-  await page.goto("/deck/#s15");
+  await page.goto("/deck/#s14");
   const budget = page.getByRole("slider", { name: "Illustrative distribution per day" });
   await expect(budget).toHaveCount(1);
   const shares = page.locator("[data-project-share]");

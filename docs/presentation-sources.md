@@ -1,6 +1,6 @@
 # Presentation evidence register
 
-This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honesty, competence and scrutiny can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the twenty-five-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
+This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honesty, competence and scrutiny can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the twenty-four-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
 
 ## Which source controls which claim
 
@@ -112,13 +112,13 @@ The [prototype’s act 2](https://rpgf-prototype.pages.dev/#/demo/act-2), inspec
 
 ## Prototype presentation material
 
-The [public prototype](https://rpgf-prototype.pages.dev/#/demo/value) and its [inspected source revision](https://github.com/golemfoundation/rpgf-prototype/tree/c6180f9ad7e44992725a6c6dcc96b60abe3de0df) inform the presentation of slides 12, 13 and 15: a pool with distinct funding and assessment roles, a dated claim connected to evidence, and a whole budget divided by normalized shares. The deck redraws these ideas using its existing research-infrastructure example and calculations. The prototype is a simulation, not evidence of a production deployment or successful incentives.
+The [public prototype](https://rpgf-prototype.pages.dev/#/demo/value) and its [inspected source revision](https://github.com/golemfoundation/rpgf-prototype/tree/c6180f9ad7e44992725a6c6dcc96b60abe3de0df) inform the presentation of slides 12, 13 and 14: a pool with distinct funding and assessment roles, a dated claim connected to evidence, and a whole budget divided by normalized shares. The deck redraws these ideas using its existing research-infrastructure example and calculations. The prototype is a simulation, not evidence of a production deployment or successful incentives.
 
 Its internal investment pitch, pilot resource estimates, token selection, older settlement rules and “technical truth serum” analogy do not govern this presentation. The current manuscript and the source hierarchy above retain authority. Continuous beneficiary funding does not mean that per-nomination jury and appeal rounds disappear.
 
 ## Real evidence in the NumPy worked example
 
-Slides 13 to 18 follow NumPy as an illustrative nominee and use its 2.0.0 release as bounded evidence about delivered work. The scoring prompt concerns the nominee under the shared policy. It does not ask curators to assign a price to the release alone.
+Slides 13 to 17 follow NumPy as an illustrative nominee and use its 2.0.0 release as bounded evidence about delivered work. The scoring prompt concerns the nominee under the shared policy. It does not ask curators to assign a price to the release alone.
 
 | Record | Verified fact | Limit of the evidence |
 | --- | --- | --- |
@@ -131,7 +131,7 @@ The release-note link uses the later 2.2 manual's historical 2.0.0 notes. The 2.
 
 NumPy's nomination, requested weight, curator identities, ticket counts, scores, comparison positions and default 100-unit daily release equivalent are illustrative. The initial six-ticket mean, twelve-ticket appeal and later re-score drive a working allocation calculation; they are not reported evaluations of NumPy. Relative shares are calculated independently of grant flow; setting that flow to zero preserves the shares and creates no earnings. Initial and appeal rates represent an active allocation after the new nomination's holdback and the applicable score finalization. Later rating increases and decreases create no new holdback. Funds accrue for the beneficiary to claim; these figures are not scheduled daily transfers. The calculator omits balances, asset transfers, eligibility enforcement and contract settlement.
 
-The accuracy branch adds a deliberately counterfactual assertion that NumPy 2.0 was released in 2020. NumPy did not make that claim in this example. The release announcement and package record supply the counter-evidence: 16 June 2024. The button illustrates an external arbitrator rejecting that added claim after scoring; this teaching order is not a prerequisite for a factual challenge, and no real accuracy ruling occurs. Debunking stops future weight while preserving all funding accrued before closure, whether paid or still unclaimed. The lower re-score is a separate alternative outcome, not an action after debunking.
+The accuracy branch adds a deliberately counterfactual assertion that NumPy 2.0 was released in 2020. NumPy did not make that claim in this example. The release announcement and package record supply the counter-evidence: 16 June 2024. The merged jury/allocation slide uses the existing calculator inputs: raising Juror A’s report from 0.70 to 1.00 changes the weighted mean from 0.60 to 0.75 and NumPy’s allocation from 40 to 45.45 units per day at the illustrative budget. These are derived display outcomes, not additional parameter definitions. The button illustrates an external arbitrator rejecting that added claim after scoring; this teaching order is not a prerequisite for a factual challenge, and no real accuracy ruling occurs. Debunking stops future weight while preserving all funding accrued before closure, whether paid or still unclaimed. The lower re-score is a separate alternative outcome, not an action after debunking.
 
 ## Capture-defense attribution and recovery design
 

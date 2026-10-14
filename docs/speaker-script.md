@@ -2,7 +2,7 @@
 
 The [handout](../public/handout/index.html) leads the session’s title and scope. This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
 
-The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 25 logical slides. Its offline export has the same 25 pages: the number and curation rounds occupy slides 7 and 8, each before its reveal. The opening establishes purpose-specific, multidimensional information quality and the trust required for curation, then uses game theory and a brief two-round Schelling-point exercise and a feedback loop to introduce the framework before applying it to public goods funding. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
+The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 24 logical slides. Its offline export has the same 24 pages: the number and curation rounds occupy slides 7 and 8, each before its reveal. The opening establishes purpose-specific, multidimensional information quality and the trust required for curation, then uses game theory and a brief two-round Schelling-point exercise and a feedback loop to introduce the framework before applying it to public goods funding. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
@@ -184,37 +184,27 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-0-0-released). Keep the link in the notes for questions rather than projecting it.
 
-## 14. Jurors score independently
+## 14. Jury judgments determine funding
 
-**Target: 2 minutes. Elapsed: 0:16 to 0:18.**
+**Target: 4 minutes. Elapsed: 0:16 to 0:20.**
 
-“People put down a deposit to enter the draw for paid jury work. Their stake is capital they can lose. More available stake increases their chance of being drawn. Here six drawn seats are held by three jurors: more seats do not necessarily mean more independent people.
+“Here the assessments and their funding consequences are visible together. These are scores after revelation. Deposits enter a draw for paid jury work; six seats belong to three jurors in this example. A juror with more drawn seats has more influence, so seats are not a count of independent people.
 
-“Each juror reads the evidence and privately seals a score before revealing it. The technical name is commit and reveal. These controls show scores after revelation. The result is the weighted mean; more drawn weight gives a juror more influence.
+“At the starting values, the seat-weighted mean is 0.60. NumPy receives 40 percent of this pool’s allocation, or 40 units per day from a budget of 100. A score of 0.60 is not a 60 percent budget share: its weight is compared with the other contributions’ weights.
 
-“Watch what happens when I move one score.”
+“Suppose Juror A sees evidence that warrants a higher assessment.”
 
-[Move one slider and pause.]
+[Move Juror A from 0.70 to 1.00. Pause so the audience can follow the change across the same slide.]
 
-“The calculation changes predictably. To decide whether the judgment improved, we need the reason and the evidence, not just the new number.”
+“The mean rises to 0.75. NumPy’s funding rises to 45.45 units per day. The other contributions’ weights have not changed, but their shares shrink because the budget is shared. This is why judgment matters: it changes support, not just a number on a screen.”
 
-[Ask what evidence could justify the change. Reset the example to its starting values before advancing. Keep the limitations of sealing for slide 24.]
+[Ask what evidence could justify the change. Select **Reset funding example** to restore the initial reports and budget.]
 
-## 15. Curate the shares; distribution can follow
+“Now set the budget to zero. The assessments and shares remain; the funding amounts become zero. Restore the budget, and the same shares allocate it again. Curation can establish priorities before a beneficiary budget arrives, although assessment itself still costs money.”
 
-**Target: 2 minutes. Elapsed: 0:18 to 0:20.**
+[Set the budget to zero, then restore 100. Ask: “If one weight rises and the budget stays fixed, whose share changes?” Take a brief answer. The scores and weights express judgments under this policy, not measured public benefit. Reset the example before advancing. Keep sealing limitations for the later attack discussion.]
 
-“Think of one whole budget being divided into shares. The table shows each contribution's weight, its share of the total and the funding that share receives. At the reset values, NumPy has weight 0.60 out of a total of 1.50. That is a 40 percent share, not 60 percent of the budget.
-
-“Set funding to zero: the shares remain. Add 100 units per day, and NumPy's share receives 40.”
-
-[Set funding to zero, then restore 100. Point to the unchanged shares and changed amounts.]
-
-“We have curated an assessment that can exist before a funding budget. Curation itself has costs, even when beneficiary funding arrives later. These weights express judgments under this policy, not measured public benefit.”
-
-[Ask: “If one weight rises and the budget stays fixed, whose share changes?” Take a brief answer.]
-
-## 16. Contest a score through an appeal
+## 15. Contest a score through an appeal
 
 **Target: 2 minutes. Elapsed: 0:20 to 0:22.**
 
@@ -228,7 +218,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Ask what evidence they would want the appeal jury to consider. Keep settlement rules in the private questions below.]
 
-## 17. Challenge a factual claim
+## 16. Challenge a factual claim
 
 **Target: 2 minutes. Elapsed: 0:22 to 0:24.**
 
@@ -244,7 +234,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Ask where the reward comes from. A lack of challenges alone is not evidence that every claim was checked.]
 
-## 18. Reassess when circumstances change
+## 17. Reassess when circumstances change
 
 **Target: 1 minute. Elapsed: 0:24 to 0:25.**
 
@@ -256,7 +246,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “The new weight changes future funding; earlier earnings stay earned. We now have three different correction paths: challenge a claim, appeal a judgment or reassess it later. Let us experience the judgment part ourselves.”
 
-## 19. Join the workshop
+## 18. Join the workshop
 
 **Target: 3 minutes. Elapsed: 0:25 to 0:28.**
 
@@ -272,7 +262,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Compare seats with participants. Remove duplicate or stray seats before opening the first nominee. Do not put private host controls on the projector.]
 
-## 20. Use one shared policy
+## 19. Use one shared policy
 
 **Target: 2 minutes. Elapsed: 0:28 to 0:30.**
 
@@ -286,7 +276,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Read the anchor labels together. Invite one clarification about the policy. Avoid announcing which nominee should score highest.]
 
-## 21. See what the workshop rewards
+## 20. See what the workshop rewards
 
 **Target: 2 minutes. Elapsed: 0:30 to 0:32.**
 
@@ -302,7 +292,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “Relevance scores guide support for contributions; juror rewards pay the people assessing them. This workshop uses points to let us experience those incentives.”
 
-## 22. Play the jury
+## 21. Play the jury
 
 **Target: 27 minutes. Elapsed: 0:32 to 0:59.**
 
@@ -328,7 +318,7 @@ If proof reporting needs explanation, say:
 
 [For the assigned-role round, let the interface deliver the private instruction. Participants may decline it. Do not identify roles publicly before the result. If nobody reveals, explain that the round is void; do not infer a judgment from it.]
 
-## 23. What shaped the scores?
+## 22. What shaped the scores?
 
 **Target: 5 minutes. Elapsed: 0:59 to 1:04.**
 
@@ -346,7 +336,7 @@ If proof reporting needs explanation, say:
 
 “The group can sometimes move the result against which everyone is rewarded. A minority can also have a good argument and lose. This is why coherence alone cannot certify accuracy. One room and one simulated group do not establish resistance to capture.”
 
-## 24. Attack the mechanism
+## 23. Attack the mechanism
 
 **Target: 5 minutes. Elapsed: 1:04 to 1:09.**
 
@@ -366,7 +356,7 @@ If proof reporting needs explanation, say:
 
 [Use the remaining time for one concrete attack and response. Ask what weakness remains. Keep contract comparisons, payout rules and recovery machinery in the private notes.]
 
-## 25. Close the loop
+## 24. Close the loop
 
 **Target: 11 minutes. Elapsed: 1:09 to 1:20.**
 

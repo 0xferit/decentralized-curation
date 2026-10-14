@@ -1,6 +1,6 @@
 # Presentation evidence register
 
-This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honesty, competence and scrutiny can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the twenty-four-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
+This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honesty, competence and scrutiny can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the twenty-five-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
 
 ## Which source controls which claim
 
@@ -104,15 +104,21 @@ The [evaluation plan](evaluation-plan.md) defines separate candidate measures fo
 
 The shared workshop policy adds a contribution-attribution rule: separately named entries do not earn full credit for the same underlying work. Shared work receives credit once across the set, while distinct contributions by one beneficiary remain eligible. This policy guard depends on assessment of scope and evidence; neither a distinct registry identifier nor a paid deposit establishes semantic uniqueness. With nonbinding request caps, splitting one contribution's total credited weight across entries preserves its combined share; assigning the full credit twice can enlarge it. This is a rule for the example pool, not a universal duplicate-beneficiary restriction.
 
+## Accuracy and relevance quality space
+
+Slide 11 visualizes the two dimensions selected for this public-goods funding application: factual accuracy and policy-relative relevance. Its labeled examples are conceptual, not measurements of projects. The highlighted accurate, highly relevant region expresses the curation objective rather than an admission threshold. Lower positive relevance can still produce funding weight. Actual accuracy challenges determine whether a nomination is debunked under the policy; the absence of a successful challenge does not certify truth, and adjudication remains fallible. The chart does not introduce a numerical accuracy score or change the allocation formula.
+
+The [prototype’s act 2](https://rpgf-prototype.pages.dev/#/demo/act-2), inspected at its displayed source revision `c6180f9`, demonstrates the binary accuracy outcome and continuous relevance distinction. This deck uses its own conceptual quality map and highlights the desired region. The authoritative definitions remain the paper’s separate accuracy and relevance assessments and the funding profile summarized below.
+
 ## Prototype presentation material
 
-The [public prototype](https://rpgf-prototype.pages.dev/#/demo/value) and its [inspected source revision](https://github.com/golemfoundation/rpgf-prototype/tree/c6180f9ad7e44992725a6c6dcc96b60abe3de0df) inform the presentation of slides 11, 12 and 14: a pool with distinct funding and assessment roles, a dated claim connected to evidence, and a whole budget divided by normalized shares. The deck redraws these ideas using its existing research-infrastructure example and calculations. The prototype is a simulation, not evidence of a production deployment or successful incentives.
+The [public prototype](https://rpgf-prototype.pages.dev/#/demo/value) and its [inspected source revision](https://github.com/golemfoundation/rpgf-prototype/tree/c6180f9ad7e44992725a6c6dcc96b60abe3de0df) inform the presentation of slides 12, 13 and 15: a pool with distinct funding and assessment roles, a dated claim connected to evidence, and a whole budget divided by normalized shares. The deck redraws these ideas using its existing research-infrastructure example and calculations. The prototype is a simulation, not evidence of a production deployment or successful incentives.
 
 Its internal investment pitch, pilot resource estimates, token selection, older settlement rules and “technical truth serum” analogy do not govern this presentation. The current manuscript and the source hierarchy above retain authority. Continuous beneficiary funding does not mean that per-nomination jury and appeal rounds disappear.
 
 ## Real evidence in the NumPy worked example
 
-Slides 12 to 17 follow NumPy as an illustrative nominee and use its 2.0.0 release as bounded evidence about delivered work. The scoring prompt concerns the nominee under the shared policy. It does not ask curators to assign a price to the release alone.
+Slides 13 to 18 follow NumPy as an illustrative nominee and use its 2.0.0 release as bounded evidence about delivered work. The scoring prompt concerns the nominee under the shared policy. It does not ask curators to assign a price to the release alone.
 
 | Record | Verified fact | Limit of the evidence |
 | --- | --- | --- |

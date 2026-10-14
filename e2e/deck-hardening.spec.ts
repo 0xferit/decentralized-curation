@@ -261,8 +261,8 @@ test("slide navigation keeps heading focus without a presentation outline", asyn
 });
 
 for (const scenario of [
-  { slide: "s15", button: "Apply appeal result", result: /0\.700.*43\.8%/ },
-  { slide: "s16", button: "Show debunked outcome", result: /Future funding stops/ },
+  { slide: "s16", button: "Apply appeal result", result: /0\.700.*43\.8%/ },
+  { slide: "s17", button: "Show debunked outcome", result: /Future funding stops/ },
 ]) {
   test(`${scenario.button} shows its result on the current slide`, async ({ page }) => {
     for (const viewport of [DESKTOP, PHONE]) {
@@ -289,7 +289,7 @@ for (const scenario of [
 }
 
 test("reset restores the worked example after a zero budget", async ({ page }) => {
-  await page.goto("/deck/#s14");
+  await page.goto("/deck/#s15");
   const budget = page.getByRole("slider", { name: "Illustrative distribution per day" });
   const initialBudget = await budget.inputValue();
   const rates = page.locator("[data-project-rate]");

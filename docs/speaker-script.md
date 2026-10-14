@@ -2,7 +2,7 @@
 
 The [handout](../public/handout/index.html) leads the session’s title and scope. This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
 
-The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. Slides 21 to 22 are optional references. Source links remain in these notes; follow-up codes are on the handout.
+The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 18 slides. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
@@ -74,17 +74,15 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 2 minutes. Elapsed: 0:07 to 0:09.**
 
-“Let us use NumPy, the array library used throughout scientific Python. Its 2.0.0 release gives us a bounded piece of real evidence to inspect. The release date, 16 June 2024, is a factual assertion we can check.
+“Let us use NumPy, the array library used in scientific Python. Its version 2.0.0 was released on 16 June 2024. That is a testable claim: we can check the release record.
 
-“The release added capabilities, including array-standard support and variable-length strings. SciPy prepared support for it. There were migration costs too: affected compiled extensions needed rebuilding, and some numerical behavior changed.
+“Establishing that fact does not tell us how much the work matters. That needs judgment under our criteria: who relies on it, what role it plays and what alternatives exist.
 
-“Those records establish delivery and some costs of use. They do not give us the right funding weight. That needs judgment under the policy, including evidence of reliance and alternatives.
+“The release record is real. The nomination, scores and funding in this demonstration are illustrative. This is not an actual application by NumPy.”
 
-“The release records are real. The nomination, requested weight, scores and funding in this demonstration are illustrative. This is not an actual application by NumPy.”
+[Point to the release date, then ask which of our criteria the date alone can answer. Keep factual evidence separate from the relevance judgment.]
 
-[Point to the release date and evidence categories. Keep the distinction between evidence and assessment clear.]
-
-Sources for this example: [NumPy release record](https://numpy.org/news/#numpy-2-0-0-released), [release notes](https://numpy.org/doc/2.2/release/2.0.0-notes.html), [migration guide](https://numpy.org/doc/2.0/numpy_2_0_migration_guide.html). Keep these links in the notes for questions rather than projecting them.
+Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-0-0-released). Keep the link in the notes for questions rather than projecting it.
 
 ## 6. Jurors score independently
 
@@ -108,37 +106,27 @@ Sources for this example: [NumPy release record](https://numpy.org/news/#numpy-2
 
 **Target: 3 minutes. Elapsed: 0:12 to 0:15.**
 
-“Suppose people believe that assessment missed something important. Under the intended design, anyone can help fund a proposed score. The nominator can participate too. Different funded scores oppose one another; nobody has to volunteer to defend the old score specifically.
+“Suppose people believe that assessment missed something important. Anyone can help fund a proposed score, including the person who nominated the work. Competing, fully funded proposals trigger a larger jury.
 
-“When at least two distinct positions are fully funded, the appeal goes to one shared jury. Here the planned jury grows from six seats to twelve. The jury examines the underlying nomination and may return a score that none of the backers proposed.
+“Here the jury grows from six seats to twelve. It examines the same nomination and can reach its own judgment. Let us apply this illustrative result.”
 
-“Let us apply this illustrative result.”
+[Select **Apply appeal result**. Let the audience see which score and shares change.]
 
-[Select **Apply appeal result**.]
+“An appeal gives people a way to contest a score. More seats do not automatically mean more knowledge or a better answer: correction still needs evidence, participation and funding.”
 
-“The adopted score changes. Backers are putting capital behind a judgment about where the final score will land. Their payouts favor positions closer to that ultimate score. They can lose principal even if they are closer than another position.
-
-“If exactly one position is fully funded when the admission and funding process has closed, it wins by forfeiture. Its backers get a full refund, with no new jury fee or profit. That is a procedural win; it is not another jury's consensus.
-
-“The larger jury and public funding create a way to contest a result. They do not guarantee new information or a successful correction.”
-
-[Do not calculate backer settlement here. The widget changes the assessment and allocation only.]
+[Ask what new evidence they would want the appeal jury to consider. Keep settlement rules in the private questions below.]
 
 ## 8. Curate the shares; distribution can follow
 
 **Target: 3 minutes. Elapsed: 0:15 to 0:18.**
 
-“The submitter requests a maximum weight, labeled ‘Cap’ in the table. The effective weight is the smaller of that cap and the adopted relevance score. Divide each eligible weight by their total, and the resulting shares sum to one. This is our curated, policy-relative picture of what matters. It exists before a grant budget does.
+“The table shows each contribution's weight, its share of the total and what that share receives from a funding budget. The shares sum to one. They describe relative importance under the chosen criteria.
 
-“At the reset values, NumPy's weight is 0.60 out of a total of 1.50: a 40 percent share. Set the grant flow to zero: the shares remain. Add 100 units per day, and NumPy receives 40. The budget acts on the curated knowledge.”
+“At the reset values, NumPy's weight is 0.60 out of a total of 1.50: a 40 percent share. Set funding to zero: the shares remain. Add 100 units per day, and NumPy's share receives 40.”
 
-[Set the grant-flow control to zero, then restore 100. Point to the unchanged shares and changed amounts. Use the current values if the appeal is still applied.]
+[Set the funding control to zero, then restore 100. Point to the unchanged shares and changed amounts. Use the current values if the appeal is still applied.]
 
-“A score of 0.60 does not mean a 60 percent share. And twice the weight is not evidence of twice the public benefit. These are relative judgments under a chosen policy.
-
-“One eligible positive weight receives the whole share, even with a low score. With no positive eligible weights, there is no allocation vector yet; we do not invent equal shares.
-
-“The table shows earning rates after the relevant conditions are met. A new nomination has a waiting period, called holdback, before it earns. Later score changes create no new holdback. Once funds are earned, the beneficiary can claim them immediately.”
+“We have curated an assessment that can exist before a funding budget. Funding is one use of it. These weights are judgments under our criteria, not measurements of public benefit.”
 
 [Ask: “If one weight rises and the budget stays fixed, whose share changes?” Take a short answer.]
 
@@ -146,53 +134,51 @@ Sources for this example: [NumPy release record](https://numpy.org/news/#numpy-2
 
 **Target: 3 minutes. Elapsed: 0:18 to 0:21.**
 
-“Now separate relevance from accuracy. The actual release date is documented. Imagine, however, that our nomination also claimed that existing NumPy 1.x compiled extensions all work unchanged with version 2.0. The migration guide supplies counter-evidence for affected binaries.
+“Now imagine the nomination says: ‘NumPy 2.0.0 was released in 2020.’ We just checked its release record: 16 June 2024. That gives a fact-checker evidence for a challenge.
 
-“Anyone can challenge a claim as false or untestable while the nomination is active, including before scoring or during a relevance assessment or appeal. The challenger puts down a deposit and pays the required fees. An external arbitrator decides the challenge; the relevance jury does not take over that job.
+“Anyone can challenge a claim as false or untestable while its nomination is active. An external arbitrator decides. If the challenge succeeds, the fact-checker receives the submitter's deposit and the nomination ends.
 
-“This is a hypothetical bad claim added for the example, not an accusation against NumPy. Let us show what a successful challenge would do.”
+“That reward gives people a reason to check claims. It is different from asking a jury how relevant the contribution is.”
 
 [Select **Show debunked outcome**.]
 
-“If the challenge succeeds, the fact-checker receives the submitter's deposit and the nomination ends. That reward gives people a reason to check claims. The submitter can make a fresh nomination. Future funding to the old nomination stops, but what it already earned remains its beneficiary's money, paid or unpaid. Earned funds also remain claimable while the dispute is pending.
+“Future funding to this nomination stops. What it already earned remains its beneficiary's money. The submitter can make a fresh nomination.
 
-“Withdrawing the nomination itself is different from claiming its earnings. If that exit request comes after the dispute, it waits behind it. A successful challenge closes the nomination, so that pending exit becomes unnecessary and is cancelled. If the challenge fails, the nomination can continue and the challenger loses their deposit under the dispute rules.”
+“The 2020 claim is invented for this demonstration; it is not an accusation against NumPy.”
+
+[Ask who has an incentive to check the claim and where the reward comes from. Keep deposit settlement and withdrawal details in the private questions below.]
 
 ## 10. Reassess periodically
 
 **Target: 2 minutes. Elapsed: 0:21 to 0:23.**
 
-“A contribution's claims can remain accurate while its relevance to the goal changes. Alternatives may improve, reliance may change, or an earlier assessment may have been too generous. Periodic reassessment runs a fresh scoring round to keep the judgment current. An appeal is different: it contests an existing score.
+“A contribution's claims can remain accurate while its relevance changes. Alternatives may improve or people may rely on it less. Periodic reassessment runs a fresh scoring round to keep the judgment current. An appeal is different: it contests an existing score.
 
 “This is a separate branch of the example. I am restoring the original nomination and applying an illustrative lower assessment.”
 
 [Select **Apply lower assessment**, then return to the allocation table if helpful.]
 
-“When the new score is adopted under the ordinary finalization rules, the lower weight changes future earning. A score increase would take effect on adoption too, without a new holdback. Earlier earnings stay earned.
+“The new weight changes future funding. Earlier earnings stay earned. A higher assessment would also change future funding.”
 
-“We have now seen the main loop: evidence, judgment, contest and a consequence that can change over time.”
-
-[The calculator shows current rates, not accumulated balances or settlement. The holdback applies only to new nominations; increases and decreases follow ordinary score adoption.]
+[Ask for one change in evidence that could justify reassessment. The calculator shows current rates, not accumulated balances.]
 
 ## 11. Honesty, care and competence
 
 **Target: 2 minutes. Elapsed: 0:23 to 0:25.**
 
-“We want personal rewards to encourage judgment that other people can rely on. That takes three different qualities, supported by a worthwhile goal, usable evidence and ways to challenge mistakes.
+“We want personal rewards to encourage judgment that other people can rely on. That takes three different qualities.
 
 “Honesty means reporting sincerely. Care means assessing evidence rigorously. Competence means knowing how to judge it. Someone can be honest and careful yet lack the expertise.
 
-“Fees compensate the work; rewards and penalties aim to make careful assessment worthwhile. Paying someone does not create expertise or prove they did the work.
+“Fees compensate the work; incentives aim to reward care. Paying someone does not create expertise or prove they did the work.
 
 “Jurors score privately. Coherence means agreement with the jury's assessment under the criteria. It earns rewards; incoherence brings penalties. When jurors cannot rely on collusion, the design aims to make honest assessment their shared focal point: the Schelling point from our opening game.
 
-“Competition over repeated rounds aims to make uninformed guessing a losing strategy. Expected losses discourage entry. Someone who keeps participating and losing gives up tokens. As their stake shrinks relative to competitors’, they are drawn less often and have less influence.
+“Repeated competition aims to make uninformed guessing a losing strategy. Expected losses discourage entry. Persistent losses reduce a juror's relative stake, draw chances and influence.
 
-“This selects for competence only if informed judgment outperforms guessing after fees, rewards, penalties and effort. We need to test that link, and whether better assessment improves decisions for the people affected.
+“This selects for competence only if informed judgment outperforms guessing after rewards, fees, penalties and effort. We need to test that link, and whether better assessment improves decisions for the people affected.
 
-“There are also real governance choices. The inspected funding implementation has a configured, time-limited authority that can permanently stop future accrual once. That holder cannot take funding already accrued. We should make that authority visible when discussing the system.
-
-“So I am presenting a design to examine, with explicit dependencies and failure modes. Let us now experience one component ourselves.”
+“Now let us experience one part of that game ourselves.”
 
 ## 12. Join the workshop
 
@@ -226,17 +212,17 @@ Sources for this example: [NumPy release record](https://numpy.org/news/#numpy-2
 
 **Target: 2 minutes. Elapsed: 0:30 to 0:32.**
 
-“Here is the scoring game. The room's reports determine a centre and a band around it. For this workshop, the centre is the mean and the width comes from the standard deviation. Every seat has equal weight.
+“The scores we submit produce a group result. Around it is a reward zone. Every seat counts equally in this workshop.
 
-“Inside the band, closer reports receive a larger share of the points. Outside it, distance increases the forfeit. If the spread is essentially zero, distance forfeits switch off. A round with opened scores receives the full base reward in this teaching version.
+“Inside that zone, scores closer to the group result receive a larger share of the points. Outside it, scores lose points, with larger losses further away. If everyone gives the same score, there are no distance penalties.
 
-“Watch the band when I move one report.”
+“Watch the reward zone when I move one score.”
 
-[Move a dot, then reset. Let the audience describe the visible change.]
+[Move a dot, then reset. Let the audience describe what changed.]
 
-“You may anticipate what others applying the policy will think. That can encourage attention to a common question. It can also reward a shared mistake. Keep both possibilities in mind.
+“Your score helps shape the result against which you and everyone else are rewarded. That can draw attention to the shared question; it can also reward a shared mistake.
 
-“This workshop uses simplified arithmetic. The inspected full-system contracts use a median-based grading reference. The points here are not a reproduction of their financial settlement.”
+“Relevance scores guide support for contributions; juror rewards pay the people assessing them. This workshop uses points to let us experience those incentives.”
 
 ## 15. Play the jury
 
@@ -272,97 +258,62 @@ If proof reporting needs explanation, say:
 
 [Hear two or three explanations. Reveal the privately recorded comparison now, including any mismatch with the observed results.]
 
-“The mean and spread describe these reports, without explaining them. Scores near zero or one have less room to vary. A wider band alone does not establish deeper disagreement.
+“The group result and spread describe these reports, without explaining them. Scores near zero or one have less room to vary. A wider reward zone alone does not establish deeper disagreement.
 
 “In the assigned-role round, compare the people assigned a role, the scores actually submitted and the points actually earned. Being assigned a role is not the same as following it. Following an instruction is not evidence that money caused manipulation. A matching score does not tell us someone's motive.
 
-“Let us use the widget to examine how a coordinated group can move the reference.”
+“Let us use the widget to examine how a coordinated group can move the group result.”
 
 [Move the bloc control gradually. State the displayed configuration; do not announce a universal safe percentage.]
 
-“The group can sometimes move the target against which everyone is paid. A minority can also have a good argument and lose. This is why coherence alone cannot certify accuracy. One room and one simulated group do not establish resistance to capture.”
+“The group can sometimes move the result against which everyone is rewarded. A minority can also have a good argument and lose. This is why coherence alone cannot certify accuracy. One room and one simulated group do not establish resistance to capture.”
 
 ## 17. Attack the mechanism
 
 **Target: 5 minutes. Elapsed: 1:04 to 1:09.**
 
-“We have seen the simple demonstration. Now let us examine the defenses rather than assuming them.
+“Now let us examine where the defenses could fail.
 
-“If people apply different criteria, a published policy gives them a shared reference. But it can remain ambiguous, embody poor priorities or create a shared bias.
+“A published policy gives us shared criteria, but the criteria can still be ambiguous or misguided.
 
-“If people copy or coordinate, commitment and revelation bind a revealed report to an earlier commitment. The inspected contract still permits an early reveal while others can commit. Private coordination and bribery remain possible. Sealing a score is not a complete anti-collusion defense.
+“Private scoring makes copying harder while scores remain hidden. Early disclosure exposes a score before others finish. Sealing does not prevent people from coordinating privately or buying votes.
 
-“If someone captures the jury, deposits put selected capital at risk. How much protection that supplies depends on its distribution and value. A large deposit alone is not evidence of competence. The intended filter is repeated competition, where informed judgment must outperform guessing. Appeals add another chance to challenge a result, but they need information, participation and funding; doubling seats does not necessarily double independent knowledge.
+“Deposits put a juror's money at risk, but concentrated stake can still concentrate influence. A large deposit alone does not demonstrate competence.
 
-“If someone can prove a sealed score to a buyer, this workshop provides a reporting penalty and bounty. A buyer may have another verification route. That particular reporting path was not found in the inspected contracts.
+“An appeal allows another hearing, but it needs funding and useful evidence. A larger jury can still share the same bias.
 
-“The broader recovery design also allows voluntary forks, including a fork that excludes suspected attackers while preserving other holders' balances. Funders can opt to migrate their pool funds. That requires working migration machinery and social coordination. We should test the recovery procedure rather than treat the possibility of a fork as an automatic rescue.”
+“This workshop adds a penalty and reward for reporting proof of a disclosed score. That particular rule belongs to this exercise. A vote buyer may have other ways to check compliance.
 
-[Invite the room to pick one failure mode and make it concrete. Ask what evidence would show the proposed response working. The detailed appeal and recovery rules are in the source register and public mechanism summary; do not read them line by line.]
+“Choose one of these attacks. What would the attacker do, and what would the defense need to stop it?”
 
-## 18. What Arrow can teach us
+[Use the remaining time for one concrete attack and response. Ask what weakness remains. Keep contract comparisons, payout rules and recovery machinery in the private notes.]
 
-**Target: 3 minutes. Elapsed: 1:09 to 1:12.**
+## 18. Close the loop
 
-“Arrow is a planned precursor experiment at Octant. Invited experts would score a real docket under a published policy, with trusted nominations and a fixed evaluation round.
+**Target: 11 minutes. Elapsed: 1:09 to 1:20.**
 
-“That can teach us about the practical work: whether participants understand the policy, what produces disagreement, how stable scores are, and how committing and revealing feels in use.
+“Personal rewards for honest, competent and careful judgment can also create public benefit: better decisions about what deserves attention or support. That is the aim of Decentralized Curation.
 
-“It assumes honesty, competence and non-collusion. It does not establish that permissionless selection works, that bribes fail, that accuracy disputes resolve correctly, or that the appeal economy and continuing funding are safe.
+“We explored public-goods curation, with funding as one use of its results. What would make this useful in your work, and what would make you hesitate to rely on it?”
 
-“It is useful precisely when we keep that scope clear. These are questions for a proposed experiment, not results already obtained.”
+[Use about two minutes for the recap and first responses. Keep the remaining time conversational.]
 
-## 19. What would change our minds?
+[From 1:11 to 1:18, invite questions. If the room is quiet, choose one prompt at a time:]
 
-**Target: 4 minutes. Elapsed: 1:12 to 1:16.**
+- [“What is the difference between challenging a claim, appealing a score and reassessing later?” Ask a participant to explain before adding anything.]
+- [“Where would informed judgment make a difference in your work? What evidence would those jurors need?”]
+- [“What would show us that the rewards improved judgment, rather than simply producing agreement?”]
+- [“Who would benefit from the resulting decisions? Whose needs might our criteria miss?”]
 
-“I want us to specify what failure would look like before we run a serious evaluation.
+[Use a concrete example from the audience. Keep detailed mechanism questions brief and offer the private source notes for follow-up. Do not fill the time with a second lecture.]
 
-“If people repeatedly misread the policy after clarification, revise the policy. If scores are stable because everyone shares a misunderstanding, stability is not success. If decisive new evidence arrives and judgments do not respond, revise the evidence and review process.
+[At about 1:18, bring the discussion back to the central idea.]
 
-“To examine incentives, compare choices under different reward conditions and assess the quality of the evidence separately from earnings. Higher rewards alongside poorer assessment would count against the reward design.
-
-“To evaluate public benefit, choose a bounded decision, a population affected by it, a time horizon and a feasible alternative. Include the costs of assessment and correction. Ask whether the resulting decisions improve outcomes for those people, and look for harms too.
-
-“We would set those outcomes and decision criteria with the relevant people before the study. Today's workshop does not supply that comparison.”
-
-[Ask: “Whose needs might this example policy miss?” Then: “What result would make you recommend changing or stopping it?” Take one concrete answer to each.]
-
-## 20. Close the loop
-
-**Target: 4 minutes. Elapsed: 1:16 to 1:20.**
-
-“Personal rewards for honest, competent and careful judgment can also create public benefit: better decisions about what deserves attention or support. That is the aim of Decentralized Curation. Evidence, clear criteria and practical ways to challenge mistakes connect those rewards to useful work.
-
-“We explored public-goods curation, with funding as one use of its results. Now we need to test that connection: do the incentives reward useful assessment and correction, and do the resulting decisions help the people affected?”
-
-[Invite one participant to distinguish an accuracy challenge from a relevance appeal. Invite another to name evidence that would make an agreed judgment more credible.]
+“We need both links to work: incentives that reward useful judgment, and decisions that help the people affected. Today's exercise gives us questions to investigate, not proof that we have achieved either.
 
 “Your handout has the codes to read the framework preprint and stay in touch. Please bring me both use cases and counterexamples. Thank you.”
 
 [Leave the closing slide visible for questions and point people to the handout codes. Finish the game if necessary so final standings remain available. After the discussion, wipe room records as promised and verify that the wipe succeeded.]
-
-## 21. Backup: keep the scopes separate
-
-**Optional, about 1 minute.**
-
-“There are different objects here. The research describes a framework and application designs. The intended public-goods application uses jurors drawn from deposited stake, claim challenges, appeals and periodic reassessment. Funding can follow the resulting assessments. The inspected implementation is evidence about a particular code snapshot, and it differs from some intended rules.
-
-“Arrow is an experiment plan involving invited experts and trusted nominations. This room is a points game that isolates one scoring experience. Evidence from one should not silently become a claim about another.”
-
-[Use this slide when a question conflates the exercise, proposed experiment, manuscript and implementation. See the [scope comparison](presentation-sources.md#keep-the-four-mechanisms-distinct).]
-
-## 22. Backup: a funding score is not a juror reward
-
-**Optional, about 2 minutes.**
-
-“A jury-issued relevance score is a weighted mean. Funding uses the score adopted under the pool's rules, which can instead come from an unopposed funded proposal winning by forfeiture. That requires no new jury and is not new jury consensus. In the inspected implementation, grading jurors uses the final jury's weighted median and median absolute deviation, or MAD, with a configured floor. Reports from earlier rounds are evaluated against that final reference too.
-
-“The workshop instead uses the mean and standard deviation, with closeness-based points and a zero-spread fallback. You cannot read the full implementation's settlement off this widget.
-
-“In the intended working design, ether (ETH) pays a fixed service fee per eligible revealed seat when a valid ruling is issued. A separate utility token provides jury stake and the redistribution of incoherence penalties. If nobody loses utility tokens, there are no extra tokens to redistribute. The ETH service fee is separate from that coherence result.”
-
-[Use the [grading comparison and source register](presentation-sources.md#keep-the-four-mechanisms-distinct) for model-specific questions. Do not transfer a result for one reward formula to another.]
 
 ## Private reference: source scope
 
@@ -379,6 +330,24 @@ References: [published version 1.2.0](https://doi.org/10.5281/zenodo.23313625), 
 ## Private reference: questions to answer without loading the slides
 
 These are optional answers, not another presentation segment. The [source register](presentation-sources.md) retains the detailed rules and their evidence boundaries.
+
+### How do the funding weights and juror rewards differ?
+
+“The example's funding weight is the smaller of the requested cap and the adopted relevance score. The cap is a ceiling, not a promised share. Normalize the eligible positive weights to obtain the shares. One positive weight receives the whole share; no positive weights means there is no allocation yet.
+
+“A jury-issued relevance score is a weighted mean. An unopposed funded proposal can instead supply an adopted score by forfeiture, without another jury. Juror rewards are a separate calculation. The workshop's group result is a mean and its reward zone uses standard deviation, with a zero-spread fallback. The inspected implementation instead grades reports against the final jury's weighted median and median absolute deviation, with a configured floor.
+
+“In the intended working design, ether (ETH) pays a fixed service fee per eligible revealed seat when a valid ruling is issued. A separate utility token provides jury stake and the redistribution of incoherence penalties. If nobody loses utility tokens, there are no extra tokens to redistribute. The service fee is separate from that coherence result.”
+
+See the [grading comparison](presentation-sources.md#keep-the-four-mechanisms-distinct) for the model and version boundaries.
+
+### What does score sealing protect, and where does it fall short?
+
+“Sealing binds a later revealed score to its earlier commitment. The inspected contract permits an early reveal while other people can still commit, so it does not fully prevent copying. Private coordination, bribery and other ways to prove compliance remain possible. The workshop's proof-reporting penalty is an exercise rule; no corresponding reporting path was found in that inspected contract snapshot.”
+
+### Is there an authority that can stop funding?
+
+“The inspected funding implementation has a configured, time-limited authority that can permanently stop future accrual once. That holder cannot take funding already accrued. This is an implementation-specific governance choice, not a claim that such authority follows from the framework.”
 
 ### How do public appeal positions settle?
 

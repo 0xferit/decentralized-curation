@@ -5,7 +5,7 @@ test.use({ reducedMotion: "reduce" });
 
 const PHONE = { width: 375, height: 740 };
 const SHORT_PHONE = { width: 390, height: 667 };
-const DECK_SLIDE_COUNT = 22;
+const DECK_SLIDE_COUNT = 18;
 const PAGES = ["/", "/deck/", "/handout/", "/join/", "/paper/", "/paper/sheets.html"];
 
 test("the handout leads the title and subtitle across session pages", async ({ page }) => {
@@ -107,8 +107,8 @@ test("funding application precedes the workshop and its real jury remains intera
   await expect(page.locator("#s3")).toContainText("Curating public goods");
   await expect(page.locator("#s9")).toContainText("Claim challenges");
   await expect(page.locator("#s7")).toContainText("Appeal");
-  await expect(page.locator("#s14")).toContainText("Workshop arithmetic");
-  await expect(page.locator("#s18")).toContainText("precursor");
+  await expect(page.locator("#s14")).toContainText("How points work");
+  await expect(page.locator("#s18")).toContainText("Make personal benefit serve the public good");
   const widget = page.locator("#w-pay");
   const dot = widget.getByRole("slider").first();
   await dot.focus();
@@ -296,9 +296,7 @@ test("worked example carries jury scores through capped funding and later outcom
   await expect(page.locator('[data-project-rate="numpy"]')).toHaveText("25.00");
   await expect(page.locator("#example-outcome")).toContainText("Earlier accrual stays earned");
   await page.getByRole("button", { name: "Show debunked outcome", exact: true }).click();
-  await expect(page.locator("#example-allocation tr").first().locator("td").nth(2)).toHaveText(
-    "0.300",
-  );
+  await expect(page.locator('[data-example="effective"]')).toHaveText("0.000");
   await expect(page.locator('[data-project-rate="numpy"]')).toHaveText("0.00");
   await expect(page.locator("#example-outcome")).toContainText(
     "Accrued funding remains owed, including unclaimed amounts",

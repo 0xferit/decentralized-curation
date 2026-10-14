@@ -120,8 +120,8 @@ test("a successful instructed bloc reports outcomes without claiming a full-syst
 test("post-demonstration disclosure response states its version and remaining attack surface", async ({
   page,
 }) => {
-  await page.goto("/deck/#s22");
-  const response = page.locator("#s22 tr").filter({ hasText: /prove.*sealed score.*buyer/i });
+  await page.goto("/deck/#s23");
+  const response = page.locator("#s23 tr").filter({ hasText: /prove.*sealed score.*buyer/i });
   await expect(response).toHaveCount(1);
   await expect(response).toContainText(/workshop only/i);
   await expect(response).toContainText(/penalty.*bounty/i);

@@ -150,23 +150,19 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
   await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
 });
 
-test("Schelling curation round resets its reveal when switching rounds", async ({ page }) => {
+test("Schelling curation follows numbers and resets independently", async ({ page }) => {
   await page.setViewportSize(DESKTOP);
   await page.goto("/deck/#s7");
-  const slide = page.locator("#s7");
+  const numberSlide = page.locator("#s7");
+  await numberSlide.getByRole("button", { name: "Reveal example", exact: true }).click();
+  await numberSlide.locator("h2").focus();
+  await page.keyboard.press("Space");
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s8");
+  const slide = page.locator("#s8");
   const options = slide.locator(".schelling-options li");
   const reveal = slide.getByRole("button", { name: "Reveal example", exact: true });
   const reset = slide.getByRole("button", { name: "Reset game", exact: true });
-  const explanation = slide.locator("#schelling-explanation");
-  const initialNumbers = await options.allTextContents();
-  const initialNumberBackground = await slide
-    .locator(".schelling-options li[data-focal]")
-    .evaluate((element) => getComputedStyle(element).backgroundColor);
-  await reveal.click();
-  await expect(explanation).toBeVisible();
-  const curationRound = slide.getByRole("button", { name: "Curation round", exact: true });
-  await expect(curationRound).toBeVisible();
-  await curationRound.click();
+  const explanation = slide.locator("#curation-explanation");
   await expect(options).toHaveCount(SCHELLING_CURATION_CHOICES.length);
   const phrases = await options.allTextContents();
   expect([...phrases].sort()).toEqual([...SCHELLING_CURATION_CHOICES].sort());
@@ -205,7 +201,7 @@ test("Schelling curation round resets its reveal when switching rounds", async (
   await expect(explanation).toContainText(/aim|designed|most rewarding/i);
   await expect(reveal).toHaveAttribute("aria-expanded", "true");
   await expect(focal).not.toHaveCSS("background-color", otherBackground);
-  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s8");
   const bounds = await slide.boundingBox();
   expect(bounds?.height).toBeLessThanOrEqual(DESKTOP.height + GEOMETRY_TOLERANCE_PX);
   const explanationBottom = await explanation.evaluate(
@@ -220,15 +216,18 @@ test("Schelling curation round resets its reveal when switching rounds", async (
   await expect(reveal).toHaveAttribute("aria-expanded", "false");
   await expect(focal).toHaveCSS("background-color", otherBackground);
   await expect(options).toHaveText(phrases);
+  await expect(numberSlide.locator("#schelling-explanation")).toBeVisible();
   await reveal.click();
-  await slide.getByRole("button", { name: "Number round", exact: true }).click();
-  await expect(options).toHaveCount(SCHELLING_OPTION_COUNT);
-  await expect(options).toHaveText(initialNumbers);
-  await expect(explanation).toBeHidden();
-  await expect(reveal).toHaveAttribute("aria-expanded", "false");
-  await expect(focal).toHaveText(SCHELLING_FOCAL_NUMBER);
-  await expect(focal).toHaveCSS("background-color", initialNumberBackground);
-  await expect(slide.getByRole("button", { name: "Curation round", exact: true })).toBeVisible();
+  await slide.locator("h2").focus();
+  await page.keyboard.press("Space");
+  await expect(page.locator("#s9 h2")).toHaveText(/^Expectations can\s*reinforce good judgment\.$/);
+  await page.keyboard.press("Shift+Space");
+  await expect(explanation).toBeVisible();
+  await page.keyboard.press("Shift+Space");
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
+  await numberSlide.getByRole("button", { name: "Reset game", exact: true }).click();
+  await expect(numberSlide.locator("#schelling-explanation")).toBeHidden();
+  await expect(explanation).toBeVisible();
 });
 
 test("slide navigation keeps heading focus without a presentation outline", async ({ page }) => {
@@ -248,8 +247,8 @@ test("slide navigation keeps heading focus without a presentation outline", asyn
 });
 
 for (const scenario of [
-  { slide: "s14", button: "Apply appeal result", result: /0\.700.*43\.8%/ },
-  { slide: "s15", button: "Show debunked outcome", result: /Future funding stops/ },
+  { slide: "s15", button: "Apply appeal result", result: /0\.700.*43\.8%/ },
+  { slide: "s16", button: "Show debunked outcome", result: /Future funding stops/ },
 ]) {
   test(`${scenario.button} shows its result on the current slide`, async ({ page }) => {
     for (const viewport of [DESKTOP, PHONE]) {
@@ -276,7 +275,7 @@ for (const scenario of [
 }
 
 test("reset restores the worked example after a zero budget", async ({ page }) => {
-  await page.goto("/deck/#s13");
+  await page.goto("/deck/#s14");
   const budget = page.getByRole("slider", { name: "Illustrative distribution per day" });
   const initialBudget = await budget.inputValue();
   const rates = page.locator("[data-project-rate]");

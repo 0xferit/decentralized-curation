@@ -2,7 +2,7 @@
 
 The [handout](../public/handout/index.html) leads the session’s title and scope. This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
 
-The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 23 logical slides. Its offline export has 24 pages because both rounds of slide 7 appear consecutively, each before its reveal. The opening establishes purpose-specific, multidimensional information quality and the trust required for curation, then uses game theory and a brief two-round Schelling-point exercise and an feedback loop to introduce the framework before applying it to public goods funding. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
+The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 24 logical slides. Its offline export has the same 24 pages: the number and curation rounds occupy slides 7 and 8, each before its reveal. The opening establishes purpose-specific, multidimensional information quality and the trust required for curation, then uses game theory and a brief two-round Schelling-point exercise and a feedback loop to introduce the framework before applying it to public goods funding. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
@@ -88,7 +88,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 ## 7. Find a shared focal point
 
-**Target: 1 minute 30 seconds. Elapsed: 0:08:30 to 0:10.**
+**Target: 35 seconds. Elapsed: 0:08:30 to 0:09:05.**
 
 “Look at these forty-nine numbers. Silently choose the number you expect others here to choose. Your aim is to match them. Do not say it yet.”
 
@@ -98,19 +98,23 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Listen to the room, then select **Reveal example**. Do not invent vote totals. If no clear answer emerges, say: “We did not converge on one answer this time.”]
 
-"One hundred sits in the center. It is the only even number, the only round hundred, and has a gentle blue tint. These cues converge on one option. I notice it, and I expect you to notice it. That is a Schelling point.
+"One hundred sits in the center. It is the only even number, the only round hundred, and has a gentle blue tint. These cues converge on one option. I notice it, and I expect you to notice it. That is a Schelling point."
+
+## 8. Choose a way of playing
+
+**Target: 55 seconds. Elapsed: 0:09:05 to 0:10.**
 
 "Now choose the way of playing you expect everyone else to choose. Keep it to yourself until three."
 
-[Select **Curation round**. Give five seconds to read the eight equally styled combinations of honest or deceptive, competent or uninformed, and thorough or lazy. Then count to three and hear the answers before selecting **Reveal example** again.]
+[Advance to slide 8 with Next, Space or the right arrow. Give five seconds to read the eight equally styled combinations of honest or deceptive, competent or uninformed, and thorough or lazy. Then count to three and hear the answers before selecting **Reveal example** again.]
 
 "Honest, competent and thorough stand out as a shared standard for how to play. Thorough means critically examining claims and evidence: scrutiny. We know these qualities matter for curation, and we expect others to recognize them too.
 
 "The design challenge is to make acting on these qualities the most rewarding way to participate. Naming a focal point illustrates coordination; the incentives must make it worth following."
 
-[Spend about 35 seconds on the number round and 55 seconds on the curation round and transition. Reveal emphasizes the intended focal option and explains it; it does not report audience votes. **Reset game** hides the explanation and restores the current round's initial styling: a gentle tint for 100 in the number round, equal styling in the curation round. **Number round** returns to the initial exercise. If either round has scattered answers, acknowledge that rather than claiming consensus.]
+[Reveal emphasizes the intended focal option and explains it; it does not report audience votes. Each slide has its own **Reset game** control, restoring the gentle tint for 100 or equal styling for the ways of playing. Normal navigation preserves each slide's reveal state when revisited. If either round has scattered answers, acknowledge that rather than claiming consensus. Advance to slide 9 for the incentive loop.]
 
-## 8. Expectations can reinforce good judgment
+## 9. Expectations can reinforce good judgment
 
 **Target: 30 seconds. Elapsed: 0:10 to 0:10:30.**
 
@@ -120,7 +124,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [This is conditional reasoning: informed assessment must outperform cheap prediction or coordinated error after effort and other costs. The slide illustrates the intended incentive loop, not a proven best response or guarantee of sound judgment.]
 
-## 9. A framework before a mechanism
+## 10. A framework before a mechanism
 
 **Target: 1 minute 30 seconds. Elapsed: 0:10:30 to 0:12.**
 
@@ -136,9 +140,9 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “Decentralized Curation is this broader framework. The paper develops news as an application. Today we will use public goods funding, with its own purpose and policy. We want credible consensus: judgments grounded in evidence, assessed under an explicit policy and open to useful correction.”
 
-[Trace the four steps in order. Leave the funding workflow for slide 10.]
+[Trace the four steps in order. Leave the funding workflow for slide 11.]
 
-## 10. Apply the framework to public goods funding
+## 11. Apply the framework to public goods funding
 
 **Target: 2 minutes. Elapsed: 0:12 to 0:14.**
 
@@ -152,7 +156,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 [Trace funders → pool → beneficiaries first. Then show who supplies the assessment: nominators bring claims and evidence, jurors judge relevance, and fact-checkers take factual disputes to an external arbitrator. The creator publishes the policy. Continuous funding does not remove per-nomination jury and appeal rounds.]
 
-## 11. Set the policy; nominate checkable work
+## 12. Set the policy; nominate checkable work
 
 **Target: 2 minutes. Elapsed: 0:14 to 0:16.**
 
@@ -168,7 +172,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-0-0-released). Keep the link in the notes for questions rather than projecting it.
 
-## 12. Jurors score independently
+## 13. Jurors score independently
 
 **Target: 2 minutes. Elapsed: 0:16 to 0:18.**
 
@@ -182,9 +186,9 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “The calculation changes predictably. To decide whether the judgment improved, we need the reason and the evidence, not just the new number.”
 
-[Ask what evidence could justify the change. Reset the example to its starting values before advancing. Keep the limitations of sealing for slide 22.]
+[Ask what evidence could justify the change. Reset the example to its starting values before advancing. Keep the limitations of sealing for slide 23.]
 
-## 13. Curate the shares; distribution can follow
+## 14. Curate the shares; distribution can follow
 
 **Target: 2 minutes. Elapsed: 0:18 to 0:20.**
 
@@ -198,7 +202,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Ask: “If one weight rises and the budget stays fixed, whose share changes?” Take a brief answer.]
 
-## 14. Contest a score through an appeal
+## 15. Contest a score through an appeal
 
 **Target: 2 minutes. Elapsed: 0:20 to 0:22.**
 
@@ -212,7 +216,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Ask what evidence they would want the appeal jury to consider. Keep settlement rules in the private questions below.]
 
-## 15. Challenge a factual claim
+## 16. Challenge a factual claim
 
 **Target: 2 minutes. Elapsed: 0:22 to 0:24.**
 
@@ -228,7 +232,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Ask where the reward comes from. A lack of challenges alone is not evidence that every claim was checked.]
 
-## 16. Reassess when circumstances change
+## 17. Reassess when circumstances change
 
 **Target: 1 minute. Elapsed: 0:24 to 0:25.**
 
@@ -240,7 +244,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “The new weight changes future funding; earlier earnings stay earned. We now have three different correction paths: challenge a claim, appeal a judgment or reassess it later. Let us experience the judgment part ourselves.”
 
-## 17. Join the workshop
+## 18. Join the workshop
 
 **Target: 3 minutes. Elapsed: 0:25 to 0:28.**
 
@@ -256,7 +260,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Compare seats with participants. Remove duplicate or stray seats before opening the first nominee. Do not put private host controls on the projector.]
 
-## 18. Use one shared policy
+## 19. Use one shared policy
 
 **Target: 2 minutes. Elapsed: 0:28 to 0:30.**
 
@@ -270,7 +274,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 [Read the anchor labels together. Invite one clarification about the policy. Avoid announcing which nominee should score highest.]
 
-## 19. See what the workshop rewards
+## 20. See what the workshop rewards
 
 **Target: 2 minutes. Elapsed: 0:30 to 0:32.**
 
@@ -286,7 +290,7 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “Relevance scores guide support for contributions; juror rewards pay the people assessing them. This workshop uses points to let us experience those incentives.”
 
-## 20. Play the jury
+## 21. Play the jury
 
 **Target: 27 minutes. Elapsed: 0:32 to 0:59.**
 
@@ -312,7 +316,7 @@ If proof reporting needs explanation, say:
 
 [For the assigned-role round, let the interface deliver the private instruction. Participants may decline it. Do not identify roles publicly before the result. If nobody reveals, explain that the round is void; do not infer a judgment from it.]
 
-## 21. What shaped the scores?
+## 22. What shaped the scores?
 
 **Target: 5 minutes. Elapsed: 0:59 to 1:04.**
 
@@ -330,7 +334,7 @@ If proof reporting needs explanation, say:
 
 “The group can sometimes move the result against which everyone is rewarded. A minority can also have a good argument and lose. This is why coherence alone cannot certify accuracy. One room and one simulated group do not establish resistance to capture.”
 
-## 22. Attack the mechanism
+## 23. Attack the mechanism
 
 **Target: 5 minutes. Elapsed: 1:04 to 1:09.**
 
@@ -350,7 +354,7 @@ If proof reporting needs explanation, say:
 
 [Use the remaining time for one concrete attack and response. Ask what weakness remains. Keep contract comparisons, payout rules and recovery machinery in the private notes.]
 
-## 23. Close the loop
+## 24. Close the loop
 
 **Target: 11 minutes. Elapsed: 1:09 to 1:20.**
 

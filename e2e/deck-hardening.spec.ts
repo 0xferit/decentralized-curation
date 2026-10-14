@@ -7,6 +7,14 @@ const PHONE = { width: 390, height: 667 };
 const READABLE_SUPPORT_PX = 14;
 const GEOMETRY_TOLERANCE_PX = 1;
 
+test("projected slides keep only the workshop entry link", async ({ page }) => {
+  await page.goto("/deck/");
+  const links = page.locator("main a:not(.support-logo)");
+  await expect(links).toHaveCount(1);
+  await expect(links).toHaveAttribute("data-link", "room");
+  await expect(links).toHaveAttribute("href", /\/r\//);
+});
+
 test("deck qualifications and chart keys remain readable without hiding content", async ({
   page,
 }) => {

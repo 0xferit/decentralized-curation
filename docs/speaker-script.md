@@ -2,7 +2,7 @@
 
 The [handout](../public/handout/index.html) leads the session’s title and scope. This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
 
-The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. Slides 21 to 24 are optional references.
+The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. Slides 21 to 23 are optional references. Source links remain in these notes; follow-up codes are on the handout.
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
@@ -82,7 +82,9 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “The release records are real. The nomination, requested weight, scores and funding in this demonstration are illustrative. This is not an actual application by NumPy.”
 
-[Point once to the evidence links. Keep the distinction between evidence and assessment visible.]
+[Point to the release date and evidence categories. Keep the distinction between evidence and assessment clear.]
+
+Sources for this example: [NumPy release record](https://numpy.org/news/#numpy-2-0-0-released), [release notes](https://numpy.org/doc/2.2/release/2.0.0-notes.html), [migration guide](https://numpy.org/doc/2.0/numpy_2_0_migration_guide.html). Keep these links in the notes for questions rather than projecting them.
 
 ## 6. Jurors score independently
 
@@ -336,9 +338,9 @@ If proof reporting needs explanation, say:
 
 [Invite one participant to distinguish an accuracy challenge from a relevance appeal. Invite another to name evidence that would make an agreed judgment more credible.]
 
-“The working paper, public explanation and follow-up links are here. Please bring me both use cases and counterexamples. Thank you.”
+“Your handout has the codes to read the framework preprint and stay in touch. Please bring me both use cases and counterexamples. Thank you.”
 
-[Leave the links visible for questions. Finish the game if necessary so final standings remain available. After the discussion, wipe room records as promised and verify that the wipe succeeded.]
+[Leave the closing slide visible for questions and point people to the handout codes. Finish the game if necessary so final standings remain available. After the discussion, wipe room records as promised and verify that the wipe succeeded.]
 
 ## 21. Backup: keep the scopes separate
 
@@ -374,9 +376,9 @@ If proof reporting needs explanation, say:
 
 Sources: [Matadisco](https://matadisco.org/), [Institute of Open Science Practices programme](https://www.iosp.science/), [The Unjournal](https://info.unjournal.org/), [Open Source Endowment](https://endowment.dev/faq/). See the [conference context](presentation-sources.md#conference-observations-and-adjacent-work) for attribution and evidence limits.
 
-## 24. Backup: read sources and check scope
+## Private reference: source scope
 
-**Optional, about 1 minute.**
+Use these notes for source questions; there is no corresponding projected slide.
 
 “The sources have different roles. The published paper records the research at a particular release. The source register identifies later working choices. The inspected implementation snapshot supports statements about that code, not a claim that those contracts are deployed, audited or identical to the paper.
 
@@ -384,7 +386,7 @@ Sources: [Matadisco](https://matadisco.org/), [Institute of Open Science Practic
 
 “If a source seems to contradict today's explanation, first check which version and which system it describes.”
 
-References: [published version 1.2.0](https://doi.org/10.5281/zenodo.23313625), [published manuscript source](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd), [public mechanism summary](../public/mechanism/index.html), [full source register](presentation-sources.md), [proposed evaluation plan](evaluation-plan.md).
+References: [published version 1.2.0](https://doi.org/10.5281/zenodo.23313625), [published manuscript source](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd), [Schelling point explanation](https://en.wikipedia.org/wiki/Focal_point_(game_theory)), [inspected implementation snapshot](https://github.com/golemfoundation/octant-v3-monorepo/tree/ca8c8560119dee34f809a31e5149f4a6217467fb), [Arrow experiment proposal](https://app.notion.com/p/3e4e165689aa819b8aa6d2f4c5d54330), [public mechanism summary](../public/mechanism/index.html), [full source register](presentation-sources.md), [proposed evaluation plan](evaluation-plan.md).
 
 ## Private reference: questions to answer without loading the slides
 

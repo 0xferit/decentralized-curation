@@ -1,8 +1,8 @@
 # Facilitator guide
 
-Run this as an eighty-minute workshop led by the [handout](../public/handout/index.html): putting self-interest to work for the public good through an application of the Decentralized Curation framework. Its central idea is that personal rewards for honest, competent and careful judgment can also create public benefit. The application is public-goods curation; funding is one use of the resulting assessments. The opening worked example curates relative allocation shares from adjustable scores for a real contribution, then applies an optional funding flow. The later live jury examines one component; neither activity simulates the entire protocol. Times run from the session start. Slides 21 to 24 are optional references.
+Run this as an eighty-minute workshop led by the [handout](../public/handout/index.html): putting self-interest to work for the public good through an application of the Decentralized Curation framework. Its central idea is that personal rewards for honest, competent and careful judgment can also create public benefit. The application is public-goods curation; funding is one use of the resulting assessments. The opening worked example curates relative allocation shares from adjustable scores for a real contribution, then applies an optional funding flow. The later live jury examines one component; neither activity simulates the entire protocol. Times run from the session start. Slides 21 to 23 are optional references.
 
-For rehearsal and delivery, use the [slide-by-slide speaker script](speaker-script.md) and [printable speech](../public/speech/speech.pdf). The projected deck contains visual prompts; the script carries the explanation and optional detail. The [offline deck](../public/deck/deck.pdf) is a fallback when the live demonstration is unavailable.
+For rehearsal and delivery, use the [slide-by-slide speaker script](speaker-script.md) and [printable speech](../public/speech/speech.pdf). The projected deck contains visual prompts; the script carries the explanation, optional detail and source links. Use the handout codes for the preprint and follow-up; the deck keeps only the room link needed to join the exercise. The [offline deck](../public/deck/deck.pdf) is a fallback when the live demonstration is unavailable.
 
 ## Before people arrive
 
@@ -25,7 +25,7 @@ Summon the jury from the laptop: enter an alias, keep the six default nominees s
 | 0:32 to 0:59 | 15 | Play all six nominees. Allow about four and a half minutes each: roughly three minutes to score, recover phones, reveal and grade; ninety seconds to discuss. |
 | 0:59 to 1:09 | 16 and 17 | Debrief the results and collusion widget. Then examine attacks, responses and remaining weaknesses. |
 | 1:09 to 1:16 | 18 and 19 | Place Arrow on the path toward the open application. Distinguish evidence already available, what Arrow can test and what remains untested. |
-| 1:16 to 1:20 | 20 | Return to the public-goods application, check understanding, take questions and give the follow-up links. Use appendices 21 to 24 only as needed. |
+| 1:16 to 1:20 | 20 | Return to the public-goods application, check understanding, take questions and point to the handout's follow-up codes. Use appendices 21 to 23 only as needed. |
 
 These are facilitation allowances, not changes to the game's scoring clock. If joining or paper collection takes longer, shorten discussion explicitly. Processing a round and interpreting it are separate work.
 
@@ -140,7 +140,7 @@ Describe the next study as a proposed evaluation, not an approved or completed A
 
 Ask: “Whose needs are missing from this policy? What evidence would show that the resulting funding served its stated purpose?” Then ask which of those claims the available evidence supports. Do not treat every possible outcome as support.
 
-On slide 20, restate the central idea: personal rewards for honest, competent and careful judgment can also create public benefit through better decisions. Public-goods curation is the application; funding is one use of its assessments, and credible consensus is an intermediate objective. Ask one participant to distinguish a claim challenge from a relevance appeal or periodic reassessment, and another to explain what would make an agreed judgment credible or justify revising it. Then ask what evidence would show that the resulting decisions benefited affected people. A profitable strategy, faithful policy application or stable consensus alone would not answer that question. Close with the full loop, research questions and paper/mailing-list links. Press “Finish” if needed so standings remain visible.
+On slide 20, restate the central idea: personal rewards for honest, competent and careful judgment can also create public benefit through better decisions. Public-goods curation is the application; funding is one use of its assessments, and credible consensus is an intermediate objective. Ask one participant to distinguish a claim challenge from a relevance appeal or periodic reassessment, and another to explain what would make an agreed judgment credible or justify revising it. Then ask what evidence would show that the resulting decisions benefited affected people. A profitable strategy, faithful policy application or stable consensus alone would not answer that question. Close with the full loop and research questions, then direct participants to the handout's preprint and mailing-list codes. Source links and version qualifications remain in the private speaker notes for questions. Press “Finish” if needed so standings remain visible.
 
 ## While the room plays
 

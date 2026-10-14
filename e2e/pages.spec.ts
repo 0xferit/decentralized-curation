@@ -232,7 +232,8 @@ test("keyboard shortcuts preserve controls and provide a dismissible focus-conta
   await expect(page.getByLabel("Speaker notes")).toHaveText("my notes");
   await expect(progress).toHaveText("7 / 24");
   await expect(guide).not.toBeVisible();
-  await page.locator("body").click({ position: { x: 1, y: 1 } });
+  await page.locator("#s7 h2").focus();
+  await expect(progress).toHaveText("7 / 24");
   await page.keyboard.press("Control+ArrowRight");
   await page.keyboard.press("Meta+ArrowRight");
   await page.keyboard.type("np?");

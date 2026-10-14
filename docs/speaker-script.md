@@ -24,7 +24,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 **Target: 2 minutes. Elapsed: 0:01 to 0:03.**
 
-“One capable curator can still miss other people's needs. Democracy gives people a voice, but a majority decision can still be poorly informed. The framework aims to combine open participation with rewards for honest, competent and careful judgment, so that the work serves the public.
+“Democracy can combine public voice with expert advice. Counting preferences alone does not ensure informed judgment, and one expert can still miss others' needs. We want open participation and rewarded good judgment together, without assuming that open entry represents everyone.
 
 “Here is a quick coordination game. Look at the three codes on your handout. Without talking or scanning, choose the one you think most people will choose: left, middle or right. Keep it private.
 
@@ -36,7 +36,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “I made the middle code green. I notice it and expect you to notice it too. That shared focal point is called a Schelling point.
 
-“Our game aims to make honest assessment that focal point. Credible consensus means a collective judgment people have reasons to rely on. Open entry and rewards alone do not guarantee it.”
+“Shared expectations can guide independent choices. The curation game aims to make honest assessment that shared focal point. Credible consensus means a collective judgment people have reasons to rely on. We still need to test whether the incentives earn that credibility.”
 
 [The code labels also influence choices. Do not claim that the color caused the result or that this exercise proves honesty. Keep the two-minute slot.]
 
@@ -52,7 +52,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “An accuracy challenge addresses the claims. Relevance assessment judges the contribution under the criteria. A high relevance score does not certify that every claim is true.
 
-“Funding is one use of these assessments. Decentralized Curation is the broader framework.”
+“Funding is one use of these assessments. Decentralized Curation is the broader framework. It distributes the work of judging and checking; it still depends on sound criteria, usable evidence and credible arbitration.”
 
 [Trace the main path once. Point to the separate accuracy path; leave its procedure for slide 9.]
 
@@ -66,7 +66,7 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “This is a choice made for this example pool. Another pool may care about a different problem and need a different policy. Curation costs must be funded. A budget to distribute to beneficiaries is useful upfront, but optional: it can arrive after we have curated the weights.
 
-“Publishing a policy lets people inspect it. It does not establish that everyone affected chose it, or that it serves a worthwhile goal. The creator chooses the terms; funders choose whether to support that pool; jurors apply its criteria.”
+“Publishing a policy lets people inspect it. The creator chooses the terms; funders choose whether to support the pool; jurors apply its criteria. We still need to ask affected people whose needs those criteria include or miss.”
 
 [Read the scoring prompt once. Do not read every anchor.]
 
@@ -172,11 +172,11 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 
 “Fees compensate the work; incentives aim to reward care. Paying someone does not create expertise or prove they did the work.
 
-“Jurors score privately. Coherence means agreement with the jury's assessment under the criteria. It earns rewards; incoherence brings penalties. When jurors cannot rely on collusion, the design aims to make honest assessment their shared focal point: the Schelling point from our opening game.
+“Jurors score privately. Agreement earns rewards; disagreement can bring penalties. Honesty is the intended Schelling point, but avoiding collusion does not show it is the only successful strategy.
 
-“Repeated competition aims to make uninformed guessing a losing strategy. Expected losses discourage entry. Persistent losses reduce a juror's relative stake, draw chances and influence.
+“Informed investigation must pay for its effort and earn more overall than cheaply predicting the group. Otherwise the game can reward prediction without rewarding competence.
 
-“This selects for competence only if informed judgment outperforms guessing after rewards, fees, penalties and effort. We need to test that link, and whether better assessment improves decisions for the people affected.
+“Losses reduce future influence when they leave a juror with less stake relative to others, after any replenishment. We need to test these incentives, and whether better assessment improves decisions for the people affected.
 
 “Now let us experience one part of that game ourselves.”
 
@@ -185,6 +185,8 @@ Source for this example: [NumPy release record](https://numpy.org/news/#numpy-2-
 **Target: 3 minutes. Elapsed: 0:25 to 0:28.**
 
 “Scan the code or open the room address. Use an alias and take a seat. You do not need an account or wallet; we are using points.
+
+“Every round gives each seat the same weight, regardless of earlier wins or losses. This exercise lets us examine scoring incentives; it cannot test whether stake losses select better jurors.
 
 “Your alias, revealed scores and standings will be visible to this room. Some rounds may give you an optional adversarial role. You can decline that role, sit out a nominee or simply observe. Please ask people before photographing or sharing identifiable results.
 
@@ -309,7 +311,7 @@ If proof reporting needs explanation, say:
 
 [At about 1:18, bring the discussion back to the central idea.]
 
-“We need both links to work: incentives that reward useful judgment, and decisions that help the people affected. Today's exercise gives us questions to investigate, not proof that we have achieved either.
+“We need two separate results: rewards must make useful investigation worth doing, and the decisions must improve outcomes for the people affected. Agreement and profit alone establish neither.
 
 “Your handout has the codes to read the framework preprint and stay in touch. Please bring me both use cases and counterexamples. Thank you.”
 
@@ -381,9 +383,37 @@ See the [grading comparison](presentation-sources.md#keep-the-four-mechanisms-di
 
 “Honesty means reporting sincerely. Care means assessing evidence rigorously. Competence means knowing how to judge it. An honest, careful person can still lack expertise.
 
-“Fees compensate service, not measured effort or expertise. Rewards and penalties aim to make careful, informed work worthwhile. Jurors score privately. Coherence means agreement with the jury's assessment under the criteria; it earns rewards, while incoherence brings penalties. When jurors cannot rely on collusion, honesty is the intended shared focal point, or Schelling point.
+“Fees compensate service, not measured effort or expertise. Rewards and penalties aim to make careful, informed work worthwhile. Private reports and agreement-based rewards are meant to make honesty a shared focal point, or Schelling point. The absence of collusion does not establish that truthful reporting is the only equilibrium or the most profitable strategy.
 
-“Repeated competition aims to make uninformed guessing unprofitable. Expected losses deter entry; continued losses shrink relative stake, draw chances and influence. This selects for competence only if informed judgment has an advantage. Service fees could outweigh token losses, so we must test total returns.”
+“Competence selection requires informed investigation to be profitable after effort and other costs, and to outperform a cheap prediction of the group's answer. A participant can predict others accurately without understanding the subject. Service fees can also outweigh token losses. Compare total returns, including both assets and effort, rather than treating agreement or a loss as a competence test.
+
+“Losses reduce future draw chances only if available stake falls relative to competitors. Replenishment, outside wealth and changes in other jurors' stakes can change that outcome. The design does not guarantee that every weak assessor leaves.”
+
+### What can we infer from the handout's coordination game?
+
+“It can illustrate shared expectations and a salient choice. It cannot isolate a color effect: color, middle position, label and destination occur together. It also cannot establish that honesty is a focal point in an assessment game, because this choice has no factual answer and asks people to coordinate. A cluster is an observation about this room, not proof of the proposed incentives.”
+
+### What can we infer from the points exercise?
+
+“We can observe which reports earn points under this rule and discuss why participants chose them. The same reports produce the group result and its rewards, so the rewards are not an independent measure of accuracy, care or expertise. Even unanimous erroneous scores can earn rewards.
+
+“The exercise gives each seat equal weight every round; accumulated point losses do not reduce later weight or draw chances. It does not model real capital at risk, costly information gathering, replenishment or stake-based selection. The short descriptions and prior knowledge also differ from a full evidence dossier.
+
+“An assigned role is an instruction, not evidence that money caused manipulation. Discussion can affect later scores, and six different nominees are not six independent replications. Treat the results as observations for discussion, not a causal test of the complete design.”
+
+### Does open participation mean that everyone is represented?
+
+“No. People may lack money, time, relevant knowledge or access, and more deposited stake can carry more influence. Open entry removes an invitation requirement; it does not guarantee equal influence or representation of everyone affected.
+
+“Choosing goals, judging evidence and representing affected people's needs are different tasks. Democratic institutions can include expert advice and deliberation. This design is one proposed way to organize assessment, not proof that it replaces or improves upon democratic decision-making.”
+
+### Where does trust remain?
+
+“The design distributes assessment and makes some judgments contestable. It still depends on the chosen criteria, accessible evidence, an external arbitrator and the implementation of its rules. We should ask what supports each dependency rather than describe the whole process as needing no trust.”
+
+### What would establish public benefit?
+
+“First test whether the incentives improve assessment compared with a feasible alternative, using evidence of quality independent of the reward formula. Then test whether decisions based on that assessment improve outcomes for affected people, including costs, excluded needs and harms. Better prediction of the group, stable scores, private profit and faithful application of a policy do not by themselves establish that second result.”
 
 ### Does this guarantee honest or sound judgment?
 

@@ -106,13 +106,13 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 "Now choose the way of playing you expect everyone else to choose. Keep it to yourself until three."
 
-[Advance to slide 8 with Next, Space or the right arrow. Give five seconds to read the eight equally styled combinations of honest or deceptive, competent or uninformed, and thorough or lazy. Then count to three and hear the answers before selecting **Reveal example** again.]
+[Advance to slide 8 with Next, Space or the right arrow. Give five seconds to read the eight combinations of honest or deceptive, competent or uninformed, and thorough or lazy. Honest · Competent · Thorough has a gentle blue tint and darker text, like 100; do not point it out before hearing the room. Then count to three and hear the answers before selecting **Reveal example** again.]
 
 "Honest, competent and thorough stand out as a shared standard for how to play. Thorough means critically examining claims and evidence: scrutiny. We know these qualities matter for curation, and we expect others to recognize them too.
 
 "The design challenge is to make acting on these qualities the most rewarding way to participate. Naming a focal point illustrates coordination; the incentives must make it worth following."
 
-[Reveal emphasizes the intended focal option and explains it; it does not report audience votes. Each slide has its own **Reset game** control, restoring the gentle tint for 100 or equal styling for the ways of playing. Normal navigation preserves each slide's reveal state when revisited. If either round has scattered answers, acknowledge that rather than claiming consensus. Advance to slide 9 for the incentive loop.]
+[Reveal emphasizes the intended focal option and explains it; it does not report audience votes. Each slide has its own **Reset game** control, restoring the gentle tint for each round’s focal choice. Normal navigation preserves each slide's reveal state when revisited. If either round has scattered answers, acknowledge that rather than claiming consensus. Advance to slide 9 for the incentive loop.]
 
 ## 9. Expectations can reinforce good judgment
 

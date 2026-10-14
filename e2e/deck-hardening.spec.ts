@@ -175,8 +175,6 @@ test("Schelling curation follows numbers and resets independently", async ({ pag
     elements.map((element) => {
       const style = getComputedStyle(element);
       return JSON.stringify([
-        style.backgroundColor,
-        style.color,
         style.fontSize,
         style.fontWeight,
         style.borderColor,
@@ -193,6 +191,20 @@ test("Schelling curation follows numbers and resets independently", async ({ pag
     .filter({ hasNotText: SCHELLING_CURATION_TARGET })
     .first()
     .evaluate((element) => getComputedStyle(element).backgroundColor);
+  const initialFocalBackground = await focal.evaluate(
+    (element) => getComputedStyle(element).backgroundColor,
+  );
+  const initialFocalColor = await focal.evaluate((element) => getComputedStyle(element).color);
+  expect(initialFocalBackground).not.toBe(otherBackground);
+  const numberFocal = numberSlide.locator("[data-focal]");
+  await numberSlide
+    .getByRole("button", { name: "Reset game", exact: true })
+    .evaluate((button) => (button as HTMLButtonElement).click());
+  await expect(numberFocal).toHaveCSS("background-color", initialFocalBackground);
+  await expect(numberFocal).toHaveCSS("color", initialFocalColor);
+  await numberSlide
+    .getByRole("button", { name: "Reveal example", exact: true })
+    .evaluate((button) => (button as HTMLButtonElement).click());
   await reveal.focus();
   await page.keyboard.press("Space");
   await expect(explanation).toBeVisible();
@@ -200,7 +212,8 @@ test("Schelling curation follows numbers and resets independently", async ({ pag
   await expect(explanation).toContainText(/shared (context|expectations)/i);
   await expect(explanation).toContainText(/aim|designed|most rewarding/i);
   await expect(reveal).toHaveAttribute("aria-expanded", "true");
-  await expect(focal).not.toHaveCSS("background-color", otherBackground);
+  await expect(focal).not.toHaveCSS("background-color", initialFocalBackground);
+  await expect(focal).toHaveCSS("color", "rgb(255, 255, 255)");
   await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s8");
   const bounds = await slide.boundingBox();
   expect(bounds?.height).toBeLessThanOrEqual(DESKTOP.height + GEOMETRY_TOLERANCE_PX);
@@ -214,7 +227,8 @@ test("Schelling curation follows numbers and resets independently", async ({ pag
   await reset.click();
   await expect(explanation).toBeHidden();
   await expect(reveal).toHaveAttribute("aria-expanded", "false");
-  await expect(focal).toHaveCSS("background-color", otherBackground);
+  await expect(focal).toHaveCSS("background-color", initialFocalBackground);
+  await expect(focal).toHaveCSS("color", initialFocalColor);
   await expect(options).toHaveText(phrases);
   await expect(numberSlide.locator("#schelling-explanation")).toBeVisible();
   await reveal.click();

@@ -141,6 +141,11 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
   await slide.locator("h2").focus();
   await page.keyboard.press("Space");
   await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s8");
+  await expect(page.locator("#s8 h2")).toBeFocused();
+  await page.keyboard.press("Space");
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s9");
+  await page.keyboard.press("Shift+Space");
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s8");
   await page.keyboard.press("Shift+Space");
   await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
 });
@@ -243,8 +248,8 @@ test("slide navigation keeps heading focus without a presentation outline", asyn
 });
 
 for (const scenario of [
-  { slide: "s13", button: "Apply appeal result", result: /0\.700.*43\.8%/ },
-  { slide: "s14", button: "Show debunked outcome", result: /Future funding stops/ },
+  { slide: "s14", button: "Apply appeal result", result: /0\.700.*43\.8%/ },
+  { slide: "s15", button: "Show debunked outcome", result: /Future funding stops/ },
 ]) {
   test(`${scenario.button} shows its result on the current slide`, async ({ page }) => {
     for (const viewport of [DESKTOP, PHONE]) {
@@ -271,7 +276,7 @@ for (const scenario of [
 }
 
 test("reset restores the worked example after a zero budget", async ({ page }) => {
-  await page.goto("/deck/#s12");
+  await page.goto("/deck/#s13");
   const budget = page.getByRole("slider", { name: "Illustrative distribution per day" });
   const initialBudget = await budget.inputValue();
   const rates = page.locator("[data-project-rate]");

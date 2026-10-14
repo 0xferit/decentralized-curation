@@ -29,3 +29,5 @@
 @media(max-width:650px){.information-lenses{grid-template-columns:1fr}}
 
 .schelling-options[data-round="numbers"][data-revealed="false"] [data-focal]{background:var(--upheld-soft);color:var(--ink)}
+
+.expectation-loop article{border-top:2px solid var(--hair);padding-top:1.25rem}.expectation-loop p{font-size:1.45rem;line-height:1.5}.expectation-loop strong{color:var(--upheld);font-weight:600}

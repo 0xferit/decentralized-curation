@@ -1,6 +1,6 @@
 # Presentation evidence register
 
-This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honesty, competence and scrutiny can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the twenty-two-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
+This workshop explains a public-goods application of the Decentralized Curation framework: personal rewards for honesty, competence and scrutiny can also create public benefit. The live exercise isolates one relevance-scoring step. The handout leads the twenty-three-slide presentation; this private source register carries technical comparisons and research background outside that sequence. Credible consensus is an intermediate objective, not proof of public benefit. The exercise does not establish that the integrated mechanism is secure or benefits affected people.
 
 ## Which source controls which claim
 
@@ -43,7 +43,7 @@ The paper's variance-padding counterexample concerns its mean/standard-deviation
 
 ## Foundational framing for the presentation
 
-Slides 2 to 8 establish the problem, trust requirements, incentive logic and framework before introducing the public-goods application. Their foundation is the [published version 1.2.0 paper](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd), with its scope qualifications intact. The incentive and focal-point slides also draw on the primary sources below.
+Slides 2 to 9 establish the problem, trust requirements, incentive logic and framework before introducing the public-goods application. Their foundation is the [published version 1.2.0 paper](https://github.com/0xferit/manuscript-decentralized-curation/blob/1b1805d66dc46b7b90f2a28c635cd28d0f6794c1/paper.qmd), with its scope qualifications intact. The incentive and focal-point slides also draw on the primary sources below.
 
 Slide 2 adapts [Wang and Strong (1996)](https://web.mit.edu/tdqm/www/tdqmpub/beyondaccuracy_files/beyondaccuracy.html), identified through [Information quality](https://en.wikipedia.org/wiki/Information_quality). Their four categories form one framework, not a universal or exhaustive taxonomy. “Credibility” condenses their believability and reputation dimensions.
 
@@ -64,7 +64,9 @@ Slide 7 demonstrates two kinds of salience within one 90-second exercise. The nu
 
 The curation round is an original contextual-salience exercise. It presents all eight equally styled combinations of honest or deceptive, competent or uninformed, and thorough or lazy. The prompt is: “Choose the way of playing you expect everyone else to choose.” **Honest · Competent · Thorough** is the intended focal choice, a shared standard made salient by the preceding discussion. Thorough means critical scrutiny of claims and evidence. The reveal distinguishes recognizing that standard from designing incentives that make acting on it most rewarding. This is not evidence that the mechanism has established truthful best responses.
 
-Both rounds contain static options and record no answers. The presenter’s **Curation round** and **Number round** controls switch local content and start the selected round unrevealed. **Reveal example** emphasizes its intended focal option and shows an explanation; **Reset game** hides the explanation and restores the current round's initial styling: the gentle tint for 100 in the number round, equal styling in the curation round. There is no audience tally, network submission or claim that the room chose the intended option. The offline deck includes both unrevealed rounds as consecutive pages for logical slide 7, giving it 23 pages while preserving the 22-slide numbering.
+Both rounds contain static options and record no answers. The presenter’s **Curation round** and **Number round** controls switch local content and start the selected round unrevealed. **Reveal example** emphasizes its intended focal option and shows an explanation; **Reset game** hides the explanation and restores the current round's initial styling: the gentle tint for 100 in the number round, equal styling in the curation round. There is no audience tally, network submission or claim that the room chose the intended option. The offline deck includes both unrevealed rounds as consecutive pages for logical slide 7, giving it 24 pages while preserving the 23-slide numbering.
+
+Slide 8 makes the conditional feedback loop explicit: expecting honest, competent and thorough judgment can encourage the same conduct when participants seek rewards for coherence. Coherence here means agreement between judgments. The slide presents informed judgment as the intended most rewarding route to coherence, not as an established best response. That route depends on relative returns after effort and other costs; predicting others cheaply or coordinating on a shared error can also produce agreement. This is a presentation synthesis of the paper’s coordination possibility and the incentive conditions discussed below.
 
 A Schelling point is a salient option around which people can coordinate their expectations without communicating their choices. [Thomas Schelling, “Bargaining, communication, and limited war” (1957)](https://journals.sagepub.com/doi/10.1177/002200275700100104), especially the experimental examples and footnotes, reports informal coordination exercises. His sample often converged on heads, and on Grand Central Station's information booth at noon for a New York rendezvous. These examples illustrate shared expectations; their results are specific to the participants and context, not universal choice frequencies. Myerson's discussion, pp. 1111–1112, explains how environmental and cultural cues can select among multiple equilibria.
 
@@ -104,13 +106,13 @@ The shared workshop policy adds a contribution-attribution rule: separately name
 
 ## Prototype presentation material
 
-The [public prototype](https://rpgf-prototype.pages.dev/#/demo/value) and its [inspected source revision](https://github.com/golemfoundation/rpgf-prototype/tree/c6180f9ad7e44992725a6c6dcc96b60abe3de0df) inform the presentation of slides 9, 10 and 12: a pool with distinct funding and assessment roles, a dated claim connected to evidence, and a whole budget divided by normalized shares. The deck redraws these ideas using its existing research-infrastructure example and calculations. The prototype is a simulation, not evidence of a production deployment or successful incentives.
+The [public prototype](https://rpgf-prototype.pages.dev/#/demo/value) and its [inspected source revision](https://github.com/golemfoundation/rpgf-prototype/tree/c6180f9ad7e44992725a6c6dcc96b60abe3de0df) inform the presentation of slides 10, 11 and 13: a pool with distinct funding and assessment roles, a dated claim connected to evidence, and a whole budget divided by normalized shares. The deck redraws these ideas using its existing research-infrastructure example and calculations. The prototype is a simulation, not evidence of a production deployment or successful incentives.
 
 Its internal investment pitch, pilot resource estimates, token selection, older settlement rules and “technical truth serum” analogy do not govern this presentation. The current manuscript and the source hierarchy above retain authority. Continuous beneficiary funding does not mean that per-nomination jury and appeal rounds disappear.
 
 ## Real evidence in the NumPy worked example
 
-Slides 10 to 15 follow NumPy as an illustrative nominee and use its 2.0.0 release as bounded evidence about delivered work. The scoring prompt concerns the nominee under the shared policy. It does not ask curators to assign a price to the release alone.
+Slides 11 to 16 follow NumPy as an illustrative nominee and use its 2.0.0 release as bounded evidence about delivered work. The scoring prompt concerns the nominee under the shared policy. It does not ask curators to assign a price to the release alone.
 
 | Record | Verified fact | Limit of the evidence |
 | --- | --- | --- |

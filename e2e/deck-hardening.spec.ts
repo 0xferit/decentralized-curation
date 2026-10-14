@@ -8,6 +8,17 @@ const READABLE_SUPPORT_PX = 14;
 const GEOMETRY_TOLERANCE_PX = 1;
 const SCHELLING_OPTION_COUNT = 100;
 const SCHELLING_FOCAL_NUMBER = "100";
+const SCHELLING_CURATION_TARGET = "Honest · Competent · Thorough";
+const SCHELLING_CURATION_CHOICES = [
+  SCHELLING_CURATION_TARGET,
+  "Honest · Competent · Lazy",
+  "Honest · Uninformed · Thorough",
+  "Honest · Uninformed · Lazy",
+  "Deceptive · Competent · Thorough",
+  "Deceptive · Competent · Lazy",
+  "Deceptive · Uninformed · Thorough",
+  "Deceptive · Uninformed · Lazy",
+];
 
 test("Schelling example reveals locally and preserves keyboard navigation", async ({ page }) => {
   await page.setViewportSize(DESKTOP);
@@ -77,6 +88,88 @@ test("Schelling example reveals locally and preserves keyboard navigation", asyn
   await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s8");
   await page.keyboard.press("Shift+Space");
   await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
+});
+
+test("Schelling curation round resets its reveal when switching rounds", async ({ page }) => {
+  await page.setViewportSize(DESKTOP);
+  await page.goto("/deck/#s7");
+  const slide = page.locator("#s7");
+  const options = slide.locator(".schelling-options li");
+  const reveal = slide.getByRole("button", { name: "Reveal example", exact: true });
+  const reset = slide.getByRole("button", { name: "Reset game", exact: true });
+  const explanation = slide.locator("#schelling-explanation");
+  const initialNumbers = await options.allTextContents();
+  await reveal.click();
+  await expect(explanation).toBeVisible();
+  const curationRound = slide.getByRole("button", { name: "Curation round", exact: true });
+  await expect(curationRound).toBeVisible();
+  await curationRound.click();
+  await expect(options).toHaveCount(SCHELLING_CURATION_CHOICES.length);
+  const phrases = await options.allTextContents();
+  expect([...phrases].sort()).toEqual([...SCHELLING_CURATION_CHOICES].sort());
+  const focal = slide.locator(".schelling-options li[data-focal]");
+  await expect(focal).toHaveCount(1);
+  await expect(focal).toHaveText(SCHELLING_CURATION_TARGET);
+  await expect(explanation).toBeHidden();
+  await expect(reveal).toHaveAttribute("aria-expanded", "false");
+  const initialAppearances = await options.evaluateAll((elements) =>
+    elements.map((element) => {
+      const style = getComputedStyle(element);
+      return JSON.stringify([
+        style.backgroundColor,
+        style.color,
+        style.fontSize,
+        style.fontWeight,
+        style.borderColor,
+        style.borderWidth,
+        style.borderStyle,
+        style.boxShadow,
+        style.transform,
+        style.opacity,
+      ]);
+    }),
+  );
+  expect(new Set(initialAppearances).size).toBe(1);
+  const otherBackground = await options
+    .filter({ hasNotText: SCHELLING_CURATION_TARGET })
+    .first()
+    .evaluate((element) => getComputedStyle(element).backgroundColor);
+  await reveal.focus();
+  await page.keyboard.press("Space");
+  await expect(explanation).toBeVisible();
+  await expect(explanation).toContainText(SCHELLING_CURATION_TARGET);
+  await expect(explanation).toContainText(/shared (context|expectations)/i);
+  await expect(explanation).toContainText(/aim|designed|most rewarding/i);
+  await expect(reveal).toHaveAttribute("aria-expanded", "true");
+  await expect(focal).not.toHaveCSS("background-color", otherBackground);
+  await expect(page.locator(".rail [aria-current]")).toHaveAttribute("href", "#s7");
+  const bounds = await slide.boundingBox();
+  expect(bounds?.height).toBeLessThanOrEqual(DESKTOP.height + GEOMETRY_TOLERANCE_PX);
+  const explanationBottom = await explanation.evaluate(
+    (element) => element.getBoundingClientRect().bottom,
+  );
+  const controlsTop = await page
+    .locator(".deck-nav")
+    .evaluate((element) => element.getBoundingClientRect().top);
+  expect(explanationBottom).toBeLessThan(controlsTop);
+  await reset.click();
+  await expect(explanation).toBeHidden();
+  await expect(reveal).toHaveAttribute("aria-expanded", "false");
+  await expect(focal).toHaveCSS("background-color", otherBackground);
+  await expect(options).toHaveText(phrases);
+  await reveal.click();
+  await slide.getByRole("button", { name: "Number round", exact: true }).click();
+  await expect(options).toHaveCount(SCHELLING_OPTION_COUNT);
+  await expect(options).toHaveText(initialNumbers);
+  await expect(explanation).toBeHidden();
+  await expect(reveal).toHaveAttribute("aria-expanded", "false");
+  await expect(focal).toHaveText(SCHELLING_FOCAL_NUMBER);
+  const restoredBackground = await slide
+    .locator(".schelling-options li:not([data-focal])")
+    .first()
+    .evaluate((element) => getComputedStyle(element).backgroundColor);
+  await expect(focal).toHaveCSS("background-color", restoredBackground);
+  await expect(slide.getByRole("button", { name: "Curation round", exact: true })).toBeVisible();
 });
 
 test("slide navigation keeps heading focus without a presentation outline", async ({ page }) => {

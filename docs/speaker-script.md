@@ -2,7 +2,7 @@
 
 The [handout](../public/handout/index.html) leads the session’s title and scope. This script accompanies [the presentation deck](../public/deck/index.html). Slide numbers match the deck. Read the spoken paragraphs naturally; bracketed directions are private delivery cues. The slides supply a picture, a question or a result while the explanation comes from you.
 
-The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 22 slides. The opening establishes purpose-specific, multidimensional information quality and the trust required for curation, then uses game theory and a brief Schelling-point exercise to introduce the framework before applying it to public goods funding. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
+The eighty-minute schedule matches the facilitator guide. Timing includes demonstrations, audience answers and quiet scoring time, not continuous speech. Protect the game's scoring window. If joining or recovery takes longer, shorten a later discussion explicitly rather than rush participants through an active round. The deck has 22 logical slides. Its offline export has 23 pages because both rounds of slide 7 appear consecutively, each before its reveal. The opening establishes purpose-specific, multidimensional information quality and the trust required for curation, then uses game theory and a brief two-round Schelling-point exercise to introduce the framework before applying it to public goods funding. Source links and technical answers remain in the private notes; follow-up codes are on the handout.
 
 Use the live values on screen if a slider changes them. Default numerical checkpoints below describe the reset example only. The [deck](../public/deck/index.html) owns those inputs; the [shared policy](../public/domain.js), [session information](../public/session.js), [facilitator guide](facilitator-guide.md) and [source register](presentation-sources.md) remain the detailed references.
 
@@ -92,21 +92,23 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “Look at these one hundred numbers. Silently choose the number you expect others here to choose. Your aim is to match them. Do not say it yet.”
 
-[Give eight to ten silent seconds. All options initially look alike. Do not point to 100 or disclose that it is the only even number among 99 odd values. Participants use no controls or devices.]
+[Give eight seconds. All options initially look alike. Do not point to 100 or disclose that it is the only even number among 99 odd values. Participants use no controls or devices.]
 
 “On three, say your number together. One, two, three.”
 
 [Listen to the room, then select **Reveal example**. Do not invent vote totals. If no clear answer emerges, say: “We did not converge on one answer this time.”]
 
-“One hundred is the only even number here, and the only round hundred. That pattern can give us a shared cue: I notice it, and I expect you to notice it. A choice that attracts these shared expectations is a Schelling point, a focal point for coordination.
+"One hundred is the only even number here, and the only round hundred. A shared cue can align our expectations: I notice it, and I expect you to notice it. That is a Schelling point.
 
-“In Schelling's 1957 sample, 36 people chose heads and six chose tails. Asked where and when to meet in New York, a majority chose Grand Central's information booth, and almost everyone chose noon. Those results reflected a particular sample and its shared context.
+"Now choose the way of playing you expect everyone else to choose. Keep it to yourself until three."
 
-“For curation, the opportunity is to make evidence-based assessment the shared focal point. Matching a salient answer illustrates coordination; it does not establish truth.”
+[Select **Curation round**. Give five seconds to read the eight equally styled combinations of honest or deceptive, competent or uninformed, and thorough or lazy. Then count to three and hear the answers before selecting **Reveal example** again.]
 
-[The reveal emphasizes 100 and explains the pattern; it does not report audience votes or prove that the room chose it. **Reset game** restores equal styling and hides the explanation for another delivery. Keep the whole exercise to 60–90 seconds.]
+"Honest, competent and thorough stand out as a shared standard for how to play. Thorough means critically examining claims and evidence: scrutiny. We know these qualities matter for curation, and we expect others to recognize them too.
 
-Source: Thomas C. Schelling, [“Bargaining, communication, and limited war” (1957)](https://journals.sagepub.com/doi/10.1177/002200275700100104), note 1. The sample's New Haven location may have influenced its choices.
+"The design challenge is to make acting on these qualities the most rewarding way to participate. Naming a focal point illustrates coordination; the incentives must make it worth following."
+
+[Spend about 35 seconds on the number round and 55 seconds on the curation round and transition. Reveal emphasizes the intended focal option and explains it; it does not report audience votes. **Reset game** hides the current round's emphasis and explanation. **Number round** returns to the initial exercise. If either round has scattered answers, acknowledge that rather than claiming consensus.]
 
 ## 8. A framework before a mechanism
 
@@ -437,11 +439,17 @@ See the [grading comparison](presentation-sources.md#keep-the-four-mechanisms-di
 
 “Losses reduce future draw chances only if available stake falls relative to competitors. Replenishment, outside wealth and changes in other jurors' stakes can change that outcome. The design does not guarantee that every weak assessor leaves.”
 
-### What can we infer from the number-grid coordination game?
+### What can we infer from the two coordination rounds?
 
 “The hundred-number grid illustrates how a salient cue can support shared expectations. All options initially look alike, but 100 is the only even number among 99 odd values and the only round hundred. Saying answers together lets us hear whether one choice is prominent; it does not produce reliable vote totals or a controlled test of which property caused the choice.
 
-“The arithmetic pattern is factual; matching the room still has no predetermined correct answer. The exercise does not prove that honesty is a focal point in an assessment game. The revealed explanation describes the pattern and concept, not a tally. A cluster is an observation about this room, not proof of the proposed incentives.”
+"The second round offers all eight combinations of honest or deceptive, competent or uninformed, and thorough or lazy. Honest, competent and thorough can become salient as a shared standard for how to play. Thorough here means critical scrutiny of claims and evidence. That illustrates contextual coordination, not a test showing that this conduct already maximizes returns in the curation mechanism.
+
+"The arithmetic pattern is factual; matching the room still has no predetermined correct answer. Each revealed explanation describes the intended cue, not a tally. A cluster is an observation about this room, not proof of the proposed incentives. The design aims to make acting on honesty, competence and scrutiny rewarding; the exercise does not establish that result."
+
+[Optional historical context, for questions or a longer delivery: In Schelling's 1957 sample, 36 people chose heads and six chose tails. Asked where and when to meet in New York, a majority chose Grand Central's information booth, and almost everyone chose noon. Those results reflected a particular sample and its shared context, including the sample's New Haven location.]
+
+Source: Thomas C. Schelling, ["Bargaining, communication, and limited war" (1957)](https://journals.sagepub.com/doi/10.1177/002200275700100104), note 1.
 
 ### What can we infer from the points exercise?
 

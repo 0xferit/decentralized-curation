@@ -82,9 +82,9 @@ Use the live values on screen if a slider changes them. Default numerical checkp
 
 “The game aims to make honesty, competence and scrutiny the most rewarding way to participate. That is a design objective to analyze and test. Rewards alone do not determine outcomes: information, expectations, effort and the surrounding rules matter.
 
-“One powerful idea here is that people can coordinate their expectations even without communicating.”
+“One powerful idea here is that people can coordinate their expectations without a binding agreement. Communication may help them identify a shared focal point.”
 
-[Use incentives as an analytical tool, not a claim that a reward formula proves the desired behavior. Move directly into the coordination exercise.]
+[Use incentives as an analytical tool, not a claim that a reward formula proves the desired behavior. Silence is a rule of this exercise, not a requirement for a Schelling point. A trusted or enforceable collusive agreement can coordinate behavior around another strategy; communication alone does not establish such an agreement. Move directly into the coordination exercise.]
 
 ## 7. Find a shared focal point
 
